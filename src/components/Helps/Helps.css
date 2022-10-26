@@ -1,0 +1,334 @@
+.helps-content {
+    position: absolute;
+    width: 360px;
+    height: 631px;
+    left: 27px;
+    top: 119px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.content-title-icon {
+    background: url('../../asset/Vector-question-icon.png') no-repeat;
+    position: absolute;
+    left: 14.49%;
+    right: 80.19%;
+    top: 16.29%;
+    bottom: 81.25%;
+}
+
+.content-title-text {
+    position: absolute;
+    width: 226px;
+    height: 18px;
+    left: 88px;
+    top: 148px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    /* identical to box height, or 90% */
+
+    letter-spacing: -0.5px;
+}
+
+/* question */
+
+.question-1 {
+    position: absolute;
+    width: 230px;
+    height: 18px;
+    left: 58px;
+    top: 189px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.answer-1 {
+    position: absolute;
+    width: 288px;
+    height: 36px;
+    left: 58px;
+    top: 233px;
+
+    font-family: 'SF UI Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* or 112% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.help-hr-1 {
+    position: absolute;
+    width: 321px;
+    height: 0px;
+    left: 46px;
+    top: 288px;
+
+    border: 1px solid #DDDDDD;
+}
+
+.question-2 {
+    position: absolute;
+    width: 204px;
+    height: 18px;
+    left: 58px;
+    top: 305px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.answer-2 {
+    position: absolute;
+    width: 288px;
+    height: 36px;
+    left: 58px;
+    top: 349px;
+
+    font-family: 'SF UI Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* or 112% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.help-hr-2 {
+    position: absolute;
+    width: 321px;
+    height: 0px;
+    left: 46px;
+    top: 404px;
+
+    border: 1px solid #DDDDDD;
+}
+
+.question-3 {
+    position: absolute;
+    width: 130px;
+    height: 18px;
+    left: 58px;
+    top: 420px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.answer-3 {
+    position: absolute;
+    width: 288px;
+    height: 36px;
+    left: 58px;
+    top: 464px;
+
+    font-family: 'SF UI Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* or 112% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.help-hr-3 {
+    position: absolute;
+    width: 321px;
+    height: 0px;
+    left: 46px;
+    top: 519px;
+
+    border: 1px solid #DDDDDD;
+}
+
+.question-4 {
+    position: absolute;
+    width: 150px;
+    height: 18px;
+    left: 58px;
+    top: 535px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.answer-4 {
+    position: absolute;
+    width: 288px;
+    height: 36px;
+    left: 58px;
+    top: 579px;
+
+    font-family: 'SF UI Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* or 112% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.help-hr-4 {
+    position: absolute;
+    width: 321px;
+    height: 0px;
+    left: 46px;
+    top: 634px;
+
+    border: 1px solid #DDDDDD;
+}
+
+.question-5 {
+    position: absolute;
+    width: 150px;
+    height: 18px;
+    left: 58px;
+    top: 650px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    /* identical to box height, or 112% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.answer-5 {
+    position: absolute;
+    width: 288px;
+    height: 36px;
+    left: 58px;
+    top: 694px;
+
+    font-family: 'SF UI Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* or 112% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+/* contact */
+
+.helps-icon-background {
+    background: url('../../asset/Ellipse\ 11.png')no-repeat;
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 108px;
+    top: 785px;
+    border-radius: 50%;
+   
+}
+
+.helps-icon-contact {
+
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 111px;
+    top: 788px;
+    width: 6px;
+    height: 6px;
+    color: #ED822E;
+   
+}
+
+.help-number-hotline {
+    position: absolute;
+    width: 169px;
+    height: 21px;
+    left: 134px;
+    top: 786px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ED822E;
+}
+
+.helps-footer {
+    position: absolute;
+width: 375px;
+height: 33px;
+left: 20px;
+top: 820px;
+text-align: center;
+font-family: 'SF UI Text';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+
+letter-spacing: -0.5px;
+
+color: #AEAEAE;
+}
+
+
+

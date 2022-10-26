@@ -1,0 +1,203 @@
+
+
+.setting-title {
+
+    position: absolute;
+    width: 328px;
+    height: 21px;
+    left: 43px;
+    top: 68px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.setting-information-user {
+    position: absolute;
+    width: 360px;
+    height: 63px;
+    left: 27px;
+    top: 119px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.setting-user-icon {
+    background: url('../../asset/Vector-user.png') no-repeat;
+    position: absolute;
+    left: 26.56%;
+    right: 82.61%;
+    top: 19.4%;
+    bottom: 82.14%;
+    width: 42px;
+    height: 42px;
+    color: #32CBF9;
+}
+
+.setting-user-icon-background {
+    background: url('../../asset/Ellipse\ 14.png');
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 20px;
+    top: 130px;
+    border-radius: 50%;
+    background: #DFF5FF;
+}
+
+.setting-description {
+    position: absolute;
+    width: 146px;
+    height: 18px;
+    left: 74px;
+    top: 140px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.setting-infomation-user-body {
+    position: absolute;
+    top: -118px;
+}
+
+/* tool đổi pass */
+.setting-change-password {
+    position: absolute;
+    width: 360px;
+    height: 63px;
+    left: 27px;
+    top: 197px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.setting-change-password-body {
+    position: absolute;
+    top: -118px;
+}
+
+.setting-password-icon-background {
+    background: url('../../asset/Ellipse\ 14.png');
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 20px;
+    top: 128px;
+    border-radius: 50%;
+    background: #E4F0FF;
+
+}
+
+.setting-password-icon {
+    background: url('../../asset/ChangePass.png');
+    position: absolute;
+    width: 17.45px;
+    height: 22px;
+    left: 29.56%;
+    top: 9px;
+
+    color: #4A96F8;
+}
+
+.setting-description-change-password {
+    position: absolute;
+    width: 106px;
+    height: 18px;
+    left: 81px;
+    top: 140px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+
+}
+
+/* tool đăng xuất */
+
+.setting-log-out {
+    position: absolute;
+    width: 360px;
+    height: 63px;
+    left: 27px;
+    top: 275px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.setting-log-out-body {
+    position: absolute;
+    top: -120px;
+}
+
+.setting-log-out-background {
+    background: url('../../asset/Ellipse\ 16.png');
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 20px;
+    top: 130px;
+    background: #FFEFE3;
+    border-radius: 50%;
+}
+
+.setting-log-out-icon {
+    background: url('../../asset/Union-log-out.png')no-repeat;
+    position: absolute;
+    left: 29.8%;
+    right: 83.66%;
+    top: 10px;
+    bottom: 64.73%;
+    width: 145px;
+    height: 22px;
+}
+
+.setting-description-log-out {
+    position: absolute;
+    width: 83px;
+    height: 18px;
+    left: 81px;
+    top: 140px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}

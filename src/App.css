@@ -1,0 +1,44 @@
+button i:hover {
+    background-color: #AEAEAE;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 414px) {
+    html {
+        position: absolute;
+        width: 414px;
+        height: 899px;
+        left: 0px;
+        top: -1px;
+        background: #FBFBFD;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        position: absolute;
+        width: 414px;
+        height: 899px;
+        left: 0px;
+        top: -1px;
+        background: #FBFBFD;
+    }
+}
+hr{
+    margin: 0;
+}
+
+.btn-change-password {
+    position: absolute;
+width: 325px;
+height: 54px;
+left: 45px;
+top: 481px;
+
+background: #2CD1F8;
+border-radius: 8px;
+border: none;
+outline: none;
+}

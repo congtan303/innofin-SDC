@@ -11,6 +11,11 @@ import Setting from './components/Setting/Setting';
 import InformationUser from './components/InformationUser/InformationUser';
 import Helps from './components/Helps/Helps';
 import Recharge from './components/Recharge/Recharge';
+import RechargeConfirm from './components/RechargeConfirm/RechargeConfirm';
+import History from './components/History/History';
+import HistoryRecharge from './components/HistoryRecharge/HistoryRecharge';
+import HomePage from './components/HomePage/HomePage';
+import Detail1 from './components/Detail1/Detail1';
 function App() {
   return (
     <div className="App">
@@ -24,7 +29,12 @@ function App() {
       {/* <Setting /> */}
       {/* <InformationUser /> */}
       {/* <Helps /> */}
-      <Recharge />
+      {/* <Recharge /> */}
+      {/* <RechargeConfirm /> */}
+      {/* <History /> */}
+      {/* <HistoryRecharge /> */}
+      {/* <HomePage /> */}
+      <Detail1 />
     </div>
   );
 } 

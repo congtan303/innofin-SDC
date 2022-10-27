@@ -1,5 +1,5 @@
 import './ForgotPassword.css'
-import Union from '../Union/Union'
+
 const ForgotPassword = () => {
     return (
         <div>
@@ -22,7 +22,7 @@ const ForgotPassword = () => {
 
             </div>
 
-            <Union className="Union-forgot-password" />
+            
         </div>
     )
 }

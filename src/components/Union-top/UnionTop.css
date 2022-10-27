@@ -1,0 +1,11 @@
+.union-top {
+    background: url('../../asset/Union-top.png')no-repeat;
+    position: absolute;
+    width: 139.05px;
+    height: 138px;
+    left: 316px;
+    top: 26px;
+
+    color: #fff;
+    opacity: 1;
+}

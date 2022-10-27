@@ -1,0 +1,253 @@
+body {
+    overflow-y: hidden;
+}
+
+element::-webkit-scrollbar {
+    display: none;
+    /* cho Chrome, Safari, and Opera */
+}
+
+.blue-text {
+    color: #2CD1F8;
+}
+
+.Home-page-header {
+    position: absolute;
+    width: 414px;
+    height: 128px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
+}
+
+.home-page-header-welcome {
+    position: absolute;
+    width: 188px;
+    height: 18px;
+    left: 122px;
+    top: 54px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.5px;
+
+    color: #FFFFFF;
+}
+
+
+.home-page-header-avatar {
+    background: url('../../asset/image\ 13.png')no-repeat;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 33px;
+    top: 43px;
+    border: 2px solid #fff;
+    border-radius: 50%
+}
+
+.account-coin {
+    position: absolute;
+    width: 100%;
+    height: 18px;
+    left: 122px;
+    top: 79px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: -0.165px;
+
+    color: #FFFFFF;
+}
+
+.home-page-navbar {
+    position: absolute;
+    width: 414px;
+    height: 60px;
+    left: 0px;
+    top: 127px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+
+}
+
+.customer-need-take-money {
+    position: absolute;
+    width: 229px;
+    height: 32px;
+    left: 18px;
+    top: 18px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* or 122% */
+
+    letter-spacing: -0.5px;
+
+    color: #2CD1F8;
+}
+
+.home-page-body {
+    position: absolute;
+   
+    overflow-y: scroll;
+    width: 414px;
+    height: 600px;
+    top: 197px;
+}
+
+
+
+.home-page-description-1 {
+    position: absolute;
+    width: 390px;
+    height: 120px;
+    left: 12px;
+    top: 4px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.home-page-body-brand {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 12px;
+    top: 12px;
+
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
+}
+
+.home-page-brand-img {
+    background: url('../../asset/img-HD-bank.png');
+    position: absolute;
+    width: 86px;
+    height: 30px;
+    left: 7px;
+    top: 25px;
+}
+
+.home-page-information-1 {
+    position: absolute;
+    left: 120px;
+    top: 0;
+}
+
+.home-page-information-title-1 {
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+    margin-top: 14px;
+}
+
+.home-page-information-address-1 {
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.home-page-information-money-1 {
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.home-page-information-hour-1 {
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.home-page-description-2{
+    position: absolute;
+width: 390px;
+height: 120px;
+left: 12px;
+top: 136px;
+
+background: #FFFFFF;
+box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+border-radius: 10px;
+}
+.home-page-description-3{
+    position: absolute;
+    width: 390px;
+    height: 120px;
+    left: 12px;
+    top: 266px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+.home-page-description-4{
+    position: absolute;
+    width: 390px;
+    height: 120px;
+    left: 12px;
+    top: 396px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+.home-page-description-5{
+    position: absolute;
+    width: 390px;
+    height: 120px;
+    left: 12px;
+    top: 526px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}

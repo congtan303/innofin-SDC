@@ -1,0 +1,44 @@
+.recharge-confirm-title {
+    position: absolute;
+width: 360px;
+height: 231px;
+left: 26px;
+top: 137px;
+
+background: #FFFFFF;
+box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+border-radius: 10px;
+}
+
+.recharge-confirm-description {
+    position: absolute;
+width: 297px;
+height: 80px;
+left: 53px;
+top: 173px;
+
+font-family: 'SF UI Text';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* or 138% */
+
+text-align: center;
+letter-spacing: -0.5px;
+
+color: #636363;
+}
+
+.btn-back-to-home-page {
+    position: absolute;
+width: 325px;
+height: 54px;
+left: 45px;
+top: 271px;
+
+background: #2CD1F8;
+border-radius: 8px;
+border: none;
+outline: none;
+}

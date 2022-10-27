@@ -1,0 +1,436 @@
+.history-header-background {
+    position: absolute;
+    width: 414px;
+    height: 128px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
+}
+
+.history-title {
+    position: absolute;
+    width: 328px;
+    height: 21px;
+    left: 35px;
+    top: 48px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #FFFFFF;
+}
+
+
+.history-notification {
+    background: url('../../asset/Vector-bell.png');
+    position: absolute;
+    width: 28px;
+    height: 30px;
+    left: 351px;
+    top: 48px;
+}
+
+.history-previous-btn {
+    border: none;
+    outline: none;
+    background: url('../../asset/Vector-icon-back.png')no-repeat;
+    position: absolute;
+    width: 9px;
+    height: 14px;
+    left: 30px;
+    top: 51px;
+
+    color: #FFFFFF;
+}
+
+.union-history {
+    position: absolute;
+    width: 139.05px;
+    height: 138px;
+    left: 316px;
+    top: 26px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.history-number-notification {
+    position: absolute;
+    width: 7px;
+    height: 18px;
+    left: 373px;
+    top: 44px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+.history-background-notification {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 366px;
+    top: 42px;
+    border-radius: 50%;
+    background: #C52AFE;
+}
+
+.history-navbar {
+    position: absolute;
+    width: 414px;
+    height: 60px;
+    left: 0px;
+    top: 127px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+}
+
+.history-navbar-seperate {
+    position: absolute;
+    width: 60px;
+    height: 0px;
+    left: 178px;
+    top: 156px;
+    border: 1px solid #DDDDDD;
+    transform: rotate(90deg);
+}
+
+.history-navbar-active-color {
+    position: absolute;
+    width: 208px;
+    height: 3px;
+    left: 0px;
+    top: 184px;
+
+    background: #2CD1F8;
+}
+
+.thu-ho {
+    position: absolute;
+    width: 61px;
+    height: 22px;
+    left: 71px;
+    top: 146px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #2CD1F8;
+}
+
+.add-coin {
+    position: absolute;
+    width: 82px;
+    height: 22px;
+    left: 264px;
+    top: 146px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.history-block-description-1 {
+    position: absolute;
+    width: 390px;
+    height: 120px;
+    left: 12px;
+    top: 197px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.history-block-description-2 {
+    position: absolute;
+    width: 390px;
+    height: 120px;
+    left: 12px;
+    top: 327px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.history-block-description-3 {
+    position: absolute;
+    width: 390px;
+    height: 120px;
+    left: 12px;
+    top: 457px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.history-block-description-4 {
+    position: absolute;
+    width: 390px;
+    height: 120px;
+    left: 12px;
+    top: 587px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.history-title-brand-1 {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 32px;
+    top: 209px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.history-title-brand-2 {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 32px;
+    top: 339px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.history-title-brand-3 {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 32px;
+    top: 469px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.history-title-brand-4 {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 32px;
+    top: 599px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.address-brand {
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.amount-money {
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.transaction-time {
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.transaction-code {
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.history-info {
+    position: absolute;
+    top: 38px;
+    left: 20px;
+}
+
+/* footer */
+
+.footer {
+    position: absolute;
+    width: 414px;
+    height: 105px;
+    left: 0px;
+    top: 791px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+}
+
+.footer-tool-app-icon-1 {
+    background: url('../../asset/Union-cost.png');
+    position: absolute;
+    width: 32.21px;
+    height: 28.54px;
+    left: 73px;
+    top: 810.79px;
+    color: #AEAEAE;
+}
+
+.footer-tool-description-app {
+    position: absolute;
+    width: 47px;
+    height: 18px;
+    left: -10px;
+    top: 34px;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #AEAEAE;
+}
+
+.footer-tool-app-icon-2{
+    background: url('../../asset/Union-history.png');
+    position: absolute;
+width: 27.99px;
+height: 28px;
+left: 185px;
+top:810px;
+
+color: #C52AFE;
+}
+.footer-tool-app-icon-3{
+    background: url('../../asset/Union-account.png');
+    position: absolute;
+width: 28px;
+height: 28px;
+left: 301px;
+top: 811px;
+
+color: #AEAEAE;
+}
+
+.footer-tool-description-history{
+    position: absolute;
+    width: 49px;
+    height: 18px;
+    left: -10px;
+    top: 34px;
+    
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    
+    text-align: center;
+    
+    color: #C52AFE;
+}
+.footer-tool-description-account{
+    position: absolute;
+    width: 62px;
+    height: 18px;
+    left: -16px;
+    top: 34px;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #AEAEAE;
+}

@@ -37,7 +37,7 @@ function App() {
   };
   return (
 
-    <div className="App">
+    
 
       <Routes>
         <Route path='/' element={<Slash />}>
@@ -82,34 +82,8 @@ function App() {
       </Routes>
 
 
-      {/* 
-      <ChangePassword />
       
-       */}
-
-
-
-
-
-
-      {/* <Detail1 /> */}
-      {/* <Detail2 /> */}
-
-      {/* <ListMoneyComplete /> */}
-      {/* <CashComplete /> */}
-
-      {/* <Verification /> */}
-
-      {/* <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <div style={{ width: "500px" }}>
-        <ReactSwipeButton
-          text="SWIPE TO UNLOCK"
-          color="#f00"
-          onSuccess={success}
-        />
-      </div> */}
-    </div>
+    
 
 
   );

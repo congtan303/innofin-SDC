@@ -9,7 +9,7 @@ const SuccessPassword = () => {
             <div class="status-success-password">Lấy lại mật khẩu thành công</div>
             <div class="comment-success-password">Mật khẩu đã gửi đến email đã đăng ký. Vui lòng kiểm tra email để thực hiện đăng nhập lại</div>
 
-            <Link to="/account-user">
+            <Link to="/login">
                 <button class="btn-login-success-password">Đăng nhập lại</button>
             </Link>
             <Union className="Union-success-password" />

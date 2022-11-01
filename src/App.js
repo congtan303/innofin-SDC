@@ -6,8 +6,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import ReactSwipeButton from "react-swipe-button";
-import SwipeBtn from './swipe';
+// import ReactSwipeButton from "react-swipe-button";
+// import SwipeBtn from './swipe';
 import Slash from './components/Slash/Slash';
 import Login from './components/Login/Login';
 import RecoverPassword from './components/RecoverPassword/RecoverPassword';

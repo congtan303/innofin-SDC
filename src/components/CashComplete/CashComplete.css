@@ -1,0 +1,203 @@
+.img-success-complete {
+    background: url('../../asset/image\ 12.png')no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 163px;
+    top: 156px;
+
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+}
+
+.description-success-complete {
+    position: absolute;
+    width: 251px;
+    height: 48px;
+    left: 88px;
+    top: 256px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #C52AFE;
+}
+
+/* card */
+
+.card-brand {
+    position: absolute;
+    width: 360px;
+    height: 264px;
+    left: 26px;
+    top: 331px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.card-brand-img {
+    background: url('../../asset/image\ 19-pizza-hut.png')no-repeat;
+    position: absolute;
+    width: 95px;
+    height: 94px;
+    left: 134px;
+    top: 18px;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
+}
+
+.card-brand-name {
+    position: absolute;
+    width: 73px;
+    height: 22px;
+    left: 149px;
+    top: 118px;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    color: #636363;
+}
+
+.card-brand-address {
+    position: absolute;
+    width: 324px;
+    height: 18px;
+    left: 20px;
+    top: 144px;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    color: #636363;
+}
+
+.hr-cash-complete {
+    position: absolute;
+    width: 314px;
+    height: 0px;
+    left: 46px;
+    top: 501px;
+
+    border: 1px solid #DDDDDD;
+}
+
+/* info cash */
+
+.information-cash {
+    position: absolute;
+    width: 100vw;
+    height: 22px;
+    left: 46px;
+    top: 508px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.information-cash-blue {}
+
+.information-cash-user {}
+
+.information-user-payed {
+    position: absolute;
+    width: 100vw;
+    height: 22px;
+    left: 46px;
+    top: 530px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.information-user-phone-number {
+    position: absolute;
+    width: 100vw;
+    height: 22px;
+    left: 46px;
+    top: 552px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.information-cash-blue {
+    position: absolute;
+    left: 100px;
+    font-family: 'SF UI Text';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+letter-spacing: -0.5px;
+
+color: #2CD1F8;
+}
+
+.user-payed-text {
+    position: absolute;
+    left: 100px;
+}
+
+/* btn homepage */
+
+.back-to-home-page {
+
+    position: absolute;
+    width: 360px;
+    height: 54px;
+    left: 26px;
+    top: 631px;
+
+    background: #2CD1F8;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: 'SF UI Text';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height, or 100% */
+
+
+color: #fff
+}

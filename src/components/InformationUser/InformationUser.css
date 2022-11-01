@@ -1,3 +1,13 @@
+.info-user-container {
+    position: relative;
+    margin: 0 auto;
+    width: 414px;
+    height: 899px;
+    left: -1px;
+    top: -3px;
+    background: #FBFBFD;
+}
+
 .title {
     position: absolute;
     width: 328px;
@@ -219,7 +229,7 @@
     color: #636363;
 }
 
-.information-user-phone-number {
+.information-user-phone-numb {
     position: absolute;
     width: 115px;
     height: 18px;

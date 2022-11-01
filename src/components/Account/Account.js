@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom'
 import "./Account.css";
-import Union from "../Union/Union";
+import UnionTop from "../Union-top/UnionTop";
 
 const Account = () => {
     return (
-        <div>
+        <div className="account-container">
             <div className="Account-header">
                 <div className="Account-background">
 
@@ -15,7 +16,10 @@ const Account = () => {
                 <div className="Account-header-avatar">
 
                 </div>
-                <div className="Account-header-name">Lê Minh Sơn</div>
+                <Link to="/information-user">
+                    <div className="Account-header-name">Lê Minh Sơn</div>
+                </Link>
+
                 <div className="Account-header-number-id">Mã số ID: 225556</div>
             </div>
             <div className="account-balance">
@@ -34,7 +38,10 @@ const Account = () => {
                     <div className="account-wallet-img-background">
 
                     </div>
-                    <div className="account-wallet-img--info">Nạp tiền vào tài khoản</div>
+                    <Link to='/recharge-money'>
+                        <div className="account-wallet-img--info">Nạp tiền vào tài khoản</div>
+                    </Link>
+
                 </div>
 
                 <div className="account-help">
@@ -44,7 +51,10 @@ const Account = () => {
                     <div className="account-help-img-background">
 
                     </div>
-                    <div className="account-help-img-info">Trợ giúp</div>
+                    <Link to="/helps">
+                        <div className="account-help-img-info">Trợ giúp</div>
+                    </Link>
+
                 </div>
 
                 <div className="account-setting">
@@ -54,9 +64,12 @@ const Account = () => {
                     <div className="account-setting-img-background">
 
                     </div>
-                    <div className="account-setting-img-info">Cài đặt</div>
+                    <Link to='/setting'>
+                        <div className="account-setting-img-info">Cài đặt</div>
+                    </Link>
+
                 </div>
-                <hr></hr>
+                <hr className='account-hr'></hr>
                 <div className="account-hotline">
                     <div className="account-hotline-icon">
 
@@ -80,19 +93,28 @@ const Account = () => {
             </div>
             <div className="account-footer">
                 <div>
-                <div className="account-footer-cost">
-                    <div className="account-footer-cost-text">Thu hộ</div>
-                </div>
-                <div className="account-footer-history">
-                <div className="account-footer-history-text">Lịch sử</div>
-                </div>
-                <div className="account-footer-user">
-                <div className="account-footer-user-text">Tài khoản</div>
-                </div>
-                </div>
-                
-            </div>
+                    <Link to='/home-page'>
+                        <div className="account-footer-cost">
+                            <div className="account-footer-cost-text">Thu hộ</div>
+                        </div>
+                    </Link>
 
+                    <Link to="/history">
+                        <div className="account-footer-history">
+                            <div className="account-footer-history-text">Lịch sử</div>
+                        </div>
+                    </Link>
+
+                    <Link to="/account-user">
+                        <div className="account-footer-user">
+                            <div className="account-footer-user-text">Tài khoản</div>
+                        </div>
+                    </Link>
+
+                </div>
+
+            </div>
+            <UnionTop />
         </div>
     )
 }

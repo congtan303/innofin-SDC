@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Login.css'
 import Union from '../Union/Union'
 const Login = () => {
@@ -20,18 +21,22 @@ const Login = () => {
                     <p>
                         <label className="input-title">Mật khẩu</label>
                         <input class="w3-input input-user" type="password" /></p>
-                    <p>
-                        <button className="btn-login">Đăng nhập</button>
+                    <p className='div-btn-login'>
+                        <Link to="/account-user">
+                            <button className="btn-login">Đăng nhập</button>
+                        </Link>
+
                     </p>
 
                 </form>
                 <i class="fas fa-user input-icon"></i>
-                <i class="fas fa-eye-slash input-eye"></i>
+                <i class="fas fa-eye-slash input-eye-login"></i>
 
             </div>
 
             <div className="forgot-password">
-                <a href="/" className="link-forgot-password">Quên mật khẩu?</a>
+                    
+                <Link to="/forgot-password" className="link-forgot-password">Quên mật khẩu?</Link>
             </div>
 
             <div className="contact">

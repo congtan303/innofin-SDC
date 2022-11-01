@@ -1,11 +1,13 @@
+import { Link } from 'react-router-dom'
+
 import './Slash.css'
 
-const Slash = () => { 
+const Slash = () => {
     return (
         <div>
             <div className="Slash__background">
                 <div className="finance__brand">
-                    
+
                 </div>
                 <div class="finance__information">
                     Xin chào! Cảm ơn bạn đã tham gia dịch vụ thu hộ innofin. Vui lòng bấm bắt đầu để truy cập
@@ -14,9 +16,11 @@ const Slash = () => {
                 <div className="finance__img">
 
                 </div>
-                
+                <Link to="/login">
                     <button className="login">Bắt đầu</button>
-                
+                </Link>
+
+
             </div>
         </div>
     )

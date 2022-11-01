@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
 import './HomePage.css'
 import UnionTop from '../Union-top/UnionTop'
 export default function HomePage() {
     return (
-        <div>
+        <div className='container'>
             <div className="Home-page-header">
                 <div className="home-page-header-background">
 
@@ -106,15 +107,20 @@ export default function HomePage() {
             </div>
             <div className="footer"></div>
             <div className="footer-tool-app">
-                <div className="footer-tool-app-icon-1">
-                    <div className="footer-tool-description-app">Thu hộ</div>
+                <div className="footer-icon-app">
+                    <div className="footer-app-text">Thu hộ</div>
                 </div>
-                <div className="footer-tool-app-icon-2">
-                    <div className="footer-tool-description-history">Lịch sử</div>
+                <Link to="/history">
+                <div className="footer-icon-history">
+                    <div className="footer-history-text">Lịch sử</div>
                 </div>
-                <div className="footer-tool-app-icon-3">
-                    <div className="footer-tool-description-account">Tài khoản</div>
+                </Link>
+                <Link to='/account-user'>
+                <div className="footer-icon-account">
+                    <div className="footer-account-text">Tài khoản</div>
                 </div>
+                </Link>
+                
             </div>
 
 

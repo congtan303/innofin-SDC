@@ -44,6 +44,7 @@
 
     position: absolute;
     overflow-y: scroll;
+    overflow-x: hidden;
     width: 414px;
     height: 600px;
 }
@@ -135,4 +136,44 @@
     letter-spacing: -0.5px;
 
     color: #636363;
+}
+
+.thu-ho-2 {
+    position: absolute;
+    width: 61px;
+    height: 22px;
+    left: 71px;
+    top: 146px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.nap-diem-2 {
+    position: absolute;
+    width: 82px;
+    height: 22px;
+    left: 264px;
+    top: 146px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #2CD1F8;
 }

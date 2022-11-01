@@ -1,11 +1,11 @@
 .Login__container {
-    position: absolute;
     width: 414px;
     height: 904px;
     left: -1px;
     top: -3px;
-
     background: #FBFBFD;
+    margin: 0 auto;
+    position: relative;
 }
 
 .header {
@@ -60,17 +60,27 @@
     border-radius: 10px;
 }
 
+.div-btn-login {
+    position: relative;
+}
+
 .btn-login {
     position: absolute;
     width: 292px;
     height: 54px;
     left: 18px;
-    top: 180px;
+    top: 30px;
     background: #2CD1F8;
     border-radius: 8px;
     outline: none;
     border: none;
     cursor: pointer;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
 }
 
 input {
@@ -116,11 +126,11 @@ input {
     color: #C1C1C1
 }
 
-.input-eye {
+.input-eye-login {
     position: absolute;
-    top: 106px;
-    left: 292px;
-    color: #C1C1C1
+    top: 126px;
+    left: 314px;
+    color: #C1C1C1;
 }
 
 /* quên Mật khẩu */
@@ -129,7 +139,7 @@ input {
     width: 122px;
     height: 19px;
     left: 147px;
-    top: 510px;
+    top: 520px;
     font-family: 'SF UI Text';
     font-style: normal;
     font-weight: 300;

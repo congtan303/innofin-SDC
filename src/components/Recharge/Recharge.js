@@ -1,9 +1,9 @@
-
+import { Link } from 'react-router-dom'
 import './Recharge.css'
 
 export default function Recharge() {
     return (
-        <div>
+        <div className='recharge-container'>
             <button className="previous-button">
                 <i class="fal fa-chevron-left icon-back"></i>
             </button>
@@ -25,13 +25,19 @@ export default function Recharge() {
             </div>
             <div className="recharge-code">Mã giao dịch nạp tiền:</div>
             <input className="recharge-input-code"></input>
-            <hr className="recharge-hr-1"/>
+            <hr className="recharge-hr-1" />
 
             <div className="recharge-coin">Số tiền muốn nạp:</div>
             <input className="recharge-input-coin" />
             <span className="recharge-text">điểm</span>
             <hr className="recharge-hr-2"></hr>
-            <button className="btn-change-password">Đổi mật khẩu</button>
+            <div className='div-button-recharge'>
+                <Link to="/recharge-confirm">
+                <button className="btn-recharge-password">Nạp điểm</button>
+                </Link>
+                
+            </div>
+
         </div>
     )
 }

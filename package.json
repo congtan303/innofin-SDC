@@ -2,7 +2,7 @@
   "name": "my-app-taichinh",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://congtan303.github.io/app-finane-SDC/",
+  "homepage": "https://congtan303.github.io/finance-SDC/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,7 +11,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fontawesome": "^1.7.1",
+    "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
+    "react-swipe-button": "^1.0.1",
+    "react-swipezor": "^1.0.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -1,4 +1,12 @@
-
+.account-container {
+    position: relative;
+    margin: 0 auto;
+    width: 414px;
+    height: 899px;
+    left: -1px;
+    top: -3px;
+    background: #FBFBFD;
+}
 
 .Account-background {
     position: absolute;
@@ -324,8 +332,7 @@ hr {
     right: 83.82%;
     top: 388px;
     bottom: 28.02%;
-    width: 100%;
-    height: 100%;
+    ;
     color: #ED822E;
     z-index: 10;
 
@@ -420,6 +427,15 @@ hr {
     top: 20px;
 
     color: #AEAEAE;
+}
+
+.account-hr {
+    position: absolute;
+    width: 375px;
+    height: 0px;
+    left: 20px;
+    top: 348px;
+    border: 1px solid #DDDDDD;
 }
 
 .account-footer-cost-text {

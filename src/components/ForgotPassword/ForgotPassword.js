@@ -1,8 +1,9 @@
 import './ForgotPassword.css'
+import { Link } from 'react-router-dom'
 
 const ForgotPassword = () => {
     return (
-        <div>
+        <div className='forgot-background'>
             <div className="Forgot-icon">
 
             </div>
@@ -13,16 +14,19 @@ const ForgotPassword = () => {
             <div className="form-input-forgot-password">
                 <form class="w3-container">
                     <p>
-                        <label>ID Đăng nhập:</label>
+                        <label className='label-text'>ID Đăng nhập:</label>
                         <input class="w3-input" type="password" /></p>
                 </form>
-                <button class="btn-forgot-password">Lấy lại mật khẩu</button>
+                <Link to='/success-password'>
+                    <button class="btn-forgot-password">Lấy lại mật khẩu</button>
+                </Link>
+
                 <i class="fas fa-eye-slash input-eye input-icon"></i>
 
 
             </div>
 
-            
+
         </div>
     )
 }

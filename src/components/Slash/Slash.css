@@ -1,11 +1,11 @@
 .Slash__background {
-    position: absolute;
+    position: relative;
     width: 414px;
     height: 897px;
     left: 0px;
     top: 0px;
-
     background: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
+    margin: 0 auto;
 }
 
 .finance__brand {

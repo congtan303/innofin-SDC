@@ -104,7 +104,7 @@ element::-webkit-scrollbar {
 
 .home-page-body {
     position: absolute;
-   
+    overflow-x: hidden;
     overflow-y: scroll;
     width: 414px;
     height: 600px;
@@ -207,47 +207,138 @@ element::-webkit-scrollbar {
     color: #636363;
 }
 
-.home-page-description-2{
+.home-page-description-2 {
     position: absolute;
-width: 390px;
-height: 120px;
-left: 12px;
-top: 136px;
+    width: 390px;
+    height: 120px;
+    left: 12px;
+    top: 136px;
 
-background: #FFFFFF;
-box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
-border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
 }
-.home-page-description-3{
+
+.home-page-description-3 {
     position: absolute;
     width: 390px;
     height: 120px;
     left: 12px;
     top: 266px;
-    
+
     background: #FFFFFF;
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
-.home-page-description-4{
+
+.home-page-description-4 {
     position: absolute;
     width: 390px;
     height: 120px;
     left: 12px;
     top: 396px;
-    
+
     background: #FFFFFF;
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
-.home-page-description-5{
+
+.home-page-description-5 {
     position: absolute;
     width: 390px;
     height: 120px;
     left: 12px;
     top: 526px;
-    
+
     background: #FFFFFF;
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
+}
+
+
+.footer-icon-app {
+    background: url('../../asset/Union-cost-purple.png');
+    position: absolute;
+    width: 32.21px;
+    height: 28.54px;
+    left: 73px;
+    top: 810.79px;
+
+    color: #C52AFE;
+}
+
+.footer-app-text {
+    position: absolute;
+    width: 47px;
+    height: 18px;
+    left: -9px;
+    top: 36px;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #C52AFE;
+
+    text-align: center;
+
+    color: #C52AFE;
+}
+
+.footer-icon-history{
+    background: url('../../asset/Union-history-home-page.png');
+    position: absolute;
+width: 27.99px;
+height: 28px;
+left: 185px;
+top: 811px;
+
+}
+.footer-history-text{
+    position: absolute;
+width: 49px;
+height: 18px;
+left: -9px;
+top: 36px;
+
+font-family: 'SF UI Text';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+text-align: center;
+
+color: #AEAEAE;
+
+}
+
+.footer-icon-account{
+    background: url('../../asset/Union-account.png');
+    position: absolute;
+width: 28px;
+height: 28px;
+left: 301px;
+top: 811px;
+}
+.footer-account-text{
+
+    position: absolute;
+    width: 64px;
+    height: 18px;
+    left: -17px;
+    top: 36px;
+    
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    
+    text-align: center;
+    
+    color: #AEAEAE;
 }

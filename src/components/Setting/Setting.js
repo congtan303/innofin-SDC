@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
 import './Setting.css'
 import Union from '../Union/Union'
 export default function Setting() {
     return (
-        <div>
+        <div className='setting-container'>
             <div className="btn-setting">
                 <button className="previous-button">
                     <i class="fal fa-chevron-left icon-back"></i>
@@ -17,7 +18,10 @@ export default function Setting() {
                         <div className="setting-user-icon">
                         </div>
                     </div>
+                    <Link to="/information-user">
                     <div className="setting-description">Thông tin cá nhân</div>
+                    </Link>
+                    
                 </div>
 
             </div><div className="setting-change-password">
@@ -26,7 +30,10 @@ export default function Setting() {
                         <div className="setting-password-icon">
                         </div>
                     </div>
+                    <Link to='/change-password'>
                     <div className="setting-description-change-password">Đổi mật khẩu</div>
+                    </Link>
+                  
                 </div>
 
             </div>

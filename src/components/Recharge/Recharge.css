@@ -1,3 +1,13 @@
+.recharge-container {
+    position: relative;
+    margin: 0 auto;
+    width: 414px;
+    height: 899px;
+    left: -1px;
+    top: -3px;
+    background: #FBFBFD;
+}
+
 .Recharge-title {
     position: absolute;
     width: 328px;
@@ -111,7 +121,7 @@
     width: 324px;
     height: 0px;
     left: 46px;
-    top: 363px;
+    top: 362px;
 
 }
 
@@ -176,5 +186,31 @@ color: #636363;
     width: 324px;
     height: 0px;
     left: 46px;
-    top: 439px;
+    top: 438px;
+}
+
+.div-button-recharge {
+    
+}
+
+.btn-recharge-password {
+    position: absolute;
+width: 325px;
+height: 54px;
+left: 44px;
+top: 481px;
+
+background: #2CD1F8;
+border-radius: 8px;
+border: none;
+outline: none;
+font-family: 'SF UI Text';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height, or 100% */
+
+
+color: #FFFFFF;
 }

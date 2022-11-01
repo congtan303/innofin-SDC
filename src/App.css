@@ -4,46 +4,73 @@ button i:hover {
 }
 
 
-
-@media (min-width: 414px) {
-    html {
-        position: absolute;
-        width: 414px;
-        height: 899px;
-        left: 0px;
-        top: -1px;
-        background: #FBFBFD;
-    }
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 414px;
+    height: 899px;
+    left: -1px;
+    top: -3px;
+    background: #FBFBFD;
 }
 
-@media (min-width: 768px) {
-    html {
-        position: absolute;
-        width: 414px;
-        height: 899px;
-        left: 0px;
-        top: -1px;
-        background: #FBFBFD;
-    }
-}
-hr{
+
+
+hr {
     margin: 0;
 }
 
 .btn-change-password {
     position: absolute;
-width: 325px;
-height: 54px;
-left: 45px;
-top: 481px;
+    width: 325px;
+    height: 54px;
+    left: 45px;
+    top: 481px;
 
-background: #2CD1F8;
-border-radius: 8px;
-border: none;
-outline: none;
+    background: #2CD1F8;
+    border-radius: 8px;
+    border: none;
+    outline: none;
 }
 
 .blue {
-    color: 
-    #2CD1F8;
+    color:
+        #2CD1F8;
+}
+
+.app {
+    position: absolute;
+    width: 414px;
+    height: 899px;
+    left: 0px;
+    top: -1px;
+
+    background: #FBFBFD;
+}
+
+.blue {
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: -0.5px;
+
+    color: #2CD1F8;
+}
+
+.bold-text {
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+    
 }

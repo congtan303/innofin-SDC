@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
 import './HistoryRecharge.css'
 import UnionTop from '../Union-top/UnionTop'
 export default function HistoryRecharge() {
     return (
-        <div>
+        <div className='container'>
             <div className="history-recharge-header">
 
                 <button className="history-previous-btn">
@@ -25,8 +26,11 @@ export default function HistoryRecharge() {
 
                 <div class="border-navbar">
                     <div className="history-recharge-navbar">
-                        <div className="thu-ho">Thu hộ</div>
-                        <div className="add-coin">Nạp điểm</div>
+                        <Link to="/history">
+                            <div className="thu-ho-2">Thu hộ</div>
+                        </Link>
+
+                        <div className="nap-diem-2">Nạp điểm</div>
                         <div className="history-navbar-seperate"></div>
                         <div className="history-navbar-active-color"></div>
                     </div>
@@ -89,15 +93,20 @@ export default function HistoryRecharge() {
 
                 <div className="footer"></div>
                 <div className="footer-tool-app">
-                    <div className="footer-tool-app-icon-1">
-                        <div className="footer-tool-description-app">Thu hộ</div>
-                    </div>
+                    <Link to='/home-page'>
+                        <div className="footer-tool-app-icon-1">
+                            <div className="footer-tool-description-app">Thu hộ</div>
+                        </div>
+                    </Link>
+
                     <div className="footer-tool-app-icon-2">
                         <div className="footer-tool-description-history">Lịch sử</div>
                     </div>
-                    <div className="footer-tool-app-icon-3">
-                        <div className="footer-tool-description-account">Tài khoản</div>
-                    </div>
+                    <Link to="/account-user">
+                        <div className="footer-tool-app-icon-3">
+                            <div className="footer-tool-description-account">Tài khoản</div>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

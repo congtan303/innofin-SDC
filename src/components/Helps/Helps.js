@@ -2,7 +2,7 @@ import './Helps.css'
 
 export default function Helps() {
     return (
-        <div>
+        <div className='help-container'>
             <button className="previous-button">
                 <i class="fal fa-chevron-left icon-back"></i>
             </button>

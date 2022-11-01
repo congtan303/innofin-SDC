@@ -1,11 +1,12 @@
-.Detail-1-background {
-    position: absolute;
+.background-detail {
     width: 414px;
-    height: 800px;
+    height: 896px;
     left: 0px;
     top: 0px;
-
     background: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
+    margin: 0 auto;
+    position: relative;
+    display: block;
 }
 
 .Detail-1-card-body {

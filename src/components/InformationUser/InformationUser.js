@@ -1,8 +1,8 @@
 import './InformationUser.css'
 import Union from '../Union/Union'
-export default function InfomationUser() {
+export default function     InfomationUser() {
     return (
-        <div>
+        <div className='info-user-container'>
             <div className="btn-setting">
                 <button className="previous-button">
                     <i class="fal fa-chevron-left icon-back"></i>
@@ -46,7 +46,7 @@ export default function InfomationUser() {
             <div className="information-user-phone">
                 Số điện thoại:
             </div>
-            <div className="information-user-phone-number">
+            <div className="information-user-phone-numb">
                 0962 228 445
             </div>
             <div className="information-edit-phone-number-background"></div>

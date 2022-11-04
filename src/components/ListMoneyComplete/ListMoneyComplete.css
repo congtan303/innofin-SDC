@@ -8,6 +8,7 @@
 
 .tbody-wrap {
     overflow-y: scroll;
+    overflow-x: hidden;
     width: 358px;
     height: 370px;
     position: absolute;
@@ -18,6 +19,23 @@
     height: 370px;
     border: 1px solid 
     #DDDDDD;
+}
+
+.tbody-wrap::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #DFF5FF;
+}
+
+.tbody-wrap::-webkit-scrollbar-thumb{
+	background-color: #32CBF9;
+    border: 5px;
+    border-radius: 20px;
+}
+
+.tbody-wrap::-webkit-scrollbar-track {
+    
+    margin-bottom: 320px;
 }
 
 .table-1 {

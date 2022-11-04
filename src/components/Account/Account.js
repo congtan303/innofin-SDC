@@ -39,7 +39,7 @@ const Account = () => {
 
                     </div>
                     <Link to='/recharge-money'>
-                        <div className="account-wallet-img--info">Nạp tiền vào tài khoản</div>
+                        <div className="account-wallet-img--info">Nạp điểm vào tài khoản</div>
                     </Link>
 
                 </div>

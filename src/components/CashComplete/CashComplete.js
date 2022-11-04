@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom'
 import './CashComplete.css';
+import logoComplete from '../../asset/image\ 12.png'
 import UnionTop from '../Union-top/UnionTop';
-export default function CashComplete () {
+export default function CashComplete() {
     return (
         <div className="container">
             <header>
@@ -26,16 +28,14 @@ export default function CashComplete () {
             </header>
 
             <div className="Cash-complete-content">
-                <div className="img-success-complete">
-
-                </div>
+                <img src={logoComplete} className="img-success-complete"></img>
                 <div className="description-success-complete">
                     Bạn đã hoàn thành thu hộ tại cửa hàng
                 </div>
 
                 <div className="card-brand">
                     <div className="card-brand-img">
-        
+
                     </div>
                     <div className="card-brand-name">
                         Pizza Hut
@@ -59,22 +59,27 @@ export default function CashComplete () {
                     Số điện thoại: <strong className="user-payed-text">0998 222 888</strong>
                 </div>
             </div>
+            <Link to="/account-user">
+                <button className="back-to-home-page">Về trang chủ</button>
+            </Link>
 
-            <button className="back-to-home-page">Về trang chủ</button>
 
             {/* footer */}
-
             <div className="footer"></div>
             <div className="footer-tool-app">
-                <div className="footer-tool-app-icon-1">
-                    <div className="footer-tool-description-app">Thu hộ</div>
-                </div>
+                <Link to="/home-page">
+                    <div className="footer-tool-app-icon-1">
+                        <div className="footer-tool-description-app">Thu hộ</div>
+                    </div>
+                </Link>
                 <div className="footer-tool-app-icon-2">
                     <div className="footer-tool-description-history">Lịch sử</div>
                 </div>
-                <div className="footer-tool-app-icon-3">
-                    <div className="footer-tool-description-account">Tài khoản</div>
-                </div>
+                <Link to="/account-user">
+                    <div className="footer-tool-app-icon-3">
+                        <div className="footer-tool-description-account">Tài khoản</div>
+                    </div>
+                </Link>
             </div>
 
         </div>

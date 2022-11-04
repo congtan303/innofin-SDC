@@ -111,6 +111,23 @@ element::-webkit-scrollbar {
     top: 197px;
 }
 
+.home-page-body::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #DFF5FF;
+}
+
+.home-page-body::-webkit-scrollbar-thumb{
+	background-color: #32CBF9;
+    border: 5px;
+    border-radius: 20px;
+}
+
+.home-page-body::-webkit-scrollbar-track {
+    margin-top: 6px;
+    margin-bottom: 500px;
+}
+
 
 
 .home-page-description-1 {

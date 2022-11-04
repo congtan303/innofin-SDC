@@ -1,15 +1,17 @@
+import { Link } from 'react-router-dom'
 import './ListMoney1.css'
 import UnionTop from '../Union-top/UnionTop'
 export default function ListMoney() {
     return (
-        <div >
+        <div className='container'>
             <header>
                 <div className="history-header-background">
 
                 </div>
-                <button className="history-previous-btn">
-
-                </button>
+                <Link to="/detail2">
+                    <button className="history-previous-btn">
+                    </button>
+                </Link>
                 <div className="history-title">
                     Bảng kê điện tử
                 </div>
@@ -105,27 +107,39 @@ export default function ListMoney() {
 
             <div className="confirm-money">
                 <input type="radio" id="enough-money" value="enough-money" className="input-radio"></input>
-                <label for="enough-money">    Tôi đã nhận đủ số tiền cần thu</label>
+                <label> Tôi đã nhận đủ số tiền cần thu</label>
             </div>
 
             <div className="edit-table">
                 <button className="btn-edit-table">Sửa bảng kê</button>
             </div>
-            <div className="complete-edit">
-                <button className="btn-complete-edit">Hoàn tất</button>
-            </div>
+
+            <Link to="/list-money-complete">
+                <div className="complete-edit">
+                    <button className="btn-complete-edit">Hoàn tất</button>
+                </div>
+            </Link>
             {/* footer */}
             <div className="footer"></div>
             <div className="footer-tool-app">
-                <div className="footer-tool-app-icon-1">
-                    <div className="footer-tool-description-app">Thu hộ</div>
-                </div>
+                <Link to="/home-page">
+                    <div className="footer-tool-app-icon-1">
+                        <div className="footer-tool-description-app">Thu hộ</div>
+                    </div>
+                </Link>
+
+
                 <div className="footer-tool-app-icon-2">
                     <div className="footer-tool-description-history">Lịch sử</div>
                 </div>
-                <div className="footer-tool-app-icon-3">
-                    <div className="footer-tool-description-account">Tài khoản</div>
-                </div>
+
+
+                <Link to="/account-user">
+                    <div className="footer-tool-app-icon-3">
+                        <div className="footer-tool-description-account">Tài khoản</div>
+                    </div>
+                </Link>
+
             </div>
 
         </div>

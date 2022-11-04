@@ -1,0 +1,311 @@
+.verification-title {
+    position: absolute;
+    width: 328px;
+    height: 21px;
+    left: 43px;
+    top: 68px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.verification-description {
+    position: absolute;
+    width: 246px;
+    height: 20px;
+    left: 87px;
+    top: 100px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+/* chứng minh thư, CCCD */
+.identification-card {
+    position: absolute;
+    width: 360px;
+    height: 63px;
+    left: 26px;
+    top: 154px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.identification-card-img {
+    background: url('../../asset/img-identification-card.png');
+    position: absolute;
+    width: 22.18px;
+    height: 15.25px;
+    left: 24px;
+    top: 24px;
+    z-index: 1;
+
+}
+
+.identification-card-background {
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #DFF5FF;
+    border-radius: 50%;
+    border: none;
+    background-color: #DFF5FF;
+    ;
+}
+
+.identification-card-content {
+    position: absolute;
+    width: 249px;
+    height: 18px;
+    left: 66px;
+    top: 21px;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+/* thẻ căn cước gắn chip */
+.identification-card-chip {
+    position: absolute;
+    width: 360px;
+    height: 63px;
+    left: 26px;
+    top: 232px;
+
+    background: #2CD1F8;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.identification-card-chip-img {
+    background: url('../../asset/img-identification-card.png');
+    position: absolute;
+    width: 22.18px;
+    height: 15.25px;
+    left: 24px;
+    top: 24px;
+    z-index: 1;
+}
+
+.identification-card-chip-background {
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    border: none;
+    background-color: #fFF;
+    ;
+}
+
+.identification-card-chip-content {
+    position: absolute;
+    width: 186px;
+    height: 18px;
+    left: 66px;
+    top: 20px;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.5px;
+
+    color: #FFFFFF;
+}
+
+/* Hộ chiếu */
+.passpord {
+    position: absolute;
+    width: 360px;
+    height: 63px;
+    left: 26px;
+    top: 310px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.passport-img {
+    background: url('../../asset/img-passport.png') no-repeat;
+    position: absolute;
+    width: 22.18px;
+    height: 26.25px;
+    left: 25px;
+    top: 19px;
+    z-index: 1;
+}
+
+.passport-background {
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #DFF5FF;
+    border-radius: 50%;
+    border: none;
+    background-color: #DFF5FF;
+    ;
+}
+
+.passport-content {
+    position: absolute;
+    width: 72px;
+    height: 18px;
+    left: 66px;
+    top: 20px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.license {
+    position: absolute;
+    width: 360px;
+    height: 63px;
+    left: 26px;
+    top: 388px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.license-img {
+    background: url('../../asset/img-license.png') no-repeat;
+    position: absolute;
+    width: 22.18px;
+    height: 26.25px;
+    left: 25px;
+    top: 22px;
+    z-index: 1;
+
+}
+
+.license-background {
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #DFF5FF;
+    border-radius: 50%;
+    border: none;
+    background-color: #DFF5FF;
+    ;
+}
+
+.license-content {
+    position: absolute;
+    width: 90px;
+    height: 18px;
+    left: 66px;
+    top: 20px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+/* giấy tờ khác */
+.other-papers {
+    position: absolute;
+    width: 360px;
+    height: 63px;
+    left: 26px;
+    top: 466px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.other-papers-img{
+    background: url('../../asset/img-other-papers.png') no-repeat;
+    position: absolute;
+    width: 22.18px;
+    height: 26.25px;
+    left: 25px;
+    top: 22px;
+    z-index: 1;
+}
+.other-papers-background{
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #DFF5FF;
+    border-radius: 50%;
+    border: none;
+    background-color: #DFF5FF;
+    ;
+}
+.other-papers-content{
+    position: absolute;
+    width: 100px;
+    height: 18px;
+    left: 66px;
+    top: 20px;
+
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}

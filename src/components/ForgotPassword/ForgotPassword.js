@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom'
 const ForgotPassword = () => {
     return (
         <div className='forgot-background'>
+            <Link to="/setting">
+                    <button className="previous-button">
+                        <i class="fal fa-chevron-left icon-back"></i>
+                    </button>
+                </Link>
             <div className="Forgot-icon">
 
             </div>

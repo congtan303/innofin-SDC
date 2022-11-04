@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import phone from '../../asset/Group\ 54.png'
 import './Login.css'
 import Union from '../Union/Union'
 const Login = () => {
@@ -41,7 +42,7 @@ const Login = () => {
 
             <div className="contact">
                 <div className="phone">
-                    <i class="fas fa-phone-alt mobile-phone "></i>
+                    <img src={phone}></img>
                 </div>
 
                 <span className="phone-number">Hotline: 19001009</span>

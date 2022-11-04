@@ -1,15 +1,21 @@
+import { Link } from 'react-router-dom'
 import './Detail2.css'
+import SwipeableButton from '../SwipeButton/SwipeButton'
 
 export default function Detail() {
+    const onSuccess = () => {
+        console.log('Yay! Swipe Success');
+    }
     return (
-        <div  className="background-detail">
+        <div className="background-detail">
             {/* header */}
             <div className="Detail-1-background">
 
             </div>
-            <button className="history-previous-btn">
-
-            </button>
+            <Link to="/detail1">
+                <button className="history-previous-btn">
+                </button>
+            </Link>
             <div className="history-title">
                 Thu hộ
             </div>
@@ -48,10 +54,12 @@ export default function Detail() {
                     <li>Đưa màn hình này cho người nộp tiền để xác nhận
                     </li>
                 </ol>
+                <Link to="/list-money-1">
+                    <div className='block'>
+                        <SwipeableButton onSuccess={onSuccess} color='#2CD1F8' />
+                    </div>
+                </Link>
 
-                <div className="btn-confirm-success-money">
-                    <div className="btn-confirm-begin">Bắt đầu thu hộ</div>
-                </div>
             </div>
 
             {/* footer */}

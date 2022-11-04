@@ -1,12 +1,16 @@
+import { Link } from 'react-router-dom'
 import './InformationUser.css'
 import Union from '../Union/Union'
-export default function     InfomationUser() {
+export default function InfomationUser() {
     return (
         <div className='info-user-container'>
             <div className="btn-setting">
-                <button className="previous-button">
-                    <i class="fal fa-chevron-left icon-back"></i>
-                </button>
+                <Link to="/account-user">
+                    <button className="previous-button">
+                        <i class="fal fa-chevron-left icon-back"></i>
+                    </button>
+                </Link>
+
             </div>
             <div className="title">
                 Thông tin cá nhân

@@ -9,9 +9,11 @@
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
+
 table {
     border-collapse: collapse;
 }
+
 table,
 th,
 td {
@@ -34,7 +36,8 @@ th {
     color: #636363;
 }
 
-.table-2,tbody,
+.table-2,
+tbody,
 tfoot {
     text-align: right;
 
@@ -52,7 +55,7 @@ th {
 
 thead {
     background: #F3F3F3;
-   
+
 
 }
 
@@ -97,15 +100,15 @@ thead {
 
 .total-money {
     font-family: 'SF UI Text';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
 
-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
 
-color: #2CD1F8;
+    color: #2CD1F8;
 }
 
 .input-radio {

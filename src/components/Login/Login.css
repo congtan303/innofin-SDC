@@ -151,6 +151,15 @@ input {
 
 .link-forgot-password {
     text-decoration: none;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #636363;
 }
 
 /* contact */
@@ -162,9 +171,8 @@ input {
     width: 21px;
     height: 21px;
     left: 110px;
-    top: 557px;
-    border-radius: 50%;
-    border: 1px solid #ED822E;
+    top: 554px;
+
 }
 
 .mobile-phone {

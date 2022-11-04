@@ -6,9 +6,10 @@ export default function HistoryRecharge() {
         <div className='container'>
             <div className="history-recharge-header">
 
+            <Link to="/account-user">
                 <button className="history-previous-btn">
-
                 </button>
+            </Link>
                 <div className="history-title">
                     Lịch sử
                 </div>

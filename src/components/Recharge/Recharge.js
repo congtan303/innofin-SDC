@@ -4,9 +4,11 @@ import './Recharge.css'
 export default function Recharge() {
     return (
         <div className='recharge-container'>
-            <button className="previous-button">
-                <i class="fal fa-chevron-left icon-back"></i>
-            </button>
+            <Link to="/account-user">
+                <button className="previous-button">
+                    <i class="fal fa-chevron-left icon-back"></i>
+                </button>
+            </Link>
             <div className="Recharge-title">
                 Nạp điểm vào tài khoản
             </div>
@@ -33,9 +35,9 @@ export default function Recharge() {
             <hr className="recharge-hr-2"></hr>
             <div className='div-button-recharge'>
                 <Link to="/recharge-confirm">
-                <button className="btn-recharge-password">Nạp điểm</button>
+                    <button className="btn-recharge-password">Nạp điểm</button>
                 </Link>
-                
+
             </div>
 
         </div>

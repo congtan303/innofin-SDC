@@ -4,9 +4,12 @@ import './RechargeConfirm.css'
 export default function RechargeConfirm() {
     return (
         <div className='container'>
-            <button className="previous-button">
-                <i class="fal fa-chevron-left icon-back"></i>
-            </button>
+            <Link to="/recharge-money">
+                <button className="previous-button">
+                    <i class="fal fa-chevron-left icon-back"></i>
+                </button>
+            </Link>
+
             <div className="Recharge-title title">
                 Nạp điểm vào tài khoản
             </div>

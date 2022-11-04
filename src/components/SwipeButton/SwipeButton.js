@@ -1,4 +1,4 @@
-import React, { Component, createRef } from 'react' 
+import React, { Component } from 'react' 
 import './SwipeButton.css'
 
 const slider = React.createRef();
@@ -8,7 +8,7 @@ const isTouchDevice = 'ontouchstart' in document.documentElement
 export default class SwipeableButton extends Component {
   
   state = {}
- 
+
   componentDidMount() {
     if(isTouchDevice) {
       document.addEventListener('touchmove', this.onDrag);
@@ -18,6 +18,7 @@ export default class SwipeableButton extends Component {
       document.addEventListener('mouseup', this.stopDrag);  
     }
     this.containerWidth = container.current.clientWidth - 50;
+    
   }
 
   onDrag =e=> {
@@ -41,7 +42,8 @@ export default class SwipeableButton extends Component {
     if(this.unmounted || this.state.unlocked) return;
     if(this.isDragging) {
       this.isDragging = false;
-      if(this.sliderLeft > this.containerWidth * 0.9) {
+
+      if(this.sliderLeft > this.containerWidth * 0.38) {
         this.sliderLeft = this.containerWidth;
         if(this.props.onSuccess) {
           this.props.onSuccess();
@@ -58,7 +60,9 @@ export default class SwipeableButton extends Component {
   }
 
   startDrag =e=> {
+    console.log(this.unmounted);
     if(this.unmounted || this.state.unlocked) return;
+    console.log('anc')
     this.isDragging = true;
     if(isTouchDevice) {
       this.startX = e.touches[0].clientX;
@@ -75,7 +79,7 @@ export default class SwipeableButton extends Component {
   }
 
   getText =()=> {
-    return this.state.unlocked ? (this.props.text_unlocked || 'UNLOCKED') : (this.props.text || 'SLIDE')
+    return this.state.unlocked ? (this.props.text_unlocked || 'Thu hộ thành công') : (this.props.text || 'Bắt đầu thu hộ')
   }
 
   reset =()=> {
@@ -87,6 +91,7 @@ export default class SwipeableButton extends Component {
   }
 
   componentWillUnmount() {
+    console.log("componentWillUnmount");
     this.unmounted = true;
   }
 
@@ -101,9 +106,9 @@ export default class SwipeableButton extends Component {
             onTouchStart={this.startDrag}>
             <span className='rsbcSliderText'>{this.getText()}</span>
             <span className='rsbcSliderArrow'></span>
-            <span className='rsbcSliderCircle' style={{background: this.props.color}}></span>
+            
           </div>
-          <div className='rsbcText'>{this.getText()}</div>
+          
         </div>
       </div>
     )

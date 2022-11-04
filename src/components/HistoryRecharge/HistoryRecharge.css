@@ -49,6 +49,22 @@
     height: 600px;
 }
 
+.history-recharge-body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #DFF5FF;
+} 
+
+.history-recharge-body::-webkit-scrollbar-thumb {
+    background-color: #32CBF9;
+    border: 5px;
+    border-radius: 20px;
+}
+
+.history-recharge-body::-webkit-scrollbar-track {
+    margin-top: 6px;
+    margin-bottom: 500px;
+}
+
 .history-navbar-active-color {
     position: absolute;
     width: 208px;

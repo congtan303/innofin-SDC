@@ -33,19 +33,22 @@ export default function HomePage() {
 
 
             <div className="home-page-body">
-                <div className="home-page-description-1">
-                    <div className="home-page-body-brand">
-                        <div className="home-page-brand-img"></div>
-                    </div>
-                    <div className="home-page-information-1">
-                        <div className="home-page-information-title-1">HD Bank</div>
-                        <div className="home-page-information-address-1">25 Nguyễn Thị Minh Khai, Quận 1, tp. Hồ Chí Minh</div>
-                        <div className="home-page-information-money-1">Số tiền phải thu: <span className="blue-text">10,000,000</span></div>
-                        <div className="home-page-information-hour-1">Giờ đi thu: <strong>8:00</strong></div>
-                    </div>
+                <Link to="/detail1">
+                    <div className="home-page-description-1">
+                        <div className="home-page-body-brand">
+                            <div className="home-page-brand-img"></div>
+                        </div>
+                        <div className="home-page-information-1">
+                            <div className="home-page-information-title-1">HD Bank</div>
+                            <div className="home-page-information-address-1">25 Nguyễn Thị Minh Khai, Quận 1, tp. Hồ Chí Minh</div>
+                            <div className="home-page-information-money-1">Số tiền phải thu: <span className="blue-text">10,000,000</span></div>
+                            <div className="home-page-information-hour-1">Giờ đi thu: <strong>8:00</strong></div>
+                        </div>
 
-                    
-                </div>
+
+                    </div>
+                </Link>
+
 
                 <div className="home-page-description-2">
                     <div className="home-page-body-brand">
@@ -58,7 +61,7 @@ export default function HomePage() {
                         <div className="home-page-information-hour-1">Giờ đi thu: <strong>8:00</strong></div>
                     </div>
 
-                    
+
                 </div>
 
                 <div className="home-page-description-3">
@@ -72,7 +75,7 @@ export default function HomePage() {
                         <div className="home-page-information-hour-1">Giờ đi thu: <strong>8:00</strong></div>
                     </div>
 
-                    
+
                 </div>
 
                 <div className="home-page-description-4">
@@ -86,7 +89,7 @@ export default function HomePage() {
                         <div className="home-page-information-hour-1">Giờ đi thu: <strong>8:00</strong></div>
                     </div>
 
-                    
+
                 </div>
 
                 <div className="home-page-description-5">
@@ -100,7 +103,7 @@ export default function HomePage() {
                         <div className="home-page-information-hour-1">Giờ đi thu: <strong>8:00</strong></div>
                     </div>
 
-                    
+
                 </div>
 
 
@@ -111,16 +114,16 @@ export default function HomePage() {
                     <div className="footer-app-text">Thu hộ</div>
                 </div>
                 <Link to="/history">
-                <div className="footer-icon-history">
-                    <div className="footer-history-text">Lịch sử</div>
-                </div>
+                    <div className="footer-icon-history">
+                        <div className="footer-history-text">Lịch sử</div>
+                    </div>
                 </Link>
                 <Link to='/account-user'>
-                <div className="footer-icon-account">
-                    <div className="footer-account-text">Tài khoản</div>
-                </div>
+                    <div className="footer-icon-account">
+                        <div className="footer-account-text">Tài khoản</div>
+                    </div>
                 </Link>
-                
+
             </div>
 
 

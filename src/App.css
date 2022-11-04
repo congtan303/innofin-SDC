@@ -1,19 +1,29 @@
-button i:hover {
-    background-color: #AEAEAE;
-    cursor: pointer;
-}
 
+
+.block {
+    width: 360px;
+    margin: 0 auto;
+}
 
 .container {
     position: relative;
     margin: 0 auto;
     width: 414px;
     height: 899px;
-    left: -1px;
-    top: -3px;
     background: #FBFBFD;
 }
 
+.container-camera {
+    position: relative;
+    width: 414px;
+    height: 896px;
+    margin: 0 auto;
+    background: #606060;
+}
+
+.previous-white {
+    color: #fff;
+}
 
 
 hr {
@@ -31,11 +41,6 @@ hr {
     border-radius: 8px;
     border: none;
     outline: none;
-}
-
-.blue {
-    color:
-        #2CD1F8;
 }
 
 .app {

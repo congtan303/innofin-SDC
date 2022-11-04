@@ -1,0 +1,45 @@
+.face-id-container {
+    position: relative;
+    margin: 0 auto;
+    width: 414px;
+    height: 896px;
+    background: #000;
+}
+
+.face-id-group {
+    background: url('../../asset/Mask\ Group.png');
+    position: absolute;
+    width: 247px;
+    height: 247px;
+    left: 87px;
+    top: 199px;
+}
+
+.face-id-elipse-border {
+    background: url('../../asset/Ellipse\ 29-face-id.png');
+    width: 228px;
+    height: 228px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.face-id-guide {
+    position: absolute;
+    width: 248px;
+    height: 19px;
+    left: 85px;
+    top: 491px;
+
+    font-family: 'SF UI Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height, or 119% */
+
+    text-align: center;
+    letter-spacing: -0.165px;
+
+    color: #FFFFFF;
+}

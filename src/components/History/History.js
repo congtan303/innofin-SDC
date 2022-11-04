@@ -7,9 +7,11 @@ export default function History() {
             <div className="history-header-background">
 
             </div>
-            <button className="history-previous-btn">
+            <Link to="/account-user">
+                <button className="history-previous-btn">
+                </button>
+            </Link>
 
-            </button>
             <div className="history-title">
                 Lịch sử
             </div>
@@ -79,11 +81,11 @@ export default function History() {
             <div className="footer"></div>
             <div className="footer-tool-app">
                 <Link to='/home-page'>
-                <div className="footer-tool-app-icon-1">
-                    <div className="footer-tool-description-app">Thu hộ</div>
-                </div>
+                    <div className="footer-tool-app-icon-1">
+                        <div className="footer-tool-description-app">Thu hộ</div>
+                    </div>
                 </Link>
-                
+
                 <div className="footer-tool-app-icon-2">
                     <div className="footer-tool-description-history">Lịch sử</div>
                 </div>

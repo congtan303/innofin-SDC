@@ -30,60 +30,74 @@ import ListMoneyComplete from './components/ListMoneyComplete/ListMoneyComplete'
 import CashComplete from './components/CashComplete/CashComplete';
 import Verification from './components/Verification/Verification';
 import SwipeableButton from './components/SwipeButton/SwipeButton';
+import IdentificationCardChip from './components/IdentificationCardChip/IdentificationCardChip';
+import FrontCamera from './components/FrontCamera/FrontCamera';
+import FrontCamera2 from './components/FrontCamera2/FrontCamera2';
+import BackSideCamera from './components/BackSideCamera/BackSideCamera';
+import BackSideCamera2 from './components/BackSideCamera2/BackSideCamera2';
+import FaceID from './components/FaceID/FaceID';
+import IDCard from './components/IDCard/IDCard';
+import ValidationResults from './components/ValidationResults/ValidationResults';
 
 function App() {
-  const success = () => {
-    console.log("weell");
-  };
+
   return (
 
-    
-
-      <Routes>
-        <Route exact  path='/' element={<Slash />}>
-
-        </Route>
-        <Route exact path='/login' element={<Login />} >
-        </Route>
-        <Route exact path='/account-user' element={<Account />}>
-
-        </Route>
-        <Route exact path='/setting' element={<Setting />}>
-
-        </Route>
-        <Route exact path='/information-user' element={<InformationUser />}>
-
-        </Route>
-        <Route exact path='/helps' element={<Helps />}>
-        </Route>
-        <Route exact path='/recharge-money' element={<Recharge />}>
-        </Route>
-        <Route exact path='/recharge-confirm' element={<RechargeConfirm />}>
-
-        </Route>
-        <Route exact path='/history' element={<History />}>
-
-        </Route>
 
 
-        <Route exact path='/history-recharge' element={<HistoryRecharge />}>
-
-        </Route>
-
-        <Route exact path='/home-page' element={<HomePage />}>
-
-        </Route>
-
-        <Route exact path='/change-password' element={<ForgotPassword />}></Route>
-        <Route exact path='/success-password' element={<SuccessPassword />}> </Route>
-        <Route></Route>
-        <Route></Route>
-        <Route></Route>
-      </Routes>
 
 
+    <Routes>
+      <Route path='/' element={<Slash />}> </Route>
+
+      <Route path='/login' element={<Login />} ></Route>
+
+      <Route path='/account-user' element={<Account />}></Route>
+
+      <Route path='/setting' element={<Setting />}></Route>
+
+      <Route path='/information-user' element={<InformationUser />}></Route>
+
+      <Route path='/helps' element={<Helps />}></Route>
+
+      <Route path='/recharge-money' element={<Recharge />}></Route>
+
+      <Route path='/recharge-confirm' element={<RechargeConfirm />}></Route>
+
+      <Route path='/history' element={<History />}></Route>
+
+      <Route path='/history-recharge' element={<HistoryRecharge />}></Route>
+
+      <Route path='/home-page' element={<HomePage />}> </Route>
+
+      <Route path='/change-password' element={<ForgotPassword />}></Route>
+
+      <Route path='/success-password' element={<SuccessPassword />}> </Route>
+      <Route path="/detail1" element={<Detail1 />}></Route>
+      <Route path='/detail2' element={<Detail2 />}></Route>
+      <Route path='/list-money-1' element={<ListMoney1 />}></Route>
+      <Route path='/list-money-complete' element={<ListMoneyComplete />}></Route>
+      <Route path='/cash-complete' element={<CashComplete />}></Route>
+      {/* <Verification /> */}
+      {/* <IdentificationCardChip /> */}
+      {/* <FrontCamera /> */}
+      {/* <FrontCamera2 /> */}
+      {/* <BackSideCamera /> */}
+      {/* <BackSideCamera2 /> */}
+      {/* <FaceID /> */}
+      {/* <IDCard /> */}
+      {/* <ValidationResults /> */}
+     
       
-    
+    </Routes>
+
+
+
+
+
+
+
+
 
 
   );

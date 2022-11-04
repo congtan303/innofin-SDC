@@ -4,10 +4,14 @@ import Union from '../Union/Union'
 export default function Setting() {
     return (
         <div className='setting-container'>
+
             <div className="btn-setting">
-                <button className="previous-button">
-                    <i class="fal fa-chevron-left icon-back"></i>
-                </button>
+                <Link to="/account-user">
+                    <button className="previous-button">
+                        <i class="fal fa-chevron-left icon-back"></i>
+                    </button>
+                </Link>
+
             </div>
             <div className="setting-title">
                 Cài đặt
@@ -19,9 +23,9 @@ export default function Setting() {
                         </div>
                     </div>
                     <Link to="/information-user">
-                    <div className="setting-description">Thông tin cá nhân</div>
+                        <div className="setting-description">Thông tin cá nhân</div>
                     </Link>
-                    
+
                 </div>
 
             </div><div className="setting-change-password">
@@ -31,9 +35,9 @@ export default function Setting() {
                         </div>
                     </div>
                     <Link to='/change-password'>
-                    <div className="setting-description-change-password">Đổi mật khẩu</div>
+                        <div className="setting-description-change-password">Đổi mật khẩu</div>
                     </Link>
-                  
+
                 </div>
 
             </div>

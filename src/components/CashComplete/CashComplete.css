@@ -1,8 +1,8 @@
 .img-success-complete {
-    background: url('../../asset/image\ 12.png')no-repeat;
+
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 87px;
+    height: 87px;
     left: 163px;
     top: 156px;
 
@@ -161,15 +161,15 @@
     position: absolute;
     left: 100px;
     font-family: 'SF UI Text';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 22px;
-/* identical to box height, or 157% */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
 
-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
 
-color: #2CD1F8;
+    color: #2CD1F8;
 }
 
 .user-payed-text {
@@ -192,12 +192,12 @@ color: #2CD1F8;
     border: none;
     outline: none;
     font-family: 'SF UI Text';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 18px;
-/* identical to box height, or 100% */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
 
 
-color: #fff
+    color: #fff
 }

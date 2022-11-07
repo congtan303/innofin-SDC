@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/innofin-SDC/static/css/main.7d6fbb4b.css",
-    "main.js": "/innofin-SDC/static/js/main.e211b802.js",
+    "main.css": "/innofin-SDC/static/css/main.c1841dd1.css",
+    "main.js": "/innofin-SDC/static/js/main.b503ab3a.js",
     "static/js/787.ff81323d.chunk.js": "/innofin-SDC/static/js/787.ff81323d.chunk.js",
+    "static/media/SFUIText-Regular.woff": "/innofin-SDC/static/media/SFUIText-Regular.865a0aa36162c98f6462.woff",
     "static/media/Mask Group.png": "/innofin-SDC/static/media/Mask Group.f6a78268d91e45fc0dd7.png",
     "static/media/image 18.png": "/innofin-SDC/static/media/image 18.628dad754653d8675a2f.png",
     "static/media/img-back-side-card.png": "/innofin-SDC/static/media/img-back-side-card.8aa3428a3a7c57c9cda0.png",
@@ -18,12 +19,12 @@
     "static/media/Group.svg": "/innofin-SDC/static/media/Group.db497002ea1f38e0775a.svg",
     "static/media/Union.svg": "/innofin-SDC/static/media/Union.bc46b1df0353757e28e5.svg",
     "index.html": "/innofin-SDC/index.html",
-    "main.7d6fbb4b.css.map": "/innofin-SDC/static/css/main.7d6fbb4b.css.map",
-    "main.e211b802.js.map": "/innofin-SDC/static/js/main.e211b802.js.map",
+    "main.c1841dd1.css.map": "/innofin-SDC/static/css/main.c1841dd1.css.map",
+    "main.b503ab3a.js.map": "/innofin-SDC/static/js/main.b503ab3a.js.map",
     "787.ff81323d.chunk.js.map": "/innofin-SDC/static/js/787.ff81323d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d6fbb4b.css",
-    "static/js/main.e211b802.js"
+    "static/css/main.c1841dd1.css",
+    "static/js/main.b503ab3a.js"
   ]
 }

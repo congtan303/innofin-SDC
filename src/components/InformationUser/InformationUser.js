@@ -20,7 +20,7 @@ export default function InfomationUser() {
             </div>
 
             <div className="information-card-avatar">
-
+                 
             </div>
             <div className="information-card-description">
                 <div className="information-name">Lê Minh Sơn</div>
@@ -37,8 +37,10 @@ export default function InfomationUser() {
             <div className="information-user-number-date">
                 28/09/1989
             </div>
-            <div className="information-edit-date-background"></div>
+            <div className="information-edit-date-background">
             <div className="information-edit-date-img"></div>
+            </div>
+            
             <div className="information-user-CCCD">
                 Số CCCD:
             </div>

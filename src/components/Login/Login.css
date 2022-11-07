@@ -91,9 +91,30 @@ input {
 
 .input-user {
     width: 320px;
+    border: none;
+    outline: none;
 }
 
-.input-form {}
+.input-login-hr {
+
+    position: absolute;
+    width: 324px;
+    height: 0px;
+    left: 20px;
+    top: 86px;
+    
+    border: 1px solid #BEBEBE;
+}
+
+.input-password-hr {
+    position: absolute;
+    width: 324px;
+    height: 0px;
+    left: 20px;
+    top: 162px;
+    
+    border: 1px solid #BEBEBE;
+}
 
 .input-title {
     font-family: 'SF UI Text';
@@ -119,24 +140,28 @@ input {
     color: #636363;
 }
 
-.input-icon {
+.div-input-password {
+    margin-top: 30px;
+}
+
+.input-icon-id {
     position: absolute;
-    left: 294px;
-    top: 42px;
+    left: 328px;
+    top: 62px;
     color: #C1C1C1
 }
 
 .input-eye-login {
     position: absolute;
-    top: 126px;
-    left: 314px;
+    top: 140px;
+    left: 328px;
     color: #C1C1C1;
 }
 
 /* quên Mật khẩu */
 .forgot-password {
     position: absolute;
-    width: 122px;
+    width: 123px;
     height: 19px;
     left: 147px;
     top: 520px;

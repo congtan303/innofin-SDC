@@ -27,7 +27,7 @@ const Account = () => {
                     Số dư tài khoản
                 </div>
                 <div>
-                    <span className="number-money">200.000.000</span> <span className="diem">điểm</span>
+                    <span className="number-money">200,000,000</span> <span className="diem">điểm</span>
                 </div>
             </div>
             <div className="account-content">

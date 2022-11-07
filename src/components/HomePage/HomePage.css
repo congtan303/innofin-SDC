@@ -124,8 +124,7 @@ element::-webkit-scrollbar {
 }
 
 .home-page-body::-webkit-scrollbar-track {
-    margin-top: 6px;
-    margin-bottom: 500px;
+  
 }
 
 

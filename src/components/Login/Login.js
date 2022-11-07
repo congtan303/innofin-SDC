@@ -1,8 +1,21 @@
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import phone from '../../asset/Group\ 54.png'
 import './Login.css'
 import Union from '../Union/Union'
 const Login = () => {
+
+    const [values, setValues] = useState({
+        password: "",
+        isShowPassword: false,
+    });
+
+    const handleShowHidePassword = () => {
+        setValues({ ...values, isShowPassword: !values.isShowPassword });
+    };
+
+
+
     return (
         <div className="Login__container">
             <div className="header">
@@ -18,10 +31,12 @@ const Login = () => {
                     <p>
                         <label className="input-title">ID</label>
                         <input class="w3-input input-user" type="text" /></p>
+                    <hr className='input-login-hr'></hr>
 
-                    <p>
+                    <p className='div-input-password'>
                         <label className="input-title">Mật khẩu</label>
-                        <input class="w3-input input-user" type="password" /></p>
+                        <input class="w3-input input-user" type={values.isShowPassword ? "text" : "password"} /></p>
+                    <hr className='input-password-hr'></hr>
                     <p className='div-btn-login'>
                         <Link to="/account-user">
                             <button className="btn-login">Đăng nhập</button>
@@ -30,15 +45,23 @@ const Login = () => {
                     </p>
 
                 </form>
-                <i class="fas fa-user input-icon"></i>
-                <i class="fas fa-eye-slash input-eye-login"></i>
+
+
+                <i class="fas fa-user input-icon-id"></i>
+                <span onClick={() => { handleShowHidePassword() }}>
+                    <i className={values.isShowPassword ? 'fas fa-eye input-eye-login' : 'fas fa-eye-slash input-eye-login'}></i>
+                </span>
+
 
             </div>
 
-            <div className="forgot-password">
-                    
-                <Link to="/forgot-password" className="link-forgot-password">Quên mật khẩu?</Link>
-            </div>
+
+
+            <Link to="/forgot-password" className="link-forgot-password">
+                <div className="forgot-password">Quên mật khẩu?
+                </div>
+            </Link>
+
 
             <div className="contact">
                 <div className="phone">

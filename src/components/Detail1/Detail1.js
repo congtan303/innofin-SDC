@@ -1,18 +1,19 @@
 import { Link } from 'react-router-dom'
+import phone from '../../asset/Vector-contact-user.png'
 import './Detail1.css'
 import SwipeableButton from '../SwipeButton2/SwipeButton2'
 export default function Detail() {
-    const onSuccess =()=> {
+    const onSuccess = () => {
         console.log('Yay! Swipe Success');
-      }
+    }
     return (
         <div>
             {/* header */}
             <div className="background-detail">
-            <Link to="/home-page">
-                <button className="history-previous-btn">
-                </button>
-            </Link>
+                <Link to="/home-page">
+                    <button className="history-previous-btn">
+                    </button>
+                </Link>
                 <div className="history-title">
                     Thu hộ
                 </div>
@@ -39,10 +40,10 @@ export default function Detail() {
                         <div className="detail-1-name-money">Người nộp tiền: <strong>Nguyễn Thị Huệ</strong></div>
                         <div className="detail-1-phone-number">Số điện thoại: <strong>0923 221 554</strong></div>
                         <div className="detail-1-contact">
-                            <div className="detail-1-contact-background"></div>
-                            <div >
-                                <i class="fas fa-phone-alt detail-1-contact-icon"></i>
+                            <div className="detail-1-contact-background">
+                                <img src={phone}></img>
                             </div>
+
                         </div>
                     </div>
                     <ul className="detail-1-list-note">
@@ -54,12 +55,13 @@ export default function Detail() {
                         </li>
                     </ul>
 
+
                     <Link to="/detail2">
-                    <div className='block'>
-                        <SwipeableButton onSuccess={onSuccess} color='#2CD1F8' />
-                    </div>
+                        <div className='block'>
+                            <SwipeableButton onSuccess={onSuccess} color='#2CD1F8' />
+                        </div>
                     </Link>
-                   
+
 
                 </div>
 

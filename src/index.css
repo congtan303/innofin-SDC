@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'SF UI Text';
+  src: local('SF UI Text'), url('./font/sf-ui-text-2-cufonfonts-webfont/SFUIText-Regular.woff') format('truetype');
+}

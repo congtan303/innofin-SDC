@@ -16,3 +16,11 @@ code {
   font-family: 'SF UI Text';
   src: local('SF UI Text'), url('./font/sf-ui-text-2-cufonfonts-webfont/SFUIText-Regular.woff') format('truetype');
 }
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

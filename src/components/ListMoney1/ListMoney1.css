@@ -68,7 +68,7 @@ thead {
 }
 
 .table-total-money {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -87,7 +87,7 @@ thead {
     left: 10px;
     top: 640px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -99,7 +99,7 @@ thead {
 }
 
 .total-money {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -129,7 +129,7 @@ thead {
     border-radius: 8px;
     border: none;
     outline: none;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -151,7 +151,7 @@ thead {
     border-radius: 8px;
     border: none;
     outline: none;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 18px;

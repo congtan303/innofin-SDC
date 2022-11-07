@@ -15,7 +15,7 @@
     left: 57px;
     top: 48px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -68,7 +68,7 @@
     left: 373px;
     top: 44px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -128,7 +128,7 @@
     left: 71px;
     top: 146px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -148,7 +148,7 @@
     left: 264px;
     top: 146px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -216,7 +216,7 @@
     left: 32px;
     top: 209px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -235,7 +235,7 @@
     left: 32px;
     top: 339px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -254,7 +254,7 @@
     left: 32px;
     top: 469px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -273,7 +273,7 @@
     left: 32px;
     top: 599px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -286,7 +286,7 @@
 }
 
 .address-brand {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -299,7 +299,7 @@
 }
 
 .amount-money {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -312,7 +312,7 @@
 }
 
 .transaction-time {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -325,7 +325,7 @@
 }
 
 .transaction-code {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -372,7 +372,7 @@
     height: 18px;
     left: -10px;
     top: 34px;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -409,7 +409,7 @@ color: #AEAEAE;
     left: -10px;
     top: 34px;
     
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -426,7 +426,7 @@ color: #AEAEAE;
     height: 18px;
     left: -16px;
     top: 34px;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

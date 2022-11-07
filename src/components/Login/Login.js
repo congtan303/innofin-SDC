@@ -57,7 +57,7 @@ const Login = () => {
 
 
 
-            <Link to="/forgot-password" className="link-forgot-password">
+            <Link to="/change-password" className="link-forgot-password">
                 <div className="forgot-password">Quên mật khẩu?
                 </div>
             </Link>

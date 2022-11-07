@@ -4,7 +4,7 @@
     height: 21px;
     left: 57px;
     top: 68px;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -21,7 +21,7 @@
     left: 27px;
     top: 117px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -65,7 +65,7 @@
     left: 50px;
     top: 124px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -108,7 +108,7 @@
     left: 50px;
     top: 124px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -152,7 +152,7 @@
     left: 7px;
     top: 124px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -186,7 +186,7 @@
     left: 40px;
     top: 20px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -209,7 +209,7 @@
 
 .guide-license-list,
 li {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -242,7 +242,7 @@ li i {
     border-radius: 8px;
     outline: none;
     border: none;
-    font-family: 'SF UI Text';
+   
 font-style: normal;
 font-weight: 700;
 font-size: 18px;

@@ -36,7 +36,7 @@
     height: 22px;
     left: 152px;
     top: 120px;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -51,7 +51,7 @@
     height: 18px;
     left: 20px;
     top: 144px;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -76,7 +76,7 @@
     height: 22px;
     left: 20px;
     top: 174px;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -91,7 +91,7 @@
     height: 22px;
     left: 20px;
     top: 196px;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -106,7 +106,7 @@
     height: 22px;
     left: 20px;
     top: 218px;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -145,7 +145,7 @@
 }
 
 .detail-1-list-note li {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -185,7 +185,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 18px;

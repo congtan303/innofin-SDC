@@ -28,7 +28,7 @@ element::-webkit-scrollbar {
     left: 122px;
     top: 54px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -59,7 +59,7 @@ element::-webkit-scrollbar {
     left: 122px;
     top: 79px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -90,7 +90,7 @@ element::-webkit-scrollbar {
     left: 18px;
     top: 18px;
 
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -171,7 +171,7 @@ element::-webkit-scrollbar {
 }
 
 .home-page-information-title-1 {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -185,7 +185,7 @@ element::-webkit-scrollbar {
 }
 
 .home-page-information-address-1 {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -198,7 +198,7 @@ element::-webkit-scrollbar {
 }
 
 .home-page-information-money-1 {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -211,7 +211,7 @@ element::-webkit-scrollbar {
 }
 
 .home-page-information-hour-1 {
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -289,7 +289,7 @@ element::-webkit-scrollbar {
     height: 18px;
     left: -9px;
     top: 36px;
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -347,7 +347,7 @@ top: 811px;
     left: -17px;
     top: 36px;
     
-    font-family: 'SF UI Text';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

@@ -38,7 +38,7 @@ export default function History() {
 
             <div className="history-block-description-1">
                 <div className="history-info">
-                    <div className="address-brand">25 Nguyễn Thị Minh Khai, Quận 1, tp. HCM</div>
+                    <div className="address-brand">25 Bis Nguyễn Thị Minh Khai, Quận 1, tp. HCM</div>
                     <div className="amount-money">Số tiền đã thu: 10,000,000</div>
                     <div className="transaction-time">Giờ thu: 8:00 AM, ngày 18/09/2019</div>
                     <div className="transaction-code">Mã giao dịch: 123888</div>
@@ -48,8 +48,8 @@ export default function History() {
 
             <div className="history-block-description-2">
                 <div className="history-info">
-                    <div className="address-brand">25 Nguyễn Thị Minh Khai, Quận 1, tp. HCM</div>
-                    <div className="amount-money">Số tiền đã thu: 10,000,000</div>
+                    <div className="address-brand">248A Nơ Trang Long, P.12, Q. Bình Thạnh, TP.HCM</div>
+                    <div className="amount-money">Số tiền đã thu: 30,000,000</div>
                     <div className="transaction-time">Giờ thu: 8:00 AM, ngày 18/09/2019</div>
                     <div className="transaction-code">Mã giao dịch: 123888</div>
                 </div>
@@ -57,7 +57,7 @@ export default function History() {
             </div>
             <div className="history-block-description-3">
                 <div className="history-info">
-                    <div className="address-brand">25 Nguyễn Thị Minh Khai, Quận 1, tp. HCM</div>
+                    <div className="address-brand">09 Hồ Biểu Chánh, Phường 11, Q. Phú Nhuận, Tp. HCM</div>
                     <div className="amount-money">Số tiền đã thu: 10,000,000</div>
                     <div className="transaction-time">Giờ thu: 8:00 AM, ngày 18/09/2019</div>
                     <div className="transaction-code">Mã giao dịch: 123888</div>
@@ -66,7 +66,7 @@ export default function History() {
             </div>
             <div className="history-block-description-4">
                 <div className="history-info">
-                    <div className="address-brand">25 Nguyễn Thị Minh Khai, Quận 1, tp. HCM</div>
+                    <div className="address-brand">122  Trần Quốc Thảo, Phường 2, Quận 3, Tp. HCM</div>
                     <div className="amount-money">Số tiền đã thu: 10,000,000</div>
                     <div className="transaction-time">Giờ thu: 8:00 AM, ngày 18/09/2019</div>
                     <div className="transaction-code">Mã giao dịch: 123888</div>

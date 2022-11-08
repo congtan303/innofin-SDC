@@ -9,12 +9,12 @@ const Account = () => {
                 <div className="Account-background">
 
                 </div>
-                <i className="fal fa-chevron-left icon-account-back"></i>
+               
                 <i class="fal fa-bell icon-account-bell"></i>
                 <span className="number-noti-account">1</span>
 
                 <div className="Account-header-avatar">
-
+                <input type="file" />
                 </div>
                 <Link to="/information-user">
                     <div className="Account-header-name">Lê Minh Sơn</div>

@@ -23,7 +23,7 @@ export default function Recharge() {
             <div className="Recharge-title">
                 Nạp điểm vào tài khoản
             </div>
-            đợi xíu, do thằng target.value nó lỗi
+            
             <div className="Recharge-guide-1">
                 Bước 1: <br />
                 Nạp tiền vào tài khoản tại bất kỳ chi nhánh nào của ngân hàng BIDV. Ghi mã số nhân viên trong phần nội dung nạp điểm.
@@ -31,7 +31,7 @@ export default function Recharge() {
 
             <div className="Recharge-guide-2">
                 Bước 2: <br />
-                Điền thông tin và nhấn nút <strong>"nạp điểm"</strong> bên dưới.
+                Điền thông tin và nhấn nút "Nạp điểm" bên dưới.
             </div>
 
             <div className="recharge-information">
@@ -47,7 +47,7 @@ export default function Recharge() {
               type="text" 
               value={moneys.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
               onChange={handleOnChangeMoney} />
-            <span className="recharge-text">điểm</span>
+            <span className="recharge-text">Điểm</span>
             <hr className="recharge-hr-2"></hr>
             <div className='div-button-recharge'>
                 <Link to="/recharge-confirm">

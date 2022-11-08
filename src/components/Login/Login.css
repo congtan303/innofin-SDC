@@ -228,4 +228,7 @@ input {
 
 }
 
-/* background logo */
+
+.previous-button {
+    cursor: pointer;
+}

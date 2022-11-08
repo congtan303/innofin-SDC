@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import "./Account.css";
 import UnionTop from "../Union-top/UnionTop";
-
+import ChangeAvatar from '../ChangeAvatar/ChangeAvatar';
 const Account = () => {
     return (
         <div className="account-container">
@@ -14,7 +14,7 @@ const Account = () => {
                 <span className="number-noti-account">1</span>
 
                 <div className="Account-header-avatar">
-                <input type="file" />
+                    <ChangeAvatar />
                 </div>
                 <Link to="/information-user">
                     <div className="Account-header-name">Lê Minh Sơn</div>

@@ -6,10 +6,10 @@ export default function HistoryRecharge() {
         <div className='container'>
             <div className="history-recharge-header">
 
-            <Link to="/account-user">
-                <button className="history-previous-btn">
-                </button>
-            </Link>
+                <Link to="/account-user">
+                    <button className="history-previous-btn">
+                    </button>
+                </Link>
                 <div className="history-title">
                     Lịch sử
                 </div>
@@ -44,6 +44,12 @@ export default function HistoryRecharge() {
                             <div className="amount-money">Số tiền đã thu: 10,000,000</div>
                             <div className="transaction-time">Giờ thu: 8:00 AM, ngày 18/09/2019</div>
                             <div className="transaction-code">Mã giao dịch: 123888</div>
+                        </div>
+
+                        <div className='history-recharge-background-success'>
+                            <div className='history-recharge-icon-success'>
+
+                            </div>
                         </div>
 
                     </div>

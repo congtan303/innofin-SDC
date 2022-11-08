@@ -314,6 +314,16 @@
     color: #636363;
 }
 
+.help-hr-5 {
+    position: absolute;
+    width: 321px;
+    height: 0px;
+    left: 19px;
+    top: 628px;
+
+    border: 1px solid #DDDDDD;
+}
+
 .question-6 {
     position: absolute;
     width: 150px;

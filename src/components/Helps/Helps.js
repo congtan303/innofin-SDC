@@ -66,6 +66,7 @@ export default function Helps() {
                 <div className="answer-5">
                     Chọn mục "Tài khoản" -&#62; Chọn mục "Cài đặt" -&#62; Chọn mục "Đổi mật khẩu"
                 </div>
+                <hr className="help-hr-5"></hr>
                 <div className="question-6">
                     Câu 6: <br />
                     Cách nạp điểm

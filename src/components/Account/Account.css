@@ -54,13 +54,13 @@
 }
 
 .Account-header-avatar {
-    background: url('../../asset/image\ 13.png') no-repeat;
+   
     position: absolute;
     width: 64px;
     height: 64px;
     left: 33px;
     top: 95px;
-    border: 2px solid #fff;
+   
     border-radius: 50%;
 }
 

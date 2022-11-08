@@ -87,6 +87,29 @@
     border-radius: 10px;
 }
 
+.history-recharge-background-success {
+    background: url('../../asset/Ellipse\ 22.png');
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 331px;
+    top: 17px;
+    z-index: 2;
+}
+
+.history-recharge-icon-success {
+    background: url('../../asset/Vector-success.png')no-repeat;
+    position: absolute;
+    z-index: 4;
+    top: 10px;
+    left: 9px;
+    right: 0;
+    width: 42px;
+    bottom: 0;
+    height: 42px;
+
+}
+
 .history-recharge-description-2 {
     position: absolute;
     width: 390px;

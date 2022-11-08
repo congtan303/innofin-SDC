@@ -38,7 +38,7 @@ import BackSideCamera2 from './components/BackSideCamera2/BackSideCamera2';
 import FaceID from './components/FaceID/FaceID';
 import IDCard from './components/IDCard/IDCard';
 import ValidationResults from './components/ValidationResults/ValidationResults';
-
+import ChangeAvatar from './components/ChangeAvatar/ChangeAvatar';
 function App() {
 
   return (

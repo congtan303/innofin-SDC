@@ -9,6 +9,55 @@
     display: block;
 }
 
+.header-detail-previous-btn {
+    background: url('../../asset/Vector-previous.png');
+    width: 9px;
+    height: 14px;
+    position: absolute;
+    top: 40px;
+    left: 28px;
+}
+
+.header-detail {
+    padding-top: 34px;
+}
+
+.detail-notification {
+    background: url('../../asset/Vector-bell.png');
+    width: 28px;
+    height: 30px;
+    position: relative;
+    position: absolute;
+    top: 34px;
+    right: 33px;
+}
+
+.detail-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #FFFFFF;
+}
+
+.detail-number-notification {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #C52AFE;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    left: 14px;
+}
+
 .Detail-1-card-body {
     position: absolute;
     width: 360px;
@@ -36,7 +85,7 @@
     height: 22px;
     left: 152px;
     top: 120px;
-   
+
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -51,7 +100,7 @@
     height: 18px;
     left: 20px;
     top: 144px;
-   
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -65,7 +114,7 @@
     width: 321px;
     height: 0px;
     left: 20px;
-    top: 167px;
+    top: 168px;
 
     border: 1px solid #DDDDDD;
 }
@@ -76,7 +125,7 @@
     height: 22px;
     left: 20px;
     top: 174px;
-   
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -91,7 +140,7 @@
     height: 22px;
     left: 20px;
     top: 196px;
-   
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -106,7 +155,7 @@
     height: 22px;
     left: 20px;
     top: 218px;
-   
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -142,10 +191,13 @@
 .detail-1-list-note {
     position: absolute;
     top: 380px;
+    margin-left: 10px; 
 }
 
+
+
 .detail-1-list-note li {
-   
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -157,9 +209,14 @@
     color: #FFFFFF;
     width: 332px;
     height: 43px;
+    list-style: inherit ;
+    padding: 0;
 }
 
 /* btn xác nhận thu hộ */
+.block {
+    margin-top: -70px
+}
 .btn-confirm-success-money {
     position: absolute;
     width: 360px;
@@ -185,7 +242,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
     font-style: normal;
     font-weight: 700;
     font-size: 18px;

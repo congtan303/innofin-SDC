@@ -3,6 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import { useState } from 'react'
 import './InformationUser.css'
 import Union from '../Union/Union'
+import ChangeAvatar from '../ChangeAvatar/ChangeAvatar';
 export default function InfomationUser() {
 
     const [defaultValue, setDefaultValue] = useState("")
@@ -51,7 +52,7 @@ export default function InfomationUser() {
             </div>
 
             <div className="information-card-avatar">
-                
+            <ChangeAvatar />
             </div>
             <div className="information-card-description">
                 <div className="information-name">Lê Minh Sơn</div>

@@ -1,0 +1,32 @@
+.header-history-navbar-recharge-active {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #2CD1F8
+}
+
+.header-history-navbar-app {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+
+.header-history-navbar-seperate-border-active {
+    position: absolute;
+    width: 208px;
+    height: 3px;
+    left: 207px;
+    background: #2CD1F8;
+    bottom: 0;
+}

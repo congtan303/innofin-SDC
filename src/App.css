@@ -1,5 +1,7 @@
 
-
+html {
+    overflow: hidden;
+}
 .block {
     width: 360px;
     margin: 0 auto;
@@ -9,7 +11,7 @@
     position: relative;
     margin: 0 auto;
     width: 414px;
-    height: 899px;
+    height: 100%;
     background: #FBFBFD;
 }
 
@@ -54,7 +56,7 @@ hr {
 }
 
 .blue {
-    font-family: 'SF UI Text';
+    
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -67,7 +69,7 @@ hr {
 }
 
 .bold-text {
-    font-family: 'SF UI Text';
+    
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -78,4 +80,13 @@ hr {
 
     color: #636363;
     
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    margin: 0;
+    padding: 0;
 }

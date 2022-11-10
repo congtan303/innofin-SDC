@@ -1,167 +1,131 @@
-.img-success-complete {
-
-    position: absolute;
-    width: 87px;
-    height: 87px;
-    left: 163px;
-    top: 156px;
-
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.1));
+.cash-complete-content-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-.description-success-complete {
-    position: absolute;
+.cash-complete-content {
+    margin-top: 128px;
+    width: 414px;
+    height: 524px;
+    overflow-y: scroll;
+}
+
+.cash-complete-content::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .cash-complete-content::-webkit-scrollbar-track {
+    background-color: #DFF5FF;
+  }
+
+  .cash-complete-content::-webkit-scrollbar-thumb {
+    background-color: #32CBF9;
+    border-radius: 20px;
+  }
+
+.cash-complete-content-status-icon {
+    text-align: center;
+}
+
+.cash-complete-content-status-text {
     width: 251px;
     height: 48px;
-    left: 88px;
-    top: 256px;
-
-   
-    font-style: normal;
+    text-align: center;
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    /* or 120% */
-
     text-align: center;
     letter-spacing: -0.5px;
-
     color: #C52AFE;
 }
 
-/* card */
-
-.card-brand {
-    position: absolute;
-    width: 360px;
-    height: 264px;
-    left: 26px;
-    top: 331px;
-
-    background: #FFFFFF;
+.cash-complete-card-body {
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
+    width: 360px;
+    height: 264px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
 }
 
-.card-brand-img {
-    background: url('../../asset/image\ 19-pizza-hut.png')no-repeat;
-    position: absolute;
-    width: 95px;
-    height: 94px;
-    left: 134px;
-    top: 18px;
+.cash-complete-card-img {
     border: 1px solid #E3E3E3;
     border-radius: 10px;
+    width: 95px;
+    height: 95px;
+    margin: 0 auto;
 }
 
-.card-brand-name {
-    position: absolute;
-    width: 73px;
-    height: 22px;
-    left: 149px;
-    top: 118px;
-   
-    font-style: normal;
+.cash-complete-card-brand {
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
+    /* identical to box height, or 138% */
+
     letter-spacing: -0.5px;
+
     color: #636363;
+    text-align: center;
 }
 
-.card-brand-address {
-    position: absolute;
-    width: 324px;
-    height: 18px;
-    left: 20px;
-    top: 144px;
-   
-    font-style: normal;
+.cash-complete-card-address {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    letter-spacing: -0.5px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: -0.1px;
+
     color: #636363;
+
 }
 
-.hr-cash-complete {
-    position: absolute;
-    width: 314px;
-    height: 0px;
-    left: 46px;
-    top: 501px;
-
+.cash-complete-card-hr {
     border: 1px solid #DDDDDD;
+    width: 321px;
+    height: 0px;
+    margin: 6px auto;
 }
 
-/* info cash */
-
-.information-cash {
-    position: absolute;
-    width: 100vw;
-    height: 22px;
-    left: 46px;
-    top: 508px;
-
-   
-    font-style: normal;
+.cash-complete-card-money {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    /* identical to box height, or 157% */
+    /* identical to box height, or 129% */
 
     letter-spacing: -0.5px;
 
     color: #636363;
 }
 
-.information-cash-blue {}
-
-.information-cash-user {}
-
-.information-user-payed {
-    position: absolute;
-    width: 100vw;
-    height: 22px;
-    left: 46px;
-    top: 530px;
-
-   
-    font-style: normal;
+.cash-complete-card-payer {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    /* identical to box height, or 157% */
+    /* identical to box height, or 129% */
 
     letter-spacing: -0.5px;
 
     color: #636363;
 }
 
-.information-user-phone-number {
-    position: absolute;
-    width: 100vw;
-    height: 22px;
-    left: 46px;
-    top: 552px;
-
-   
-    font-style: normal;
+.cash-complete-card-phone-number {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    /* identical to box height, or 157% */
+    /* identical to box height, or 129% */
 
     letter-spacing: -0.5px;
 
     color: #636363;
 }
 
-.information-cash-blue {
-    position: absolute;
-    left: 100px;
-   
-    font-style: normal;
+.money-blue {
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
@@ -170,34 +134,53 @@
     letter-spacing: -0.5px;
 
     color: #2CD1F8;
+    position: absolute;
+    top: 169px;
+    left: 120px;
 }
 
-.user-payed-text {
+.text-payer {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
     position: absolute;
-    left: 100px;
+    top: 191px;
+    left: 120px;
 }
 
-/* btn homepage */
+.text-phone-number {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
 
-.back-to-home-page {
+    letter-spacing: -0.5px;
 
+    color: #636363;
     position: absolute;
-    width: 360px;
-    height: 54px;
-    left: 26px;
-    top: 631px;
+    top: 213px;
+    left: 120px;
+}
 
+.cash-complete-btn-home {
     background: #2CD1F8;
     border-radius: 8px;
-    border: none;
-    outline: none;
-   
-    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
     /* identical to box height, or 100% */
 
 
-    color: #fff
+    color: #FFFFFF;
+    width: 360px;
+    height: 54px;
+    margin: 30px auto;
 }

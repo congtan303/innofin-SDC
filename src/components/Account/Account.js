@@ -2,16 +2,28 @@ import { Link } from 'react-router-dom'
 import "./Account.css";
 import UnionTop from "../Union-top/UnionTop";
 import ChangeAvatar from '../ChangeAvatar/ChangeAvatar';
+import NotiBell from '../../asset/Vector-bell.png'
+import FooterAccount from '../FooterAccount/FooterAccount';
+import iconWallet from '../../asset/wallet.png'
+import walletBackground from '../../asset/Ellipse\ 14.png'
+import iconHelp from '../../asset/icon-help.png'
+import helpBackground from '../../asset/Ellipse\ 15.png'
+import iconSetting from '../../asset/icon-setting.png'
+import settingBackground from '../../asset/Ellipse\ 15.png'
+import iconContact from '../../asset/Vector-contact.png'
+import contactBackground from '../../asset/Ellipse\ 16.png'
 const Account = () => {
     return (
         <div className="account-container">
+            {/* header */}
             <div className="Account-header">
                 <div className="Account-background">
 
                 </div>
-               
-                <i class="fal fa-bell icon-account-bell"></i>
-                <span className="number-noti-account">1</span>
+                <div className='account-icon-notification'>
+                    <img src={NotiBell} />
+                    <span className="account-number-noti">1</span>
+                </div>
 
                 <div className="Account-header-avatar">
                     <ChangeAvatar />
@@ -22,6 +34,9 @@ const Account = () => {
 
                 <div className="Account-header-number-id">Mã số ID: 225556</div>
             </div>
+
+            {/* body */}
+
             <div className="account-balance">
                 <div className="account-balance-infomation">
                     Số dư tài khoản điểm
@@ -30,90 +45,80 @@ const Account = () => {
                     <span className="number-money">200,000,000</span> <span className="diem">điểm</span>
                 </div>
             </div>
-            <div className="account-content">
-                <div className="account-wallet">
-                    <div className="account-wallet-img">
 
-                    </div>
-                    <div className="account-wallet-img-background">
 
-                    </div>
-                    <Link to='/recharge-money'>
-                        <div className="account-wallet-img--info">Nạp điểm vào tài khoản</div>
-                    </Link>
+            <div className='account-content-wrap'>
+                <div className="account-content">
+                    <div className="account-icon">
+                        <div className="account-wallet-img">
 
-                </div>
+                            <div className='elipse-wallet'>
+                                <img src={walletBackground}/>
+                                <img src={iconWallet} className="wallet-icon"/>
+                            </div>
 
-                <div className="account-help">
-                    <div className="account-help-img">
-
-                    </div>
-                    <div className="account-help-img-background">
-
-                    </div>
-                    <Link to="/helps">
-                        <div className="account-help-img-info">Trợ giúp</div>
-                    </Link>
-
-                </div>
-
-                <div className="account-setting">
-                    <div className="account-setting-img">
-
-                    </div>
-                    <div className="account-setting-img-background">
-
-                    </div>
-                    <Link to='/setting'>
-                        <div className="account-setting-img-info">Cài đặt</div>
-                    </Link>
-
-                </div>
-                <hr className='account-hr'></hr>
-                <div className="account-hotline">
-                    <div className="account-hotline-icon">
-
-                    </div>
-                    <div className="account-hotline-background">
-
-                    </div>
-                    <div className="account-hotline-information">
-                        <div className="account-hotline-information-text">
-                            Thông báo khẩn
                         </div>
-                        <div className="account-hotline-information-number">
-                            0909 99 99 99
-                        </div>
-                        <div className="account-hotline-description">
-                            Số đường dây nóng hỗ trợ nhân viên thu hộ trong mọi trường hợp khẩn cấp.
-                        </div>
+                        
+                        <Link to='/recharge-money'>
+                            <div className="account-wallet-img--info">Nạp điểm vào tài khoản</div>
+                        </Link>
 
                     </div>
+
+                    <div className="account-icon">
+                        <div className="account-help-img">
+                            
+                            <div className='elipse-help'>
+                                <img src={helpBackground}/>
+                            <img src={iconHelp} className="help-icon"/>
+                            </div>
+                        </div>
+                       
+                        <Link to="/helps">
+                            <div className="account-help-img-info">Trợ giúp</div>
+                        </Link>
+
+                    </div>
+
+                    <div className="account-icon">
+                        <div className="account-setting-img">
+                            
+                            <div className='elipse-setting'>
+                            <img src={settingBackground}/>
+                            <img src={iconSetting} className="setting-icon" />
+                            </div>
+                        </div>
+                        
+                        <Link to='/setting'>
+                            <div className="account-setting-img-info">Cài đặt</div>
+                        </Link>
+
+                    </div>
+                    
+                    {/* hr */}
+                    <div className='account-hr'></div>
+                    <div className="account-icon">
+                        <div className="account-contact-img">
+                            
+                            <div className='elipse-contact'>
+                            <img src={contactBackground} className="contact-background"/>
+                            <img src={iconContact} className="contact-icon" />
+                            </div>
+                        </div>
+        
+                        <Link to='/'>
+                            <div className="account-contact-info">Thông báo khẩn</div>
+                            <div className='account-contact-phone-number'>0909 99 99 99</div>
+                           
+                        </Link>
+
+                    </div>
+                    <div className='account-contact-description'>Số đường dây nóng hỗ trợ nhân viên thu hộ
+                                 trong mọi trường hợp khẩn cấp</div>
                 </div>
             </div>
-            <div className="account-footer">
-                <div>
-                    <Link to='/home-page'>
-                        <div className="account-footer-cost">
-                            <div className="account-footer-cost-text">Thu hộ</div>
-                        </div>
-                    </Link>
 
-                    <Link to="/history">
-                        <div className="account-footer-history">
-                            <div className="account-footer-history-text">Lịch sử</div>
-                        </div>
-                    </Link>
-
-                    <Link to="/account-user">
-                        <div className="account-footer-user">
-                            <div className="account-footer-user-text">Tài khoản</div>
-                        </div>
-                    </Link>
-
-                </div>
-
-            </div>
+            <FooterAccount />
             <UnionTop />
         </div>
     )

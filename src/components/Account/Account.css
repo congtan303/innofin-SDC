@@ -8,6 +8,11 @@
     background: #FBFBFD;
 }
 
+.Account-header {
+    position: absolute;
+    z-index: 3;
+}
+
 .Account-background {
     position: absolute;
     width: 414px;
@@ -16,6 +21,14 @@
     top: 0px;
 
     background: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
+}
+
+.account-icon-notification {
+
+    position: absolute;
+    left: 351px;
+    top: 48px;
+
 }
 
 .icon-account-back {
@@ -36,7 +49,7 @@
     color: #fff;
 }
 
-.number-noti-account {
+.account-number-noti {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,8 +57,8 @@
     text-align: center;
     width: 18px;
     height: 18px;
-    left: 358px;
-    top: 38px;
+    left: 14px;
+    top: -7px;
     border: 1px;
     border-radius: 50px;
     background: #C52AFE;
@@ -54,13 +67,13 @@
 }
 
 .Account-header-avatar {
-   
+
     position: absolute;
     width: 64px;
     height: 64px;
     left: 33px;
     top: 95px;
-   
+    cursor: pointer;
     border-radius: 50%;
 }
 
@@ -71,7 +84,7 @@
     left: 122px;
     top: 106px;
 
-   
+
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -89,7 +102,7 @@
     left: 122px;
     top: 131px;
 
-   
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -120,7 +133,7 @@
     left: 88px;
     top: 20px;
 
-    
+
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -141,7 +154,7 @@
     left: 76px;
     top: 60px;
 
-   
+
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -161,7 +174,7 @@
     left: 258px;
     top: 63px;
 
-   
+
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -172,341 +185,141 @@
 }
 
 /* content */
-
 .account-content {
-    position: absolute;
-    width: 414px;
-    height: 676px;
-    left: 0px;
-    top: 229px;
-    background-color: #FBFBFD;
-}
-
-.account-wallet-img {
-    background: url('../../asset/Group.svg')no-repeat;
-    position: absolute;
-    left: 8.45%;
-    right: 84.06%;
-    top: 120px;
-    bottom: 56.58%;
-    z-index: 10;
-
-}
-
-.account-wallet-img--info {
-
-    position: absolute;
-    width: 193px;
-    height: 18px;
-    left: 97px;
-    top: 128px;
-
-   
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    /* identical to box height, or 100% */
-
     text-align: center;
     letter-spacing: -0.3px;
-
     color: #636363;
+    
+}
+
+.account-content-wrap {
+    position: relative;
+    width: 414px;
+    height: 652px;
+    padding: 330px 0 0 20px;
+    overflow-y: scroll;
+   
+}
+
+.account-content-wrap::-webkit-scrollbar {
+    width: 4px;
+  }
+
+.account-content-wrap::-webkit-scrollbar-track {
+    background-color: #DFF5FF;
+  }
+
+.account-content-wrap::-webkit-scrollbar-thumb {
+    background-color: #32CBF9;
+    border-radius: 20px;
+  }
+
+.account-icon {
+    display: flex;
+    align-items: center;
+    height: 62px;
+    width: auto;
+    margin: 14px 0;
+}
+
+.account-wallet-img,
+.account-setting-img,
+.account-help-img,
+.account-contact-img{
+    margin-right: 20px;
+}
+
+.elipse-wallet,
+.elipse-setting,
+.elipse-help,
+.elipse-contact {
+    position: relative;
+}
+
+.contact-background {
+    width: 60p;
+    height: 60px;
+}
+
+    .contact-icon {
+        position: absolute;
+        top: 14px;
+        left: 19px;
+    }
+
+.wallet-icon {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+}
+
+.help-icon {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+
+.setting-icon {
+    position: absolute;
+    top: 12px;
+    left: 13px;
 }
 
 .account-wallet-img-background {
-    background: url('../../asset/Ellipse\ 14.png') no-repeat;
-    position: absolute;
+
     width: 60px;
     height: 60px;
-    left: 20px;
-    top: 108px;
-    border-radius: 50%;
-    background: #DFF5FF;
-
-
-
 }
 
-.account-help-img {
-    background: url('../../asset/union-help.svg') no-repeat;
-    position: absolute;
-    width: 34px;
-    height: 34px;
-    left: 35px;
-    top: 200px;
-    z-index: 10;
-    color: #4A96F8;
-}
-
-.account-help-img-background {
-    background: url('../../asset/Ellipse\ 14.png') no-repeat;
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 21px;
-    top: 186px;
-    border-radius: 50%;
-    background: #DFF5FF;
-}
-
-.account-help-img-info {
-    position: absolute;
-    width: 69px;
-    height: 18px;
-    left: 97px;
-    top: 207px;
-
-   
-    font-style: normal;
+.account-wallet-img--info,
+.account-help-img-info,
+.account-setting-img-info,
+.account-contact-info {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    /* identical to box height, or 100% */
+font-size: 18px;
+line-height: 18px;
+/* identical to box height, or 100% */
 
-    text-align: center;
-    letter-spacing: -0.3px;
 
-    color: #636363;
+letter-spacing: -0.3px;
+
+color: #636363;
 }
 
-.account-setting-img {
-    background: url('../../asset/Vector-setting.svg');
-    position: absolute;
-    left: 34px;
-    right: 83.82%;
-    top: 275px;
-    bottom: 38.28%;
-    width: 35px;
-    height: 35px;
-    z-index: 10;
-}
+/* hr */
 
-.account-setting-img-background {
-    background: url('../../asset/Ellipse\ 14.png') no-repeat;
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 21px;
-    top: 264px;
-    border-radius: 50%;
-    background: #DFF5FF;
-}
-
-.account-setting-img-info {
-    position: absolute;
-    width: 59px;
-    height: 18px;
-    left: 97px;
-    top: 284px;
-
-   
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    /* identical to box height, or 100% */
-
-    text-align: center;
-    letter-spacing: -0.3px;
-
-    color: #636363;
-}
-
-hr {
-    position: absolute;
+.account-hr {
     width: 375px;
     height: 0px;
-    left: 20px;
-    top: 330px;
-
     border: 1px solid #DDDDDD;
 }
 
 /* contact */
 
-.account-hotline-icon {
-    background: url('../../asset/Vector-contact.png') no-repeat;
-    position: absolute;
-    left: 38px;
-    right: 83.82%;
-    top: 388px;
-    bottom: 28.02%;
-    ;
-    color: #ED822E;
-    z-index: 10;
-
-}
-
-.account-hotline-background {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 20px;
-    top: 374px;
-    border-radius: 50%;
-    background: #FFEFE3;
-}
-
-.account-hotline-information-text {
-    position: absolute;
-    width: 134px;
-    height: 18px;
-    left: 97px;
-    top: 386px;
-
-   
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    /* identical to box height, or 100% */
-
-    text-align: center;
-    letter-spacing: -0.3px;
-
-    color: #636363;
-}
-
-.account-hotline-information-number {
-    position: absolute;
-    width: 134px;
-    height: 18px;
-    left: 95px;
-    top: 408px;
-
-   
-    font-style: normal;
+.account-contact-phone-number {
+    text-align: left;
+    margin-top: 4px;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 18px;
-    /* identical to box height, or 100% */
+font-size: 18px;
+line-height: 18px;
+/* identical to box height, or 100% */
 
-    text-align: center;
-    letter-spacing: -0.3px;
+letter-spacing: -0.3px;
 
-    color: #ED822E;
+color: #ED822E;
 }
 
-.account-hotline-description {
-    position: absolute;
-    width: 375px;
-    height: 52px;
-    left: 20px;
-    top: 450px;
-
-   
-    font-style: italic;
+.account-contact-description {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    /* or 125% */
-
-    letter-spacing: -0.5px;
-
-    color: #AEAEAE;
-}
-
-.account-footer {
-    position: absolute;
-    width: 414px;
-    height: 105px;
-    left: 0px;
-    top: 791px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 1px 10px #D6DCE9;
-}
-
-.account-footer-cost {
-    background: url('../../asset/Union-cost.png');
-    position: absolute;
-    width: 32.21px;
-    height: 28.54px;
-    left: 73px;
-    top: 20px;
-
-    color: #AEAEAE;
-}
-
-.account-hr {
-    position: absolute;
-    width: 375px;
-    height: 0px;
-    left: 20px;
-    top: 348px;
-    border: 1px solid #DDDDDD;
-}
-
-.account-footer-cost-text {
-    position: absolute;
-    width: 47px;
-    height: 18px;
-    left: -10px;
-    top: 34px;
-   
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    /* identical to box height, or 129% */
-
-    text-align: center;
-
-    color: #AEAEAE;
-}
-
-.account-footer-history {
-    background: url('../../asset/Frame-history.png');
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    left: 186px;
-    top: 20px;
-}
-
-
-.account-footer-history-text {
-    position: absolute;
-    width: 48px;
-    height: 18px;
-    left: -9px;
-    top: 34px;
-   
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    /* identical to box height, or 129% */
-
-    text-align: center;
-
-    color: #AEAEAE;
-}
-
-.account-footer-user {
-    background: url('../../asset/Union-user.png');
-    position: absolute;
-    width: 28px;
-    height: 28px;
-    left: 300px;
-    top: 20px;
-}
-
-.account-footer-user-text {
-    position: absolute;
-    width: 80px;
-    height: 18px;
-    left: -26px;
-    top: 34px;
-   
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    /* identical to box height, or 129% */
-
-    text-align: center;
-
-    color: #C52AFE;
+font-size: 16px;
+font-style: italic;
+line-height: 20px;
+/* or 125% */
+height: 70px;
+letter-spacing: -0.5px;
+text-align: left;
+color: #AEAEAE;
 }

@@ -41,14 +41,13 @@
 }
 
 .information-card-avatar {
-    background: url('../../asset/image\ 13.png')no-repeat;
+    
     position: absolute;
     width: 64px;
     height: 64px;
     left: 42px;
     top: 146px;
-    border: 2px solid #fff;
-    border-radius: 50%;
+    
 
 }
 

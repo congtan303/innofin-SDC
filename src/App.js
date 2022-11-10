@@ -39,6 +39,13 @@ import FaceID from './components/FaceID/FaceID';
 import IDCard from './components/IDCard/IDCard';
 import ValidationResults from './components/ValidationResults/ValidationResults';
 import ChangeAvatar from './components/ChangeAvatar/ChangeAvatar';
+import FooterHistory from './components/FooterHistory/FooterHistory';
+import FooterAccount from './components/FooterAccount/FooterAccount';
+import FooterApp from './components/FooterApp/FooterApp';
+
+import HeaderHistory from './components/HeaderHistory/HeaderHistory';
+import HeaderHistoryRecharge from './components/HeaderHistoryRecharge/HeaderHistoryRecharge';
+import HeaderApp from './components/HeaderApp/HeaderApp';
 function App() {
 
   return (
@@ -90,9 +97,9 @@ function App() {
      
       
     </Routes>
+        
 
-
-
+  
 
 
 

@@ -1,121 +1,89 @@
 import { Link } from 'react-router-dom'
 import './HistoryRecharge.css'
 import UnionTop from '../Union-top/UnionTop'
+import HeaderHistoryRecharge from '../HeaderHistoryRecharge/HeaderHistoryRecharge'
+import FooterHistory from '../FooterHistory/FooterHistory'
 export default function HistoryRecharge() {
     return (
         <div className='container'>
-            <div className="history-recharge-header">
+            <HeaderHistoryRecharge />
 
-                <Link to="/account-user">
-                    <button className="history-previous-btn">
-                    </button>
-                </Link>
-                <div className="history-title">
-                    Lịch sử
-                </div>
-                <div className="history-notification">
-
-                </div>
-                <UnionTop />
-                <div className="history-number-notification">
-                    1
-                </div>
-                <div className="history-background-notification">
-
-                </div>
-
-
-                <div class="border-navbar">
-                    <div className="history-recharge-navbar">
-                        <Link to="/history">
-                            <div className="thu-ho-2">Thu hộ</div>
-                        </Link>
-
-                        <div className="nap-diem-2">Nạp điểm</div>
-                        <div className="history-navbar-seperate"></div>
-                        <div className="history-navbar-active-color"></div>
-                    </div>
-
-                </div>
-                <div className="history-recharge-body">
-                    <div className="history-recharge-description-1">
-                        <div className="history-info">
-                            <div className="history-recharge-status">Nạp điểm thành công</div>
-                            <div className="amount-money">Số tiền đã thu: 10,000,000</div>
-                            <div className="transaction-time">Giờ thu: 8:00 AM, ngày 18/09/2019</div>
-                            <div className="transaction-code">Mã giao dịch: 123888</div>
+            <div >
+                <ul className='history-list'>
+                    <li className='history-list-description'>
+                        <div>
+                            <div className='history-list-status'>Nạp điểm thành công</div>
+                            <div className='history-list-money'>Số tiền đã thu: 10,000,000</div>
+                            <div className='history-list-time'>Giờ thu: 8:00 AM, ngày 18/09/2019</div>
+                            <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
+                        </div>
+                        <div className='history-list-status-icon-success'>
+                            <div className='history-list-status-icon-success-img'></div>
                         </div>
 
-                        <div className='history-recharge-background-success'>
-                            <div className='history-recharge-icon-success'>
+                    </li>
+                    <li className='history-list-description'>
+                        <div className='history-list-status'>Nạp điểm thành công</div>
+                        <div className='history-list-money'>Số tiền đã thu: 30,000,000</div>
+                        <div className='history-list-time'>Giờ thu: 8:00 AM, ngày 18/09/2019</div>
+                        <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
+                        <div className='history-list-status-icon-success'>
+                            <div className='history-list-status-icon-success-img'></div>
+                        </div>
+                    </li>
+                    <li className='history-list-description'>
+                        <div className='history-list-status'>Nạp điểm đang chờ</div>
+                        <div className='history-list-money'>Số tiền đã thu: 10,000,000</div>
+                        <div className='history-list-time'>Giờ thu: 8:00 AM, ngày 18/09/2019</div>
+                        <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
+                        <div className='history-list-status-icon-waitting'>
+                            <div className='history-list-status-icon-waitting-img'></div>
+                        </div>
+                    </li>
+                    <li className='history-list-description'>
+                        <div className='history-list-status'>Nạp điểm bị từ chối</div>
+                        <div className='history-list-money'>Số tiền đã thu: 10,000,000</div>
+                        <div className='history-list-time'>Giờ thu: 8:00 AM, ngày 18/09/2019</div>
+                        <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
+                        <div className='history-list-status-icon-denied'>
+                            <div className='history-list-status-icon-denied-img'>
+                                <div className='history-list-status-icon-denied-img-2'>
 
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li className='history-list-description'>
+                        <div className='history-list-status'>Nạp điểm bị hủy</div>
+                        <div className='history-list-money'>Số tiền đã thu: 10,000,000</div>
+                        <div className='history-list-time'>Giờ thu: 8:00 AM, ngày 18/09/2019</div>
+                        <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
+                        <div className='history-list-status-icon-canceled-img'>
+                            <div className='history-list-status-icon-canceled-img-2'>
+                                <i class="far fa-times-circle icon-canceled-img"></i>
                             </div>
                         </div>
-
-                    </div>
-
-                    <div className="history-recharge-description-2">
-                        <div className="history-info">
-                            <div className="history-recharge-status">Nạp điểm thành công</div>
-                            <div className="amount-money">Số tiền đã thu: 10,000,000</div>
-                            <div className="transaction-time">Giờ thu: 8:00 AM, ngày 18/09/2019</div>
-                            <div className="transaction-code">Mã giao dịch: 123888</div>
+                    </li>
+                    <li className='history-list-description'>
+                        <div className='history-list-status'>Nạp điểm bị hủy</div>
+                        <div className='history-list-money'>Số tiền đã thu: 10,000,000</div>
+                        <div className='history-list-time'>Giờ thu: 8:00 AM, ngày 18/09/2019</div>
+                        <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
+                        <div className='history-list-status-icon-canceled-img'>
+                            <div className='history-list-status-icon-canceled-img-2'>
+                                <i class="far fa-times-circle icon-canceled-img"></i>
+                            </div>
                         </div>
-
-                    </div>
-
-                    <div className="history-recharge-description-3">
-                        <div className="history-info">
-                            <div className="history-recharge-status">Nạp điểm thành công</div>
-                            <div className="amount-money">Số tiền đã thu: 10,000,000</div>
-                            <div className="transaction-time">Giờ thu: 8:00 AM, ngày 18/09/2019</div>
-                            <div className="transaction-code">Mã giao dịch: 123888</div>
-                        </div>
-
-                    </div>
-
-                    <div className="history-recharge-description-4">
-                        <div className="history-info">
-                            <div className="history-recharge-status">Nạp điểm thành công</div>
-                            <div className="amount-money">Số tiền đã thu: 10,000,000</div>
-                            <div className="transaction-time">Giờ thu: 8:00 AM, ngày 18/09/2019</div>
-                            <div className="transaction-code">Mã giao dịch: 123888</div>
-                        </div>
-
-                    </div>
-
-                    <div className="history-recharge-description-5">
-                        <div className="history-info">
-                            <div className="history-recharge-status">Nạp điểm thành công</div>
-                            <div className="amount-money">Số tiền đã thu: 10,000,000</div>
-                            <div className="transaction-time">Giờ thu: 8:00 AM, ngày 18/09/2019</div>
-                            <div className="transaction-code">Mã giao dịch: 123888</div>
-                        </div>
-
-                    </div>
+                    </li>
 
 
-
-                </div>
-
-                <div className="footer"></div>
-                <div className="footer-tool-app">
-                    <Link to='/home-page'>
-                        <div className="footer-tool-app-icon-1">
-                            <div className="footer-tool-description-app">Thu hộ</div>
-                        </div>
-                    </Link>
-
-                    <div className="footer-tool-app-icon-2">
-                        <div className="footer-tool-description-history">Lịch sử</div>
-                    </div>
-                    <Link to="/account-user">
-                        <div className="footer-tool-app-icon-3">
-                            <div className="footer-tool-description-account">Tài khoản</div>
-                        </div>
-                    </Link>
-                </div>
+                </ul>
             </div>
+
+            <FooterHistory />
+
+
         </div>
     )
 }

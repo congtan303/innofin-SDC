@@ -1,0 +1,78 @@
+.footer-history {
+    position: fixed;
+    bottom: 0;
+    width: 414px;
+    height: 105px;
+    background: #FFFFFF;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    z-index: 10;
+}
+
+.footer-history-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+text-align: center;
+
+color: #AEAEAE;
+
+}
+
+.footer-history-icon-img {
+    background: url('../../asset/Union-cost.png');
+    width: 32.21px;
+    height: 28.54px;
+    margin-bottom: 4px;
+}
+
+.footer-history-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+text-align: center;
+
+color: #C52AFE;
+
+}
+
+.footer-history-active-img{
+    background: url('../../asset/Union-history.png');
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+}
+
+.footer-history-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    
+    text-align: center;
+    
+    color: #AEAEAE;
+}
+
+.footer-history-account-img {
+    background: url('../../asset/Union-account.png');
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+}

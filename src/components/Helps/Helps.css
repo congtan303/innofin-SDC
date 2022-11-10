@@ -105,7 +105,7 @@
 
 .answer-1 {
     position: absolute;
-    width: 288px;
+    width: 256px;
     height: 36px;
     left: 31px;
     top: 114px;
@@ -153,12 +153,10 @@
 
 .answer-2 {
     position: absolute;
-    width: 288px;
+    width: 256px;
     height: 36px;
     left: 31px;
     top: 230px;
-
-   
     font-style: italic;
     font-weight: 400;
     font-size: 16px;
@@ -201,7 +199,7 @@
 
 .answer-3 {
     position: absolute;
-    width: 288px;
+    width: 256px;
     height: 36px;
     left: 31px;
     top: 344px;
@@ -249,7 +247,7 @@
 
 .answer-4 {
     position: absolute;
-    width: 288px;
+    width: 256px;
     height: 36px;
     left: 31px;
     top: 460px;
@@ -297,7 +295,7 @@
 
 .answer-5 {
     position: absolute;
-    width: 288px;
+    width: 256px;
     height: 36px;
     left: 31px;
     top: 574px;
@@ -345,7 +343,7 @@
 
 .answer-6 {
     position: absolute;
-    width: 288px;
+    width: 256px;
     height: 36px;
     left: 31px;
     top: 688px;

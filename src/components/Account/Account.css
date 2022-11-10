@@ -8,6 +8,13 @@
     background: #FBFBFD;
 }
 
+.account-union {
+    width: 222.69px;
+    height: 221px;
+    position: absolute;
+    left: 287px
+}
+
 .Account-header {
     position: absolute;
     z-index: 3;

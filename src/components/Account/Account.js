@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import "./Account.css";
-import UnionTop from "../Union-top/UnionTop";
+import union from '../../asset/Union-top-account.png'
 import ChangeAvatar from '../ChangeAvatar/ChangeAvatar';
 import NotiBell from '../../asset/Vector-bell.png'
 import FooterAccount from '../FooterAccount/FooterAccount';
@@ -33,6 +33,9 @@ const Account = () => {
                 </Link>
 
                 <div className="Account-header-number-id">Mã số ID: 225556</div>
+                <div className='account-union'>
+                    <img src={union}/>
+                </div>
             </div>
 
             {/* body */}
@@ -119,7 +122,7 @@ const Account = () => {
             </div>
 
             <FooterAccount />
-            <UnionTop />
+            
         </div>
     )
 }

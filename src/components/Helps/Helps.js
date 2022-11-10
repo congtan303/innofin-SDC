@@ -28,7 +28,7 @@ export default function Helps() {
                     Làm thế nào để đổi mật khẩu?
                 </div>
                 <div className="answer-1">
-                    Chọn mục "Tài khoản" -<span className="code-arrow">&#62;</span> Chọn mục "Cài đặt" -<span className="code-arrow">&#62;</span> Chọn mục đổi mật khẩu
+                    Chọn mục "Tài khoản" -<span className="code-arrow">&#62;</span> Chọn mục "Cài đặt" -<span className="code-arrow">&#62;</span> Chọn mục "Đổi mật khẩu"
                 </div>
                 <hr className="help-hr-1"></hr>
 

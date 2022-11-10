@@ -1,7 +1,24 @@
+import { useState } from 'react'
 import './ForgotPassword.css'
 import { Link } from 'react-router-dom'
-
+import Union from '../Union/Union'
 const ForgotPassword = () => {
+    const [values, setValues] = useState({
+        password: "",
+        isShowPassword: false,
+    });
+    const handleShowHidePassword = () => {
+        setValues({
+            ...values,
+            isShowPassword: !values.isShowPassword,
+            
+        });
+        setTimeout(() => {
+            setValues({
+                isShowPassword: false,
+            });
+          }, 3000)
+    }
     return (
         <div className='forgot-background'>
             <Link to="/setting">
@@ -20,16 +37,20 @@ const ForgotPassword = () => {
                 <form class="w3-container">
                     <p>
                         <label className='label-text'>ID Đăng nhập:</label>
-                        <input class="w3-input" type="password" /></p>
+                        <input class="w3-input" type={values.isShowPassword ? "text" : "password"} /></p>
                 </form>
                 <Link to='/success-password'>
                     <button class="btn-forgot-password">Lấy lại mật khẩu</button>
                 </Link>
 
-                <i class="fas fa-eye-slash input-eye input-icon"></i>
+                <span onClick={() => { handleShowHidePassword() }}>
+                    <i className={values.isShowPassword ? 'fas fa-eye-slash input-eye input-icon-forgot' : 'fas fa-eye-slash input-icon-forgot'}></i>
+                </span>
+                {/* <i class="fas fa-eye-slash input-eye input-icon"></i> */}
 
 
             </div>
+            <Union />
 
 
         </div>

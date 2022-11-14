@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {
@@ -47,6 +47,12 @@ import HeaderHistory from './components/HeaderHistory/HeaderHistory';
 import HeaderHistoryRecharge from './components/HeaderHistoryRecharge/HeaderHistoryRecharge';
 import HeaderApp from './components/HeaderApp/HeaderApp';
 function App() {
+
+  const [token, setToken] = useState();
+
+  if(!token) {
+    return <Login setToken={setToken} />
+  }
 
   return (
 

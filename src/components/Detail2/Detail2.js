@@ -1,12 +1,14 @@
-import { Link } from 'react-router-dom'
+import { Link,useNavigate} from 'react-router-dom'
 import phone from '../../asset/Vector-contact-user.png'
 import './Detail2.css'
 import SwipeableButton from '../SwipeButton/SwipeButton'
 import FooterApp from '../FooterApp/FooterApp'
 
 export default function Detail() {
+
+    const navigate = useNavigate()
     const onSuccess = () => {
-        console.log('Yay! Swipe Success');
+        navigate('/list-money-1')
     }
     return (
         <div className="background-detail">
@@ -15,7 +17,7 @@ export default function Detail() {
 
             </div>
             <div className='header-detail'>
-                    <Link to="/home-page">
+                    <Link to="/detail1">
                         <div className='header-detail-previous-btn'></div>
                     </Link>
                     <div className="detail-title">
@@ -46,9 +48,12 @@ export default function Detail() {
                     <div className="detail-1-name-money">Người nộp tiền: <strong className='text-detail-css'>Nguyễn Thị Huệ</strong></div>
                     <div className="detail-1-phone-number">Số điện thoại: <strong className='text-detail-css'>0923 221 554</strong></div>
                     <div className="detail-1-contact">
-                            <div className="detail-1-contact-background">
+                        <a href='tel: 0923 221 554'>
+                        <div className="detail-1-contact-background">
                                 <img src={phone}></img>
                             </div>
+                        </a>
+                            
 
                         </div>
                 </div>

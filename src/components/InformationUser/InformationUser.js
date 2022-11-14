@@ -59,7 +59,7 @@ export default function InfomationUser() {
                 <div className="information-id">Mã số ID: 225556</div>
             </div>
             <hr className="information-hr"></hr>
-            <div className="information-account-balance">Số dư tài khoản <span className="information-coin">200,000,000 </span> điểm</div>
+            <div className="information-account-balance">Số dư tài khoản điểm <span className="information-coin">200,000,000 </span> điểm</div>
             <div className="information-user">
             <TextField
                 id="date"
@@ -80,6 +80,7 @@ export default function InfomationUser() {
             <div className="information-edit-date-background">
                 <div className="information-edit-date-img"></div>
             </div>
+            <div className='information-user-hr'></div>
 
             <div className="information-user-CCCD">
                 Số CMND/CCCD:
@@ -95,6 +96,8 @@ export default function InfomationUser() {
             <div className="information-edit-CCCD-background" onClick={changeEditNumberID}>
                 <div className="information-edit-CCCD-img"></div>
             </div>
+
+            <div className='information-user-hr-2'></div>
 
             
             <div className="information-user-phone">

@@ -37,7 +37,7 @@ const ForgotPassword = () => {
                 <form class="w3-container">
                     <p>
                         <label className='label-text'>ID Đăng nhập:</label>
-                        <input class="w3-input" type={values.isShowPassword ? "text" : "password"} /></p>
+                        <input class="w3-input forgot-password-input" type={values.isShowPassword ? "text" : "password"} /></p>
                 </form>
                 <Link to='/success-password'>
                     <button class="btn-forgot-password">Lấy lại mật khẩu</button>

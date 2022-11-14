@@ -6,9 +6,12 @@ export default function ListMoneyComplete() {
     return (
         <div className='container'>
             <div className="header-history">
-                <div className='header-history-previous-btn'>
+                <Link to="/list-money-1">
+                    <div className='header-history-previous-btn'>
 
-                </div>
+                    </div>
+                </Link>
+
                 <div className="header-history-title">Bảng kê điện tử</div>
                 <div className="header-history-notification">
                     <div className="header-history-notification-number">1</div>
@@ -103,15 +106,15 @@ export default function ListMoneyComplete() {
                 </div>
 
                 <Link to="/list-money-1">
-                <div className="edit-table">
-                    <button className="btn-edit-table remove-edit-table">Sửa bảng kê</button>
-                </div>
-            </Link>
-            <Link to="/cash-complete">
-                <div className="complete-edit">
-                    <button className="btn-complete-edit edit-complete">Hoàn tất</button>
-                </div>
-            </Link>
+                    <div className="edit-table">
+                        <button className="btn-edit-table remove-edit-table">Sửa bảng kê</button>
+                    </div>
+                </Link>
+                <Link to="/cash-complete">
+                    <div className="complete-edit">
+                        <button className="btn-complete-edit edit-complete">Hoàn tất</button>
+                    </div>
+                </Link>
             </div>
 
             {/* footer */}

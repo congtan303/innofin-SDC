@@ -6,9 +6,11 @@ export default function ListMoney() {
     return (
         <div className='container'>
             <div className="header-history">
-                <div className='header-history-previous-btn'>
+                <Link to='/detail2'>
+                    <div className='header-history-previous-btn'>
+                    </div>
+                </Link>
 
-                </div>
                 <div className="header-history-title">Bảng kê điện tử</div>
                 <div className="header-history-notification">
                     <div className="header-history-notification-number">1</div>

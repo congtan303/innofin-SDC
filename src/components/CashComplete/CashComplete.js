@@ -10,9 +10,12 @@ export default function CashComplete() {
         <div className="container">
             {/* header */}
             <div className="header-history">
-                <div className='header-history-previous-btn'>
+                <Link to="/list-money-complete">
+                    <div className='header-history-previous-btn'>
 
-                </div>
+                    </div>
+                </Link>
+
                 <div className="header-history-title">Thu hộ hoàn tất</div>
                 <div className="header-history-notification">
                     <div className="header-history-notification-number">1</div>
@@ -54,10 +57,12 @@ export default function CashComplete() {
                         Số điện thoại: <span className='text-phone-number'> 0276 665 568</span>
                     </div>
                 </div>
+                <Link to="/home-page">
+                    <div className='cash-complete-btn-home'>
+                        Về trang chủ
+                    </div>
+                </Link>
 
-                <div className='cash-complete-btn-home'>
-                    Về trang chủ
-                </div>
 
             </div>
 

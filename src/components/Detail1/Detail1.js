@@ -1,12 +1,17 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import phone from '../../asset/Vector-contact-user.png'
 import './Detail1.css'
 import SwipeableButton from '../SwipeButton2/SwipeButton2'
 import FooterApp from '../FooterApp/FooterApp'
+import { Route } from 'react-router-dom'
+import Detail2 from '../Detail2/Detail2'
 export default function Detail() {
+
+    const navigate = useNavigate()
     const onSuccess = () => {
-        console.log('Yay! Swipe Success');
+        navigate('/detail2')
     }
+
     return (
         <div>
             {/* header */}
@@ -18,7 +23,7 @@ export default function Detail() {
                     <div className="detail-title">
                         Thu hộ
                     </div>
-                    
+
 
                     <div className="detail-notification purple">
                         <div className='detail-number-notification'>
@@ -43,9 +48,12 @@ export default function Detail() {
                         <div className="detail-1-name-money">Người nộp tiền: <strong className='text-detail-css'>Nguyễn Thị Huệ</strong></div>
                         <div className="detail-1-phone-number">Số điện thoại: <strong className='text-detail-css'>0923 221 554</strong></div>
                         <div className="detail-1-contact">
+                            <a href='tel:0923 221 554 '>
                             <div className="detail-1-contact-background">
                                 <img src={phone}></img>
                             </div>
+                            </a>
+                            
 
                         </div>
                     </div>
@@ -59,11 +67,11 @@ export default function Detail() {
                     </ul>
 
 
-                    
                         <div className='block'>
                             <SwipeableButton onSuccess={onSuccess} color='#2CD1F8' />
                         </div>
-                   
+
+
 
 
                 </div>

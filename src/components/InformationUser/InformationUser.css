@@ -278,6 +278,26 @@
     cursor: pointer;
 }
 
+.information-user-hr {
+    position: absolute;
+    width: 330px;
+    height: 0px;
+    left: 44px;
+    top: 385px;
+    border: 1px solid #DDDDDD;
+
+}
+
+.information-user-hr-2 {
+    position: absolute;
+width: 330px;
+height: 0px;
+left: 44px;
+top: 451px;
+
+border: 1px solid #DDDDDD;
+}
+
 .input-cccd {
     position: absolute;
     top: 406px;
@@ -288,8 +308,7 @@
     font-size: 16px;
     line-height: 18px;
     color: #636363;
-    border: none;
-    outline: none;
+ 
 }
 .input-phone-number {
     position: absolute;

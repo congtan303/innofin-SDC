@@ -34,7 +34,7 @@ const Account = () => {
 
                 <div className="Account-header-number-id">Mã số ID: 225556</div>
                 <div className='account-union'>
-                    <img src={union}/>
+                    <img src={union} />
                 </div>
             </div>
 
@@ -56,12 +56,12 @@ const Account = () => {
                         <div className="account-wallet-img">
 
                             <div className='elipse-wallet'>
-                                <img src={walletBackground}/>
-                                <img src={iconWallet} className="wallet-icon"/>
+                                <img src={walletBackground} />
+                                <img src={iconWallet} className="wallet-icon" />
                             </div>
 
                         </div>
-                        
+
                         <Link to='/recharge-money'>
                             <div className="account-wallet-img--info">Nạp điểm vào tài khoản</div>
                         </Link>
@@ -70,13 +70,13 @@ const Account = () => {
 
                     <div className="account-icon">
                         <div className="account-help-img">
-                            
+
                             <div className='elipse-help'>
-                                <img src={helpBackground}/>
-                            <img src={iconHelp} className="help-icon"/>
+                                <img src={helpBackground} />
+                                <img src={iconHelp} className="help-icon" />
                             </div>
                         </div>
-                       
+
                         <Link to="/helps">
                             <div className="account-help-img-info">Trợ giúp</div>
                         </Link>
@@ -85,44 +85,48 @@ const Account = () => {
 
                     <div className="account-icon">
                         <div className="account-setting-img">
-                            
+
                             <div className='elipse-setting'>
-                            <img src={settingBackground}/>
-                            <img src={iconSetting} className="setting-icon" />
+                                <img src={settingBackground} />
+                                <img src={iconSetting} className="setting-icon" />
                             </div>
                         </div>
-                        
+
                         <Link to='/setting'>
                             <div className="account-setting-img-info">Cài đặt</div>
                         </Link>
 
                     </div>
-                    
+
                     {/* hr */}
                     <div className='account-hr'></div>
                     <div className="account-icon">
-                        <div className="account-contact-img">
-                            
-                            <div className='elipse-contact'>
-                            <img src={contactBackground} className="contact-background"/>
-                            <img src={iconContact} className="contact-icon" />
+                        <a href='tel:0909 99 99 99'>
+                            <div className="account-contact-img">
+
+
+                                <div className='elipse-contact'>
+                                    <img src={contactBackground} className="contact-background" />
+                                    <img src={iconContact} className="contact-icon" />
+                                </div>
                             </div>
-                        </div>
-        
-                        <Link to='/'>
+                        </a>
+
+                        <div>
+
                             <div className="account-contact-info">Thông báo khẩn</div>
                             <div className='account-contact-phone-number'>0909 99 99 99</div>
-                           
-                        </Link>
+                        </div>
+
 
                     </div>
                     <div className='account-contact-description'>Số đường dây nóng hỗ trợ nhân viên thu hộ
-                                 trong mọi trường hợp khẩn cấp</div>
+                        trong mọi trường hợp khẩn cấp</div>
                 </div>
             </div>
 
             <FooterAccount />
-            
+
         </div>
     )
 }

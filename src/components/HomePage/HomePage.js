@@ -178,6 +178,44 @@ export default function HomePage() {
                         </div>
                     </div>
                 </li>
+                <li className='list-customer-information'>
+                    <div className='list-customer-avatar'>
+                        <img src={avatarHD} className='list-customer-avatar'></img>
+                    </div>
+                    <div className='list-customer-description'>
+                        <div className='list-customer-description-name'>
+                            HD Bank
+                        </div>
+                        <div className='list-customer-description-address'>
+                        25 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. Hồ Chí Minh
+                        </div>
+                        <div className='list-customer-description-money'>
+                        Số tiền phải thu: 10,000,000
+                        </div>
+                        <div className='list-customer-description-time'>
+                        Giờ đi thu: 8:00 
+                        </div>
+                    </div>
+                </li>
+                <li className='list-customer-information'>
+                    <div className='list-customer-avatar'>
+                        <img src={avatarHD} className='list-customer-avatar'></img>
+                    </div>
+                    <div className='list-customer-description'>
+                        <div className='list-customer-description-name'>
+                            HD Bank
+                        </div>
+                        <div className='list-customer-description-address'>
+                        25 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. Hồ Chí Minh
+                        </div>
+                        <div className='list-customer-description-money'>
+                        Số tiền phải thu: 10,000,000
+                        </div>
+                        <div className='list-customer-description-time'>
+                        Giờ đi thu: 8:00 
+                        </div>
+                    </div>
+                </li>
             </ul>
             <FooterApp />
             

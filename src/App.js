@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {
@@ -46,14 +46,15 @@ import FooterApp from './components/FooterApp/FooterApp';
 import HeaderHistory from './components/HeaderHistory/HeaderHistory';
 import HeaderHistoryRecharge from './components/HeaderHistoryRecharge/HeaderHistoryRecharge';
 import HeaderApp from './components/HeaderApp/HeaderApp';
+import Protected from './components/Protected';
 
 
 
 
 
 function App() {
-  
-
+  const [isLoggedIn, setIsLoggedIn] = useState(null);
+  console.log(isLoggedIn);
   return (
 
 
@@ -62,32 +63,161 @@ function App() {
       <Route path="/login" element={<Login />} />
 
 
-      <Route path='/account-user' element={<Account />}></Route>
+      <Route
+        path='/account-user'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <Account />
+          </Protected>}>
 
-      <Route path='/setting' element={<Setting />}></Route>
+      </Route>
 
-      <Route path='/information-user' element={<InformationUser />}></Route>
+      <Route
+        path='/setting'
+        element={<Protected isLoggedIn={isLoggedIn}>
+          <Setting />
+        </Protected>}>
 
-      <Route path='/helps' element={<Helps />}></Route>
+      </Route>
 
-      <Route path='/recharge-money' element={<Recharge />}></Route>
+      <Route
+        path='/information-user'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <InformationUser />
+          </Protected>}>
 
-      <Route path='/recharge-confirm' element={<RechargeConfirm />}></Route>
+      </Route>
 
-      <Route path='/history' element={<History />}></Route>
+      <Route
+        path='/helps'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <Helps />
+          </Protected>}>
 
-      <Route path='/history-recharge' element={<HistoryRecharge />}></Route>
+      </Route>
 
-      <Route path='/home-page' element={<HomePage />}> </Route>
+      <Route
+        path='/recharge-money'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <Recharge />
+          </Protected>
+        }>
 
-      <Route path='/change-password' element={<ForgotPassword />}></Route>
+      </Route>
 
-      <Route path='/success-password' element={<SuccessPassword />}> </Route>
-      <Route path="/detail1" element={<Detail1 />}></Route>
-      <Route path='/detail2' element={<Detail2 />}></Route>
-      <Route path='/list-money-1' element={<ListMoney1 />}></Route>
-      <Route path='/list-money-complete' element={<ListMoneyComplete />}></Route>
-      <Route path='/cash-complete' element={<CashComplete />}></Route>
+      <Route
+        path='/recharge-confirm'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <RechargeConfirm />
+          </Protected>
+        }>
+
+      </Route>
+
+
+
+      <Route
+        path='/history'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <History />
+          </Protected>
+        }></Route>
+
+      <Route
+        path='/history-recharge'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <HistoryRecharge />
+          </Protected>
+        }>
+
+      </Route>
+
+      <Route
+        path='/home-page'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <HomePage />
+          </Protected>
+        }>
+      </Route>
+
+
+      <Route
+        path='/change-password'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <ForgotPassword />
+          </Protected>
+        }>
+
+      </Route>
+
+      <Route
+        path='/success-password'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <SuccessPassword />
+          </Protected>
+        }>
+      </Route>
+
+
+      <Route
+        path="/detail1"
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <Detail1 />
+          </Protected>
+        }>
+
+      </Route>
+
+
+      <Route
+        path='/detail2'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <Detail2 />
+          </Protected>
+        }>
+      </Route>
+
+
+      <Route
+        path='/list-money-1'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <ListMoney1 />
+          </Protected>
+        }>
+
+      </Route>
+
+      <Route
+        path='/list-money-complete'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <ListMoneyComplete />
+          </Protected>
+        }>
+
+      </Route>
+
+      <Route
+        path='/cash-complete'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <CashComplete />
+          </Protected>
+        }>
+
+      </Route>
       {/* <Verification /> */}
       {/* <IdentificationCardChip /> */}
       {/* <FrontCamera /> */}
@@ -97,12 +227,12 @@ function App() {
       {/* <FaceID /> */}
       {/* <IDCard /> */}
       {/* <ValidationResults /> */}
-     
-      
-    </Routes>
-        
 
-  
+
+    </Routes>
+
+
+
 
 
   );

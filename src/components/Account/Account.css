@@ -205,9 +205,9 @@
 .account-content-wrap {
     position: relative;
     width: 414px;
-    height: 652px;
+    height: 100%;
     padding: 330px 0 0 20px;
-    overflow-y: scroll;
+  
    
 }
 

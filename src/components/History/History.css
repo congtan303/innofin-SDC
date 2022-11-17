@@ -3,20 +3,22 @@
     top: 178px;
     overflow-y: scroll;
     width: 414px;
-    height: 476px;
-
+    height: 548px;
     padding: 8px;
 }
 
 .history-list::-webkit-scrollbar-track {
     background-color: #DFF5FF;
+ 
   }
   .history-list::-webkit-scrollbar {
     width: 4px;
+   
   }
 
   .history-list::-webkit-scrollbar-thumb {
     background-color: #32CBF9;
+    
   }
 .history-list-description {
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);

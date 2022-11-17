@@ -41,9 +41,6 @@ export default function Login() {
                 // Do somthing
                 console.error(err);
             })
-
-
-
     }
 
     // ẩn hiện password

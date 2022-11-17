@@ -53,6 +53,28 @@ export default function History() {
                         <div className='history-list-time'>Giờ thu: 8:00 AM, ngày 18/09/2019</div>
                         <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
                     </li>
+                    <li className='history-list-description'>
+                        <div className='history-list-title'>HD Bank</div>
+                        <div className='history-list-address'>25 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. HCM</div>
+                        <div className='history-list-money'>Số tiền đã thu: 10,000,000</div>
+                        <div className='history-list-time'>Giờ thu: 8:00 AM, ngày 18/09/2019</div>
+                        <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
+                    </li>
+                    <li className='history-list-description'>
+                        <div className='history-list-title'>HD Bank</div>
+                        <div className='history-list-address'>25 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. HCM</div>
+                        <div className='history-list-money'>Số tiền đã thu: 10,000,000</div>
+                        <div className='history-list-time'>Giờ thu: 8:00 AM, ngày 18/09/2019</div>
+                        <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
+                    </li>
+                    <li className='history-list-description'>
+                        <div className='history-list-title'>HD Bank</div>
+                        <div className='history-list-address'>25 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. HCM</div>
+                        <div className='history-list-money'>Số tiền đã thu: 10,000,000</div>
+                        <div className='history-list-time'>Giờ thu: 8:00 AM, ngày 18/09/2019</div>
+                        <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
+                    </li>
+
                     
 
                 </ul>

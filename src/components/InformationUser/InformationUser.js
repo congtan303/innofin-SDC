@@ -1,18 +1,20 @@
 import { Link } from 'react-router-dom'
-import TextField from '@material-ui/core/TextField';
+
+import DatePicker from 'react-datepicker'
+import "react-datepicker/dist/react-datepicker.css";
 import { useState } from 'react'
 import './InformationUser.css'
 import Union from '../Union/Union'
 import ChangeAvatar from '../ChangeAvatar/ChangeAvatar';
 export default function InfomationUser() {
+    const [startDate, setStartDate] = useState(new Date());
 
-    const [defaultValue, setDefaultValue] = useState("")
 
     const [numberID, setNumberID] = useState({
         id: "2736 56 276",
         isInEditNumberID: false
     })
-    
+
     const changeEditNumberID = () => {
         setNumberID({
             isInEditNumberID: !numberID.isInEditNumberID,
@@ -33,7 +35,7 @@ export default function InfomationUser() {
         })
     }
 
-    
+
     return (
         <div className='info-user-container'>
             <div className="btn-setting">
@@ -52,7 +54,7 @@ export default function InfomationUser() {
             </div>
 
             <div className="information-card-avatar">
-            <ChangeAvatar />
+                <ChangeAvatar />
             </div>
             <div className="information-card-description">
                 <div className="information-name">Lê Minh Sơn</div>
@@ -61,22 +63,16 @@ export default function InfomationUser() {
             <hr className="information-hr"></hr>
             <div className="information-account-balance">Số dư tài khoản điểm <span className="information-coin">200,000,000 </span> điểm</div>
             <div className="information-user">
-            <TextField
-                id="date"
-                type="date"
-                defaultValue={defaultValue}
-                onChange={e => setDefaultValue(e.target.value)}
-                InputLabelProps={{
-                    shrink: true,
-                }}
-            />
+                <div className='date-picker'>
+                    <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+                </div>
+
+
             </div>
             <div className="information-user-date">
                 Ngày sinh:
             </div>
-            <div className="information-user-number-date">
-             
-            </div>
+            
             <div className="information-edit-date-background">
                 <div className="information-edit-date-img"></div>
             </div>
@@ -88,28 +84,28 @@ export default function InfomationUser() {
 
             {numberID.isInEditNumberID ? <div>
                 <input type="text" defaultValue={numberID.id} className="input-cccd" ></input>
-               
+
             </div>
-            :  <div className="information-user-number-CCCD">{numberID.id}</div>
+                : <div className="information-user-number-CCCD">{numberID.id}</div>
             }
-            
+
             <div className="information-edit-CCCD-background" onClick={changeEditNumberID}>
                 <div className="information-edit-CCCD-img"></div>
             </div>
 
             <div className='information-user-hr-2'></div>
 
-            
+
             <div className="information-user-phone">
                 Số điện thoại:
             </div>
-            {phoneNumber.isInEditNumberPhone? <input type="text" defaultValue={phoneNumber.phone} className="input-phone-number" ></input>
-            :<div className="information-user-phone-numb">{phoneNumber.phone}</div>}
-            
+            {phoneNumber.isInEditNumberPhone ? <input type="text" defaultValue={phoneNumber.phone} className="input-phone-number" ></input>
+                : <div className="information-user-phone-numb">{phoneNumber.phone}</div>}
+
             <div className="information-edit-phone-number-background" onClick={changeEditNumberPhone}>
                 <div className="information-edit-phone-number-img"></div>
             </div>
-            
+
             <Union />
         </div>
     )

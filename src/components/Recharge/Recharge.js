@@ -5,9 +5,6 @@ import './Recharge.css'
 export default function Recharge() {
     const [moneys, setMoneys] = useState('')
 
-   
-
-
    const handleOnChangeMoney = (event) => {
     const {value} = event.target
         setMoneys(value.replaceAll(",", ''))

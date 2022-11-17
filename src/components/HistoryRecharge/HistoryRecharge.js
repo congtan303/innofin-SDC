@@ -61,7 +61,7 @@ export default function HistoryRecharge() {
                         <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
                         <div className='history-list-status-icon-canceled-img'>
                             <div className='history-list-status-icon-canceled-img-2'>
-                                <i class="far fa-times-circle icon-canceled-img"></i>
+                                <i className="far fa-times-circle icon-canceled-img"></i>
                             </div>
                         </div>
                     </li>
@@ -72,7 +72,7 @@ export default function HistoryRecharge() {
                         <div className='history-list-trading-code'>Mã giao dịch: 123666</div>
                         <div className='history-list-status-icon-canceled-img'>
                             <div className='history-list-status-icon-canceled-img-2'>
-                                <i class="far fa-times-circle icon-canceled-img"></i>
+                                <i className="far fa-times-circle icon-canceled-img"></i>
                             </div>
                         </div>
                     </li>

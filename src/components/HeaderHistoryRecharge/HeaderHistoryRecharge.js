@@ -6,9 +6,12 @@ export default function HeaderHistoryRecharge() {
     return (
         <div className='container'>
             <div className="header-history">
-                <div className='header-history-previous-btn'>
+                <Link to="/home-page">
+                    <div className='header-history-previous-btn'>
 
-                </div>
+                    </div>
+                </Link>
+
                 <div className="header-history-title">Lịch sử</div>
                 <div className="header-history-notification">
                     <div className="header-history-notification-number">1</div>

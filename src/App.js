@@ -46,24 +46,21 @@ import FooterApp from './components/FooterApp/FooterApp';
 import HeaderHistory from './components/HeaderHistory/HeaderHistory';
 import HeaderHistoryRecharge from './components/HeaderHistoryRecharge/HeaderHistoryRecharge';
 import HeaderApp from './components/HeaderApp/HeaderApp';
+
+
+
+
+
 function App() {
-
-  const [token, setToken] = useState();
-
-  if(!token) {
-    return <Login setToken={setToken} />
-  }
+  
 
   return (
 
 
-
-
-
     <Routes>
       <Route path='/' element={<Slash />}> </Route>
+      <Route path="/login" element={<Login />} />
 
-      <Route path='/login' element={<Login />} ></Route>
 
       <Route path='/account-user' element={<Account />}></Route>
 
@@ -106,11 +103,6 @@ function App() {
         
 
   
-
-
-
-
-
 
 
   );

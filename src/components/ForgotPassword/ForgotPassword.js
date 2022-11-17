@@ -23,7 +23,7 @@ const ForgotPassword = () => {
         <div className='forgot-background'>
             <Link to="/setting">
                     <button className="previous-button">
-                        <i class="fal fa-chevron-left icon-back"></i>
+                        <i className="fal fa-chevron-left icon-back"></i>
                     </button>
                 </Link>
             <div className="Forgot-icon">
@@ -34,19 +34,19 @@ const ForgotPassword = () => {
                 mật khẩu tới email đã đăng ký</div>
 
             <div className="form-input-forgot-password">
-                <form class="w3-container">
+                <form className="w3-container">
                     <p>
                         <label className='label-text'>ID Đăng nhập:</label>
-                        <input class="w3-input forgot-password-input" type={values.isShowPassword ? "text" : "password"} /></p>
+                        <input className="w3-input forgot-password-input" type={values.isShowPassword ? "text" : "password"} /></p>
                 </form>
                 <Link to='/success-password'>
-                    <button class="btn-forgot-password">Lấy lại mật khẩu</button>
+                    <button className="btn-forgot-password">Lấy lại mật khẩu</button>
                 </Link>
 
                 <span onClick={() => { handleShowHidePassword() }}>
                     <i className={values.isShowPassword ? 'fas fa-eye-slash input-eye input-icon-forgot' : 'fas fa-eye-slash input-icon-forgot'}></i>
                 </span>
-                {/* <i class="fas fa-eye-slash input-eye input-icon"></i> */}
+                {/* <i className="fas fa-eye-slash input-eye input-icon"></i> */}
 
 
             </div>

@@ -9,7 +9,7 @@ const Slash = () => {
                 <div className="finance__brand">
 
                 </div>
-                <div class="finance__information">
+                <div className="finance__information">
                     Xin chào! Cảm ơn bạn đã tham gia dịch vụ thu hộ Innofin. Vui lòng bấm bắt đầu để truy cập
                     vào hệ thống
                 </div>

@@ -54,7 +54,7 @@ import Protected from './components/Protected';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(null);
-  console.log(isLoggedIn);
+ 
   return (
 
 

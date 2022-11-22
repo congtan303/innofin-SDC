@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
 import './HomePage.css'
 import UnionTop from '../Union-top/UnionTop'
 import FooterApp from '../FooterApp/FooterApp'
@@ -9,6 +11,39 @@ import avatarSHB from '../../asset/Group-SHB.png'
 import avatarVPBank from '../../asset/Group-VP-Bank.png'
 import avatarVPBank2 from '../../asset/image-vp-bank.png'
 export default function HomePage() {
+
+    // hàm tự động thêm dấu phẩy vào số tiền
+    
+
+
+
+    // lấy data từ api
+    const [dataCustomer, setDataCustomer] = useState([])
+   if(isNaN(dataCustomer)) {
+    console.log( dataCustomer.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))
+   
+   }
+
+    const access_token = localStorage.getItem('access_token')
+
+    const config = {
+        headers: {
+            'Authorization': 'Bearer ' + access_token
+        }
+    }
+
+    useEffect(() => {
+        axios.get('https://home-dev.innofin.vn/api/app/mobile/my-request-collection?cityId&districtId&wardId&merchantId&page=1', config)
+            .then(response => {
+                console.log(response.data[0]);
+                setDataCustomer(response.data[0])
+            })
+            .catch(err => {
+                console.log(err)
+            })
+
+    }, [])
+
     return (
         <div className='container'>
             <div className="Home-page-header">
@@ -36,189 +71,37 @@ export default function HomePage() {
                 </div>
             </div>
 
-
-
+            {/* list */}
             <ul className='list-customer'>
                 <Link to="/detail1">
-                <li className='list-customer-information'>
-                    <div className='list-customer-avatar'>
-                        <img src={avatarHD} ></img>
-                    </div>
-                    <div className='list-customer-description'>
-                        <div className='list-customer-description-name'>
-                            HD Bank
+
+                    <li className='list-customer-information'>
+                        <div >
+                            <img src={dataCustomer.storeLogo} className='list-customer-avatar'></img>
                         </div>
-                        <div className='list-customer-description-address'>
-                        25 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. Hồ Chí Minh
+                        <div className='list-customer-description'>
+                            <div className='list-customer-description-name'>
+                                {dataCustomer.storeName}
+                            </div>
+                            <div className='list-customer-description-address'>
+                                {dataCustomer.storeAddress}
+                            </div>
+                            <div className='list-customer-description-money'>
+                                Số tiền phải thu: <span className='blue'> {dataCustomer.total}</span>
+                            </div>
+                            <div className='list-customer-description-time'>
+                                Giờ đi thu: 8:00
+                            </div>
                         </div>
-                        <div className='list-customer-description-money'>
-                        Số tiền phải thu: 10,000,000
-                        </div>
-                        <div className='list-customer-description-time'>
-                        Giờ đi thu: 8:00 
-                        </div>
-                    </div>
-                </li>
+                    </li>
+
+
                 </Link>
-                
-                <li className='list-customer-information'>
-                    <div className='list-customer-avatar'>
-                        <img src={avatarPharma} ></img>
-                    </div>
-                    <div className='list-customer-description'>
-                        <div className='list-customer-description-name'>
-                        Pharmacity
-                        </div>
-                        <div className='list-customer-description-address'>
-                        248A Nơ Trang Long, P.12, Q.Bình Thạnh, TP.Hồ Chí Minh.
-                        </div>
-                        <div className='list-customer-description-money'>
-                        Số tiền phải thu: 30,000,000
-                        </div>
-                        <div className='list-customer-description-time'>
-                        Giờ đi thu: 8:00 
-                        </div>
-                    </div>
-                </li>
-                <li className='list-customer-information'>
-                    <div className='list-customer-avatar'>
-                        <img src={avatarPhanoPharma} className='list-customer-avatar'></img>
-                    </div>
-                    <div className='list-customer-description'>
-                        <div className='list-customer-description-name'>
-                        Phano Pharmacy
-                        </div>
-                        <div className='list-customer-description-address'>
-                        09 Hồ Biểu Chánh, Phường 11, Quận Phú Nhuận, TP.HCM
-                        </div>
-                        <div className='list-customer-description-money'>
-                        Số tiền phải thu: 10,000,000
-                        </div>
-                        <div className='list-customer-description-time'>
-                        Giờ đi thu: 8:00 
-                        </div>
-                    </div>
-                </li>
-                <li className='list-customer-information'>
-                    <div className='list-customer-avatar'>
-                        <img src={avatarSHB} className='list-customer-avatar'></img>
-                    </div>
-                    <div className='list-customer-description'>
-                        <div className='list-customer-description-name'>
-                        Ngân hàng SHB
-                        </div>
-                        <div className='list-customer-description-address'>
-                        122 Trần Quốc Thảo, Phường 2, Quận 3, Thành phố Hồ Chí Minh
-                        </div>
-                        <div className='list-customer-description-money'>
-                        Số tiền phải thu: 10,000,000
-                        </div>
-                        <div className='list-customer-description-time'>
-                        Giờ đi thu: 8:00 
-                        </div>
-                    </div>
-                </li>
-                <li className='list-customer-information'>
-                    <div className='list-customer-avatar'>
-                        <img src={avatarVPBank} className='list-customer-avatar'>
-                            
-                        </img>
-                        <img src={avatarVPBank2} className="img-vp-bank-2"></img>
-                    </div>
-                    <div className='list-customer-description'>
-                        <div className='list-customer-description-name'>
-                        VP Bank
-                        </div>
-                        <div className='list-customer-description-address'>
-                        166 Nguyễn Công Trứ, Phường Nguyễn Thái Bình, Quận 1, Tp. Hồ Chí Minh
-                        </div>
-                        <div className='list-customer-description-money'>
-                        Số tiền phải thu: 10,000,000
-                        </div>
-                        <div className='list-customer-description-time'>
-                        Giờ đi thu: 8:00 
-                        </div>
-                    </div>
-                </li>
-                <li className='list-customer-information'>
-                    <div className='list-customer-avatar'>
-                        <img src={avatarHD} className='list-customer-avatar'></img>
-                    </div>
-                    <div className='list-customer-description'>
-                        <div className='list-customer-description-name'>
-                            HD Bank
-                        </div>
-                        <div className='list-customer-description-address'>
-                        25 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. Hồ Chí Minh
-                        </div>
-                        <div className='list-customer-description-money'>
-                        Số tiền phải thu: 10,000,000
-                        </div>
-                        <div className='list-customer-description-time'>
-                        Giờ đi thu: 8:00 
-                        </div>
-                    </div>
-                </li>
-                <li className='list-customer-information'>
-                    <div className='list-customer-avatar'>
-                        <img src={avatarHD} className='list-customer-avatar'></img>
-                    </div>
-                    <div className='list-customer-description'>
-                        <div className='list-customer-description-name'>
-                            HD Bank
-                        </div>
-                        <div className='list-customer-description-address'>
-                        25 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. Hồ Chí Minh
-                        </div>
-                        <div className='list-customer-description-money'>
-                        Số tiền phải thu: 10,000,000
-                        </div>
-                        <div className='list-customer-description-time'>
-                        Giờ đi thu: 8:00 
-                        </div>
-                    </div>
-                </li>
-                <li className='list-customer-information'>
-                    <div className='list-customer-avatar'>
-                        <img src={avatarHD} className='list-customer-avatar'></img>
-                    </div>
-                    <div className='list-customer-description'>
-                        <div className='list-customer-description-name'>
-                            HD Bank
-                        </div>
-                        <div className='list-customer-description-address'>
-                        25 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. Hồ Chí Minh
-                        </div>
-                        <div className='list-customer-description-money'>
-                        Số tiền phải thu: 10,000,000
-                        </div>
-                        <div className='list-customer-description-time'>
-                        Giờ đi thu: 8:00 
-                        </div>
-                    </div>
-                </li>
-                <li className='list-customer-information'>
-                    <div className='list-customer-avatar'>
-                        <img src={avatarHD} className='list-customer-avatar'></img>
-                    </div>
-                    <div className='list-customer-description'>
-                        <div className='list-customer-description-name'>
-                            HD Bank
-                        </div>
-                        <div className='list-customer-description-address'>
-                        25 Bis Nguyễn Thị Minh Khai, Quận 1, Tp. Hồ Chí Minh
-                        </div>
-                        <div className='list-customer-description-money'>
-                        Số tiền phải thu: 10,000,000
-                        </div>
-                        <div className='list-customer-description-time'>
-                        Giờ đi thu: 8:00 
-                        </div>
-                    </div>
-                </li>
+
+
             </ul>
             <FooterApp />
-            
+
 
 
         </div>

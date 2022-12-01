@@ -136,7 +136,7 @@ element::-webkit-scrollbar {
     top: 176px;
     overflow-y: scroll;
     width: 414px;
-    height: 450px;
+    height: 455px;
     padding: 8px;
 }
 
@@ -157,7 +157,7 @@ element::-webkit-scrollbar {
     border-radius: 10px;
     display: flex;
     /* padding: 12px; */
-    
+    cursor: pointer;
     align-items: center;
     padding: 10px 14px;
 }
@@ -316,4 +316,23 @@ border-radius: 10px;
     text-align: center;
 
     color: #AEAEAE;
+}
+
+/* button check data */
+
+.check-data-payment {
+    position: absolute;
+    right: 20px;
+    top: 560px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2CD1F8;
+    color: white;
+    z-index: 20;
+    cursor: pointer;
 }

@@ -57,8 +57,6 @@ export default function Login() {
         }, 3000);
     };
 
-
-
     return (
         <div className="Login__container">
             <div className="header">
@@ -75,7 +73,7 @@ export default function Login() {
                         <label className="input-title">ID</label>
                         <input
                             className="w3-input input-user"
-                            type="text" onChange={(e) => setValues({ ...values, username: e.target.value })} /></p>
+                            type="text" onChange={({target}) => setValues({ ...values, username: target.value })} /></p>
                     <hr className='input-login-hr'></hr>
 
                     <p className='div-input-password'>

@@ -1,11 +1,44 @@
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import './CashComplete.css';
 import logoComplete from '../../asset/image\ 12.png'
 import logoBrand from '../../asset/image\ 19-pizza-hut.png'
 import UnionTop from '../Union-top/UnionTop';
-
+import axios from 'axios'
 import FooterHistory from '../FooterHistory/FooterHistory';
+import { useState } from 'react';
+import { useEffect } from 'react';
 export default function CashComplete() {
+    const [dataComplete, setDataComplete] = useState([])
+
+    const bodyFormData = new FormData();
+
+    let { id } = useParams();
+
+    bodyFormData.append('id', id);
+    // bodyFormData.append('image', imageFile);
+
+    const dataObject = dataComplete.find((item) => item.id === id)
+    const lng = dataObject?.lng
+    const lat = dataObject?.lat
+    console.log(id);    
+    console.log(lng, lat);
+
+    
+    const access_token = localStorage.getItem('access_token')
+
+    const config = {
+        headers: {
+            'Authorization': 'Bearer ' + access_token
+        }
+    }
+
+    useEffect(() => {
+        axios.post('https://home-dev.innofin.vn/api/app/mobile/complete-collection', config, bodyFormData)
+        .then((response) => {
+            console.log(response.data);
+        })
+    })
+
     return (
         <div className="container">
             {/* header */}

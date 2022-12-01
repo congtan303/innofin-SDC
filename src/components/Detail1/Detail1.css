@@ -71,17 +71,22 @@
 }
 
 .detail-1-avatar {
-    background: url('../../asset/Group-thu-ho-hd-bank.png');
+   
     position: absolute;
     width: 95px;
     height: 95px;
     left: 134px;
     top: 18px;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
 }
 
 .detail-1-name {
-    position: absolute;
-    width: 66px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 116px;
+    width: 100%;
     height: 22px;
     left: 152px;
     top: 120px;
@@ -132,6 +137,26 @@
     line-height: 22px;
     letter-spacing: -0.5px;
     color: #636363;
+}
+
+.user-payment,
+.user-payment-number-phone {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: -0.5px;
+
+    color: #636363;
+}
+.user-payment {
+    margin-left: 4px;
+}
+
+.user-payment-number-phone {
+    margin-left: 16px;
 }
 
 .detail-1-name-money {

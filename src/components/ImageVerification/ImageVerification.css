@@ -12,41 +12,127 @@
 
 .header-img-previous-btn {
     position: absolute;
-width: 9px;
-height: 14px;
-left: 30px;
-top: 51px;
-color: white;
+    width: 9px;
+    height: 14px;
+    left: 30px;
+    top: 51px;
+    color: white;
 }
 
 .header-image-verification-title {
     font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-/* or 120% */
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
 
-text-align: center;
-letter-spacing: -0.5px;
+    text-align: center;
+    letter-spacing: -0.5px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
+}
+
+.body-image-verification {
+    height: 522px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.body-image-verification::-webkit-scrollbar {
+    width: 0px;
+}
+
+.body-image-verification::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
 }
 
 .description-verification {
     margin: 20px 30px;
     font-weight: 400;
-font-size: 14px;
-line-height: 22px;
-/* identical to box height, or 157% */
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
 
-letter-spacing: -0.5px;
+    letter-spacing: -0.5px;
 
-color: #636363;
+    color: #636363;
+}
+
+.div-image-verification {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
 }
 
 .image-verification {
-    width: 380px;
+    width: 360px;
     height: 400px;
-    background-color: #58A0FA;
-    margin: -12px 0 0 20px;
+    
+
+}
+
+.div-button-camera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.button-camera {
+    width: 100px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #2CD1F8;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+.button-camera , i , label, input {
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.button-camera-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-camera-verify {
+    margin-top: 1px;
+}
+
+.div-button-verifycation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button-verifycation-text {
+    width: 360px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2CD1F8;
+    color: white;
+    font-weight: 500;
 }

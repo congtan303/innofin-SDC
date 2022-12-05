@@ -8,13 +8,17 @@ import SwipeableButton from '../SwipeButton/SwipeButton'
 import FooterApp from '../FooterApp/FooterApp'
 
 export default function Detail() {
-    let { id } = useParams();
+    let { id, lat, lng } = useParams();
+    console.log(id);
+    console.log(lng);
+    console.log(lat);
     const navigate = useNavigate()
     const onSuccess = () => {
-        navigate(`/cash-complete/${id}`)
+        navigate(`/image-verify/${id}-${lat}-${lng}`);
     }
 
     const [dataPayment, setDataPayment] = useState([])
+
     const access_token = localStorage.getItem('access_token')
 
     const config = {
@@ -23,13 +27,17 @@ export default function Detail() {
         }
     }
 
-    useEffect(() => {
-        axios.get('https://home-dev.innofin.vn/api/app/mobile/start-collect', config)
-        .then( (response) => {
-            console.log(response.data);
-            setDataPayment(response.data)
-        })
-    },[])
+        // get API theo id 
+        useEffect(() => {
+            axios.get(`https://home-dev.innofin.vn/api/app/mobile/get-cash-collection/${id}`, config)
+                .then((response) => {
+                    setDataPayment(response.data)
+                    console.log(response.data);
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+        }, [])
 
 
     return (

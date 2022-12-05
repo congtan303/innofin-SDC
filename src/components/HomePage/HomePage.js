@@ -14,12 +14,12 @@ function HomePage() {
     const { dataCustomer } = useContext(AppContext);
   
     
-    const [isPayment, setIsPayment] = useState([])
+    const [isPayment, setIsPayment] = useState(false)
+
     const handlePayment = () => {
-        navigate(`/detail2/${isPayment.id}`)
+        navigate(`/detail2/${isPayment.id}-${isPayment.lat}-${isPayment.lng}`)
     }
 
-    
     const access_token = localStorage.getItem('access_token')
 
     const config = {
@@ -27,15 +27,13 @@ function HomePage() {
             'Authorization': 'Bearer ' + access_token
         }
     }
-
+    // get API check data nào đang ở trạng thái "đã nhận"
     useEffect(() => {
         axios.get('https://home-dev.innofin.vn/api/app/mobile/my-progress', config)
             .then(response => {
                 setIsPayment(response.data)
-                console.log(response.data);
             })
     }, [])
-   console.log(isPayment.id);
 
     return (
         <div className='container'>
@@ -47,7 +45,6 @@ function HomePage() {
 
                 </div>
                 <div className="home-page-header-welcome">Xin chào Lê Minh Sơn</div>
-
 
                 <UnionTop />
                 <div className='homepage-bell-notification'>
@@ -68,8 +65,8 @@ function HomePage() {
 
             <ul className='list-customer'>
 
-                {dataCustomer.map((data) => (
-                    <Link to={`/detail1/${data.id}`} key={data.id} >
+                {dataCustomer && dataCustomer.map((data) => (
+                    <Link to={`/detail1/${data.id}-${data.lat}-${data.lng}`} key={data.id} >
                         <li className='list-customer-information' >
                             <div>
                                 <img src={data.storeLogo} className='list-customer-avatar'></img>
@@ -95,10 +92,10 @@ function HomePage() {
                 ))}
 
             </ul>
-            {isPayment ? <div className='check-data-payment' onClick={handlePayment}>
+            {!isPayment ? '' : <div className='check-data-payment' onClick={handlePayment}>
+                {console.log(isPayment) }
                 <i className="far fa-biking"></i>
-            </div> : ''}
-
+            </div>}
 
             {/* footer */}
             <FooterApp />

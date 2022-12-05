@@ -48,7 +48,7 @@ import HeaderHistoryRecharge from './components/HeaderHistoryRecharge/HeaderHist
 import HeaderApp from './components/HeaderApp/HeaderApp';
 import Protected from './components/Protected';
 import ImageVerification from './components/ImageVerification/ImageVerification';
-
+import LoaderAnimation from './components/LoaderAnimation/LoaderAnimation';
 
 
 
@@ -167,7 +167,7 @@ function App() {
       </Route>
 
       <Route
-        path="/detail1/:id"
+        path="/detail1/:id-:lat-:lng"
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <Detail1 />
@@ -178,7 +178,7 @@ function App() {
 
 
       <Route
-        path='/detail2/:id'
+        path='/detail2/:id-:lat-:lng'
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <Detail2 />
@@ -208,7 +208,17 @@ function App() {
       </Route>
 
       <Route
-        path='/cash-complete/:id'
+        path='/image-verify/:id-:lat-:lng'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <ImageVerification />
+          </Protected>
+        }>
+
+      </Route>
+
+      <Route
+        path='/cash-complete/:id-:lat-:lng'
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <CashComplete />

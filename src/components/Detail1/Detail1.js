@@ -10,16 +10,32 @@ import { Route } from 'react-router-dom'
 import Detail2 from '../Detail2/Detail2'
 
 export default function Detail() {
+    let { id, lat, lng } = useParams();
 
     // hàm điều hướng tới trang thu hộ
     const navigate = useNavigate()
     const onSuccess = () => {
-        navigate(`/detail2/${id}`)
+        navigate(`/detail2/${id}-${lat}-${lng}`)
+        console.log(id);
+
+
+        // API bắt đầu nhận đơn
+        const access_token = localStorage.getItem('access_token')
+
+        const config = {
+            headers: {
+                'Authorization': 'Bearer ' + access_token
+            }
+        }
+        axios.get(`https://home-dev.innofin.vn/api/app/mobile/take-request?Id=${id}&Lat=${lat}&Lng=${lng}`,config)
+        .then((response) => {
+            console.log(response);
+        })
     }
 
     const [dataCustomer, setDataCustomer] = useState([])
 
-    let { id } = useParams();
+    
     // const dataObject = dataCustomer.find((item) => item.id === id)
     // const lng = dataObject?.lng
     // const lat = dataObject?.lat
@@ -40,6 +56,7 @@ export default function Detail() {
     //     'lng': lng,
     // }
 
+    // api nhận đơn theo id 
     useEffect(() => {
         axios.get(`https://home-dev.innofin.vn/api/app/mobile/get-cash-collection/${id}`, config)
             .then((response) => {
@@ -51,8 +68,6 @@ export default function Detail() {
             })
     }, [])
   
-    console.log(  dataCustomer.total);
-
 
     if (!dataCustomer) return <div>no data  </div>
     return (

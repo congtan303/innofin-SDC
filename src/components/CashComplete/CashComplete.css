@@ -1,3 +1,11 @@
+.title-complete {
+    margin: 0 auto;
+}
+
+.cash-complete-wrap {
+    margin-top: 6px;
+}
+
 .cash-complete-content-status {
     display: flex;
     flex-direction: column;
@@ -15,16 +23,16 @@
 
 .cash-complete-content::-webkit-scrollbar {
     width: 4px;
-  }
+}
 
-  .cash-complete-content::-webkit-scrollbar-track {
+.cash-complete-content::-webkit-scrollbar-track {
     background-color: #DFF5FF;
-  }
+}
 
-  .cash-complete-content::-webkit-scrollbar-thumb {
+.cash-complete-content::-webkit-scrollbar-thumb {
     background-color: #32CBF9;
     border-radius: 20px;
-  }
+}
 
 .cash-complete-content-status-icon {
     text-align: center;
@@ -59,6 +67,7 @@
     width: 95px;
     height: 95px;
     margin: 0 auto;
+    display: block;
 }
 
 .cash-complete-card-brand {
@@ -92,7 +101,10 @@
     margin: 6px auto;
 }
 
-.cash-complete-card-money {
+.cash-complete-card-money,
+.cash-complete-card-payer,
+.cash-complete-card-phone-number
+ {
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
@@ -101,70 +113,46 @@
     letter-spacing: -0.5px;
 
     color: #636363;
+    display: flex;
+    align-items: center;
 }
 
-.cash-complete-card-payer {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    /* identical to box height, or 129% */
 
-    letter-spacing: -0.5px;
-
-    color: #636363;
-}
-
-.cash-complete-card-phone-number {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    /* identical to box height, or 129% */
-
-    letter-spacing: -0.5px;
-
-    color: #636363;
-}
-
-.money-blue {
+.cash-complete-money {
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
     /* identical to box height, or 157% */
 
     letter-spacing: -0.5px;
-
     color: #2CD1F8;
-    position: absolute;
-    top: 169px;
-    left: 120px;
+    margin-left: 7px;
 }
 
-.text-payer {
+
+
+.cash-complete-payer {
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
     /* identical to box height, or 157% */
 
     letter-spacing: -0.5px;
-
+    margin-left: 9px;
     color: #636363;
-    position: absolute;
-    top: 191px;
-    left: 120px;
 }
 
-.text-phone-number {
+
+
+.cash-complete-phone-number {
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
     /* identical to box height, or 157% */
 
     letter-spacing: -0.5px;
-
+    margin-left: 21px;
     color: #636363;
-    position: absolute;
-    top: 213px;
-    left: 120px;
 }
 
 .cash-complete-btn-home {

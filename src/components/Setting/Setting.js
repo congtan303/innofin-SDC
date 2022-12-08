@@ -8,7 +8,7 @@ export default function Setting() {
             <div className="btn-setting">
                 <Link to="/account-user">
                     <button className="previous-button">
-                        <i class="fal fa-chevron-left icon-back"></i>
+                        <i className="fal fa-chevron-left icon-back"></i>
                     </button>
                 </Link>
 

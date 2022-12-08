@@ -12,42 +12,55 @@ import iconSetting from '../../asset/icon-setting.png'
 import settingBackground from '../../asset/Ellipse\ 15.png'
 import iconContact from '../../asset/Vector-contact.png'
 import contactBackground from '../../asset/Ellipse\ 16.png'
+import { useEffect, useState, useContext } from 'react';
+import axios from 'axios'
+import { UserContext } from '../../context/UserContext/UserContext';
+
 const Account = () => {
+    
+    const { dataUser } = useContext(UserContext);
+    console.log(dataUser);
+    
     return (
+        
         <div className="account-container">
             {/* header */}
-            <div className="Account-header">
-                <div className="Account-background">
-
+            
+                
+                    <div className="Account-header">
+                    <div className="Account-background">
+                    </div>
+                    <div className='account-icon-notification'>
+                        <img src={NotiBell} />
+                        <span className="account-number-noti">1</span>
+                    </div>
+    
+                    <div className="Account-header-avatar">
+                        <ChangeAvatar />
+                    </div>
+                    <Link to="/information-user">
+                        <div className="Account-header-name">{dataUser.surname} {dataUser.name}</div>
+                    </Link>
+    
+                    <div className="Account-header-number-id">Mã số ID: {dataUser.identityNumber}</div>
+                    <div className='account-union'>
+                        <img src={union} />
+                    </div>
                 </div>
-                <div className='account-icon-notification'>
-                    <img src={NotiBell} />
-                    <span className="account-number-noti">1</span>
+    
+                {/* body */}
+    
+                <div className="account-balance">
+                    <div className="account-balance-infomation">
+                        Số dư tài khoản điểm
+                    </div>
+                    <div>
+                        <span className="number-money">{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span> <span className="diem">điểm</span>
+                    </div>
                 </div>
-
-                <div className="Account-header-avatar">
-                    <ChangeAvatar />
-                </div>
-                <Link to="/information-user">
-                    <div className="Account-header-name">Lê Minh Sơn</div>
-                </Link>
-
-                <div className="Account-header-number-id">Mã số ID: 225556</div>
-                <div className='account-union'>
-                    <img src={union} />
-                </div>
-            </div>
-
-            {/* body */}
-
-            <div className="account-balance">
-                <div className="account-balance-infomation">
-                    Số dư tài khoản điểm
-                </div>
-                <div>
-                    <span className="number-money">200,000,000</span> <span className="diem">điểm</span>
-                </div>
-            </div>
+             
+           
+            
 
 
             <div className='account-content-wrap'>

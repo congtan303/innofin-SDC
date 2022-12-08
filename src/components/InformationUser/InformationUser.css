@@ -72,7 +72,7 @@
 
 .information-id {
     position: absolute;
-    width: 133px;
+    width: 100vw;
     height: 18px;
     left: 134px;
     top: 181px;
@@ -119,256 +119,6 @@
     color: #636363;
 }
 
-.purple {
-
-
-    color: #C52AFE;
-}
-
-.information-user {
-    position: absolute;
-    width: 360px;
-    height: 197px;
-    left: 27px;
-    top: 319px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
-    border-radius: 10px;
-}
-
-.information-user-date {
-    position: absolute;
-    width: 80px;
-    height: 18px;
-    left: 44px;
-    top: 345px;
-
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    /* identical to box height, or 112% */
-
-
-    color: #636363;
-}
-
-.information-user-number-date {
-    position: absolute;
-    width: 95px;
-    height: 18px;
-    left: 157px;
-    top: 345px;
-
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    /* identical to box height, or 112% */
-
-
-    color: #636363;
-}
-
-.information-user-CCCD {
-
-    position: absolute;
-    width: 120px;
-    height: 18px;
-    left: 44px;
-    top: 408px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    /* identical to box height, or 112% */
-
-
-    color: #636363
-}
-
-.information-user-number-CCCD {
-    position: absolute;
-    width: 102px;
-    height: 18px;
-    left: 173px;
-    top: 408px;
-
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    /* identical to box height, or 112% */
-
-
-    color: #636363;
-}
-
-.information-user-phone {
-    position: absolute;
-    width: 104px;
-    height: 18px;
-    left: 44px;
-    top: 474px;
-
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    /* identical to box height, or 112% */
-
-
-    color: #636363;
-}
-
-.information-user-phone-numb {
-    position: absolute;
-    width: 115px;
-    height: 18px;
-    left: 173px;
-    top: 474px;
-
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    /* identical to box height, or 112% */
-
-
-    color: #636363;
-}
-
-.information-edit-date-background {
-
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    left: 332px;
-    top: 333px;
-    border: 1px;
-    border-radius: 50%;
-    background: #DFF5FF;
-    cursor: pointer;
-}
-
-.information-edit-date-img {
-    background: url('../../asset/Vector-edit.png')no-repeat;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    right: 0;
-    bottom: 0;
-    color: #32CBF9;
-}
-
-.information-edit-CCCD-background {
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    left: 332px;
-    top: 397px;
-    border-radius: 50%;
-    background: #DFF5FF;
-    cursor: pointer;
-}
-
-.information-user-hr {
-    position: absolute;
-    width: 330px;
-    height: 0px;
-    left: 44px;
-    top: 385px;
-    border: 1px solid #DDDDDD;
-
-}
-
-.information-user-hr-2 {
-    position: absolute;
-    width: 330px;
-    height: 0px;
-    left: 44px;
-    top: 451px;
-
-    border: 1px solid #DDDDDD;
-}
-
-.input-cccd {
-    position: absolute;
-    top: 406px;
-    left: 170px;
-    width: 140px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    color: #636363;
-
-}
-
-.input-phone-number {
-    position: absolute;
-    top: 472px;
-    left: 170px;
-    width: 140px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
-    color: #636363;
-    border: none;
-    outline: none;
-}
-
-.input-cccd ::after {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: "";
-    position: absolute;
-    transform: scaleX(0);
-    transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-    border-bottom: 2px solid #3f51b5;
-    pointer-events: none
-}
-
-.information-edit-CCCD-img {
-    background: url('../../asset/Vector-edit.png')no-repeat;
-
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    right: 0;
-    bottom: 0;
-    color: #32CBF9;
-}
-
-.information-edit-phone-number-background {
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    left: 332px;
-    top: 461px;
-    border-radius: 50%;
-    background: #DFF5FF;
-    cursor: pointer;
-}
-
-.information-edit-phone-number-img {
-    background: url('../../asset/Vector-edit.png')no-repeat;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    right: 0;
-    bottom: 0;
-    color: #32CBF9;
-}
-
 .information-coin {
     width: 118px;
     height: 25px;
@@ -383,58 +133,98 @@
     color: #C52AFE;
 }
 
-/* date picker */
-
-.MuiInput-root {
-    position: absolute;
-    left: 142px;
-    top: 25px;
-    font-weight: 700 !important;
-    font-size: 16px !important;
-    line-height: 18px !important;
-    color: #636363 !important;
-    font-family: inherit !important;
+.purple {
+    color: #C52AFE;
 }
 
-.MuiInput-underline:before {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: "\00a0";
-    position: absolute;
-    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    border: none !important;
-    pointer-events: none;
-}
-
-.MuiInputBase-root {
-    /* color: rgba(0, 0, 0, 0.87); */
-    cursor: text;
-    display: inline-flex;
+.information-user-card {
     position: relative;
-    font-size: 1rem;
-    box-sizing: border-box;
+    width: 360px;
+    height: 197px;
+    left: 27px;
+    top: 319px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+
+/* btn edit */
+
+.btn-edit-information,
+.btn-edit-information-phone-number {
+    width: 42px;
+    position: relative;
+    height: 42px;
+    background-color: #DFF5FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
-    /* font-weight: 400; */
-    /* line-height: 1.1876em; */
-    /* letter-spacing: 0.00938em; */
+    cursor: pointer;
 }
 
-/* date picker */
+.btn-edit-information-phone-number {
+    margin-right: 10px;
+}
 
-.date-picker {
-    width: 96px;
-    height: 20px;
-    position: absolute;
-    top: 23px;
-    left: 142px;
-    font-style: normal;
+.information-date-of-birth-content{
+    margin-right: 50px;
+}
+
+.information-phone-number-content{
+    margin-right: 66px;
+}
+
+.information-phone-number-text{
+    margin-left: 10px;
+}
+
+.information-identity-number-content{
+    margin-right: 46px;
+}
+
+.information-date-of-birth-content,
+.information-identity-number-content,
+.information-phone-number-content {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 18px;
+font-size: 16px;
+line-height: 18px;
+/* identical to box height, or 112% */
+
+
+color: #636363;
 }
 
-.date-picker input {
-    color: #636363;
+/* date-of-birth */
+
+.information-date-of-birth,
+.information-identity-number,
+.information-phone-number {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    width: 100%;
 }
+
+
+/* hr */
+
+.hr-information-user{
+    border: 1px solid #DDDDDD;
+    width: 330px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+

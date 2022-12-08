@@ -1,7 +1,8 @@
 .history-list {
     position: absolute;
-    top: 178px;
+    top: 192px;
     overflow-y: scroll;
+    overflow-x: hidden;
     width: 414px;
     height: 455px;
     padding: 8px;

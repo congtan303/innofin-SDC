@@ -72,17 +72,17 @@ export default function Login() {
                     <p>
                         <label className="input-title">ID</label>
                         <input
-                            className="w3-input input-user"
+                            className="w3-input input-user-id"
                             type="text" onChange={({target}) => setValues({ ...values, username: target.value })} /></p>
-                    <hr className='input-login-hr'></hr>
+                    {/* <hr className='input-login-hr'></hr> */}
 
                     <p className='div-input-password'>
                         <label className="input-title">Mật khẩu</label>
                         <input
-                            className="w3-input input-user"
+                            className="w3-input input-user-password"
                             type={values.isShowPassword ? "text" : "password"}
                             onChange={(e) => setValues({ ...values, password: e.target.value })} /></p>
-                    <hr className='input-password-hr'></hr>
+                    {/* <hr className='input-password-hr'></hr> */}
                     <p className='div-btn-login'>
                         {/* <Link to="/account-user">
                          

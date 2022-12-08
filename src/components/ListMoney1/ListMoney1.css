@@ -133,6 +133,7 @@ thead {
 .input-radio {
     width: 14px;
     height: 14px;
+    margin-right: 10px;
 }
 
 /* btn edit table */

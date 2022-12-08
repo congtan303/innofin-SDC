@@ -1,10 +1,9 @@
 import './HeaderHistoryRecharge.css'
 import { Link } from 'react-router-dom'
 import UnionTop from '../Union-top/UnionTop'
-import FooterHistory from '../FooterHistory/FooterHistory'
 export default function HeaderHistoryRecharge() {
     return (
-        <div className='container'>
+        <div>
             <div className="header-history">
                 <Link to="/home-page">
                     <div className='header-history-previous-btn'>
@@ -30,7 +29,7 @@ export default function HeaderHistoryRecharge() {
                 <div className='header-history-navbar-recharge-active'>Nạp điểm</div>
                 <div className='header-history-navbar-seperate-border-active'></div>
             </div>
-            <FooterHistory />
+          
 
         </div>
     )

@@ -1,16 +1,12 @@
-import { TailSpin } from 'react-loader-spinner'
+import Spinner from 'react-bootstrap/Spinner';
+import './LoaderAnimation.css'
 export default function LoaderAnimation() {
     return (
         <div className='container'>
-            <TailSpin
-                height="40"
-                width="40"
-                radius="9"
-                color="#2CD1F8"
-                ariaLabel="loading"
-                wrapperStyle
-                wrapperClass
-            />
+            <div className='div-spinner'>
+            <Spinner animation="border" variant="info" />
+
+            </div>
         </div>
     )
 }

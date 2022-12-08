@@ -5,7 +5,6 @@ import phone from '../../asset/Vector-contact-user.png'
 import './Detail1.css'
 import SwipeableButton from '../SwipeButton2/SwipeButton2'
 import FooterApp from '../FooterApp/FooterApp'
-import { AppContext } from '../../context/AppContext'
 import { Route } from 'react-router-dom'
 import Detail2 from '../Detail2/Detail2'
 
@@ -60,16 +59,14 @@ export default function Detail() {
     useEffect(() => {
         axios.get(`https://home-dev.innofin.vn/api/app/mobile/get-cash-collection/${id}`, config)
             .then((response) => {
-                setDataCustomer(response.data)
                 console.log(response.data);
+                setDataCustomer(response.data)
             })
             .catch(err => {
                 console.log(err)
             })
     }, [])
   
-
-    if (!dataCustomer) return <div>no data  </div>
     return (
         <div>
             {/* header */}
@@ -97,29 +94,29 @@ export default function Detail() {
 
 
                 <div className="Detail-1-content">
-                        <div className="Detail-1-card-body" >
-                            <div >
-                                <img src={dataCustomer.storeLogo} className="detail-1-avatar"></img>
+                     
+                    <div className="Detail-1-card-body" >
+                    <div >
+                        <img src={dataCustomer.storeLogo} className="detail-1-avatar"></img>
+                    </div>
+                    <div className="detail-1-name">{dataCustomer.storeName}</div>
+                    <div className="detail-1-address">{dataCustomer.storeAddress}</div>
+                    <hr className="detail-1-hr" />
+                    <div className="detail-1-money">Số tiền phải thu: <strong className="blue text-detail-css">{dataCustomer.total}</strong></div>
+                    <div className="detail-1-name-money">Người nộp tiền: <span className='user-payment'>Nguyễn Thị Huệ</span></div>
+                    <div className="detail-1-phone-number">Số điện thoại: <span className='user-payment-number-phone'>{dataCustomer.storePhone}</span></div>
+
+                    <div className="detail-1-contact">
+                        <a href='tel:0923 221 554 '>
+                            <div className="detail-1-contact-background">
+                                <img src={phone}></img>
                             </div>
-                            <div className="detail-1-name">{dataCustomer.storeName}</div>
-                            <div className="detail-1-address">{dataCustomer.storeAddress}</div>
-                            <hr className="detail-1-hr" />
-                            <div className="detail-1-money">Số tiền phải thu: <strong className="blue text-detail-css">{dataCustomer.total}</strong></div>
-                            <div className="detail-1-name-money">Người nộp tiền: <span className='user-payment'>Nguyễn Thị Huệ</span></div>
-                            <div className="detail-1-phone-number">Số điện thoại: <span className='user-payment-number-phone'>{dataCustomer.storePhone}</span></div>
+                        </a>
 
-
-
-                            <div className="detail-1-contact">
-                                <a href='tel:0923 221 554 '>
-                                    <div className="detail-1-contact-background">
-                                        <img src={phone}></img>
-                                    </div>
-                                </a>
-
-
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                   
+                        
               
 
                     <ul className="detail-1-list-note">

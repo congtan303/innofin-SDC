@@ -89,10 +89,13 @@ input {
 
 }
 
-.input-user {
-    width: 320px;
+.input-user-id {
+    width: 328px;
     border: none;
     outline: none;
+    margin-top: 14px;
+    border-bottom: 1px solid #ccc;
+
 }
 
 .input-login-hr {
@@ -117,27 +120,20 @@ input {
 }
 
 .input-title {
-
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 18px;
-    /* identical to box height, or 112% */
-
-
     color: #636363;
 }
 
-.input-user {
-
+.input-user-password,
+.input-user-id {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    /* identical to box height, or 100% */
-
-
-    color: #636363;
+    color: #636363 !important;
 }
 
 .div-input-password {

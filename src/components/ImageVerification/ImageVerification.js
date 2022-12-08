@@ -81,8 +81,6 @@ export default function ImageVerification() {
                 </div>
 
 
-
-
                 <div className="div-button-verifycation">
                     <div className="button-verifycation">
                         <button className="button-verifycation-text" onClick={handleApi}>Hoàn thành</button>

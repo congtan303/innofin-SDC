@@ -6,7 +6,7 @@ export default function Helps() {
         <div className='help-container'>
             <Link to="/account-user">
                 <button className="previous-button">
-                    <i class="fal fa-chevron-left icon-back"></i>
+                    <i className="fal fa-chevron-left icon-back"></i>
                 </button>
             </Link>
             <div className="title">

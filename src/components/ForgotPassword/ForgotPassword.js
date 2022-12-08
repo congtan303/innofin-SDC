@@ -35,7 +35,7 @@ const ForgotPassword = () => {
 
             <div className="form-input-forgot-password">
                 <form className="w3-container">
-                    <p>
+                    <p className='form-forgot-password'>
                         <label className='label-text'>ID Đăng nhập:</label>
                         <input className="w3-input forgot-password-input" type={values.isShowPassword ? "text" : "password"} /></p>
                 </form>

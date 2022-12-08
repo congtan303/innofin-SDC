@@ -40,8 +40,7 @@
 }
 
 .question-wrap::-webkit-scrollbar-track {
-    margin-top: 60px;
-    margin-bottom: 530px;      /* color of the tracking area */
+      /* color of the tracking area */
   }
 
 .question-wrap::-webkit-scrollbar-thumb {
@@ -51,10 +50,6 @@
     /* creates padding around scroll thumb */
     height: 38px;
 }
-
-
-
-
 
 .content-title-icon {
     background: url('../../asset/Vector-question-icon.png') no-repeat;

@@ -72,12 +72,12 @@ export default function CashComplete() {
                         </div>
                         <div className='cash-complete-card-money'>
                             <div className='cash-complete-text-money'>Số tiền phải thu: </div>
-                            <span className="cash-complete-money">{dataComplete.total}</span>
+                            <span className="cash-complete-money">{dataComplete.total && dataComplete.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span>
                         </div>
                         <div className='cash-complete-card-payer'>
                             <div className='cash-complete-text-payer'> Người nộp tiền: </div>
 
-                            <span className='cash-complete-payer'>Nguyễn Thị Huệ</span>
+                            <span className='cash-complete-payer'>{dataComplete.staff}</span>
                         </div>
                         <div className='cash-complete-card-phone-number'>
                             <div className='cash-complete-text-phone-number'>Số điện thoại: </div>

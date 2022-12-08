@@ -10,37 +10,7 @@ import Detail2 from '../Detail2/Detail2'
 
 export default function Detail() {
     let { id, lat, lng } = useParams();
-
-    // hàm điều hướng tới trang thu hộ
-    const navigate = useNavigate()
-    const onSuccess = () => {
-        navigate(`/detail2/${id}-${lat}-${lng}`)
-        console.log(id);
-
-
-        // API bắt đầu nhận đơn
-        const access_token = localStorage.getItem('access_token')
-
-        const config = {
-            headers: {
-                'Authorization': 'Bearer ' + access_token
-            }
-        }
-        axios.get(`https://home-dev.innofin.vn/api/app/mobile/take-request?Id=${id}&Lat=${lat}&Lng=${lng}`,config)
-        .then((response) => {
-            console.log(response);
-        })
-    }
-
     const [dataCustomer, setDataCustomer] = useState([])
-
-    
-    // const dataObject = dataCustomer.find((item) => item.id === id)
-    // const lng = dataObject?.lng
-    // const lat = dataObject?.lat
-    // console.log(id);    
-    // console.log(lng, lat);
-
     const access_token = localStorage.getItem('access_token')
 
     const config = {
@@ -48,12 +18,22 @@ export default function Detail() {
             'Authorization': 'Bearer ' + access_token
         }
     }
+    // hàm điều hướng tới trang thu hộ
+    const navigate = useNavigate()
+    const onSuccess = () => {
+        navigate(`/detail2/${id}-${lat}-${lng}`)
+        console.log(id);
 
-    // const params = {
-    //     'id': id,
-    //     'lat': lat,
-    //     'lng': lng,
-    // }
+        // API bắt đầu nhận đơn
+       
+        axios.get(`https://home-dev.innofin.vn/api/app/mobile/take-request?Id=${id}&Lat=${lat}&Lng=${lng}`,config)
+        .then((response) => {
+            console.log(response);
+        })
+    }
+
+    
+
 
     // api nhận đơn theo id 
     useEffect(() => {
@@ -102,8 +82,8 @@ export default function Detail() {
                     <div className="detail-1-name">{dataCustomer.storeName}</div>
                     <div className="detail-1-address">{dataCustomer.storeAddress}</div>
                     <hr className="detail-1-hr" />
-                    <div className="detail-1-money">Số tiền phải thu: <strong className="blue text-detail-css">{dataCustomer.total}</strong></div>
-                    <div className="detail-1-name-money">Người nộp tiền: <span className='user-payment'>Nguyễn Thị Huệ</span></div>
+                    <div className="detail-1-money">Số tiền phải thu: <strong className="blue text-detail-css">{dataCustomer.total && dataCustomer.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") }</strong></div>
+                    <div className="detail-1-name-money">Người nộp tiền: <span className='user-payment'>{dataCustomer.staff}</span></div>
                     <div className="detail-1-phone-number">Số điện thoại: <span className='user-payment-number-phone'>{dataCustomer.storePhone}</span></div>
 
                     <div className="detail-1-contact">
@@ -116,9 +96,6 @@ export default function Detail() {
                     </div>
                 </div>
                    
-                        
-              
-
                     <ul className="detail-1-list-note">
                         <li>Khi bấm nút "bắt đầu" người nộp tiền sẽ được thông báo
                             rằng bạn sẽ đến vòng 15 phút

@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import './ListMoney1.css'
 import UnionTop from '../Union-top/UnionTop'
 import FooterHistory from '../FooterHistory/FooterHistory'
 import { useState } from 'react'
 export default function ListMoney() {
+    const {id,  lat, lng} = useParams()
+
     const [toggle, setToggle] = useState(false)
     const changeActive = () => {
        setToggle(!toggle)
@@ -116,7 +118,7 @@ export default function ListMoney() {
                 <button className="btn-edit-table">Sửa bảng kê</button>
 
 
-                <Link to="/list-money-complete">
+                <Link to={`/list-money-complete/${id}-${lat}-${lng}`}>
 
                     <button style={{background: toggle ? '#2CD1F8' : ''}} className="btn-complete-edit" onClick={changeActive}>Hoàn tất</button>
 

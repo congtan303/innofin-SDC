@@ -14,7 +14,7 @@ export default function Detail() {
     console.log(lat);
     const navigate = useNavigate()
     const onSuccess = () => {
-        navigate(`/image-verify/${id}-${lat}-${lng}`);
+        navigate(`/list-money-1/${id}-${lat}-${lng}`);
     }
 
     const [dataPayment, setDataPayment] = useState([])
@@ -76,8 +76,8 @@ export default function Detail() {
                     <div className="detail-1-name">{dataPayment.storeName}</div>
                     <div className="detail-1-address">{dataPayment.storeAddress}</div>
                     <hr className="detail-1-hr" />
-                    <div className="detail-1-money">Số tiền phải thu: <strong className="blue text-detail-css">{dataPayment.total}</strong></div>
-                    <div className="detail-1-name-money">Người nộp tiền: <strong className='text-detail-css'>Nguyễn Thị Huệ</strong></div>
+                    <div className="detail-1-money">Số tiền phải thu: <strong className="blue text-detail-css">{dataPayment.total && dataPayment.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</strong></div>
+                    <div className="detail-1-name-money">Người nộp tiền: <strong className='text-detail-css'>{dataPayment.staff}</strong></div>
                     <div className="detail-1-phone-number">Số điện thoại: <strong className='text-detail-css'>{dataPayment.storePhone}</strong></div>
                     <div className="detail-1-contact">
                         <a href='tel: 0923 221 554'>

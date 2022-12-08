@@ -12,16 +12,12 @@ import moment from 'moment'
 import { from } from 'form-data';
 
 
+
 export default function InfomationUser() {
     const { dataUser } = useContext(UserContext);
     // tạo biến datePicker
    
-    const [ dataIdentity, setDataIdentity ] = useState(dataUser.identityNumber)
-    // const [isInEditId, setIsInEditId] = useState(false)
-// console.log(isInEditId);
-    const changeIdentity = () => {
-       
-    }
+   
 
     return (
         <div className='info-user-container'>
@@ -66,7 +62,7 @@ export default function InfomationUser() {
                 <div className='information-identity-number'>
                     <div className='information-identity-number-text'>Số CMND:</div>
                     <div className='information-identity-number-content'>{dataUser.identityNumber}</div>
-                    <div className='btn-edit-information' onClick={changeIdentity}>
+                    <div className='btn-edit-information'>
                         <img src={imgEdit}></img>
                     </div>
 

@@ -100,7 +100,7 @@
     cursor: pointer;
 }
 
-input[type="file"] {
+#file-upload {
     display: none;
 }
 

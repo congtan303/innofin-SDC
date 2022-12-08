@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import './ListMoneyComplete.css'
 import UnionTop from '../Union-top/UnionTop'
 import FooterHistory from '../FooterHistory/FooterHistory'
 export default function ListMoneyComplete() {
+    let { id, lat, lng } = useParams();
     return (
         <div className='container'>
             <div className="header-history">
@@ -41,6 +42,7 @@ export default function ListMoneyComplete() {
                 </div >
                 <div className="tbody-wrap">
                     <table className="table-2">
+                        <tbody>
                         <tr>
                             <td><span className="text-right">500,000đ</span></td>
                             <td><span className="text-right">4</span></td>
@@ -96,6 +98,8 @@ export default function ListMoneyComplete() {
                             <td className="td-hidden">2889</td>
                             <td className="blue"><span className="text-right total-money">7,000,000</span></td>
                         </tr>
+                        </tbody>
+                       
 
                     </table>
                 </div>
@@ -110,7 +114,7 @@ export default function ListMoneyComplete() {
                         <button className="btn-edit-table remove-edit-table">Sửa bảng kê</button>
                     </div>
                 </Link>
-                <Link to="/cash-complete">
+                <Link to={`/image-verify/${id}-${lat}-${lng}`}>
                     <div className="complete-edit">
                         <button className="btn-complete-edit edit-complete">Hoàn tất</button>
                     </div>

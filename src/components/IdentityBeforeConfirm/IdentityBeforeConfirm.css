@@ -1,0 +1,78 @@
+.front-camera-title-2 {
+    position: absolute;
+    width: 300px;
+    height: 21px;
+    left: 59px;
+    top: 68px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--bold-color);
+}
+
+.card-body-detail {
+    position: absolute;
+    width: 325px;
+    height: 201.14px;
+    left: 45px;
+    top: 201px;
+    filter: drop-shadow(0px 1px 10px rgba(112, 112, 112, 0.2));
+}
+
+.front-camera-2-note {
+    position: absolute;
+    width: 340px;
+    height: 33px;
+    left: 37px;
+    top: 466px;
+    font-family: 'SF UI Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.165px;
+    color: var(--bold-color)
+}
+
+/* form btn */
+.btn-take-photo-again {
+    position: absolute;
+    width: 190px;
+    height: 54px;
+    left: 15px;
+    top: 640px;
+    background: #CBCBCB;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--white-color);
+
+}
+
+.btn-use-photo {
+    position: absolute;
+    width: 190px;
+    height: 54px;
+    left: 208px;
+    top: 640px;
+    background: #2CD1F8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--white-color);
+}
+

@@ -6,7 +6,7 @@
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    color: #C52AFE;
+    color: var(--purple-color);
 }
 
 .footer-history-icon-img-active {

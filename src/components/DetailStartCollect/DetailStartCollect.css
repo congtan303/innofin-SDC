@@ -1,0 +1,17 @@
+.text-detail-css {
+    position: absolute;
+    left: 98px;
+}
+
+.detail-1-list-note li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    color: var(--white-color);
+    width: 332px;
+    height: 43px;
+    list-style: inherit;
+    padding: 0;
+}

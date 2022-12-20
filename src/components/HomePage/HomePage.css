@@ -1,11 +1,4 @@
-body {
-    overflow-y: hidden;
-}
 
-element::-webkit-scrollbar {
-    display: none;
-    /* cho Chrome, Safari, and Opera */
-}
 
 .blue-text {
     color: #2CD1F8;
@@ -17,27 +10,21 @@ element::-webkit-scrollbar {
     height: 128px;
     left: 0px;
     top: 0px;
-
-    background: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
+    background: var(--background-color);
 }
 
 .home-page-header-welcome {
     position: absolute;
-    width: 188px;
+    width: 100%;
     height: 18px;
     left: 122px;
     top: 54px;
-
-
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 18px;
-    /* identical to box height, or 100% */
-
     letter-spacing: -0.5px;
-
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 
@@ -48,7 +35,7 @@ element::-webkit-scrollbar {
     height: 64px;
     left: 33px;
     top: 43px;
-    border: 2px solid #fff;
+    border: 2px solid var(--white-color);
     border-radius: 50%
 }
 
@@ -63,14 +50,14 @@ element::-webkit-scrollbar {
 
 .homepage-number-notification {
     position: absolute;
-    color: #fff;
+    color: var(--white-color);
     /* z-index: 3; */
     top: -4px;
     left: 16px;
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-color: #C52AFE;
+    background-color: var(--purple-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,17 +72,12 @@ element::-webkit-scrollbar {
     height: 18px;
     left: 122px;
     top: 79px;
-
-
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-
     letter-spacing: -0.165px;
-
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .home-page-navbar {
@@ -104,8 +86,7 @@ element::-webkit-scrollbar {
     height: 60px;
     left: 0px;
     top: 127px;
-
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
 
 }
@@ -116,16 +97,11 @@ element::-webkit-scrollbar {
     height: 32px;
     left: 18px;
     top: 18px;
-
-
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    /* or 122% */
-
     letter-spacing: -0.5px;
-
     color: #2CD1F8;
 }
 
@@ -157,7 +133,6 @@ element::-webkit-scrollbar {
     box-shadow: 0px 1px 10px rgb(112 112 112 / 20%);
     border-radius: 10px;
     display: flex;
-    /* padding: 12px; */
     cursor: pointer;
     align-items: center;
     padding: 10px 14px;
@@ -181,41 +156,19 @@ border-radius: 10px;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: -0.5px;
-    color: #636363;
+    color: var(--bold-color);
 
 }
 
-.list-customer-description-address {
+.list-customer-description-address,
+.list-customer-description-money,
+.list-customer-description-time,
+.list-customer-description-date {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* or 129% */
-
     letter-spacing: -0.5px;
-
-    color: #636363;
-}
-
-.list-customer-description-money {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    /* or 129% */
-
-    letter-spacing: -0.5px;
-
-    color: #636363;
-}
-
-.list-customer-description-time {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    /* or 129% */
-
-    letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .time-cash,
@@ -225,7 +178,7 @@ border-radius: 10px;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.5px;
-    color: #636363;
+    color: var(--bold-color);
 }
 
 
@@ -233,12 +186,7 @@ border-radius: 10px;
     position: absolute;
     left: 35px;
     top: 518px;
-
 }
-
-
-
-
 
 
 .footer-icon-app {
@@ -248,8 +196,7 @@ border-radius: 10px;
     height: 28.54px;
     left: 73px;
     top: 810.79px;
-
-    color: #C52AFE;
+    color: var(--purple-color);
 }
 
 .footer-app-text {
@@ -258,17 +205,14 @@ border-radius: 10px;
     height: 18px;
     left: -9px;
     top: 36px;
-
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    color: #C52AFE;
-
+    color: var(--purple-color);
     text-align: center;
-
-    color: #C52AFE;
+    color: var(--purple-color);
 }
 
 .footer-icon-history {
@@ -278,7 +222,6 @@ border-radius: 10px;
     height: 28px;
     left: 185px;
     top: 811px;
-
 }
 
 .footer-history-text {
@@ -287,16 +230,12 @@ border-radius: 10px;
     height: 18px;
     left: -9px;
     top: 36px;
-
     font-family: 'SF UI Text';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-
     text-align: center;
-
     color: #AEAEAE;
 
 }
@@ -317,16 +256,11 @@ border-radius: 10px;
     height: 18px;
     left: -17px;
     top: 36px;
-
-
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-
     text-align: center;
-
     color: #AEAEAE;
 }
 

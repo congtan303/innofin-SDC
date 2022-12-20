@@ -2,11 +2,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-    /* identical to box height, or 138% */
-
     letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
     margin: 8px 0 4px;
 }
 
@@ -47,7 +44,6 @@
 .history-list-status-icon-waitting-img {
     position: absolute;
     background: url('../../asset/Union-waitting.png');
-
     width: 30px;
     height: 30px;
 }

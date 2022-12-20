@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
+
 export const UserContext = createContext({});
 
 export const UserProvider = ({children}) => {
@@ -24,6 +25,8 @@ export const UserProvider = ({children}) => {
             console.log(err)
         })
     },[])
+
+  
 
     return <UserContext.Provider value={{dataUser}}>
         {children}

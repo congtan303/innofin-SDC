@@ -26,16 +26,13 @@
     height: 232px;
     left: 0px;
     top: 0px;
-
-    background: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
+    background: var(--background-color)
 }
 
-.account-icon-notification {
-
+.account-icon-notification { 
     position: absolute;
     left: 351px;
     top: 48px;
-
 }
 
 .icon-account-back {
@@ -68,13 +65,12 @@
     top: -7px;
     border: 1px;
     border-radius: 50px;
-    background: #C52AFE;
+    background: var(--purple-color);
     color: #fff;
     font-size: 10px;
 }
 
 .Account-header-avatar {
-
     position: absolute;
     width: 64px;
     height: 64px;
@@ -86,19 +82,14 @@
 
 .Account-header-name {
     position: absolute;
-    width: 122px;
+    width: 100vw;
     height: 18px;
     left: 122px;
     top: 106px;
-
-
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 18px;
-    /* identical to box height, or 90% */
-
-
     color: #FFFFFF;
 }
 
@@ -108,16 +99,11 @@
     height: 18px;
     left: 122px;
     top: 131px;
-
-
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    /* identical to box height, or 112% */
-
     letter-spacing: -0.165px;
-
     color: #FFFFFF;
 }
 
@@ -139,17 +125,12 @@
     height: 18px;
     left: 88px;
     top: 20px;
-
-
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    /* identical to box height, or 100% */
-
     text-align: center;
-
-    color: #636363;
+    color: var(--bold-color);
 }
 
 
@@ -160,18 +141,13 @@
     height: 18px;
     left: 76px;
     top: 60px;
-
-
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 18px;
-    /* identical to box height, or 60% */
-
     text-align: center;
     letter-spacing: -0.4px;
-
-    color: #C52AFE;
+    color: var(--purple-color);
 }
 
 .diem {
@@ -180,14 +156,18 @@
     height: 18px;
     left: 248px;
     top: 65px;
-    color: #636363;
+    color: var(--bold-color);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    /* identical to box height, or 112% */
-
     text-align: center;
+}
+
+.diem,
+.number-money,
+.account-balance-infomation {
+    margin-top: 6px;
 }
 
 /* content */
@@ -197,7 +177,7 @@
     line-height: 18px;
     text-align: center;
     letter-spacing: -0.3px;
-    color: #636363;
+    color: var(--bold-color);
 
 }
 
@@ -294,7 +274,7 @@
 
     letter-spacing: -0.3px;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 /* hr */
@@ -302,7 +282,7 @@
 .account-hr {
     width: 375px;
     height: 0px;
-    border: 1px solid #DDDDDD;
+    border: 1px solid var(--border-color);
 }
 
 /* contact */
@@ -313,10 +293,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    /* identical to box height, or 100% */
-
     letter-spacing: -0.3px;
-
     color: #ED822E;
 }
 
@@ -325,9 +302,8 @@
     font-size: 16px;
     font-style: italic;
     line-height: 20px;
-    /* or 125% */
     height: 70px;
     letter-spacing: -0.5px;
     text-align: left;
-    color: #AEAEAE;
+    color: var(--text-color);
 }

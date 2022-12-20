@@ -1,7 +1,17 @@
+:root {
+    --text-color: #AEAEAE;
+    --white-color: #fff;
+    --bold-color: #636363;
+    --blue-color: #2CD1F8;
+    --border-color: #DDDDDD;
+    --purple-color: #C52AFE;
+    --background-color: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
+}
 
 html {
     overflow: hidden;
 }
+
 .block {
     width: 360px;
     margin: 0 auto;
@@ -15,34 +25,14 @@ html {
     background: #FBFBFD;
 }
 
-.container-camera {
-    position: relative;
-    width: 414px;
-    height: 896px;
-    margin: 0 auto;
-    background: #606060;
-}
 
 .previous-white {
-    color: #fff;
+    color: var(--white-color);
 }
 
 
 hr {
     margin: 0;
-}
-
-.btn-change-password {
-    position: absolute;
-    width: 325px;
-    height: 54px;
-    left: 45px;
-    top: 481px;
-
-    background: #2CD1F8;
-    border-radius: 8px;
-    border: none;
-    outline: none;
 }
 
 .app {
@@ -51,47 +41,58 @@ hr {
     height: 899px;
     left: 0px;
     top: -1px;
-
     background: #FBFBFD;
 }
 
 .blue {
-    
+
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
-    /* identical to box height, or 157% */
-
     letter-spacing: -0.5px;
-
     color: #2CD1F8;
 }
 
 .bold-text {
-    
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
-    /* identical to box height, or 157% */
-
     letter-spacing: -0.5px;
-
     color: #636363;
-    
+
+}
+
+.text-center {
+    margin: 0 auto;
+    display: block;
 }
 
 a {
     text-decoration: none;
 }
 
-li{
+li {
     margin: 0;
     padding: 0;
 }
 
+/* input */
 input {
     outline: none;
     border: none;
+    color: #636363;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* text warning when  validate form */
+.text-warning-msg {
+    font-weight: 400;
+    font-size: 14px;
+    color: red;
+    font-style: italic;
 }

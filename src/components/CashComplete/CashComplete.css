@@ -48,7 +48,7 @@
     line-height: 24px;
     text-align: center;
     letter-spacing: -0.5px;
-    color: #C52AFE;
+    color: var(--purple-color);
 }
 
 .cash-complete-card-body {
@@ -74,11 +74,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-    /* identical to box height, or 138% */
-
     letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
     text-align: center;
 }
 
@@ -86,12 +83,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-
     letter-spacing: -0.1px;
-
-    color: #636363;
-
+    color: var(--bold-color);
 }
 
 .cash-complete-card-hr {
@@ -108,11 +101,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    /* identical to box height, or 129% */
-
     letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
     display: flex;
     align-items: center;
 }
@@ -122,8 +112,6 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
-    /* identical to box height, or 157% */
-
     letter-spacing: -0.5px;
     color: #2CD1F8;
     margin-left: 7px;
@@ -135,11 +123,9 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
-    /* identical to box height, or 157% */
-
     letter-spacing: -0.5px;
     margin-left: 9px;
-    color: #636363;
+    color: var(--bold-color);
 }
 
 
@@ -148,11 +134,9 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
-    /* identical to box height, or 157% */
-
     letter-spacing: -0.5px;
     margin-left: 21px;
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .cash-complete-btn-home {
@@ -164,10 +148,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    /* identical to box height, or 100% */
-
-
-    color: #FFFFFF;
+    color: var(--white-color);
     width: 360px;
     height: 54px;
     margin: 30px auto;

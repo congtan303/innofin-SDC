@@ -1,21 +1,22 @@
 
-import { Link, useParams,useNavigate } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import UnionTop from "../Union-top/UnionTop"
 import FooterApp from "../FooterApp/FooterApp"
 import './ImageVerification.css'
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import axios from 'axios'
-export default function ImageVerification() {
+import { useForm } from 'react-hook-form'
 
+export default function ImageVerification() {
+    const { id, lat, lng } = useParams()
+    const { register, handleSubmit, formState: { errors } } = useForm()
     const navigate = useNavigate()
-    const [image, setImage] = useState('')
-    
-    const {id,  lat, lng} = useParams()
-//   console.log(lat);
-//   console.log(id);
-//   console.log(lng);
+    const [image, setImage] = useState()
+console.log(image);
+
     const handleImage = (e) => {
         const file = e.target.files[0]
+
         file.preview = URL.createObjectURL(file)
         setImage(file)
     }
@@ -24,7 +25,6 @@ export default function ImageVerification() {
         navigate(`/cash-complete/${id}-${lat}-${lng}`)
         const formData = new FormData()
         formData.append('Images', image)
-        console.log(image);
         formData.append('Lng', lng)
         formData.append('Lat', lat)
         formData.append('Id', id)
@@ -33,7 +33,7 @@ export default function ImageVerification() {
 
         // post form data đơn thu hộ lên server
         axios({
-            url:'https://home-dev.innofin.vn/api/app/mobile/complete-collection',
+            url: 'https://home-dev.innofin.vn/api/app/mobile/complete-collection',
             method: 'POST',
             headers: {
                 'Authorization': 'Bearer ' + access_token
@@ -41,6 +41,28 @@ export default function ImageVerification() {
             data: formData
         })
 
+    }
+
+    const onSubmit = (e) => {
+        console.log(e);
+        navigate(`/cash-complete/${id}-${lat}-${lng}`)
+        const formData = new FormData()
+        formData.append('Images', image)
+        formData.append('Lng', lng)
+        formData.append('Lat', lat)
+        formData.append('Id', id)
+
+        const access_token = localStorage.getItem('access_token')
+
+        // post form data đơn thu hộ lên server
+        axios({
+            url: 'https://home-dev.innofin.vn/api/app/mobile/complete-collection',
+            method: 'POST',
+            headers: {
+                'Authorization': 'Bearer ' + access_token
+            },
+            data: formData
+        })
 
     }
     return (
@@ -58,34 +80,40 @@ export default function ImageVerification() {
                 <UnionTop />
             </div>
             <div className="body-image-verification">
-                <div className="description-verification">
-                    Minh chứng:
-                </div>
-                <div className="div-image-verification">
-                    <div className="image-verification">
-                        {image && (
-                            <img src={image.preview} alt="" width="100%" height="100%" />
-                        )}
-
+                <form onSubmit={handleSubmit(onSubmit)}>
+                    <div className="description-verification">
+                        Minh chứng:
                     </div>
-                </div>
-                <div className="div-button-camera">
-                    <div className="button-camera">
-                        <label htmlFor="file-upload" className="button-camera-text">
-                            <i className="fas fa-camera icon-camera-verify"></i>
-                            <div className="">Chụp ảnh</div>
+                    <div className="div-image-verification">
+                        <div className="image-verification">
+                            {image && (
+                                <img src={image.preview} alt="" width="100%" height="100%" />
+                            )}
 
-                        </label>
-                        <input id="file-upload" type="file" onChange={handleImage} />
+                        </div>
                     </div>
-                </div>
-
-
-                <div className="div-button-verifycation">
-                    <div className="button-verifycation">
-                        <button className="button-verifycation-text" onClick={handleApi}>Hoàn thành</button>
+                    <div className="div-button-camera">
+                        <div className="button-camera">
+                            <label htmlFor="file-upload" className="button-camera-text">
+                                <i className="fas fa-camera icon-camera-verify"></i>
+                                <div className="">Chọn ảnh</div>
+                            </label>
+                            <input
+                                id="file-upload"
+                                type="file"
+                                {...register("inputImage", { required: 'vui lòng chọn hình ảnh xác minh thu hộ', onChange: handleImage})}
+                            />
+                        </div>
                     </div>
-                </div>
+                    {errors.inputImage && <span className='text-warning-msg text-center'>{errors.inputImage.message}</span>}
+
+
+                    <div className="div-button-verifycation">
+                        <div className="button-verifycation">
+                            <button className="button-verifycation-text" type="submit">Hoàn thành</button>
+                        </div>
+                    </div>
+                </form>
 
 
             </div>

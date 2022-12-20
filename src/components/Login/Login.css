@@ -34,16 +34,12 @@
     height: 17px;
     left: 129px;
     top: 144px;
-
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    /* or 100% */
-
     text-transform: uppercase;
-
-    color: #636363;
+    color: var(--bold-color);
 }
 
 /* login */
@@ -55,7 +51,7 @@
     left: 26px;
     top: 197px;
     margin: 0;
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
@@ -65,22 +61,20 @@
 }
 
 .btn-login {
-    position: absolute;
+    display: block;
+    margin: 34px auto;
     width: 292px;
     height: 54px;
-    left: 18px;
-    top: 30px;
     background: #2CD1F8;
     border-radius: 8px;
     outline: none;
     border: none;
     cursor: pointer;
-
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 input {
@@ -93,7 +87,6 @@ input {
     width: 328px;
     border: none;
     outline: none;
-    margin-top: 14px;
     border-bottom: 1px solid #ccc;
 
 }
@@ -124,7 +117,7 @@ input {
     font-weight: 300;
     font-size: 16px;
     line-height: 18px;
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .input-user-password,
@@ -133,11 +126,12 @@ input {
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    color: #636363 !important;
+    color: var(--bold-color) !important;
 }
 
 .div-input-password {
-    margin-top: 30px;
+    margin-top: 20px;
+    position: relative;
 }
 
 .input-icon-id {
@@ -149,8 +143,8 @@ input {
 
 .input-eye-login {
     position: absolute;
-    top: 147px;
-    left: 328px;
+    top: 32px;
+    right: 2px;
     color: #C1C1C1;
     cursor: pointer;
 }
@@ -167,7 +161,7 @@ input {
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-    color: #636363;
+    color: var(--bold-color);
 
 }
 
@@ -181,7 +175,7 @@ input {
     /* identical to box height */
 
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 /* contact */

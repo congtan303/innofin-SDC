@@ -41,5 +41,5 @@
     text-align: center;
     letter-spacing: -0.165px;
 
-    color: #FFFFFF;
+    color: var(--white-color);
 }

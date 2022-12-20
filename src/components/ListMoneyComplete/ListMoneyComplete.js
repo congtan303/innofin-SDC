@@ -7,7 +7,7 @@ export default function ListMoneyComplete() {
     return (
         <div className='container'>
             <div className="header-history">
-                <Link to="/list-money-1">
+                <Link to="/list-money">
                     <div className='header-history-previous-btn'>
 
                     </div>

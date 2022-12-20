@@ -4,14 +4,14 @@
     height: 21px;
     left: 57px;
     top: 68px;
-   
+
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     letter-spacing: -0.5px;
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .identification-card-chip-description {
@@ -20,31 +20,24 @@
     height: 40px;
     left: 27px;
     top: 117px;
-
-   
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    /* or 125% */
-
     letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
 }
 
 /* card id-front */
 
 .identification-card-chip-front {
     box-sizing: border-box;
-
     position: absolute;
     width: 168px;
     height: 119px;
     left: 27px;
     top: 193px;
-
-    background: #FFFFFF;
+    background: var(--white-color);
     border: 1px solid #E3E3E3;
     border-radius: 10px;
 }
@@ -64,30 +57,23 @@
     height: 20px;
     left: 50px;
     top: 124px;
-
-   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height, or 125% */
-
     letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
 }
 
 /* card id-back */
 .identification-card-chip-backside {
     box-sizing: border-box;
-
     position: absolute;
     width: 168px;
     height: 119px;
     left: 219px;
     top: 193px;
-
-    background: #FFFFFF;
+    background: var(--white-color);
     border: 1px solid #E3E3E3;
     border-radius: 10px;
 }
@@ -107,31 +93,24 @@
     height: 20px;
     left: 50px;
     top: 124px;
-
-   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height, or 125% */
-
     letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
 }
 
 /* card id-faceID */
 
 .identification-card-chip-face-id {
     box-sizing: border-box;
-
     position: absolute;
     width: 168px;
     height: 119px;
     left: 123px;
     top: 364px;
-
-    background: #FFFFFF;
+    background: var(--white-color);
     border: 1px solid #E3E3E3;
     border-radius: 10px;
 }
@@ -151,17 +130,12 @@
     height: 20px;
     left: 7px;
     top: 124px;
-
-   
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height, or 125% */
-
     letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
 }
 
 /* hướng dẫn chụp chứng từ */
@@ -172,8 +146,7 @@
     height: 183px;
     left: 27px;
     top: 536px;
-
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
     z-index: 1;
@@ -185,18 +158,13 @@
     height: 17px;
     left: 40px;
     top: 20px;
-
-   
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    /* or 133% */
-
     text-align: center;
     letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .guide-license-list {
@@ -209,23 +177,18 @@
 
 .guide-license-list,
 li {
-   
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-
     letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
     margin-bottom: 6px;
     padding: 0 0 0 10px;
     list-style: none;
 }
 
-.guide-license-list
-li i {
+.guide-license-list li i {
     margin-right: 12px;
     color: #2CD1F8;
 }
@@ -242,14 +205,10 @@ li i {
     border-radius: 8px;
     outline: none;
     border: none;
-   
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 24px;
-/* identical to box height, or 133% */
-
-letter-spacing: -0.5px;
-
-color: #FBFBFD;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: #FBFBFD;
 }

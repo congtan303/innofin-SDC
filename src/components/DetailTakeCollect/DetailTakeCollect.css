@@ -1,0 +1,254 @@
+.background-detail {
+    width: 414px;
+    height: 896px;
+    left: 0px;
+    top: 0px;
+    background: var(--background-color);
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+.header-detail-previous-btn {
+    background: url('../../asset/Vector-previous.png');
+    width: 9px;
+    height: 14px;
+    position: absolute;
+    top: 40px;
+    left: 28px;
+}
+
+.header-detail {
+    padding-top: 34px;
+}
+
+.detail-notification {
+    background: url('../../asset/Vector-bell.png');
+    width: 28px;
+    height: 30px;
+    position: relative;
+    position: absolute;
+    top: 34px;
+    right: 33px;
+}
+
+.detail-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--white-color);
+}
+
+.detail-number-notification {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    left: 14px;
+}
+
+.Detail-1-card-body {
+    position: absolute;
+    width: 360px;
+    height: 264px;
+    left: 26px;
+    top: 101px;
+    background: var(--white-color);
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 10px;
+}
+
+.detail-1-avatar {
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 134px;
+    top: 18px;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
+}
+
+.detail-1-name {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 116px;
+    width: 100%;
+    height: 22px;
+    left: 152px;
+    top: 120px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    color: var(--bold-color);
+}
+
+.detail-1-address {
+    position: absolute;
+    width: 324px;
+    height: 18px;
+    left: 20px;
+    top: 144px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    color: var(--bold-color);
+}
+
+.detail-1-hr {
+    position: absolute;
+    width: 321px;
+    height: 0px;
+    left: 20px;
+    top: 168px;
+    border: 1px solid #DDDDDD;
+}
+
+.detail-1-money {
+    position: absolute;
+    width: 100%;
+    height: 22px;
+    left: 20px;
+    top: 174px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    color: var(--bold-color);
+}
+
+.user-payment,
+.user-payment-number-phone {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    color: var(--bold-color);
+}
+.user-payment {
+    margin-left: 4px;
+}
+
+.user-payment-number-phone {
+    margin-left: 16px;
+}
+
+.detail-1-name-money {
+    position: absolute;
+    width: 100%;
+    height: 22px;
+    left: 20px;
+    top: 196px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    color: var(--bold-color);
+}
+
+.detail-1-phone-number {
+    position: absolute;
+    width: 100%;
+    height: 22px;
+    left: 20px;
+    top: 218px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    color: var(--bold-color);
+}
+
+.detail-1-contact-background {
+    background: url('../../asset/Ellipse\ 17.png');
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 300px;
+    top: 196px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-1-contact-icon {
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    color: var(--white-color);
+}
+
+/* list */
+
+.detail-1-list-note {
+    position: absolute;
+    top: 380px;
+    margin-left: 10px; 
+}
+
+
+.detail-1-list-note li {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    color: var(--white-color);
+    width: 332px;
+    height: 43px;
+    list-style: inherit ;
+    padding: 0;
+}
+
+/* btn xác nhận thu hộ */
+.block {
+    margin-top: -70px
+}
+.btn-confirm-success-money {
+    position: absolute;
+    width: 360px;
+    height: 54px;
+    left: 26px;
+    top: 536px;
+    background: var(--white-color);
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 30px;
+}
+
+.btn-confirm-begin {
+    position: absolute;
+    width: 205px;
+    height: 54px;
+    left: 0;
+    top: 0;
+    background: #2CD1F8;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    color: var(--white-color);
+}

@@ -2,11 +2,8 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height, or 122% */
-
     text-align: center;
     letter-spacing: -0.5px;
-
     color: #2CD1F8
 }
 
@@ -14,12 +11,9 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height, or 122% */
-
     text-align: center;
     letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .header-history-navbar-app,
@@ -29,7 +23,7 @@
     line-height: 22px;
     text-align: center;
     letter-spacing: -0.5px;
-    color: #636363;
+    color: var(--bold-color);
     display: flex;
     align-items: center;
     justify-content: center;

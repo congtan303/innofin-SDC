@@ -3,7 +3,7 @@
     bottom: 0;
     width: 414px;
     height: 105px;
-    background: #FFFFFF;
+    background: var(--white-color);
     display: flex;
     margin-top: 20px;
     justify-content: space-around;
@@ -19,12 +19,8 @@
     font-weight: 400;
 font-size: 14px;
 line-height: 18px;
-/* identical to box height, or 129% */
-
 text-align: center;
-
 color: #AEAEAE;
-
 }
 
 .footer-history-icon-img {
@@ -41,11 +37,8 @@ color: #AEAEAE;
     font-weight: 400;
 font-size: 14px;
 line-height: 18px;
-/* identical to box height, or 129% */
-
 text-align: center;
-
-color: #C52AFE;
+color: var(--purple-color);
 
 }
 
@@ -63,10 +56,7 @@ color: #C52AFE;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-    
     text-align: center;
-    
     color: #AEAEAE;
 }
 

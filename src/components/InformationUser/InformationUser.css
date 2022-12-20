@@ -25,7 +25,7 @@
     text-align: center;
     letter-spacing: -0.5px;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .information-card {
@@ -35,7 +35,7 @@
     left: 27px;
     top: 119px;
 
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
@@ -53,7 +53,7 @@
 
 .information-name {
     position: absolute;
-    width: 121px;
+    width: 100%;
     height: 18px;
     left: 134px;
     top: 156px;
@@ -67,7 +67,7 @@
 
     letter-spacing: -0.005em;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .information-id {
@@ -86,7 +86,7 @@
 
     letter-spacing: -0.005em;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .information-hr {
@@ -116,7 +116,7 @@
     text-align: center;
     letter-spacing: -0.005em;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .information-coin {
@@ -130,11 +130,11 @@
     text-align: center;
     letter-spacing: -0.005em;
 
-    color: #C52AFE;
+    color: var(--purple-color);
 }
 
 .purple {
-    color: #C52AFE;
+    color: var(--purple-color);
 }
 
 .information-user-card {
@@ -144,9 +144,16 @@
     left: 27px;
     top: 319px;
 
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
+}
+
+.information-date-of-birth-text,
+.information-identity-number-text,
+.information-phone-number-text {
+    color: var(--bold-color);
+    text-align: left;
 }
 
 
@@ -169,32 +176,29 @@
     margin-right: 10px;
 }
 
-.information-date-of-birth-content{
+.information-date-of-birth-content {
     margin-right: 50px;
 }
 
-.information-phone-number-content{
-    margin-right: 66px;
+.information-phone-number-content {
+    margin-right: 56px;
 }
 
-.information-phone-number-text{
+.information-phone-number-text {
     margin-left: 10px;
 }
 
-.information-identity-number-content{
-    margin-right: 46px;
+.information-identity-number-content {
+    margin-right: 28px;
 }
 
 .information-date-of-birth-content,
 .information-identity-number-content,
 .information-phone-number-content {
     font-weight: 700;
-font-size: 16px;
-line-height: 18px;
-/* identical to box height, or 112% */
-
-
-color: #636363;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--bold-color);
 }
 
 /* date-of-birth */
@@ -213,18 +217,34 @@ color: #636363;
 
 /* hr */
 
-.hr-information-user{
+.hr-information-user {
     border: 1px solid #DDDDDD;
     width: 330px;
     margin: 0 auto;
 }
 
+/* btn submit update info */
 
+.btn-update-information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 350px ;
+    
+}
 
-
-
-
-
-
-
-
+.btn-submit-update {
+    position: relative;
+    z-index: 10;
+    background: #2CD1F8;
+    border-radius: 8px;
+    border: none;
+    width: 325px;
+    height: 54px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    cursor: pointer;
+}

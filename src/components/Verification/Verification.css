@@ -15,7 +15,7 @@
     text-align: center;
     letter-spacing: -0.5px;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .verification-description {
@@ -35,7 +35,7 @@
     text-align: center;
     letter-spacing: -0.5px;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 /* chứng minh thư, CCCD */
@@ -46,7 +46,7 @@
     left: 26px;
     top: 154px;
 
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
@@ -90,7 +90,7 @@
 
     letter-spacing: -0.5px;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 /* thẻ căn cước gắn chip */
@@ -122,10 +122,10 @@
     left: 14px;
     width: 42px;
     height: 42px;
-    border: 1px solid #fff;
+    border: 1px solid var(--white-color);
     border-radius: 50%;
     border: none;
-    background-color: #fFF;
+    background-color: var(--white-color);
     ;
 }
 
@@ -144,7 +144,7 @@
 
     letter-spacing: -0.5px;
 
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 /* Hộ chiếu */
@@ -155,7 +155,7 @@
     left: 26px;
     top: 310px;
 
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
@@ -199,7 +199,7 @@
 
     letter-spacing: -0.5px;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .license {
@@ -209,7 +209,7 @@
     left: 26px;
     top: 388px;
 
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
@@ -254,7 +254,7 @@
 
     letter-spacing: -0.5px;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 /* giấy tờ khác */
@@ -265,7 +265,7 @@
     left: 26px;
     top: 466px;
 
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
@@ -307,5 +307,5 @@
 
     letter-spacing: -0.5px;
 
-    color: #636363;
+    color: var(--bold-color);
 }

@@ -4,8 +4,7 @@
     height: 231px;
     left: 26px;
     top: 137px;
-
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
@@ -16,18 +15,14 @@
     height: 80px;
     left: 53px;
     top: 173px;
-
-   
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    /* or 138% */
-
     text-align: center;
     letter-spacing: -0.5px;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .btn-back-to-home-page {
@@ -36,18 +31,13 @@
     height: 54px;
     left: 45px;
     top: 271px;
-
     background: #2CD1F8;
     border-radius: 8px;
     border: none;
     outline: none;
-   
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    /* identical to box height, or 100% */
-
-
-    color: #FFFFFF;
+    color: var(--white-color);
 }

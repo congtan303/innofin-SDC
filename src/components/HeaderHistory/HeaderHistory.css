@@ -7,7 +7,7 @@
     top: 0;
     height: 128px;
     width: 414px;
-    background: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
+    background: var(--background-color);
 }
 
 .header-history-previous-btn {
@@ -17,9 +17,11 @@
 }
 
 .header-history-notification {
+    position: relative;
     background: url('../../asset/Vector-bell.png');
     width: 28px;
     height: 30px;
+    
 }
 
 .header-history-notification-number {
@@ -29,26 +31,22 @@
     font-size: 12px;
     line-height: 18px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--white-color);
     position: absolute;
-    /* border: 2px solid red; */
     border-radius: 50%;
-    background-color: #C52AFE;
+    background-color: var(--purple-color);
     position: absolute;
-    top: 42px;
-    left: 372px;
+    top: -6px;
+    left: 16px;
 }
 
 .header-history-title {
     font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-/* or 120% */
-
-text-align: center;
-letter-spacing: -0.5px;
-
-color: #FFFFFF;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--white-color);
 }
 
 .header-history-navbar {
@@ -59,26 +57,23 @@ color: #FFFFFF;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: #FFFFFF;
-box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
-z-index: 10;
+    background: var(--white-color);
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    z-index: 10;
 }
 
 .header-history-navbar-app-active {
     width: 208px;
     height: 60px;
     font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-/* identical to box height, or 122% */
-
-text-align: center;
-letter-spacing: -0.5px;
-
-color: #2CD1F8;
-display: flex;
-align-items: center;
-justify-content: center;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #2CD1F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header-history-navbar-seperate {
@@ -96,7 +91,6 @@ justify-content: center;
     width: 208px;
     height: 3px;
     left: 0px;
-    
     bottom: 0;
     background: #2CD1F8;
 }
@@ -105,15 +99,12 @@ justify-content: center;
     width: 208px;
     height: 60px;
     font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-/* identical to box height, or 122% */
-
-text-align: center;
-letter-spacing: -0.5px;
-
-color: #636363;
-display: flex;
-align-items: center;
-justify-content: center;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--bold-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

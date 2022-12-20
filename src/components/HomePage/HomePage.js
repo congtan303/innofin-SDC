@@ -1,4 +1,4 @@
-import { Link, navigate, useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useContext, useState, useEffect } from 'react'
 import axios from 'axios'
 import './HomePage.css'
@@ -8,21 +8,12 @@ import LoaderAnimation from '../LoaderAnimation/LoaderAnimation'
 import moment from 'moment'
 import { UserContext } from '../../context/UserContext/UserContext'
 
-
-
 function HomePage() {
     const navigate = useNavigate()
-
-    const handlePayment = () => {
-        navigate(`/detail2/${isPayment.id}-${isPayment.lat}-${isPayment.lng}`)
-    }
-
     const [dataCustomer, setDataCustomer] = useState([])
     const [loader, setLoader] = useState(true);
     const [isPayment, setIsPayment] = useState(false)
     const { dataUser } = useContext(UserContext);
-    console.log(dataUser);
-   
     const access_token = localStorage.getItem('access_token')
 
     const config = {
@@ -32,7 +23,6 @@ function HomePage() {
     }
     // get API check data nào đang ở trạng thái "đã nhận"
     useEffect(() => {
-        console.log(123123);
         axios.get('https://home-dev.innofin.vn/api/app/mobile/my-progress', config)
             .then(response => {
                 setIsPayment(response.data)
@@ -40,24 +30,22 @@ function HomePage() {
             })
     }, [])
 
+    // nếu có đơn đã vào trạng thái "đã nhận" thì chuyển hướng đến trang "bắt đầu thu hộ"
+    const handlePayment = () => {
+        navigate(`/detail-start-collect/${isPayment.id}-${isPayment.lat}-${isPayment.lng}`)
+    }
+
     // get APIlist đơn 
     useEffect(() => {
         axios.get('https://home-dev.innofin.vn/api/app/mobile/my-request-collection?cityId&districtId&wardId&merchantId&page=1', config)
             .then(response => {
                 setDataCustomer(response.data)
-                console.log(response.data);
-
             })
             .catch(err => {
                 console.log(err)
             })
 
     }, [])
-
-    // get API thông tin user
-
-
-
 
     return (
         <div className='container'>
@@ -68,7 +56,7 @@ function HomePage() {
                 <div className="home-page-header-avatar">
 
                 </div>
-                
+
                 <div className="home-page-header-welcome">Xin chào {dataUser.surname} {dataUser.name}</div>
 
                 <UnionTop />
@@ -76,9 +64,7 @@ function HomePage() {
                     <div className="homepage-number-notification">
                         1
                     </div>
-
                 </div>
-
 
                 <div className="account-coin">Tài khoản điểm: <strong >{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</strong> điểm</div>
                 <div className="home-page-navbar">
@@ -90,8 +76,8 @@ function HomePage() {
 
             <ul className='list-customer'>
 
-                { dataCustomer.map((data) => (
-                    <Link to={`/detail1/${data.id}-${data.lat}-${data.lng}`} key={data.id} >
+                { dataCustomer ? dataCustomer.map((data) => (
+                    <Link to={`/detail-take-collect/${data.id}-${data.lat}-${data.lng}`} key={data.id} >
                         <li className='list-customer-information' >
                             <div>
                                 <img src={data.storeLogo} className='list-customer-avatar'></img>
@@ -109,7 +95,7 @@ function HomePage() {
                                 <div className='list-customer-description-time'>
                                     Giờ đi thu:  <span className='time-cash'>{data.requestDateTime.substring(11, 16)} - {data.requestEndTime.substring(11, 16)}</span>
                                 </div>
-                                <div>
+                                <div className='list-customer-description-date'>
                                     Ngày: <span className='date-cash'>{moment(data.requestDateTime).format("DD/MM/YYYY")}</span>
                                 </div>
                             </div>
@@ -117,12 +103,12 @@ function HomePage() {
                     </Link>
 
 
-                ))}
+                )) : <div className='blue text-center'>Hiện tại chưa có đơn nào</div>}
                 {loader && <LoaderAnimation />}
-
+                    
             </ul>
             {!isPayment ? '' : <div className='check-data-payment' onClick={handlePayment}>
-                {console.log(isPayment) }
+                {console.log(isPayment)}
                 <i className="far fa-biking"></i>
             </div>}
 

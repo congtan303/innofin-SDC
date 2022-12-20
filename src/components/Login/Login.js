@@ -1,30 +1,32 @@
-import React, { useState, useEffect } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
 import axios from 'axios';
-import qs from 'qs'
 import phone from '../../asset/Group\ 54.png'
 import './Login.css'
 import Union from '../Union/Union'
-
-
+import LoaderAnimation from '../LoaderAnimation/LoaderAnimation';
 export default function Login() {
     const navigate = useNavigate()
-    const [values, setValues] = useState({
-        username: "",
-        password: "",
-        isShowPassword: false,
-    });
+    const [isShowPassword, setIsShowPassword] = useState(false);
+    const [errLogin, setErrLogin] = useState('');
+
+    // validate form
+
+    const { register, handleSubmit, formState: { errors } } = useForm()
+
 
     // authentication login
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const params = new URLSearchParams()
-        params.append('username', values.username)
-        params.append('password', values.password)
-        params.append('grant_type', 'password')
-        params.append('scope', 'offline_access FinCCP')
-        params.append('client_id', 'FinCCP_App')
-        params.append('client_secret', '1q2w3e*')
+    const onHandleSubmit = (e) => {
+
+        const params = {
+            username:  e.username,
+            password: e.password,
+            grant_type: 'password',
+            scope: 'offline_access FinCCP',
+            client_id: 'FinCCP_App',
+            client_secret:  '1q2w3e*'
+        }
 
         const config = {
             headers: {
@@ -34,28 +36,15 @@ export default function Login() {
 
         axios.post('https://home-dev.innofin.vn/connect/token', params, config)
             .then((result) => {
-               localStorage.setItem("access_token", result.data.access_token)
-               navigate("/account-user");
+                localStorage.setItem("access_token", result.data.access_token)
+                navigate("/account-user");
             })
-            .catch((err) => {
-                // Do somthing
-                console.error(err);
+            .catch((error) => {
+                if( error.response ){
+                    alert(error.response.data.error_description)
+                }
             })
     }
-
-    // ẩn hiện password
-    const handleShowHidePassword = () => {
-        setValues({
-            ...values,
-            isShowPassword: !values.isShowPassword,
-
-        });
-        setTimeout(() => {
-            setValues({
-                isShowPassword: false,
-            });
-        }, 3000);
-    };
 
     return (
         <div className="Login__container">
@@ -68,43 +57,69 @@ export default function Login() {
             </div>
 
             <div className="form-group-login">
-                <form className="w3-container input-form" onSubmit={handleSubmit}>
+                <form className="w3-container input-form" onSubmit={handleSubmit(onHandleSubmit)}>
                     <p>
                         <label className="input-title">ID</label>
                         <input
                             className="w3-input input-user-id"
-                            type="text" onChange={({target}) => setValues({ ...values, username: target.value })} /></p>
-                    {/* <hr className='input-login-hr'></hr> */}
+                            type="text"
+                            name='username'
+                            {...register("username", { required: true })}
+                        />
+                        {Object.keys(errors).length !== 0 && (
+                            <span>
+                                {errors.username?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập "id"</span>}
+                            </span>
+                        )}
+                        <i className="fas fa-user input-icon-id"></i>
+
+                    </p>
+
 
                     <p className='div-input-password'>
                         <label className="input-title">Mật khẩu</label>
                         <input
                             className="w3-input input-user-password"
-                            type={values.isShowPassword ? "text" : "password"}
-                            onChange={(e) => setValues({ ...values, password: e.target.value })} /></p>
-                    {/* <hr className='input-password-hr'></hr> */}
-                    <p className='div-btn-login'>
-                        {/* <Link to="/account-user">
-                         
-                        </Link> */}
+                            type={isShowPassword ? "text" : "password"}
+                            name='password'
+                            {...register("password", { required: true, minLength: 6 })}
+                        />
+                        {Object.keys(errors).length !== 0 && (
+                            <>
+                                <span>
+                                    {errors.password?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập "mật khẩu"</span>}
+                                </span>
+                                <span>
+                                    {errors.password?.type === "minLength" && <span className='text-warning-msg'> "mật khẩu" tối thiểu 6 ký tự</span>}
+                                </span>
+                            </>
 
-                        <button type='submit' className="btn-login">Đăng nhập</button>
+                        )}
+                        <span>{errLogin}</span>
+                        <i
+                            className={isShowPassword ? 'fas fa-eye input-eye-login' : 'fas fa-eye-slash input-eye-login'}
+                            onClick={() => setIsShowPassword(!isShowPassword)}
+                        >
+                        </i>
                     </p>
 
+                    <p className='div-btn-login'>
+                        <button type='submit' className="btn-login">Đăng nhập</button>
+                    </p>
+                        
                 </form>
 
 
-                <i className="fas fa-user input-icon-id"></i>
-                <span onClick={() => { handleShowHidePassword() }}>
-                    <i className={values.isShowPassword ? 'fas fa-eye input-eye-login' : 'fas fa-eye-slash input-eye-login'}></i>
-                </span>
+
+
+
 
 
             </div>
 
 
 
-            <Link to="/change-password" className="link-forgot-password">
+            <Link to="/forgot-password" className="link-forgot-password">
                 <div className="forgot-password">Quên mật khẩu?
                 </div>
             </Link>

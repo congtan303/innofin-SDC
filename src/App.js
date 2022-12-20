@@ -1,19 +1,12 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-// import ReactSwipeButton from "react-swipe-button";
-// import SwipeBtn from './swipe';
+import { Routes, Route } from "react-router-dom";
 import Slash from './components/Slash/Slash';
 import Login from './components/Login/Login';
-import RecoverPassword from './components/RecoverPassword/RecoverPassword';
-import ChangePassword from './components/SuccessRecoverPassword/ChangePassword';
+import ChangePassword from './components/ChangePassword/ChangePassword';
+import ChangePasswordSuccess from './components/ChangePasswordSuccess/ChangePasswordSuccess';
 import ForgotPassword from './components/ForgotPassword/ForgotPassword';
-import SuccessPassword from './components/Union/SuccessPassword/SuccessPassword';
+import SuccessRecoverPassword from './components/SuccessRecoverPassword/SuccessRecoverPassword';
 import Account from './components/Account/Account';
 import Setting from './components/Setting/Setting';
 import InformationUser from './components/InformationUser/InformationUser';
@@ -23,38 +16,18 @@ import RechargeConfirm from './components/RechargeConfirm/RechargeConfirm';
 import History from './components/History/History';
 import HistoryRecharge from './components/HistoryRecharge/HistoryRecharge';
 import HomePage from './components/HomePage/HomePage';
-import Detail1 from './components/Detail1/Detail1';
-import Detail2 from './components/Detail2/Detail2';
-import ListMoney1 from './components/ListMoney1/ListMoney1';
+import DetailTakeCollect from './components/DetailTakeCollect/DetailTakeCollect';
+import DetailStartCollect from './components/DetailStartCollect/DetailStartCollect';
+import ListMoney from './components/ListMoney/ListMoney';
 import ListMoneyComplete from './components/ListMoneyComplete/ListMoneyComplete';
 import CashComplete from './components/CashComplete/CashComplete';
-import Verification from './components/Verification/Verification';
-import SwipeableButton from './components/SwipeButton/SwipeButton';
-import IdentificationCardChip from './components/IdentificationCardChip/IdentificationCardChip';
-import FrontCamera from './components/FrontCamera/FrontCamera';
-import FrontCamera2 from './components/FrontCamera2/FrontCamera2';
-import BackSideCamera from './components/BackSideCamera/BackSideCamera';
-import BackSideCamera2 from './components/BackSideCamera2/BackSideCamera2';
-import FaceID from './components/FaceID/FaceID';
-import IDCard from './components/IDCard/IDCard';
-import ValidationResults from './components/ValidationResults/ValidationResults';
-import ChangeAvatar from './components/ChangeAvatar/ChangeAvatar';
-import FooterHistory from './components/FooterHistory/FooterHistory';
-import FooterAccount from './components/FooterAccount/FooterAccount';
-import FooterApp from './components/FooterApp/FooterApp';
-
-import HeaderHistory from './components/HeaderHistory/HeaderHistory';
-import HeaderHistoryRecharge from './components/HeaderHistoryRecharge/HeaderHistoryRecharge';
-import HeaderApp from './components/HeaderApp/HeaderApp';
 import Protected from './components/Protected';
 import ImageVerification from './components/ImageVerification/ImageVerification';
-import LoaderAnimation from './components/LoaderAnimation/LoaderAnimation';
 import { UserProvider } from './context/UserContext/UserContext';
-
+import EditProfile from './components/EditProfile/EditProfile';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(null);
-
 
   return (
     <Routes>
@@ -78,19 +51,32 @@ function App() {
         element={<Protected isLoggedIn={isLoggedIn}>
           <Setting />
         </Protected>}>
-
       </Route>
+
 
       <Route
         path='/information-user'
         element={
           <Protected isLoggedIn={isLoggedIn}>
-            <UserProvider>
-              <InformationUser />
-            </UserProvider>
+            <InformationUser />
+          </Protected>}>
+      </Route>
 
+      <Route
+        path='/change-password'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <ChangePassword />
           </Protected>}>
 
+      </Route>
+
+      <Route
+        path='/edit-profile'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <EditProfile />
+          </Protected>}>
       </Route>
 
       <Route
@@ -122,8 +108,6 @@ function App() {
 
       </Route>
 
-
-
       <Route
         path='/history'
         element={
@@ -147,38 +131,45 @@ function App() {
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <UserProvider>
-            <HomePage />
+              <HomePage />
             </UserProvider>
-            
           </Protected>
         }>
       </Route>
 
 
       <Route
-        path='/change-password'
+        path='/forgot-password'
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <ForgotPassword />
           </Protected>
         }>
-
       </Route>
 
       <Route
-        path='/success-password'
+        path='/change-password-success'
         element={
           <Protected isLoggedIn={isLoggedIn}>
-            <SuccessPassword />
+            <ChangePasswordSuccess />
           </Protected>
         }>
       </Route>
 
       <Route
-        path="/detail1/:id-:lat-:lng"
+        path='/success-recover-password'
         element={
           <Protected isLoggedIn={isLoggedIn}>
-            <Detail1 />
+            <SuccessRecoverPassword />
+          </Protected>
+        }>
+      </Route>
+
+      <Route
+        path="/detail-take-collect/:id-:lat-:lng"
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <DetailTakeCollect />
           </Protected>
         }>
 
@@ -186,20 +177,20 @@ function App() {
 
 
       <Route
-        path='/detail2/:id-:lat-:lng'
+        path='/detail-start-collect/:id-:lat-:lng'
         element={
           <Protected isLoggedIn={isLoggedIn}>
-            <Detail2 />
+            <DetailStartCollect />
           </Protected>
         }>
       </Route>
 
 
       <Route
-        path='/list-money-1/:id-:lat-:lng'
+        path='/list-money/:id-:lat-:lng'
         element={
           <Protected isLoggedIn={isLoggedIn}>
-            <ListMoney1 />
+            <ListMoney />
           </Protected>
         }>
 
@@ -232,16 +223,9 @@ function App() {
             <CashComplete />
           </Protected>
         }>
-
       </Route>
 
-
-
     </Routes>
-
-
-
-
   );
 }
 

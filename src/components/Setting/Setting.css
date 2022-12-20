@@ -15,18 +15,14 @@
     height: 21px;
     left: 57px;
     top: 68px;
-
-    
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    /* or 120% */
-
     text-align: center;
     letter-spacing: -0.5px;
 
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .setting-information-user {
@@ -35,8 +31,7 @@
     height: 63px;
     left: 27px;
     top: 119px;
-
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
@@ -76,12 +71,9 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    /* identical to box height, or 100% */
-
     text-align: center;
     letter-spacing: -0.5px;
-
-    color: #636363;
+    color: var(--bold-color);
 }
 
 .setting-infomation-user-body {
@@ -96,8 +88,7 @@
     height: 63px;
     left: 27px;
     top: 197px;
-
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
@@ -136,21 +127,15 @@
     height: 18px;
     left: 81px;
     top: 140px;
-
-    
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    /* identical to box height, or 100% */
-
     letter-spacing: -0.5px;
-
-    color: #636363;
-
+    color: var(--bold-color); 
 }
 
-/* tool đăng xuất */
+/*  đăng xuất */
 
 .setting-log-out {
     position: absolute;
@@ -158,8 +143,7 @@
     height: 63px;
     left: 27px;
     top: 275px;
-
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
 }
@@ -197,15 +181,11 @@
     height: 18px;
     left: 81px;
     top: 140px;
-
-    
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
-    /* identical to box height, or 100% */
-
     letter-spacing: -0.5px;
 
-    color: #636363;
+    color: var(--bold-color);
 }

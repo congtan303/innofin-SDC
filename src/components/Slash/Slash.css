@@ -4,7 +4,7 @@
     height: 897px;
     left: 0px;
     top: 0px;
-    background: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
+    background: var(--background-color);
     margin: 0 auto;
 }
 
@@ -16,7 +16,6 @@
     right: 19.81%;
     top: 18.97%;
     bottom: 74.17%;
-
     background: url("../../asset/innofin\ 1.png");
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -27,17 +26,12 @@
     right: 10.63%;
     top: 27.68%;
     bottom: 62.5%;
-
-   
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    /* or 150% */
-
     text-align: center;
-
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .finance__img {
@@ -55,20 +49,16 @@
     height: 54px;
     left: 45px;
     top: 618px;
-    color: #fff;
+    color: var(--white-color);
     background: #2CD1F8;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     outline: none;
     border: none;
     cursor: pointer;
- 
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 18px;
-/* identical to box height, or 100% */
-
-
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--white-color);
 }

@@ -1,0 +1,19 @@
+.backside-card-detail {
+    position: absolute;
+    width: 333px;
+    height: 205px;
+    left: 40px;
+    top: 199px;
+    filter: drop-shadow(0px 1px 10px rgba(112, 112, 112, 0.2));
+}
+
+.backside-card-img {
+    background: url('../../asset/img-back-side-card.png');
+    position: absolute;
+    width: 289px;
+    height: 178.86px;
+    left: 12px;
+    top: 12px;
+    border-radius: 7px;
+    z-index: 2;
+}

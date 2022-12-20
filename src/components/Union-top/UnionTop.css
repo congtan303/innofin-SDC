@@ -6,6 +6,6 @@
     left: 316px;
     top: 26px;
 
-    color: #fff;
+    color: var(--white-color);
     opacity: 1;
 }

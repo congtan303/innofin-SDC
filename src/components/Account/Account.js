@@ -12,26 +12,23 @@ import iconSetting from '../../asset/icon-setting.png'
 import settingBackground from '../../asset/Ellipse\ 15.png'
 import iconContact from '../../asset/Vector-contact.png'
 import contactBackground from '../../asset/Ellipse\ 16.png'
-import { useEffect, useState, useContext } from 'react';
-import axios from 'axios'
+import { useContext } from 'react';
 import { UserContext } from '../../context/UserContext/UserContext';
 
 const Account = () => {
     
     const { dataUser } = useContext(UserContext);
-    console.log(dataUser);
     
     return (
         
         <div className="account-container">
             {/* header */}
-            
                 
                     <div className="Account-header">
                     <div className="Account-background">
                     </div>
                     <div className='account-icon-notification'>
-                        <img src={NotiBell} />
+                        <img src={NotiBell} alt='img-notification'/>
                         <span className="account-number-noti">1</span>
                     </div>
     
@@ -42,9 +39,9 @@ const Account = () => {
                         <div className="Account-header-name">{dataUser.surname} {dataUser.name}</div>
                     </Link>
     
-                    <div className="Account-header-number-id">Mã số ID: {dataUser.identityNumber}</div>
+                    <div className="Account-header-number-id">Mã số ID: {dataUser.id}</div>
                     <div className='account-union'>
-                        <img src={union} />
+                        <img src={union} alt="img-union"/>
                     </div>
                 </div>
     
@@ -58,10 +55,6 @@ const Account = () => {
                         <span className="number-money">{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span> <span className="diem">điểm</span>
                     </div>
                 </div>
-             
-           
-            
-
 
             <div className='account-content-wrap'>
                 <div className="account-content">
@@ -116,8 +109,6 @@ const Account = () => {
                     <div className="account-icon">
                         <a href='tel:0909 99 99 99'>
                             <div className="account-contact-img">
-
-
                                 <div className='elipse-contact'>
                                     <img src={contactBackground} className="contact-background" />
                                     <img src={iconContact} className="contact-icon" />
@@ -126,12 +117,9 @@ const Account = () => {
                         </a>
 
                         <div>
-
                             <div className="account-contact-info">Thông báo khẩn</div>
                             <div className='account-contact-phone-number'>0909 99 99 99</div>
                         </div>
-
-
                     </div>
                     <div className='account-contact-description'>Số đường dây nóng hỗ trợ nhân viên thu hộ
                         trong mọi trường hợp khẩn cấp</div>

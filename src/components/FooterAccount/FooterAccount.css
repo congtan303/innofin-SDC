@@ -11,10 +11,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-
     text-align: center;
-
     color: #AEAEAE;
 }
 
@@ -29,11 +26,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* identical to box height, or 129% */
-
     text-align: center;
-
-    color: #C52AFE;
+    color: var(--purple-color);
 }
 
 .footer-history-account-active-img {

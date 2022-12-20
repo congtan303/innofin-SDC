@@ -1,7 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import './CashComplete.css';
 import logoComplete from '../../asset/image\ 12.png'
-import logoBrand from '../../asset/image\ 19-pizza-hut.png'
 import UnionTop from '../Union-top/UnionTop';
 import axios from 'axios'
 import FooterHistory from '../FooterHistory/FooterHistory';
@@ -9,7 +8,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 export default function CashComplete() {
 
-    let { id, lat, lng } = useParams();
+    let { id } = useParams();
     const [dataComplete, setDataComplete] = useState([])
     const access_token = localStorage.getItem('access_token')
 
@@ -24,7 +23,6 @@ export default function CashComplete() {
         axios.get(`https://home-dev.innofin.vn/api/app/mobile/get-cash-collection/${id}`, config)
             .then((response) => {
                 setDataComplete(response.data)
-                console.log(response.data);
             })
             .catch(err => {
                 console.log(err)
@@ -37,12 +35,10 @@ export default function CashComplete() {
             {/* header */}
             <div className="header-history">
 
-
                 <div className="header-history-title title-complete">Thu hộ hoàn tất</div>
                 <div className="header-history-notification">
                     <div className="header-history-notification-number">1</div>
                 </div>
-
 
                 <UnionTop />
             </div>

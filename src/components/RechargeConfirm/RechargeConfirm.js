@@ -6,7 +6,7 @@ export default function RechargeConfirm() {
         <div className='container'>
             <Link to="/recharge-money">
                 <button className="previous-button">
-                    <i class="fal fa-chevron-left icon-back"></i>
+                    <i className="fal fa-chevron-left icon-back"></i>
                 </button>
             </Link>
 

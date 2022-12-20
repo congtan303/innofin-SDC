@@ -1,16 +1,26 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
 import './Recharge.css'
 
 export default function Recharge() {
-    const [moneys, setMoneys] = useState('')
 
-   const handleOnChangeMoney = (event) => {
-    const {value} = event.target
-        setMoneys(value.replaceAll(",", ''))
-    } 
+    const { register, handleSubmit, formState: { errors } } = useForm()
+    const [coins, setCoins] = useState('')
+    const navigate = useNavigate()
+
+    // hàm submit form nạp điểm
+    const onHandleSubmit = (e) => {
+        console.log(e);
+        navigate("/recharge-confirm")
+    }
+    // hàm thêm dấu phẩy vào hàng nghìn khi user nhập số điểm muốn nạp
+    const handleChangeCoin = (event) => {
+        const {value} = event.target
+        setCoins(value.replaceAll(",", ''))
+    }
+
     return (
-     
         <div className='recharge-container'>
             <Link to="/account-user">
                 <button className="previous-button">
@@ -20,7 +30,7 @@ export default function Recharge() {
             <div className="Recharge-title">
                 Nạp điểm vào tài khoản
             </div>
-            
+
             <div className="Recharge-guide-1">
                 Bước 1: <br />
                 Nạp tiền vào tài khoản tại bất kỳ chi nhánh nào của ngân hàng BIDV. Ghi mã số nhân viên trong phần nội dung nạp điểm.
@@ -32,27 +42,54 @@ export default function Recharge() {
             </div>
 
             <div className="recharge-information">
+                <form className="w3-container input-form" onSubmit={handleSubmit(onHandleSubmit)}>
+                    <p>
+                        <label className="input-title">Mã giao dịch nạp tiền</label>
+                        <input
+                            className="w3-input input-user-password"
+                            type="text"
+                            name='tradingCode'
+                            {...register("tradingCode", { required: true })}
+                        />
+                        {Object.keys(errors).length !== 0 && (
+                            <>
+                                <span>
+                                    {errors.tradingCode?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập "Mã giao dịch nạp tiền"</span>}
+                                </span>
+                            </>
+                        )}
 
+                    </p>
+
+                    <p className='div-input-password'>
+                        <label className="input-title">Số điểm muốn nạp</label>
+                        <input
+                            className="w3-input recharge-input-coin"
+                            type="text"
+                            value={coins.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                            name='moneyCoin'
+                            {...register("moneyCoin", { required: true, onChange: handleChangeCoin })}
+                        />
+                        <span className='recharge-text-coin'>Điểm</span>
+                        {Object.keys(errors).length !== 0 && (
+                            <>
+                                <span>
+                                    {errors.moneyCoin?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập số điểm mà bạn muốn nạp</span>}
+                                </span>
+                                
+                            </>
+
+                        )}
+                    </p>
+
+                    <p className='div-btn-login'>
+                        <button type='submit' className="btn-login">Nạp điểm</button>
+                    </p>
+
+                </form>
             </div>
-            <div className="recharge-code">Mã giao dịch nạp tiền</div>
-            <input className="recharge-input-code"></input>
-            <hr className="recharge-hr-1" />
 
-            <div className="recharge-coin">Số tiền muốn nạp</div>
-            <input
-             className="recharge-input-coin"
-              type="text" 
-              value={moneys.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-              onChange={handleOnChangeMoney} />
-            <span className="recharge-text">Điểm</span>
-            <hr className="recharge-hr-2"></hr>
-            <div className='div-button-recharge'>
-                <Link to="/recharge-confirm">
-                    <button className="btn-recharge-password">Nạp điểm</button>
-                </Link>
-
-            </div>
 
         </div>
     )
-}
+}   

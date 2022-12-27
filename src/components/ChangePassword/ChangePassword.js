@@ -63,14 +63,10 @@ const ChangePassword = () => {
                                         {errors.newPassword?.type === "minLength" && <span className='text-warning-msg'> "mật khẩu" tối thiểu 6 ký tự</span>}
                                     </span>
                                 </>
-
                             )}
 
                             <i className="fas fa-eye-slash  input-icon" onClick={handleShowHidePassword}></i>
-
-
                         </p>
-
 
                         <p className='div-input-password'>
                             <label className="input-title">Nhập lại mật khẩu mới</label>

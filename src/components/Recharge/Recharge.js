@@ -49,15 +49,10 @@ export default function Recharge() {
                             className="w3-input input-user-password"
                             type="text"
                             name='tradingCode'
-                            {...register("tradingCode", { required: true })}
+                            {...register("tradingCode", { required: 'Vui lòng nhập "Mã giao dịch nạp tiền"' })}
                         />
-                        {Object.keys(errors).length !== 0 && (
-                            <>
-                                <span>
-                                    {errors.tradingCode?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập "Mã giao dịch nạp tiền"</span>}
-                                </span>
-                            </>
-                        )}
+                        
+                        {errors.tradingCode && <span className='text-warning-msg '>{errors.tradingCode.message}</span>}
 
                     </p>
 
@@ -68,18 +63,11 @@ export default function Recharge() {
                             type="text"
                             value={coins.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                             name='moneyCoin'
-                            {...register("moneyCoin", { required: true, onChange: handleChangeCoin })}
+                            {...register("moneyCoin", { required: 'Vui lòng nhập số điểm mà bạn muốn nạp', onChange: handleChangeCoin })}
                         />
                         <span className='recharge-text-coin'>Điểm</span>
-                        {Object.keys(errors).length !== 0 && (
-                            <>
-                                <span>
-                                    {errors.moneyCoin?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập số điểm mà bạn muốn nạp</span>}
-                                </span>
-                                
-                            </>
-
-                        )}
+                        
+                        {errors.moneyCoin && <span className='text-warning-msg '>{errors.moneyCoin.message}</span>}
                     </p>
 
                     <p className='div-btn-login'>

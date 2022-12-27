@@ -171,13 +171,10 @@ export default function EditProfile() {
                                     type="text"
                                     name='surName'
                                     placeholder={dataUser.surname}
-                                    className="input-edit-profile" {...register("surName", { required: true })}
+                                    className="input-edit-profile" {...register("surName", { required: 'Vui lòng nhập "Họ" của bạn' })}
                                 />
-                                {Object.keys(errors).length !== 0 && (
-                                    <span>
-                                        {errors.surName?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập "Họ" của bạn</span>}
-                                    </span>
-                                )}
+
+                                {errors.surName && <span className='text-warning-msg '>{errors.surName.message}</span>}
                             </div>
                             <div className='edit-profile-hr'></div>
                         </div>
@@ -190,14 +187,11 @@ export default function EditProfile() {
                                     type="text"
                                     name='name'
                                     placeholder={dataUser.name}
-                                    className="input-edit-profile" {...register("name", { required: true })}
+                                    className="input-edit-profile" {...register("name", { required: 'Vui lòng nhập "Tên" của bạn' })}
                                 />
-                                {Object.keys(errors).length !== 0 && (
-                                    <span>
-                                        {errors.name?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập "Tên" của bạn</span>}
-                                    </span>
+                                
+                                {errors.name && <span className='text-warning-msg '>{errors.name.message}</span>}
 
-                                )}
                             </div>
                             <div className='edit-profile-hr'></div>
                         </div>
@@ -273,19 +267,10 @@ export default function EditProfile() {
                                     type="text"
                                     name='phoneNumber'
                                     placeholder={dataUser.phoneNumber}
-                                    className="input-edit-profile" {...register("phoneNumber", { required: true, minLength: 10 })}
+                                    className="input-edit-profile" {...register("phoneNumber", { required: 'Vui lòng nhập "số điện thoại"', minLength: 10 })}
                                 />
-                                {Object.keys(errors).length !== 0 && (
-                                    <>
-                                        <span>
-                                            {errors.phoneNumber?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập "số điện thoại"</span>}
-                                        </span>
-                                        <span>
-                                            {errors.phoneNumber?.type === "minLength" && <span className='text-warning-msg'>"Số điện thoại" phải đủ 10 ký tự</span>}
-                                        </span>
-                                    </>
-
-                                )}
+                                
+                                {errors.phoneNumber && <span className='text-warning-msg '>{errors.phoneNumber.message}</span>}
                             </div>
                             <div className='edit-profile-hr'></div>
                         </div>
@@ -298,7 +283,7 @@ export default function EditProfile() {
                                     type="number"
                                     name='identityNumber'
                                     placeholder={dataUser.identityNumber}
-                                    className="input-edit-profile" {...register("identityNumber", { required: true, minLength: 12, maxLength:12 })}
+                                    className="input-edit-profile" {...register("identityNumber", { required: true, minLength: 12, maxLength: 12 })}
                                 />
                                 {Object.keys(errors).length !== 0 && (
                                     <>
@@ -307,11 +292,11 @@ export default function EditProfile() {
                                         </span>
                                         <span>
                                             {errors.identityNumber?.type === "minLength" && <span className='text-warning-msg'>số CCCD phải tối thiểu 12 ký tự</span>}
-                                            
+
                                         </span>
                                         <span>
                                             {errors.identityNumber?.type === "maxLength" && <span className='text-warning-msg'>số CCCD phải tối đa 12 ký tự</span>}
-                                            
+
                                         </span>
                                     </>
 
@@ -391,14 +376,9 @@ export default function EditProfile() {
                                     type="text"
                                     placeholder={dataUser.identityAddress}
                                     className="input-edit-profile"
-                                    {...register("identityAddress", { required: true })}
+                                    {...register("identityAddress", { required: 'Vui lòng nhập "Nơi cấp"' })}
                                 />
-                                {Object.keys(errors).length !== 0 && (
-                                    <span>
-                                        {errors.identityAddress?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập "Nơi cấp"</span>}
-                                    </span>
-
-                                )}
+                                {errors.identityAddress && <span className='text-warning-msg '>{errors.identityAddress.message}</span>}
                             </div>
                             <div className='edit-profile-hr'></div>
                         </div>
@@ -430,8 +410,8 @@ export default function EditProfile() {
                             <div className='edit-profile-hr'></div>
                         </div>
                         <div className="flex flex-col gap-5">
-                           <label htmlFor='cities' className='edit-profile-name'>Tỉnh/Thành phố:</label>
-                            
+                            <label htmlFor='cities' className='edit-profile-name'>Tỉnh/Thành phố:</label>
+
                             <select name='cities' className='form-control p-2' onChange={(e) => handleCities(e)}>
                                 <option value="abc">--Vui lòng chọn Tỉnh/Thành phố</option>
                                 {
@@ -442,7 +422,7 @@ export default function EditProfile() {
                             </select>
 
                             <label htmlFor='districts' className='edit-profile-name'>Quận/Huyện</label>
-                            
+
                             <select name='districts' className='form-control p-2' onChange={(e) => handleDistricts(e)}>
                                 <option value="abc">--Vui lòng chọn Quận/Huyện</option>
                                 {
@@ -454,7 +434,7 @@ export default function EditProfile() {
                             </select>
                             <label htmlFor='wards' className='edit-profile-name'>Phường/Xã:</label>
 
-                            
+
                             <select name='wards' className='form-control p-2' onChange={(e) => handleWards(e)} >
                                 <option value="abc">--Vui lòng chọn Phường/Xã</option>
                                 {

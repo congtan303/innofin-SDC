@@ -9,11 +9,11 @@ import moment from 'moment'
 import { UserContext } from '../../context/UserContext/UserContext'
 
 function HomePage() {
+    const { dataUser } = useContext(UserContext);
     const navigate = useNavigate()
     const [dataCustomer, setDataCustomer] = useState([])
     const [loader, setLoader] = useState(true);
     const [isPayment, setIsPayment] = useState(false)
-    const { dataUser } = useContext(UserContext);
     const access_token = localStorage.getItem('access_token')
 
     const config = {
@@ -65,18 +65,15 @@ function HomePage() {
                         1
                     </div>
                 </div>
-
                 <div className="account-coin">Tài khoản điểm: <strong >{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</strong> điểm</div>
                 <div className="home-page-navbar">
                     <span className="customer-need-take-money">Khách hàng cần thu</span>
                 </div>
             </div>
 
-            {/* list */}
-
             <ul className='list-customer'>
-
-                { dataCustomer ? dataCustomer.map((data) => (
+                {loader && <LoaderAnimation />}
+                {dataCustomer.length !== 0 ? dataCustomer.map((data) => (
                     <Link to={`/detail-take-collect/${data.id}-${data.lat}-${data.lng}`} key={data.id} >
                         <li className='list-customer-information' >
                             <div>
@@ -101,14 +98,11 @@ function HomePage() {
                             </div>
                         </li>
                     </Link>
+                )) : <div className='blue text-center'>Hiện tại chưa có đơn thu hộ nào</div>}
 
 
-                )) : <div className='blue text-center'>Hiện tại chưa có đơn nào</div>}
-                {loader && <LoaderAnimation />}
-                    
             </ul>
             {!isPayment ? '' : <div className='check-data-payment' onClick={handlePayment}>
-                {console.log(isPayment)}
                 <i className="far fa-biking"></i>
             </div>}
 

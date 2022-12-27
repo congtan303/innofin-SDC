@@ -3,45 +3,31 @@ import { useParams, useNavigate } from "react-router-dom"
 import UnionTop from "../Union-top/UnionTop"
 import FooterApp from "../FooterApp/FooterApp"
 import './ImageVerification.css'
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import axios from 'axios'
 import { useForm } from 'react-hook-form'
 
 export default function ImageVerification() {
     const { id, lat, lng } = useParams()
-    const { register, handleSubmit, formState: { errors } } = useForm()
     const navigate = useNavigate()
+    const { register, handleSubmit, formState: { errors } } = useForm()
     const [image, setImage] = useState()
-console.log(image);
 
+
+    // xóa hình ảnh khỏi bộ nhớ, khi chọn hình khác
+    useEffect(() => {
+        return() => {
+        image && URL.revokeObjectURL(image.preview)
+        }
+    }, [image])
+
+    // hàm thay đổi hình ảnh
     const handleImage = (e) => {
         const file = e.target.files[0]
-
         file.preview = URL.createObjectURL(file)
         setImage(file)
     }
 
-    const handleApi = () => {
-        navigate(`/cash-complete/${id}-${lat}-${lng}`)
-        const formData = new FormData()
-        formData.append('Images', image)
-        formData.append('Lng', lng)
-        formData.append('Lat', lat)
-        formData.append('Id', id)
-
-        const access_token = localStorage.getItem('access_token')
-
-        // post form data đơn thu hộ lên server
-        axios({
-            url: 'https://home-dev.innofin.vn/api/app/mobile/complete-collection',
-            method: 'POST',
-            headers: {
-                'Authorization': 'Bearer ' + access_token
-            },
-            data: formData
-        })
-
-    }
 
     const onSubmit = (e) => {
         console.log(e);

@@ -21,7 +21,7 @@ const Account = () => {
     
     return (
         
-        <div className="account-container">
+        <div className="container">
             {/* header */}
                 
                     <div className="Account-header">

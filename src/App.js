@@ -25,6 +25,7 @@ import Protected from './components/Protected';
 import ImageVerification from './components/ImageVerification/ImageVerification';
 import { UserProvider } from './context/UserContext/UserContext';
 import EditProfile from './components/EditProfile/EditProfile';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(null);
@@ -221,6 +222,15 @@ function App() {
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <CashComplete />
+          </Protected>
+        }>
+      </Route>
+
+      <Route
+        path='*'
+        element={
+          <Protected isLoggedIn={isLoggedIn}>
+            <PageNotFound />
           </Protected>
         }>
       </Route>

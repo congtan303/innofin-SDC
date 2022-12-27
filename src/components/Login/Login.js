@@ -5,11 +5,9 @@ import axios from 'axios';
 import phone from '../../asset/Group\ 54.png'
 import './Login.css'
 import Union from '../Union/Union'
-import LoaderAnimation from '../LoaderAnimation/LoaderAnimation';
 export default function Login() {
     const navigate = useNavigate()
     const [isShowPassword, setIsShowPassword] = useState(false);
-    const [errLogin, setErrLogin] = useState('');
 
     // validate form
 
@@ -64,13 +62,9 @@ export default function Login() {
                             className="w3-input input-user-id"
                             type="text"
                             name='username'
-                            {...register("username", { required: true })}
+                            {...register("username", { required: 'Vui lòng nhập "id"' })}
                         />
-                        {Object.keys(errors).length !== 0 && (
-                            <span>
-                                {errors.username?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập "id"</span>}
-                            </span>
-                        )}
+                        {errors.username && <span className='text-warning-msg '>{errors.username.message}</span>}
                         <i className="fas fa-user input-icon-id"></i>
 
                     </p>
@@ -95,7 +89,6 @@ export default function Login() {
                             </>
 
                         )}
-                        <span>{errLogin}</span>
                         <i
                             className={isShowPassword ? 'fas fa-eye input-eye-login' : 'fas fa-eye-slash input-eye-login'}
                             onClick={() => setIsShowPassword(!isShowPassword)}
@@ -109,30 +102,17 @@ export default function Login() {
                         
                 </form>
 
-
-
-
-
-
-
             </div>
-
-
-
             <Link to="/forgot-password" className="link-forgot-password">
                 <div className="forgot-password">Quên mật khẩu?
                 </div>
             </Link>
-
-
             <div className="contact">
                 <a href='tel: 19001009'>
                     <div className="phone">
                         <img src={phone}></img>
                     </div>
                 </a>
-
-
                 <span className="phone-number">Hotline: 19001009</span>
             </div>
 

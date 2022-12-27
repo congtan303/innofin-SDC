@@ -46,16 +46,9 @@ const ForgotPassword = () => {
                             className="w3-input forgot-password-input"
                             type={values.isShowPassword ? "text" : "password"}
                             name="forgotPassword"
-                            {...register("forgotPassword", { required: true })}
-                        />
-                        {Object.keys(errors).length !== 0 && (
-                            <>
-                                <span>
-                                    {errors.forgotPassword?.type === "required" && <span className='text-warning-msg'>Vui lòng nhập "ID Đăng nhập" của bạn</span>}
-                                </span>
-                            </>
-
-                        )}
+                            {...register("forgotPassword", { required: 'Vui lòng nhập "ID Đăng nhập" của bạn' })}
+                        /> 
+                        {errors.forgotPassword && <span className='text-warning-msg '>{errors.forgotPassword.message}</span>}
                     </p>
                     <button className="btn-forgot-password" type='submit'>Lấy lại mật khẩu</button>
                 </form>

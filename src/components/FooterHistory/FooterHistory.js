@@ -10,7 +10,7 @@ export default function FooterHistory() {
 
                         </div>
 
-                        <div className="footer-history-icon-text">
+                        <div className="footer-history-icon-text-normal">
                             Thu hộ
                         </div>
 

@@ -9,7 +9,7 @@ export default function FooterAccount() {
                         <div className="footer-history-icon-img">
 
                         </div>
-                        <div className="footer-history-icon-text">
+                        <div className="footer-history-icon-normal">
                             Thu hộ
                         </div>
                     </div>

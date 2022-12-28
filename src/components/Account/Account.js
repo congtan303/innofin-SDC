@@ -25,8 +25,7 @@ const Account = () => {
             {/* header */}
                 
                     <div className="Account-header">
-                    <div className="Account-background">
-                    </div>
+                    
                     <div className='account-icon-notification'>
                         <img src={NotiBell} alt='img-notification'/>
                         <span className="account-number-noti">1</span>

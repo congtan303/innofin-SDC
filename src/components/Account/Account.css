@@ -17,17 +17,15 @@
 
 .Account-header {
     position: absolute;
-    z-index: 3;
-}
-
-.Account-background {
-    position: absolute;
     width: 414px;
     height: 232px;
     left: 0px;
     top: 0px;
-    background: var(--background-color)
+    background: var(--background-color);
+    z-index: 3;
 }
+
+
 
 .account-icon-notification { 
     position: absolute;

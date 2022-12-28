@@ -24,3 +24,24 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    background-color: red !important;
+  }
+
+  .footer-history {
+    position: fixed;
+    bottom: 0;
+    width: 414px;
+    height: 105px;
+    background: var(--white-color);
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 1px 10px rgb(112 112 112 / 20%);
+    z-index: 10;
+  }
+}

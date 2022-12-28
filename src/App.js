@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
+import { HashRouter } from 'react-router-dom';
 import Slash from './components/Slash/Slash';
 import Login from './components/Login/Login';
 import ChangePassword from './components/ChangePassword/ChangePassword';

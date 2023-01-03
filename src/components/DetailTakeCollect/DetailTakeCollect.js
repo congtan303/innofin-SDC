@@ -32,7 +32,7 @@ export default function DetailTakeCollect() {
     // hàm điều hướng tới trang thu hộ
     const navigate = useNavigate()
     const onSuccess = () => {
-        navigate(`/detail-start-collect/${id}-${lat}-${lng}`)
+        navigate(`/detail-start-collect/${id}/${lat}/${lng}`)
 
         // API bắt đầu nhận đơn thu
 

@@ -10,7 +10,7 @@ export default function DetailStartCollect() {
     let { id, lat, lng } = useParams();
     const navigate = useNavigate()
     const onSuccess = () => {
-        navigate(`/list-money/${id}-${lat}-${lng}`);
+        navigate(`/list-money/${id}/${lat}/${lng}`);
     }
 
     const [dataPayment, setDataPayment] = useState([])
@@ -76,7 +76,7 @@ export default function DetailStartCollect() {
                     <div className="detail-1-contact">
                         <a href='tel: 0923 221 554'>
                             <div className="detail-1-contact-background">
-                                <img src={phone}></img>
+                                <img src={phone} alt=''></img>
                             </div>
                         </a>
                     </div>

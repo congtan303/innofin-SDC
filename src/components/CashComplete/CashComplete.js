@@ -45,7 +45,7 @@ export default function CashComplete() {
             <div className='cash-complete-content'>
                 <div className='cash-complete-content-status'>
                     <div className='cash-complete-content-status-icon'>
-                        <img src={logoComplete} />
+                        <img src={logoComplete} alt='' />
                     </div>
                     <div className='cash-complete-content-status-text '>
                         Bạn đã thu hộ thành công tại cửa hàng
@@ -54,7 +54,7 @@ export default function CashComplete() {
 
                 <div className='cash-complete-card-body'>
                     <div >
-                        <img src={dataComplete.storeLogo} className='cash-complete-card-img' />
+                        <img src={dataComplete.storeLogo} className='cash-complete-card-img' alt='' />
                     </div>
                     <div className='cash-complete-wrap'>
                         <div className='cash-complete-card-brand'>

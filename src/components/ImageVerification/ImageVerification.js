@@ -31,7 +31,7 @@ export default function ImageVerification() {
 
     const onSubmit = (e) => {
         console.log(e);
-        navigate(`/cash-complete/${id}-${lat}-${lng}`)
+        navigate(`/cash-complete/${id}/${lat}/${lng}`)
         const formData = new FormData()
         formData.append('Images', image)
         formData.append('Lng', lng)
@@ -54,11 +54,9 @@ export default function ImageVerification() {
     return (
         <div className="container">
             <div className="header-image-verification">
-
                 <div className='header-img-previous-btn'>
                     <i className="fal fa-chevron-left"></i>
                 </div>
-
                 <div className="header-image-verification-title">
                     Xác minh thu hộ
                 </div>

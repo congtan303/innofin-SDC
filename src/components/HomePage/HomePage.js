@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useContext, useState, useEffect } from 'react'
 import axios from 'axios'
 import './HomePage.css'
@@ -9,11 +9,13 @@ import moment from 'moment'
 import { UserContext } from '../../context/UserContext/UserContext'
 
 function HomePage() {
+   
     const { dataUser } = useContext(UserContext);
     const navigate = useNavigate()
     const [dataCustomer, setDataCustomer] = useState([])
     const [loader, setLoader] = useState(true);
     const [isPayment, setIsPayment] = useState(false)
+
     const access_token = localStorage.getItem('access_token')
 
     const config = {
@@ -32,10 +34,10 @@ function HomePage() {
 
     // nếu có đơn đã vào trạng thái "đã nhận" thì chuyển hướng đến trang "bắt đầu thu hộ"
     const handlePayment = () => {
-        navigate(`/detail-start-collect/${isPayment.id}-${isPayment.lat}-${isPayment.lng}`)
+        navigate(`/detail-start-collect/${isPayment.id}/${isPayment.lat}/${isPayment.lng}`)
     }
 
-    // get APIlist đơn 
+    // get API list đơn 
     useEffect(() => {
         axios.get('https://home-dev.innofin.vn/api/app/mobile/my-request-collection?cityId&districtId&wardId&merchantId&page=1', config)
             .then(response => {
@@ -74,10 +76,11 @@ function HomePage() {
             <ul className='list-customer'>
                 {loader && <LoaderAnimation />}
                 {dataCustomer.length !== 0 ? dataCustomer.map((data) => (
-                    <Link to={`/detail-take-collect/${data.id}-${data.lat}-${data.lng}`} key={data.id} >
+                    <Link to={`/detail-take-collect/${data.id}/${data.lat}/${data.lng}`} key={data.id} >
+                        
                         <li className='list-customer-information' >
-                            <div>
-                                <img src={data.storeLogo} className='list-customer-avatar'></img>
+                          <div>
+                                <img src={data.storeLogo} className='list-customer-avatar' alt='' />
                             </div>
                             <div className='list-customer-description'>
                                 <div className='list-customer-description-name'>

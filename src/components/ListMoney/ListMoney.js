@@ -36,7 +36,7 @@ export default function ListMoney() {
     }, [])
 
     const onHandleSubmit = (e) => {
-        navigate(`/image-verify/${id}-${lat}-${lng}`)
+        navigate(`/image-verify/${id}/${lat}/${lng}`)
 
     }
     return (

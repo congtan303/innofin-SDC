@@ -168,7 +168,7 @@ function App() {
       </Route>
 
       <Route
-        path="/detail-take-collect/:id-:lat-:lng"
+        path="/detail-take-collect/:id/:lat/:lng"
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <DetailTakeCollect />
@@ -179,7 +179,7 @@ function App() {
 
 
       <Route
-        path='/detail-start-collect/:id-:lat-:lng'
+        path='/detail-start-collect/:id/:lat/:lng'
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <DetailStartCollect />
@@ -189,7 +189,7 @@ function App() {
 
 
       <Route
-        path='/list-money/:id-:lat-:lng'
+        path='/list-money/:id/:lat/:lng'
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <ListMoney />
@@ -199,7 +199,7 @@ function App() {
       </Route>
 
       <Route
-        path='/list-money-complete/:id-:lat-:lng'
+        path='/list-money-complete/:id/:lat/:lng'
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <ListMoneyComplete />
@@ -209,7 +209,7 @@ function App() {
       </Route>
 
       <Route
-        path='/image-verify/:id-:lat-:lng'
+        path='/image-verify/:id/:lat/:lng'
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <ImageVerification />
@@ -219,7 +219,7 @@ function App() {
       </Route>
 
       <Route
-        path='/cash-complete/:id-:lat-:lng'
+        path='/cash-complete/:id/:lat/:lng'
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <CashComplete />
@@ -227,14 +227,14 @@ function App() {
         }>
       </Route>
 
-      <Route
+      {/* <Route
         path='*'
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <PageNotFound />
           </Protected>
         }>
-      </Route>
+      </Route> */}
 
     </Routes>
   );

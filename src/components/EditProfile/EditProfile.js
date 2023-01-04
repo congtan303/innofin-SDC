@@ -176,7 +176,7 @@ export default function EditProfile() {
 
                                 {errors.surName && <span className='text-warning-msg '>{errors.surName.message}</span>}
                             </div>
-                            <div className='edit-profile-hr'></div>
+                            
                         </div>
                         <div className='edit-profile-information'>
                             <div className='edit-profile-name'>
@@ -193,7 +193,7 @@ export default function EditProfile() {
                                 {errors.name && <span className='text-warning-msg '>{errors.name.message}</span>}
 
                             </div>
-                            <div className='edit-profile-hr'></div>
+                            
                         </div>
                         <div className='edit-profile-information'>
                             <div className='edit-profile-name'>
@@ -256,7 +256,7 @@ export default function EditProfile() {
                                     className="input-edit-profile"
                                 />
                             </div>
-                            <div className='edit-profile-hr'></div>
+                            
                         </div>
                         <div className='edit-profile-information'>
                             <div className='edit-profile-name'>
@@ -272,7 +272,7 @@ export default function EditProfile() {
                                 
                                 {errors.phoneNumber && <span className='text-warning-msg '>{errors.phoneNumber.message}</span>}
                             </div>
-                            <div className='edit-profile-hr'></div>
+                            
                         </div>
                         <div className='edit-profile-information'>
                             <div className='edit-profile-name'>
@@ -303,7 +303,7 @@ export default function EditProfile() {
 
                                 )}
                             </div>
-                            <div className='edit-profile-hr'></div>
+                            
                         </div>
                         <div className='edit-profile-information'>
                             <div className='edit-profile-name'>
@@ -365,7 +365,7 @@ export default function EditProfile() {
                                     className="input-edit-profile"
                                 />
                             </div>
-                            <div className='edit-profile-hr'></div>
+                            
                         </div>
                         <div className='edit-profile-information'>
                             <div className='edit-profile-name'>
@@ -380,7 +380,7 @@ export default function EditProfile() {
                                 />
                                 {errors.identityAddress && <span className='text-warning-msg '>{errors.identityAddress.message}</span>}
                             </div>
-                            <div className='edit-profile-hr'></div>
+                            
                         </div>
                         <div className='edit-profile-information'>
                             <div className='edit-profile-name'>
@@ -407,7 +407,7 @@ export default function EditProfile() {
 
                                 )}
                             </div>
-                            <div className='edit-profile-hr'></div>
+                            
                         </div>
                         <div className="flex flex-col gap-5">
                             <label htmlFor='cities' className='edit-profile-name'>Tỉnh/Thành phố:</label>

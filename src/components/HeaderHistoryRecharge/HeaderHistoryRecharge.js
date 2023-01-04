@@ -21,13 +21,11 @@ export default function HeaderHistoryRecharge() {
             </div>
             <div className='header-history-navbar'>
                 <Link to="/history">
-                    <div className='header-history-navbar-app '>Thu hộ</div>
+                    <div className='header-history-navbar-recharge-no-active '>Thu hộ</div>
                 </Link>
 
-                <div className='header-history-navbar-seperate'></div>
 
-                <div className='header-history-navbar-recharge-active'>Nạp điểm</div>
-                <div className='header-history-navbar-seperate-border-active'></div>
+                <div className='header-history-navbar-add-coin-active'>Nạp điểm</div>
             </div>
           
 

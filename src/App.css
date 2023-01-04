@@ -24,6 +24,7 @@ html {
     height: 100%;
     background: #FBFBFD;
     display: block;
+    padding: 0;
 }
 
 
@@ -83,7 +84,9 @@ li {
 input {
     outline: none;
     border: none;
+    border-bottom: 1px solid #ccc;
     color: #636363;
+    line-height: 30px;
 }
 
 input[type=number]::-webkit-inner-spin-button {

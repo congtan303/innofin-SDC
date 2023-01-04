@@ -7,11 +7,11 @@ export default function HeaderHistory() {
         <div>
             <div className="header-history">
                 <Link to="/home-page">
-                <div className='header-history-previous-btn'>
+                    <div className='header-history-previous-btn'>
 
-                </div>
+                    </div>
                 </Link>
-                
+
                 <div className="header-history-title">Lịch sử</div>
                 <div className="header-history-notification">
                     <div className="header-history-notification-number">1</div>
@@ -21,14 +21,12 @@ export default function HeaderHistory() {
                 <UnionTop />
             </div>
             <div className='header-history-navbar'>
-                
-                <div className='header-history-navbar-app-active'>Thu hộ</div>
-                <div className='header-history-navbar-seperate'></div>
-                <div className='header-history-navbar-app-border-active'></div>
+
+                <div className='header-history-navbar-app'>Thu hộ</div>
                 <Link to="/history-recharge">
-                <div className='header-history-navbar-recharge'>Nạp điểm</div>
+                    <div className='header-history-navbar-add-coin'>Nạp điểm</div>
                 </Link>
-                
+
             </div>
 
         </div>

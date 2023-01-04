@@ -289,3 +289,15 @@ border-radius: 10px;
     z-index: 20;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .list-customer {
+        height: 100vh;
+    }
+    .home-page-header-welcome {
+        width: 100%;
+    }
+    .home-page-header-welcome {
+        width: 100%;
+    }
+}

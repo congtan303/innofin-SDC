@@ -1,5 +1,5 @@
 
-import { useParams, useNavigate } from "react-router-dom"
+import { useParams, useNavigate, Link } from "react-router-dom"
 import UnionTop from "../Union-top/UnionTop"
 import FooterApp from "../FooterApp/FooterApp"
 import './ImageVerification.css'
@@ -16,8 +16,8 @@ export default function ImageVerification() {
 
     // xóa hình ảnh khỏi bộ nhớ, khi chọn hình khác
     useEffect(() => {
-        return() => {
-        image && URL.revokeObjectURL(image.preview)
+        return () => {
+            image && URL.revokeObjectURL(image.preview)
         }
     }, [image])
 
@@ -54,9 +54,12 @@ export default function ImageVerification() {
     return (
         <div className="container">
             <div className="header-image-verification">
-                <div className='header-img-previous-btn'>
-                    <i className="fal fa-chevron-left"></i>
-                </div>
+                <Link to={`/list-money/${id}/${lat}/${lng}`}>
+                    <div className='header-img-previous-btn'>
+                        <i className="fal fa-chevron-left"></i>
+                    </div>
+                </Link>
+
                 <div className="header-image-verification-title">
                     Xác minh thu hộ
                 </div>
@@ -85,7 +88,7 @@ export default function ImageVerification() {
                             <input
                                 id="file-upload"
                                 type="file"
-                                {...register("inputImage", { required: 'vui lòng chọn hình ảnh xác minh thu hộ', onChange: handleImage})}
+                                {...register("inputImage", { required: 'vui lòng chọn hình ảnh xác minh thu hộ', onChange: handleImage })}
                             />
                         </div>
                     </div>

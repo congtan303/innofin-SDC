@@ -91,12 +91,12 @@
 
 .information-hr {
     position: absolute;
-    width: 359px;
-    height: 0px;
+    width: 360px;
+    height: 1px;
     left: 27px;
     top: 230px;
     margin: 0;
-    border: 1px solid #DDDDDD;
+   background-color: var(--border-color);
 }
 
 
@@ -189,7 +189,7 @@
 }
 
 .information-identity-number-content {
-    margin-right: 28px;
+    margin-right: 46px;
 }
 
 .information-date-of-birth-content,
@@ -218,9 +218,10 @@
 /* hr */
 
 .hr-information-user {
-    border: 1px solid #DDDDDD;
     width: 330px;
+    height: 1px;
     margin: 0 auto;
+    background-color: var(--border-color);
 }
 
 /* btn submit update info */

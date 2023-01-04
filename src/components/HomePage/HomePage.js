@@ -112,7 +112,6 @@ function HomePage() {
                     </Link>
                 )) : <div className='blue text-center'>Hiện tại chưa có đơn thu hộ nào</div>}
 
-
             </ul>
             {!isPayment ? '' : <div className='check-data-payment' onClick={handlePayment}>
                 <i className="far fa-biking"></i>

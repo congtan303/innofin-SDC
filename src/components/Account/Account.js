@@ -112,7 +112,7 @@ const Account = () => {
                     </div>
 
                     {/* hr */}
-                    <div className='account-hr'></div>
+                    <hr className='hr-account'/>
                     <div className="account-icon">
                         <a href='tel:0909 99 99 99'>
                             <div className="account-contact-img">

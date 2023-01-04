@@ -117,8 +117,9 @@ thead {
 
 .confirm-money {
     position: absolute;
-    width: 280px;
-    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: 10px;
     top: 500px;
     font-style: normal;
@@ -138,15 +139,67 @@ thead {
     color: #2CD1F8;
 }
 
-.input-radio {
+.input-checkbox {
+ 
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid #CBCBCB;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.input-checkbox::before {
+    content: '';
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.input-checkbox:checked ~ .circle-checkbox {
+    /* background-color: var(--blue-color); */
+    display: block;
+}
+
+.circle-checkbox {
     width: 14px;
     height: 14px;
-    margin-right: 10px;
+    background: var(--blue-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 5.5px;
+    top: 5.5px;
+    display: none;
+    cursor: pointer;
 }
 
 /* btn edit table */
 
 .btn-edit-table {
+    position: absolute;
+    width: 190px;
+    height: 54px;
+    left: 15px;
+    top: 545px;
+    background: #CBCBCB;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--white-color);
+}
+
+.btn-edit-table-active {
     position: absolute;
     width: 190px;
     height: 54px;
@@ -171,6 +224,24 @@ thead {
     left: 210px;
     top: 545px;
     background: #CBCBCB;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--white-color);
+}
+
+
+.btn-complete-edit-active {
+    position: absolute;
+    width: 190px;
+    height: 54px;
+    left: 210px;
+    top: 545px;
+    background: #2CD1F8;
     border-radius: 8px;
     border: none;
     outline: none;

@@ -11,6 +11,8 @@ export default function ListMoney() {
     const { id, lat, lng } = useParams()
     const [statement, setStateMent] = useState([])
     const [collect, setCollect] = useState({})
+    const [isCheckBox, setIsCheckBox] = useState(false)
+    
     const access_token = localStorage.getItem('access_token')
 
     const config = {
@@ -39,10 +41,13 @@ export default function ListMoney() {
         navigate(`/image-verify/${id}/${lat}/${lng}`)
 
     }
+
+    const changeColorButton = () => {
+    }
     return (
         <div className='container'>
             <div className="header-history">
-                <Link to={`/detail-start-collect/${id}-${lat}-${lng}`}>
+                <Link to={`/detail-start-collect/${id}/${lat}/${lng}`}>
                     <div className='header-history-previous-btn'>
                     </div>
                 </Link>
@@ -94,23 +99,26 @@ export default function ListMoney() {
 
                     <div className="confirm-money">
                         <input
-                            type="radio"
+                            type="checkbox"
                             value="enough-money"
                             id="money"
-                            className="input-radio"
+                            className="input-checkbox"
                             name='inputCheckbox'
                             {...register("inputCheckbox", { required: 'vui lòng bấm nút xác nhận ' })}
+                            onClick={() => setIsCheckBox(!isCheckBox)}
                         />
                         <label htmlFor='money'> Tôi đã nhận đủ số tiền cần thu</label>
+                        <div className='circle-checkbox'></div>
                         {errors.inputCheckbox && <span className='text-warning-msg '>{errors.inputCheckbox.message}</span>}
                     </div>
 
-                    <button className="btn-edit-table">Sửa bảng kê</button>
+                    <button className={isCheckBox ? "btn-edit-table" : "btn-edit-table-active" } >Sửa bảng kê</button>
 
                     <button
                         type='submit'
-                        className="btn-complete-edit" 
+                        className={isCheckBox ? "btn-complete-edit-active" : "btn-complete-edit" } 
                     >
+                        {console.log(isCheckBox)}
                         Hoàn tất
                     </button>
                 </form>

@@ -1,23 +1,29 @@
-.header-history-navbar-recharge-active {
+.header-history-navbar-recharge-no-active {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     letter-spacing: -0.5px;
-    color: #2CD1F8 !important
+    color: var(--bold-color)
 }
 
-.header-history-navbar-app {
+.header-history-navbar-add-coin-active {
+    width: 208px;
+    height: 60px;
     font-weight: 700;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 22px;  
+    /* identical to box height, or 122% */
+
     text-align: center;
     letter-spacing: -0.5px;
-    color: var(--bold-color);
+    color: #2CD1F8 !important;
+    border-left: 1px solid #DDDDDD;
+    border-bottom: 3px solid var(--blue-color);
 }
 
-.header-history-navbar-app,
-.header-history-navbar-recharge-active {
+.header-history-navbar-recharge-no-active,
+.header-history-navbar-add-coin-active {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -29,13 +35,4 @@
     justify-content: center;
     width: 208px;
     height: 60px;
-}
-
-.header-history-navbar-seperate-border-active {
-    position: absolute;
-    width: 208px;
-    height: 3px;
-    left: 207px;
-    background: #2CD1F8;
-    bottom: 0;
 }

@@ -62,7 +62,7 @@
     z-index: 10;
 }
 
-.header-history-navbar-app-active {
+.header-history-navbar-app {
     width: 208px;
     height: 60px;
     font-weight: 700;
@@ -70,32 +70,17 @@
     line-height: 22px;
     text-align: center;
     letter-spacing: -0.5px;
-    color: #2CD1F8;
+    color: #2CD1F8 !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 3px solid var(--blue-color);
 }
 
-.header-history-navbar-seperate {
-    position: absolute;
-    width: 60px;
-    height: 0px;
-    left: auto;
-    top: 29px;
-    border: 1px solid #DDDDDD;
-    transform: rotate(90deg);
-}
 
-.header-history-navbar-app-border-active {
-    position: absolute;
-    width: 208px;
-    height: 3px;
-    left: 0px;
-    bottom: 0;
-    background: #2CD1F8;
-}
 
-.header-history-navbar-recharge {
+
+.header-history-navbar-add-coin {
     width: 208px;
     height: 60px;
     font-weight: 700;
@@ -107,4 +92,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-left: 1px solid #DDDDDD ;
 }

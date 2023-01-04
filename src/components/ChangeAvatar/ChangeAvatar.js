@@ -1,6 +1,5 @@
 import React from "react";
-import Avatar from "react-avatar-edit";
-import { useState } from "react";
+import Avatar from '../../asset/image-avatar.png'
 import AvatarUploader from "react-avatar-uploader";
 import './ChangeAvatar.css'
 
@@ -21,9 +20,7 @@ function ChangeAvatar() {
         }}
         onFinished={(error, response) => getInfo(error, response)}
         fileType={"all"}
-        defaultImg={
-          "https://www.kindpng.com/picc/m/451-4517876_default-profile-hd-png-download.png"
-        }
+        defaultImg={Avatar}
       />
     </>
   );

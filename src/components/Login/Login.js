@@ -5,6 +5,8 @@ import axios from 'axios';
 import phone from '../../asset/Group\ 54.png'
 import './Login.css'
 import Union from '../Union/Union'
+import {ImEyeBlocked, ImEye} from 'react-icons/im'
+
 export default function Login() {
     const navigate = useNavigate()
     const [isShowPassword, setIsShowPassword] = useState(false);
@@ -39,7 +41,7 @@ export default function Login() {
             })
             .catch((error) => {
                 if( error.response ){
-                    alert(error.response.data.error_description)
+                    alert("Sai mật khẩu hoặc ID, vui lòng Đăng nhập lại!")
                 }
             })
     }
@@ -89,11 +91,10 @@ export default function Login() {
                             </>
 
                         )}
-                        <i
-                            className={isShowPassword ? 'fas fa-eye input-eye-login' : 'fas fa-eye-slash input-eye-login'}
-                            onClick={() => setIsShowPassword(!isShowPassword)}
-                        >
-                        </i>
+                        <span onClick={() => setIsShowPassword(!isShowPassword)}>
+                            {isShowPassword ? <ImEyeBlocked className='input-eye-login'/> : <ImEye className='input-eye-login'  /> }
+                        </span>
+                        
                     </p>
 
                     <p className='div-btn-login'>
@@ -110,7 +111,7 @@ export default function Login() {
             <div className="contact">
                 <a href='tel: 19001009'>
                     <div className="phone">
-                        <img src={phone}></img>
+                        <img src={phone} alt=''/>
                     </div>
                 </a>
                 <span className="phone-number">Hotline: 19001009</span>

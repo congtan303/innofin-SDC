@@ -1,5 +1,11 @@
 
 
+.home-page-container {
+    width: 414px;
+    height: auto;
+    margin: 0 auto;
+}
+
 .blue-text {
     color: #2CD1F8;
 }
@@ -29,10 +35,10 @@
 
 
 .home-page-header-avatar {
-    background: url('../../asset/image\ 13.png')no-repeat;
+    background: url('../../asset/image-avatar.png')no-repeat;
     position: absolute;
-    width: 64px;
-    height: 64px;
+    width: 68px;
+    height: 68px;
     left: 33px;
     top: 43px;
     border: 2px solid var(--white-color);
@@ -115,6 +121,7 @@
     width: 414px;
     height: 462px;
     padding: 8px;
+    background: #FBFBFD;
 }
 
 .list-customer::-webkit-scrollbar {

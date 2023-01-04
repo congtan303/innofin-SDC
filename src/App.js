@@ -227,14 +227,14 @@ function App() {
         }>
       </Route>
 
-      {/* <Route
+      <Route
         path='*'
         element={
           <Protected isLoggedIn={isLoggedIn}>
             <PageNotFound />
           </Protected>
         }>
-      </Route> */}
+      </Route>
 
     </Routes>
   );

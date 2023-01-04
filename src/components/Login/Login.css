@@ -88,6 +88,7 @@ input {
     border: none;
     outline: none;
     border-bottom: 1px solid #ccc;
+    color: var(--bold-color);
 
 }
 
@@ -125,7 +126,7 @@ input {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 30px;
     color: var(--bold-color) !important;
 }
 
@@ -136,17 +137,20 @@ input {
 
 .input-icon-id {
     position: absolute;
-    left: 328px;
-    top: 62px;
-    color: #C1C1C1
+    left: 322px;
+    top: 56px;
+    color: #C1C1C1;
+    font-size: 20px;
 }
 
 .input-eye-login {
     position: absolute;
-    top: 32px;
+    top: 28px;
     right: 2px;
     color: #C1C1C1;
     cursor: pointer;
+    font-size: 20px;
+    
 }
 
 /* quên Mật khẩu */

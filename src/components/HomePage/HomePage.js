@@ -50,16 +50,25 @@ function HomePage() {
     }, [])
 
     return (
-        <div className='container'>
+        <div className='home-page-container'>
             <div className="Home-page-header">
                 <div className="home-page-header-background">
 
                 </div>
-                <div className="home-page-header-avatar">
 
+                <div className='abc'>
+                    <div className="home-page-header-avatar">
+
+                    </div>
+
+                    {/* <div className="home-page-header-welcome">Xin chào {dataUser.surname} {dataUser.name}!</div> */}
+                    <div className='qwery'>
+                        <div className="home-page-header-welcome">Xin chào Nguyễn Văn Hiên !</div>
+                        <div className="account-coin">Tài khoản điểm: <strong >{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</strong> điểm</div>
+                    </div>
+                    
                 </div>
-
-                <div className="home-page-header-welcome">Xin chào {dataUser.surname} {dataUser.name}</div>
+                
 
                 <UnionTop />
                 <div className='homepage-bell-notification'>
@@ -67,7 +76,7 @@ function HomePage() {
                         1
                     </div>
                 </div>
-                <div className="account-coin">Tài khoản điểm: <strong >{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</strong> điểm</div>
+                
                 <div className="home-page-navbar">
                     <span className="customer-need-take-money">Khách hàng cần thu</span>
                 </div>

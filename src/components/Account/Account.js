@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import "./Account.css";
 import union from '../../asset/Union-top-account.png'
-import ChangeAvatar from '../ChangeAvatar/ChangeAvatar';
 import NotiBell from '../../asset/Vector-bell.png'
 import FooterAccount from '../FooterAccount/FooterAccount';
 import iconWallet from '../../asset/wallet.png'
@@ -12,33 +11,42 @@ import iconSetting from '../../asset/icon-setting.png'
 import settingBackground from '../../asset/Ellipse\ 15.png'
 import iconContact from '../../asset/Vector-contact.png'
 import contactBackground from '../../asset/Ellipse\ 16.png'
+import Avatar from '../../asset/image-avatar.png';
+import {HiOutlineChevronLeft} from 'react-icons/hi'
 import { useContext } from 'react';
 import { UserContext } from '../../context/UserContext/UserContext';
 
 const Account = () => {
-    
     const { dataUser } = useContext(UserContext);
+    console.log(dataUser);
     
     return (
         
         <div className="container">
             {/* header */}
-                
-                    <div className="Account-header">
                     
-                    <div className='account-icon-notification'>
-                        <img src={NotiBell} alt='img-notification'/>
-                        <span className="account-number-noti">1</span>
-                    </div>
+                    <div className="Account-header">
+                        <div className='account-header-top'>
+                            <div>
+                                <HiOutlineChevronLeft className='account-previous-button'/>
+                            </div>
+                            <div className='account-icon-notification'>
+                                <img src={NotiBell} alt='img-notification'/>
+                                <span className="account-number-noti">1</span>
+                            </div>
+                        </div>
+                        
+                    
+                    
     
-                    <div className="Account-header-avatar">
-                        <ChangeAvatar />
+                    <div >
+                        <img src={Avatar} alt='' className="account-header-avatar"/>
                     </div>
                     <Link to="/information-user">
                         <div className="Account-header-name">{dataUser.surname} {dataUser.name}</div>
                     </Link>
     
-                    <div className="Account-header-number-id">Mã số ID: {dataUser.id}</div>
+                    <div className="Account-header-number-id">Mã số ID: {dataUser.identityNumber}</div>
                     <div className='account-union'>
                         <img src={union} alt="img-union"/>
                     </div>
@@ -50,7 +58,7 @@ const Account = () => {
                     <div className="account-balance-infomation">
                         Số dư tài khoản điểm
                     </div>
-                    <div>
+                    <div className='account-user-coin'>
                         <span className="number-money">{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</span> <span className="diem">điểm</span>
                     </div>
                 </div>
@@ -61,8 +69,8 @@ const Account = () => {
                         <div className="account-wallet-img">
 
                             <div className='elipse-wallet'>
-                                <img src={walletBackground} />
-                                <img src={iconWallet} className="wallet-icon" />
+                                <img src={walletBackground} alt='' />
+                                <img src={iconWallet} className="wallet-icon" alt='' />
                             </div>
 
                         </div>
@@ -77,8 +85,8 @@ const Account = () => {
                         <div className="account-help-img">
 
                             <div className='elipse-help'>
-                                <img src={helpBackground} />
-                                <img src={iconHelp} className="help-icon" />
+                                <img src={helpBackground} alt=''/>
+                                <img src={iconHelp} className="help-icon" alt='' />
                             </div>
                         </div>
 
@@ -92,8 +100,8 @@ const Account = () => {
                         <div className="account-setting-img">
 
                             <div className='elipse-setting'>
-                                <img src={settingBackground} />
-                                <img src={iconSetting} className="setting-icon" />
+                                <img src={settingBackground} alt=''/>
+                                <img src={iconSetting} className="setting-icon" alt='' />
                             </div>
                         </div>
 
@@ -109,8 +117,8 @@ const Account = () => {
                         <a href='tel:0909 99 99 99'>
                             <div className="account-contact-img">
                                 <div className='elipse-contact'>
-                                    <img src={contactBackground} className="contact-background" />
-                                    <img src={iconContact} className="contact-icon" />
+                                    <img src={contactBackground} className="contact-background" alt='' />
+                                    <img src={iconContact} className="contact-icon" alt='' />
                                 </div>
                             </div>
                         </a>

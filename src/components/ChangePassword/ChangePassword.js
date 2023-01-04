@@ -3,6 +3,8 @@ import "./ChangePassword.css"
 import Union from "../Union/Union"
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import {ImEyeBlocked, ImEye} from 'react-icons/im'
+
 
 const ChangePassword = () => {
     const navigate = useNavigate()
@@ -64,8 +66,11 @@ const ChangePassword = () => {
                                     </span>
                                 </>
                             )}
+                            <span onClick={() => setIsShowPassword(!isShowPassword)}>
+                                {isShowPassword ? <ImEyeBlocked className='input-icon-change-password '/> : <ImEye className='input-icon-change-password '  /> }
+                            </span>
 
-                            <i className="fas fa-eye-slash  input-icon" onClick={handleShowHidePassword}></i>
+                            {/* <i className="fas fa-eye-slash  input-icon" onClick={handleShowHidePassword}></i> */}
                         </p>
 
                         <p className='div-input-password'>
@@ -87,7 +92,9 @@ const ChangePassword = () => {
                                 </>
 
                             )}
-                            <i className="fas fa-eye-slash input-icon-2" onClick={handleShowHidePasswordReType}></i>
+                            <span onClick={() => handleShowHidePasswordReType(!isShowPassword)}>
+                                {isShowPassword ? <ImEyeBlocked className='input-icon-change-password-retype'/> : <ImEye className='input-icon-change-password-retype'  /> }
+                            </span>
                         </p>
 
                         <p className='div-btn-login'>

@@ -21,7 +21,7 @@ export default function HeaderHistoryRecharge() {
             </div>
             <div className='header-history-navbar'>
                 <Link to="/history">
-                    <div className='header-history-navbar-app'>Thu hộ</div>
+                    <div className='header-history-navbar-app '>Thu hộ</div>
                 </Link>
 
                 <div className='header-history-navbar-seperate'></div>

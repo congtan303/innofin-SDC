@@ -4,7 +4,7 @@
     line-height: 22px;
     text-align: center;
     letter-spacing: -0.5px;
-    color: #2CD1F8
+    color: #2CD1F8 !important
 }
 
 .header-history-navbar-app {

@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './ForgotPassword.css'
 import { Link, useNavigate } from 'react-router-dom'
-import Union from '../Union/Union'
 import { useForm } from 'react-hook-form'
 import {ImEyeBlocked, ImEye} from 'react-icons/im'
 
@@ -60,7 +59,7 @@ const ForgotPassword = () => {
                     {/* <i className={values.isShowPassword ? 'fas fa-eye-slash input-eye input-icon-forgot' : 'fas fa-eye-slash input-icon-forgot'}></i> */}
                 </span>
             </div>
-            <Union />
+            <div className='union-forgot-password'></div>
 
 
         </div>

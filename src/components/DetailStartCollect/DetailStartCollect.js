@@ -10,7 +10,8 @@ export default function DetailStartCollect() {
     let { id, lat, lng } = useParams();
     const navigate = useNavigate()
     const onSuccess = () => {
-        navigate(`/list-money/${id}/${lat}/${lng}`);
+        // navigate(`/list-money/${id}/${lat}/${lng}`);
+        console.log(123);
     }
 
     const [dataPayment, setDataPayment] = useState([])
@@ -42,7 +43,7 @@ export default function DetailStartCollect() {
 
             </div> */}
             <div className='header-detail'>
-                <Link to={`/detail-take-collect/${id}`}>
+                <Link to={`/detail-take-collect/${id}/${lat}/${lng}`}>
                     <div className='header-detail-previous-btn'></div>
                 </Link>
                 <div className="detail-title">
@@ -76,12 +77,12 @@ export default function DetailStartCollect() {
                     <div className="detail-1-contact">
                         <a href='tel: 0923 221 554'>
                             <div className="detail-1-contact-background">
-                                <img src={phone} alt=''></img>
+                                <img src={phone} alt='' />
                             </div>
                         </a>
                     </div>
                 </div>
-                <ol className="detail-1-list-note">
+                <ol className="detail-2-list-note">
                     <li>Đến gặp người nộp tiền và bấm "Bắt đầu thu hộ"
                     </li>
                     <li>Đưa màn hình này cho người nộp tiền để xác nhận

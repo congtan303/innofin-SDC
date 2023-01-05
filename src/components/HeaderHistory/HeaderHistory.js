@@ -1,6 +1,5 @@
 import './HeaderHistory.css'
 import { Link } from 'react-router-dom'
-import UnionTop from '../Union-top/UnionTop'
 
 export default function HeaderHistory() {
     return (
@@ -17,9 +16,9 @@ export default function HeaderHistory() {
                     <div className="header-history-notification-number">1</div>
                 </div>
 
-
-                <UnionTop />
             </div>
+                <div className="header-union-top"></div>
+               
             <div className='header-history-navbar'>
 
                 <div className='header-history-navbar-app'>Thu hộ</div>

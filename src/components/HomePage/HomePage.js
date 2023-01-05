@@ -1,12 +1,12 @@
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useContext, useState, useEffect } from 'react'
 import axios from 'axios'
 import './HomePage.css'
-import UnionTop from '../Union-top/UnionTop'
 import FooterApp from '../FooterApp/FooterApp'
 import LoaderAnimation from '../LoaderAnimation/LoaderAnimation'
 import moment from 'moment'
 import { UserContext } from '../../context/UserContext/UserContext'
+import {IoIosBicycle} from 'react-icons/io'
 
 function HomePage() {
    
@@ -52,9 +52,7 @@ function HomePage() {
     return (
         <div className='home-page-container'>
             <div className="Home-page-header">
-                <div className="home-page-header-background">
-
-                </div>
+                <div className="header-union-top"></div>
 
                 <div className='abc'>
                     <div className="home-page-header-avatar">
@@ -70,7 +68,7 @@ function HomePage() {
                 </div>
                 
 
-                <UnionTop />
+                {/* <UnionTop /> */}
                 <div className='homepage-bell-notification'>
                     <div className="homepage-number-notification">
                         1
@@ -112,10 +110,10 @@ function HomePage() {
                     </Link>
                 )) : <div className='blue text-center'>Hiện tại chưa có đơn thu hộ nào</div>}
 
-            </ul>
             {!isPayment ? '' : <div className='check-data-payment' onClick={handlePayment}>
-                <i className="far fa-biking"></i>
+               <IoIosBicycle className='icon-payment'/>
             </div>}
+            </ul>
 
             {/* footer */}
             <FooterApp />

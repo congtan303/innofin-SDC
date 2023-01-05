@@ -8,14 +8,7 @@
     position: relative;
 }
 
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
+
 
 .Login__Brand {
 
@@ -88,7 +81,7 @@ input {
     border: none;
     outline: none;
     border-bottom: 1px solid #ccc;
-    color: var(--bold-color);
+   
 
 }
 
@@ -127,7 +120,7 @@ input {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-    color: var(--bold-color) !important;
+    color: red
 }
 
 .div-input-password {
@@ -226,4 +219,13 @@ input {
 
 .previous-button {
     cursor: pointer;
+}
+
+.union-bottom {
+    background-image: url(../../asset/Union.svg);
+    background-repeat: no-repeat;
+    background-position: 237px 535px;
+    width: 414px;
+    height: 904px;
+
 }

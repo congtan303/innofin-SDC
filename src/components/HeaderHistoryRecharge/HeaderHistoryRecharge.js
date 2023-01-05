@@ -17,8 +17,8 @@ export default function HeaderHistoryRecharge() {
                 </div>
 
 
-                <UnionTop />
             </div>
+                <div className="header-union-top"></div>
             <div className='header-history-navbar'>
                 <Link to="/history">
                     <div className='header-history-navbar-recharge-no-active '>Thu hộ</div>

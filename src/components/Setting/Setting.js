@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import './Setting.css'
-import Union from '../Union/Union'
 export default function Setting() {
     return (
         <div className='setting-container'>
@@ -51,7 +50,7 @@ export default function Setting() {
                 </div>
 
             </div>
-            <Union />
+            <div className='union-bottom'></div>
         </div>
     )
 }

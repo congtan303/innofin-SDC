@@ -127,6 +127,7 @@ thead {
     font-size: 18px;
     line-height: 18px;
     color: var(--bold-color);
+    
 }
 
 .total-money {
@@ -152,33 +153,31 @@ thead {
     -webkit-appearance: none;
     outline: none;
     cursor: pointer;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    -webkit-appearance: none;
+    
 }
+
+
 
 .input-checkbox::before {
-    content: '';
-    background-color: red;
-    width: 20px;
-    height: 20px;
-    display: block;
-}
-
-.input-checkbox:checked ~ .circle-checkbox {
-    /* background-color: var(--blue-color); */
-    display: block;
-}
-
-.circle-checkbox {
-    width: 14px;
-    height: 14px;
-    background: var(--blue-color);
-    border-radius: 50%;
-    position: absolute;
-    left: 5.5px;
-    top: 5.5px;
+    content: '\f111';
+    font-family: 'Font Awesome 5 Free';
+    color: var(--blue-color);
+    font-size: 13.6px;
     display: none;
-    cursor: pointer;
 }
+
+
+
+.input-checkbox:checked::before {
+    display: block;
+}
+
+
 
 /* btn edit table */
 

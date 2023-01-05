@@ -59,7 +59,7 @@ export default class SwipeableButton extends Component {
     }
   }
 
-  startDrag =e=> {
+  startDrag = e => {
     console.log(this.unmounted);
     if(this.unmounted || this.state.unlocked) return;
     console.log('anc')

@@ -39,6 +39,7 @@ export default class SwipeableButton extends Component {
   }
 
   stopDrag =()=> {
+    
     if(this.unmounted || this.state.unlocked) return;
     if(this.isDragging) {
       this.isDragging = false;
@@ -60,15 +61,17 @@ export default class SwipeableButton extends Component {
   }
 
   startDrag =e=> {
+    
     console.log(this.unmounted);
     if(this.unmounted || this.state.unlocked) return;
     console.log('anc')
     this.isDragging = true;
     if(isTouchDevice) {
       this.startX = e.touches[0].clientX;
-    } else {
+    } else  {
       this.startX = e.clientX;
     }
+      
   }
 
   onSuccess =()=> {

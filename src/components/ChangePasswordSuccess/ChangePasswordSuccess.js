@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import './ChangePasswordSuccess.css';
-import Union from '../Union/Union';
 
 function ChangePasswordSuccess() {
     return (
@@ -13,7 +12,7 @@ function ChangePasswordSuccess() {
             <button class="login-again">Đăng nhập lại</button>
             </Link>
             
-            <Union /> 
+            <div className='union-bottom'></div>
         </div>
     );
 }

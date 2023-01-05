@@ -100,8 +100,7 @@ export default function DetailTakeCollect() {
                     </div>
 
                     <ul className="detail-1-list-note">
-                        <li>Khi bấm nút "bắt đầu" người nộp tiền sẽ được thông báo
-                            rằng bạn sẽ đến vòng 15 phút
+                        <li>Khi bấm “bắt đầu" người nộp tiền sẽ được thông báo rằng bạn sẽ đến vòng 15 phút.
                         </li>
                         <li>Bạn không thể thay đổi địa điểm thu sau khi
                             bấm nút bên dưới

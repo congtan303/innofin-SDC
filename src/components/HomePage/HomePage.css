@@ -16,12 +16,22 @@
     height: 128px;
     left: 0px;
     top: 0px;
-    background: var(--background-color);
+    background: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
+   
+}
+
+.header-union-top {
+    background-image: url(../../asset/Union-top.png);
+    background-repeat: no-repeat;
+    background-position: 316px 26px;
+    width: 414px;
+height: 138px;
+position: absolute;
 }
 
 .home-page-header-welcome {
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 18px;
     left: 122px;
     top: 54px;
@@ -74,7 +84,7 @@
 
 .account-coin {
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 18px;
     left: 122px;
     top: 79px;
@@ -276,7 +286,7 @@ border-radius: 10px;
 .check-data-payment {
     position: absolute;
     right: 20px;
-    top: 560px;
+    top: 370px;
     width: 50px;
     height: 50px;
     border: 1px solid;
@@ -290,14 +300,26 @@ border-radius: 10px;
     cursor: pointer;
 }
 
+.icon-payment {
+    font-size: 26px;
+}
+
 @media (max-width: 768px) {
     .list-customer {
         height: 100vh;
     }
     .home-page-header-welcome {
-        width: 100%;
+        width: auto;
     }
-    .home-page-header-welcome {
-        width: 100%;
+    .account-coin {
+        width: auto;
     }
+    
+    .check-data-payment {
+        position: absolute;
+    right: 20px;
+    top: 300px;
+    }
+    
+    
 }

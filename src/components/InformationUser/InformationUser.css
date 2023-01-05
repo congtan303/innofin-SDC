@@ -249,3 +249,11 @@
     line-height: 18px;
     cursor: pointer;
 }
+
+.union-info-user {
+    background-image: url(../../asset/Union.svg);
+    background-repeat: no-repeat;
+    background-position: 234px 0px;
+    width: 414px;
+    height: 904px;
+}

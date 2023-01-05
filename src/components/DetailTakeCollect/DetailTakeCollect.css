@@ -110,10 +110,11 @@
 .detail-1-hr {
     position: absolute;
     width: 321px;
-    height: 0px;
+    height: 1px;
     left: 20px;
     top: 168px;
-    border: 1px solid #DDDDDD;
+    margin: 0;
+    background-color: var(--border-color);
 }
 
 .detail-1-money {
@@ -200,22 +201,22 @@
 .detail-1-list-note {
     position: absolute;
     top: 380px;
-    margin-left: 10px; 
+    margin-left: 24px; 
 }
 
 
 .detail-1-list-note li {
-
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.5px;
     color: var(--white-color);
-    width: 332px;
+    width: 320px;
     height: 43px;
     list-style: inherit ;
     padding: 0;
+    margin-bottom: 10px;
 }
 
 /* btn xác nhận thu hộ */

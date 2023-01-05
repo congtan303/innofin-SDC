@@ -42,8 +42,7 @@ export default function ListMoney() {
 
     }
 
-    const changeColorButton = () => {
-    }
+    
     return (
         <div className='container'>
             <div className="header-history">

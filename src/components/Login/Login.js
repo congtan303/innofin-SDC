@@ -48,13 +48,13 @@ export default function Login() {
 
     return (
         <div className="Login__container">
-            <div className="header">
+           
                 <div className="Login__Brand">
                 </div>
                 <div className="Login__description">
                     Dịch vụ thu hộ
                 </div>
-            </div>
+            
 
             <div className="form-group-login">
                 <form className="w3-container input-form" onSubmit={handleSubmit(onHandleSubmit)}>
@@ -117,15 +117,10 @@ export default function Login() {
                 <span className="phone-number">Hotline: 19001009</span>
             </div>
 
-            <div className="background-logo">
-                <div className="background-logo-1">
-
-                </div>
-                <div className="background-logo-2">
-
-                </div>
-            </div>
-            <Union />
+  
+            
+           
+           <div className='union-bottom'></div>
         </div>
     )
 }

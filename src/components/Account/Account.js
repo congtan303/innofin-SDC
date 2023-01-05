@@ -26,7 +26,7 @@ const Account = () => {
             {/* header */}
                     
                     <div className="Account-header">
-                        <div className='account-header-top'>
+                        
                             <div>
                                 <HiOutlineChevronLeft className='account-previous-button'/>
                             </div>
@@ -34,7 +34,8 @@ const Account = () => {
                                 <img src={NotiBell} alt='img-notification'/>
                                 <span className="account-number-noti">1</span>
                             </div>
-                        </div>
+                        
+                            <div className='account-union'></div>
                         
                     
                     
@@ -47,9 +48,7 @@ const Account = () => {
                     </Link>
     
                     <div className="Account-header-number-id">Mã số ID: {dataUser.identityNumber}</div>
-                    <div className='account-union'>
-                        <img src={union} alt="img-union"/>
-                    </div>
+                    
                 </div>
     
                 {/* body */}

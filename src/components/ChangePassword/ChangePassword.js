@@ -1,6 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
 import "./ChangePassword.css"
-import Union from "../Union/Union"
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import {ImEyeBlocked, ImEye} from 'react-icons/im'
@@ -92,8 +91,8 @@ const ChangePassword = () => {
                                 </>
 
                             )}
-                            <span onClick={() => handleShowHidePasswordReType(!isShowPassword)}>
-                                {isShowPassword ? <ImEyeBlocked className='input-icon-change-password-retype'/> : <ImEye className='input-icon-change-password-retype'  /> }
+                            <span onClick={() =>  setIsShowPasswordRetype(!isShowPasswordReType)}>
+                                {isShowPasswordReType ? <ImEyeBlocked className='input-icon-change-password-retype'/> : <ImEye className='input-icon-change-password-retype'  /> }
                             </span>
                         </p>
 
@@ -106,7 +105,7 @@ const ChangePassword = () => {
 
 
                 </div>
-                <Union />
+                <div className='union-bottom'></div>
             </div>
 
         </div>

@@ -3,7 +3,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './InformationUser.css'
-import Union from '../Union/Union'
 import ChangeAvatar from '../ChangeAvatar/ChangeAvatar';
 import moment from 'moment'
 import LoaderAnimation from '../LoaderAnimation/LoaderAnimation';
@@ -93,10 +92,9 @@ export default function InfomationUser() {
                         </div>
                     </Link>
 
-                    <Union />
+                    <div className='union-info-user'></div>
                 </div>}
         </>
-
 
     )
 }

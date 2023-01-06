@@ -59,7 +59,7 @@ function HomePage() {
                     <div className="home-page-header-avatar"></div>
 
                     <div className='information-user-and-coin'>
-                        <div className="home-page-header-welcome">Xin chào {dataUser.surname} {dataUser.name} tân công!</div>
+                        <div className="home-page-header-welcome">Xin chào {dataUser.surname} {dataUser.name}!</div>
                         <div className="account-coin">Tài khoản điểm: <strong>{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</strong> điểm</div>
                     </div>
                     

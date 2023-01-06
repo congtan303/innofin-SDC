@@ -15,6 +15,7 @@ function HomePage() {
     const [dataCustomer, setDataCustomer] = useState([])
     const [loader, setLoader] = useState(true);
     const [isPayment, setIsPayment] = useState(false)
+    
 
     const access_token = localStorage.getItem('access_token')
 
@@ -55,14 +56,11 @@ function HomePage() {
                 <div className="header-union-top"></div>
 
                 <div className='abc'>
-                    <div className="home-page-header-avatar">
+                    <div className="home-page-header-avatar"></div>
 
-                    </div>
-
-                    {/* <div className="home-page-header-welcome">Xin chào {dataUser.surname} {dataUser.name}!</div> */}
-                    <div className='qwery'>
-                        <div className="home-page-header-welcome">Xin chào Nguyễn Văn Hiên !</div>
-                        <div className="account-coin">Tài khoản điểm: <strong >{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</strong> điểm</div>
+                    <div className='information-user-and-coin'>
+                        <div className="home-page-header-welcome">Xin chào {dataUser.surname} {dataUser.name} tân công!</div>
+                        <div className="account-coin">Tài khoản điểm: <strong>{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</strong> điểm</div>
                     </div>
                     
                 </div>

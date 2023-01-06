@@ -10,8 +10,7 @@ export default function DetailStartCollect() {
     let { id, lat, lng } = useParams();
     const navigate = useNavigate()
     const onSuccess = () => {
-        // navigate(`/list-money/${id}/${lat}/${lng}`);
-        console.log(123);
+        navigate(`/list-money/${id}/${lat}/${lng}`);
     }
 
     const [dataPayment, setDataPayment] = useState([])

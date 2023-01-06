@@ -80,7 +80,7 @@ input {
     width: 328px;
     border: none;
     outline: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;  
    
 
 }
@@ -120,7 +120,7 @@ input {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-    color: red
+    color: #636363
 }
 
 .div-input-password {

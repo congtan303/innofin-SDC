@@ -17,7 +17,7 @@ export default class SwipeableButton extends Component {
       document.addEventListener('mousemove', this.onDrag);
       document.addEventListener('mouseup', this.stopDrag);  
     }
-    this.containerWidth = container.current.clientWidth - 50;
+    this.containerWidth = container.current.clientWidth - 205;
     
   }
 
@@ -35,11 +35,11 @@ export default class SwipeableButton extends Component {
 
   updateSliderStyle =()=> {
     if(this.unmounted || this.state.unlocked) return;
-    slider.current.style.left = (this.sliderLeft + 50)+'px';
+    slider.current.style.left = (this.sliderLeft + 205) + 'px';
   }
 
-  stopDrag =()=> {
-    
+  stopDrag =(e)=> {
+    console.log(e);
     if(this.unmounted || this.state.unlocked) return;
     if(this.isDragging) {
       this.isDragging = false;
@@ -53,7 +53,7 @@ export default class SwipeableButton extends Component {
       } else {
         this.sliderLeft = 0;
         if(this.props.onFailure) {
-          this.props.onFailure();
+          this.props.onFailure(); 
         }
       }
       this.updateSliderStyle();
@@ -64,7 +64,6 @@ export default class SwipeableButton extends Component {
     
     console.log(this.unmounted);
     if(this.unmounted || this.state.unlocked) return;
-    console.log('anc')
     this.isDragging = true;
     if(isTouchDevice) {
       this.startX = e.touches[0].clientX;
@@ -96,7 +95,7 @@ export default class SwipeableButton extends Component {
   componentWillUnmount() {
     console.log("componentWillUnmount");
     this.unmounted = true;
-  }
+  } 
 
   render() { 
     return (

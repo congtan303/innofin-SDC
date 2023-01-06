@@ -7,26 +7,38 @@
 .ReactSwipeButton,
 .ReactSwipeButton * {
   -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                   not supported by any browser */
 }
-.rsbContainer{
+.rsbContainer {
   float: left;
   width: 100%;
   height: 100%;
-  background: #eee;
+  background: var(--white-color);
   border-radius: 50px;
   position: relative;
   /* box-shadow: inset 1px 1px 4px rgba(0,0,0,0.1); */
   overflow: hidden;
 }
+.rsbContainerUnlocked {
+  width: 100% !important;
+  /* margin-left: 25%; */
+  transition: 0.5s;
+  cursor: default;
+}
 
-.rsbContainerUnlocked .rsbcSlider{
-  left:50%!important;
+.rsbContainerUnlocked .rsbcSliderText {
+  text-align: center;
+  color: var(--white-color);
+display: flex;
+justify-content:flex-start ;
+}
+.rsbContainerUnlocked .rsbcSlider {
+  left: 100% !important;
   cursor: default;
   pointer-events: none;
 }
@@ -40,43 +52,38 @@
 }
 .rsbcSlider {
   float: left;
-  width: 400px;
+  width: 100%;
   position: absolute;
   height: 50px;
-  top:0;
-  left: 50px;
-  margin-left:-58%;
-  background: #333;
+  top: 0;
+  left: 205px;
+  margin-left: -100%;
+  background: #51ad7e;
   border-radius: 25px;
-  z-index: 2;
+  z-index: 100;
   /* box-shadow: 1px 1px 5px rgba(0,0,0,0.3); */
   cursor: pointer;
 }
-.rsbcSliderText{
-  position: absolute;
-    top: 14px;
-    left: 165px;
-    right: 0;
-    line-height: 50px;
-    text-align: center;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-    /* letter-spacing: 2px; */
-    color: var(--white-color);
-    font-size: 13px;
+.rsbcSliderText {
   
-    font-style: normal;
-    font-weight: 700px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-
+  line-height: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 111% */
+  
+  letter-spacing: -0.5px;
+  
+  color: #FFFFFF;
 }
 
 .rsbcSliderCircle {
   position: absolute;
   right: 0;
-  background: #444;
-  top:0;
+  background: #51ad7e;
+  /* border: 5px solid #157946; */
+  top: 0;
   height: 50px;
   width: 50px;
   border-radius: 100%;
@@ -84,13 +91,13 @@
 .rsbcText {
   float: left;
   position: absolute;
-  top:0;
-  left:0;
-  right:0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 50px;
   line-height: 50px;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
   letter-spacing: 2px;
   font-size: 13px;
   color: #aaa;

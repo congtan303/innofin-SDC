@@ -17,7 +17,7 @@ export default class SwipeableButton extends Component {
       document.addEventListener('mousemove', this.onDrag);
       document.addEventListener('mouseup', this.stopDrag);  
     }
-    this.containerWidth = container.current.clientWidth - 50;
+    this.containerWidth = container.current.clientWidth - 205;
     
   }
 
@@ -35,7 +35,7 @@ export default class SwipeableButton extends Component {
 
   updateSliderStyle =()=> {
     if(this.unmounted || this.state.unlocked) return;
-    slider.current.style.left = (this.sliderLeft + 50)+'px';
+    slider.current.style.left = (this.sliderLeft + 205)+'px';
   }
 
   stopDrag =()=> {

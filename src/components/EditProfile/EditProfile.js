@@ -454,7 +454,7 @@ export default function EditProfile() {
 
 
             </form>
-            <Union />
+            <div className='union-edit-info-user'></div>
 
         </div>
     )

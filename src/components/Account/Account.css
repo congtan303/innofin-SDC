@@ -1,5 +1,3 @@
-
-
 .account-container {
     position: relative;
     margin: 0 auto;
@@ -23,15 +21,15 @@
     font-size: 20px;
     color: var(--white-color);
     position: absolute;
-left: 30px;
-top: 51px;
+    left: 30px;
+    top: 51px;
 
 
 }
 
 .account-union {
-  
-    width: 414px;   
+
+    width: 414px;
     height: 221px;
     background-image: url(../../asset/Union-top-account.png);
     background-repeat: no-repeat;
@@ -50,8 +48,8 @@ top: 51px;
 
 
 
-.account-icon-notification { 
-    
+.account-icon-notification {
+
     position: absolute;
     right: 30px;
     top: 51px;
@@ -191,40 +189,50 @@ top: 51px;
     margin-top: 6px;
 }
 
-/* content */
-.account-content {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: -0.3px;
-    color: var(--bold-color);
+/* các chức năng trong trang Account */
 
-}
+/* màn hình desktop */
+/* @media (min-height: 820px) {
+    .account-content {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.3px;
+        color: var(--bold-color);
+        position: relative;
+        top: 300px;
+        width: 414px;
+        height: 652px;
+        padding: 20px;
 
-.account-content-wrap {
+    }
+
+} */
+
+/* .account-content-wrap {
     position: relative;
     width: 414px;
     height: 652px;
-    padding: 330px 0 0 20px;
-    overflow-y: auto;
+    top: 300px;
+    padding: 20px;
+  
 
-}
+} */
 
-.account-content-wrap::-webkit-scrollbar {
+/* .account-content::-webkit-scrollbar {
     width: 4px;
-
+    height: 200%;
 }
 
-.account-content-wrap::-webkit-scrollbar-track {
+.account-content::-webkit-scrollbar-track {
     background-color: #DFF5FF;
-    margin-top: 200px;
 }
 
-.account-content-wrap::-webkit-scrollbar-thumb {
+.account-content::-webkit-scrollbar-thumb {
     background-color: #32CBF9;
     border-radius: 20px;
-}
+} */
 
 .account-icon {
     display: flex;

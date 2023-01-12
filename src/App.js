@@ -27,6 +27,7 @@ import { UserProvider } from './context/UserContext/UserContext';
 import EditProfile from './components/EditProfile/EditProfile';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import SwipeableButton from './components/SwipeButton/SwipeButton';
+import Test from './components/Test';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(null);
 
@@ -236,7 +237,7 @@ function App() {
       </Route>
 
     </Routes>
-  //  <DetailStartCollect />
+ 
   );
 }
 

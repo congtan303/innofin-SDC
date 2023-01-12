@@ -1,23 +1,20 @@
-.Login__container {
-    width: 414px;
-    height: 904px;
-    left: -1px;
-    top: -3px;
-    background: #FBFBFD;
-    margin: 0 auto;
+.container-login {
     position: relative;
+    margin: 0 auto;
+    width: 414px;
+    height: 100vh;
+    display: block;
+    padding: 0;
+    background: #FBFBFD;
+    max-width: 100%;
 }
 
-
-
 .Login__Brand {
-
     position: absolute;
     left: 25.12%;
     right: 27.78%;
     top: 10.38%;
     bottom: 84.26%;
-    background: url('../../asset/innofin\ 2.png');
 }
 
 /* Dịch vụ thu hộ */
@@ -26,7 +23,7 @@
     width: 164px;
     height: 17px;
     left: 129px;
-    top: 144px;
+    top: 124px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -39,8 +36,8 @@
 
 .form-group-login {
     position: absolute;
-    width: 360px;
-    height: 300px;
+    width: 86.96%;
+    height: 36.53%;
     left: 26px;
     top: 197px;
     margin: 0;
@@ -49,14 +46,17 @@
     border-radius: 10px;
 }
 
+.form-login {
+    padding: 32px 18px;
+}
+
 .div-btn-login {
     position: relative;
 }
 
 .btn-login {
-    display: block;
-    margin: 34px auto;
-    width: 292px;
+    margin: 20px auto;
+    width: 100.31%;
     height: 54px;
     background: #2CD1F8;
     border-radius: 8px;
@@ -77,11 +77,11 @@ input {
 }
 
 .input-user-id {
-    width: 328px;
+    width: 324px;
     border: none;
     outline: none;
-    border-bottom: 1px solid #ccc;  
-   
+    border-bottom: 1px solid #ccc;
+
 
 }
 
@@ -120,7 +120,8 @@ input {
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-    color: #636363
+    color: #636363;
+    width: 324px;
 }
 
 .div-input-password {
@@ -136,14 +137,14 @@ input {
     font-size: 20px;
 }
 
-.input-eye-login {
+.input-eye-passwords {
     position: absolute;
     top: 28px;
-    right: 2px;
+    left: 304px;
     color: #C1C1C1;
     cursor: pointer;
     font-size: 20px;
-    
+
 }
 
 /* quên Mật khẩu */
@@ -228,4 +229,217 @@ input {
     width: 414px;
     height: 904px;
 
+}
+
+/* MÀN HÌNH ĐIỆN THOẠI CỰC NHỎ */
+@media (min-width: 220px) and (max-width: 310px) {
+    .Login__Brand {
+        left: 16.12%;
+    }
+
+    .Login__description {
+        left: 28.12%;
+        top: 18%;
+        font-size: 16px;
+    }
+
+    .input-user-id,
+    .input-user-password {
+        width: 100%;
+    }
+
+    .form-group-login {
+        height: 46.53%;
+        width: 82%;
+        top: 168px;
+    }
+
+    .input-title {
+        font-size: 14px;
+    }
+
+    .input-icon-id {
+        left: 88%;
+    }
+
+    .input-eye-passwords {
+        left: 93%;
+    }
+
+    .forgot-password {
+        left: 85px;
+        top: 490px;
+    }
+    .phone-number {
+        left: 79px;
+        top: 516px;
+    }
+    .phone {
+        left: 55px;
+        top: 513px;
+    }
+    .union-bottom {
+    background-position: 100px 390px;
+
+    }
+
+}
+
+/* MÀN HÌNH ĐIỆN THOẠI NHỎ */
+@media (min-width: 320px) {
+    .Login__Brand {
+        position: absolute;
+        left: 25.12%;
+        right: 27.78%;
+        top: 10.38%;
+        bottom: 84.26%;
+    }
+
+    .Login__description {
+        position: absolute;
+        width: 164px;
+        height: 17px;
+        left: 32%;
+        top: 18%;
+    }
+
+    .form-group-login {
+        position: absolute;
+        width: 86.69%;
+        height: 300px;
+        left: 26px;
+        top: 197px;
+        margin: 0;
+        background: var(--white-color);
+        box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+        border-radius: 10px;
+    }
+
+    .input-user-password,
+    .input-user-id {
+        width: 100%;
+    }
+
+    .input-icon-id {
+        left: 88%;
+    }
+
+    .input-eye-passwords {
+        left: 92%;
+    }
+
+    .btn-login {
+        width: 90.785%;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .forgot-password {
+        left: 134px
+    }
+
+    .phone {
+        left: 104px;
+    }
+
+    .phone-number {
+        left: 129px;
+    }
+}
+
+/* MÀN HÌNH ĐIỆN THOẠI CÓ HEIGHT DÀI */
+@media (min-height: 914px) {
+
+    .input-user-password,
+    .input-user-id {
+        width: 100%;
+    }
+}
+
+/* MÀN HÌNH ĐIỆN THOẠI CÓ HEIGHT TỐI ĐA 915PX VÀ RỘNG TỐI THIỂU 412PX */
+@media screen and (max-height: 915px) and (min-width:412px) {
+    .Login__description {
+        top: 17%;
+    }
+
+    .btn-login {
+        width: 90.785%;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .form-group-login {
+        height: 32.53%;
+    }
+}
+
+/* MÀN HÌNH ĐIỆN THOẠI IP 6/7/8 PLUS*/
+@media screen and (max-height: 736px) and (min-width:412px) {
+    .form-group-login {
+        height: 37.53%;
+    }
+}
+
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px) {
+    .Login__Brand {
+        top: 8.38%;
+    }
+
+    .Login__description {
+        top: 14%;
+    }
+
+    .form-group-login {
+        top: 180px;
+        height: 300px;
+    }
+
+    .forgot-password {
+        top: 504px;
+        left: 152px;
+    }
+
+    .phone-number {
+        top: 534px;
+        left: 140px;
+    }
+
+    .phone {
+        top: 532px;
+        left: 115px;
+    }
+}
+
+/* MÀN HÌNH IPAD NGANG */
+@media screen and (min-width: 1024px) {
+    .Login__description {
+        top: 15%;
+
+    }
+
+    .form-group-login {
+        top: 214px;
+        height: 300px;
+    }
+
+    .forgot-password {
+        top: 540px;
+    }
+
+    .phone-number {
+        top: 570px;
+    }
+
+    .phone {
+        top: 568px;
+    }
+}
+
+/* MÀN HÌNH DESKTOP */
+@media (min-width:1025px ) {
+    .form-group-login{
+        width: 360px;
+        height: 300px;
+    }
 }

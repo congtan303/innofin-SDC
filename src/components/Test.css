@@ -1,0 +1,31 @@
+.congtan-container {
+    width: 414px;
+    height: 100vh;
+    background-color: rebeccapurple;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 12.5%;
+    background-color: brown;
+}
+
+.navbar {
+    width: 100%;
+    height: 5.86%;
+    background-color: aquamarine;
+}
+
+.body {
+    width: 100%;
+    height: 71.385%;
+    background-color: yellow;
+}
+
+.footer {
+    width: 100%;
+    height: 10.255%;
+    background-color: blueviolet;
+}

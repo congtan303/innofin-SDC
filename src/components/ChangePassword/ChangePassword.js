@@ -2,8 +2,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import "./ChangePassword.css"
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import {ImEyeBlocked, ImEye} from 'react-icons/im'
-
+import { ImEyeBlocked, ImEye } from 'react-icons/im'
+import iconLock from '../../asset/Group\ 4.svg'
 
 const ChangePassword = () => {
     const navigate = useNavigate()
@@ -30,22 +30,22 @@ const ChangePassword = () => {
 
     return (
         <div>
-            <div className="Reset-container">
-            <Link to="/setting">
-                <button className="previous-button">
-                    <i className="fal fa-chevron-left icon-back"></i>
-                </button>
-            </Link>
-                
-                <div className="icon-login-success">
+            <div className="change-password-container">
+                <Link to="/setting">
+                    <button className="previous-button">
+                        <i className="fal fa-chevron-left icon-back"></i>
+                    </button>
+                </Link>
 
+                <div className='div-icon-lock'>
+                    <img src={iconLock} className="icon-lock"/>
                 </div>
                 <div className="Login-status">
                     <div className="login-info">Đăng nhập lần đầu thành công</div>
                     <div className="login-retpye-password">Vui lòng nhập lại mật khẩu mới</div>
                 </div>
 
-                <div className="form-input">
+                <div className="form-group-change-password">
                     <form className="w3-container input-form" onSubmit={handleSubmit(onHandleSubmit)}>
                         <p>
                             <label className="input-title">Mật khẩu mới</label>
@@ -66,7 +66,7 @@ const ChangePassword = () => {
                                 </>
                             )}
                             <span onClick={() => setIsShowPassword(!isShowPassword)}>
-                                {isShowPassword ? <ImEyeBlocked className='input-icon-change-password '/> : <ImEye className='input-icon-change-password '  /> }
+                                {isShowPassword ? <ImEyeBlocked className='input-icon-change-password ' /> : <ImEye className='input-icon-change-password ' />}
                             </span>
 
                             {/* <i className="fas fa-eye-slash  input-icon" onClick={handleShowHidePassword}></i> */}
@@ -91,8 +91,8 @@ const ChangePassword = () => {
                                 </>
 
                             )}
-                            <span onClick={() =>  setIsShowPasswordRetype(!isShowPasswordReType)}>
-                                {isShowPasswordReType ? <ImEyeBlocked className='input-icon-change-password-retype'/> : <ImEye className='input-icon-change-password-retype'  /> }
+                            <span onClick={() => setIsShowPasswordRetype(!isShowPasswordReType)}>
+                                {isShowPasswordReType ? <ImEyeBlocked className='input-icon-change-password-retype' /> : <ImEye className='input-icon-change-password-retype' />}
                             </span>
                         </p>
 

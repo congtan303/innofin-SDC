@@ -1,24 +1,23 @@
-.Slash__background {
-    position: relative;
+.container-slash {
     width: 414px;
-    height: 897px;
-    left: 0px;
-    top: 0px;
+    height: 100vh;
     background: var(--background-color);
     margin: 0 auto;
+    max-width: 100%;
+    position: relative;
 }
 
-.finance__brand {
-    /* innofin 1 */
-
+.brand-logo {
     position: absolute;
     left: 19.81%;
     right: 19.81%;
     top: 18.97%;
     bottom: 74.17%;
-    background: url("../../asset/innofin\ 1.png");
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 250px;
+    height: 61.47px;
 }
+
 
 .finance__information {
     position: absolute;
@@ -34,21 +33,24 @@
     color: var(--white-color);
 }
 
-.finance__img {
+.finance-img {
     position: absolute;
-    left: 10.39%;
-    right: 11.84%;
+    /* left: 10.39%; */
+    right: 6.84%;
     top: 41.07%;
-    bottom: 36.38%;
-    background: url("../../asset/image\ 18.png");
+    /* bottom: 36.38%; */
+    width: 85.87%;
+    height: 30.285%;
+    object-fit: contain;
+
 }
 
-.login {
+.start-btn {
     position: absolute;
-    width: 325px;
+    width: 83.6%;
     height: 54px;
-    left: 45px;
-    top: 618px;
+    left: 8.5%;
+    top: 80%;
     color: var(--white-color);
     background: #2CD1F8;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
@@ -60,5 +62,45 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    color: var(--white-color);
 }
+
+/* @media (max-width: 390px) {
+    .finance-img {
+        position: absolute;
+        left: 7.39%;
+        right: 11.84%;
+        top: 41.07%;
+        bottom: 36.38%;
+
+    }
+
+    .start-btn {
+        position: absolute;
+        width: 325px;
+        height: 54px;
+        left: 45px;
+        top: 76%;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width:1024px) {
+    .start-btn {
+        position: absolute;
+        width: 325px;
+        height: 54px;
+        left: 45px;
+        top: 68%;
+        color: var(--white-color);
+        background: #2CD1F8;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+    }
+} */

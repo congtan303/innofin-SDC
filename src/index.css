@@ -38,10 +38,13 @@ input:-webkit-autofill:active  {
     height: 100%;
     background: var(--white-color);
     display: flex;
-    margin-top: 20px;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0px 1px 10px rgb(112 112 112 / 20%);
     z-index: 10;
   }
+}
+
+#root {
+  overflow: hidden;
 }

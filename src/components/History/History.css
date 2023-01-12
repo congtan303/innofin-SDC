@@ -8,6 +8,7 @@
     padding: 8px;
 }
 
+
 .history-list::-webkit-scrollbar-track {
     background-color: #DFF5FF;
 }
@@ -70,3 +71,4 @@
     letter-spacing: -0.5px;
     color: var(--bold-color);
 }
+

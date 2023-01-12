@@ -1,27 +1,24 @@
 import { Link } from 'react-router-dom'
-
+import brandLogo from '../../asset/innofinLogo.png'
+import financeImage from '../../asset/image\ 18.png'
 import './Slash.css'
 
 const Slash = () => {
     return (
-        <div>
-            <div className="Slash__background">
-                <div className="finance__brand">
+        <div className='container-slash'>
+            <div>
 
+                <img src={brandLogo} alt='' className='brand-logo' />
+                <div className='finance__information'>
+                    Xin chào! Cám ơn bạn đã tham gia dịch vụ thu hộ innofin.
+                    Vui lòng bấm bất đầu để truy cập vào hệ thống
                 </div>
-                <div className="finance__information">
-                    Xin chào! Cảm ơn bạn đã tham gia dịch vụ thu hộ Innofin. Vui lòng bấm bắt đầu để truy cập
-                    vào hệ thống
-                </div>
-                <div className="finance__img">
-
-                </div>
-                <Link to="/login">
-                    <button className="login">Bắt đầu</button>
-                </Link>
-
-
             </div>
+            <img src={financeImage} className='finance-img' />
+            <Link to='/login'>
+            <button className='start-btn'>Bắt đầu</button>
+            </Link>
+
         </div>
     )
 }

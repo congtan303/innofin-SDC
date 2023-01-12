@@ -5,7 +5,8 @@ import axios from 'axios';
 import phone from '../../asset/Group\ 54.png'
 import './Login.css'
 import Union from '../Union/Union'
-import {ImEyeBlocked, ImEye} from 'react-icons/im'
+import {ImEyeBlocked, ImEye} from 'react-icons/im';
+import brandLogin from '../../asset/innofin\ 2.png'
 
 export default function Login() {
     const navigate = useNavigate()
@@ -47,18 +48,17 @@ export default function Login() {
     }
 
     return (
-        <div className="Login__container">
+        <div className="container-login">
            
-                <div className="Login__Brand">
-                </div>
+                <img src={brandLogin} alt='' className='Login__Brand' />
                 <div className="Login__description">
                     Dịch vụ thu hộ
                 </div>
             
 
             <div className="form-group-login">
-                <form className="w3-container input-form" onSubmit={handleSubmit(onHandleSubmit)}>
-                    <p>
+                <form className="w3-container form-login" onSubmit={handleSubmit(onHandleSubmit)}>
+                    <p className='div-input-id'>
                         <label className="input-title">ID</label>
                         <input
                             className="w3-input input-user-id"
@@ -92,14 +92,16 @@ export default function Login() {
 
                         )}
                         <span onClick={() => setIsShowPassword(!isShowPassword)}>
-                            {isShowPassword ? <ImEyeBlocked className='input-eye-login'/> : <ImEye className='input-eye-login'  /> }
+                            {isShowPassword ? <ImEyeBlocked className='input-eye-passwords'/> : <ImEye className='input-eye-passwords' /> }
                         </span>
                         
                     </p>
 
-                    <p className='div-btn-login'>
+                            <div className='abc'>
+
                         <button type='submit' className="btn-login">Đăng nhập</button>
-                    </p>
+                            </div>
+                    
                         
                 </form>
 

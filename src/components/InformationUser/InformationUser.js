@@ -48,14 +48,17 @@ export default function InfomationUser() {
                     <div className="information-card">
 
                     </div>
+                    <div className='abc'>
+                        <div className="information-card-avatar">
+                            <ChangeAvatar />
+                        </div>
+                        <div className="information-card-description">
+                            {/* <div className="information-name">{dataUser.surname && dataUser.surname} {dataUser.name && dataUser.name}</div> */}
+                            <div className="information-name">Nguyễn Thị thanh thuý hiền</div>
+                            <div className="information-id">Mã số ID: {dataUser.identityNumber && dataUser.identityNumber}</div>
+                        </div>
+                    </div>
 
-                    <div className="information-card-avatar">
-                        <ChangeAvatar />
-                    </div>
-                    <div className="information-card-description">
-                        <div className="information-name">{dataUser.surname && dataUser.surname} {dataUser.name && dataUser.name}</div>
-                        <div className="information-id">Mã số ID: {dataUser.identityNumber && dataUser.identityNumber}</div>
-                    </div>
                     <hr className="information-hr"></hr>
                     <div className="information-account-balance">Số dư tài khoản điểm <span className="information-coin">{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} </span> điểm</div>
 

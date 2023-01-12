@@ -6,7 +6,6 @@ import { useForm } from 'react-hook-form'
 import range from "lodash/range";
 import './EditProfile.css'
 import ReactDatePicker from 'react-datepicker';
-import Union from '../Union/Union';
 
 export default function EditProfile() {
     const navigate = useNavigate()
@@ -139,7 +138,6 @@ export default function EditProfile() {
             data: params
         })
             .then((response) => {
-                console.log(response.data);
                 setDataUser(response.data)
                 navigate('/information-user')
             })
@@ -173,7 +171,6 @@ export default function EditProfile() {
                                     placeholder={dataUser.surname}
                                     className="input-edit-profile" {...register("surName", { required: 'Vui lòng nhập "Họ" của bạn' })}
                                 />
-
                                 {errors.surName && <span className='text-warning-msg '>{errors.surName.message}</span>}
                             </div>
                             
@@ -189,9 +186,7 @@ export default function EditProfile() {
                                     placeholder={dataUser.name}
                                     className="input-edit-profile" {...register("name", { required: 'Vui lòng nhập "Tên" của bạn' })}
                                 />
-                                
                                 {errors.name && <span className='text-warning-msg '>{errors.name.message}</span>}
-
                             </div>
                             
                         </div>
@@ -299,8 +294,6 @@ export default function EditProfile() {
 
                                         </span>
                                     </>
-
-
                                 )}
                             </div>
                             

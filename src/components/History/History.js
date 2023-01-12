@@ -46,7 +46,7 @@ export default function History() {
 
         <div className='container'>
             <HeaderHistory />
-            <div >
+         
                 <ul className='history-list' onScroll={onscroll} >
                         { historyData.map((item) => (
                             <li className='history-list-description' key={item.id}>
@@ -59,7 +59,7 @@ export default function History() {
                         ))}
                         {loader && <LoaderAnimation />}
                 </ul>
-            </div>
+            
 
             <FooterHistory />
 

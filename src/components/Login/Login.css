@@ -3,44 +3,42 @@
     margin: 0 auto;
     width: 414px;
     height: 100vh;
-    display: block;
     padding: 0;
     background: #FBFBFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 100%;
+    
 }
 
 .Login__Brand {
-    position: absolute;
-    left: 25.12%;
-    right: 27.78%;
-    top: 10.38%;
-    bottom: 84.26%;
+    width: 195px;
+    height: 48px;
+    margin-top: 93px;
 }
 
 /* Dịch vụ thu hộ */
 .Login__description {
-    position: absolute;
-    width: 164px;
+   
+    width: auto;
     height: 17px;
-    left: 129px;
-    top: 124px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
     color: var(--bold-color);
+    margin-bottom: 32px;
 }
 
 /* login */
 
 .form-group-login {
-    position: absolute;
-    width: 86.96%;
-    height: 36.53%;
+    width: 360px;
+    height: 300px;
     left: 26px;
     top: 197px;
-    margin: 0;
     background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
@@ -81,8 +79,6 @@ input {
     border: none;
     outline: none;
     border-bottom: 1px solid #ccc;
-
-
 }
 
 .input-login-hr {
@@ -124,23 +120,20 @@ input {
     width: 324px;
 }
 
-.div-input-password {
-    margin-top: 20px;
-    position: relative;
-}
+
 
 .input-icon-id {
     position: absolute;
-    left: 322px;
-    top: 56px;
+    left: 308px;
+    top: 6px;
     color: #C1C1C1;
     font-size: 20px;
 }
 
-.input-eye-passwords {
+.input-icon-passwords {
     position: absolute;
-    top: 28px;
-    left: 304px;
+    top: 8px;
+    left: 308px;
     color: #C1C1C1;
     cursor: pointer;
     font-size: 20px;
@@ -149,17 +142,14 @@ input {
 
 /* quên Mật khẩu */
 .forgot-password {
-    position: absolute;
-    width: 122px;
+    width: auto;
     height: 19px;
-    left: 147px;
-    top: 520px;
-
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     color: var(--bold-color);
+    margin-top: 24px;
 
 }
 
@@ -178,36 +168,31 @@ input {
 
 /* contact */
 
+.contact{
+    display: flex;
+    flex-direction: row;
+    width: 196px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .phone {
     box-sizing: border-box;
-
-    position: absolute;
     width: 21px;
     height: 21px;
-    left: 110px;
-    top: 554px;
-
+    margin-bottom: 6px;
 }
 
 .mobile-phone {
-    position: absolute;
-    left: 12.84%;
-    right: 66.27%;
-    top: 14.91%;
-    bottom: 35.76%;
     color: #ED822E;
-
-
 }
 
 .phone-number {
-    position: absolute;
-    width: 169px;
+   
+    width: auto;
     height: 21px;
     left: 135px;
-    top: 556px;
-
-
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -225,221 +210,50 @@ input {
 .union-bottom {
     background-image: url(../../asset/Union.svg);
     background-repeat: no-repeat;
-    background-position: 237px 535px;
-    width: 414px;
-    height: 904px;
+    background-position: 20% 0;
+    width: 319.42px;
+    height: 317px;
+    position: absolute;
+    top: 542px;
 
 }
 
-/* MÀN HÌNH ĐIỆN THOẠI CỰC NHỎ */
-@media (min-width: 220px) and (max-width: 310px) {
-    .Login__Brand {
-        left: 16.12%;
-    }
-
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px) {
     .Login__description {
-        left: 28.12%;
-        top: 18%;
         font-size: 16px;
     }
-
-    .input-user-id,
-    .input-user-password {
+    .form-group-login{
+        width: 90.53%;
+    }
+    .input-user-password, .input-user-id{
         width: 100%;
     }
-
-    .form-group-login {
-        height: 46.53%;
-        width: 82%;
-        top: 168px;
-    }
-
-    .input-title {
-        font-size: 14px;
-    }
-
-    .input-icon-id {
-        left: 88%;
-    }
-
-    .input-eye-passwords {
-        left: 93%;
-    }
-
-    .forgot-password {
-        left: 85px;
-        top: 490px;
-    }
-    .phone-number {
-        left: 79px;
-        top: 516px;
-    }
-    .phone {
-        left: 55px;
-        top: 513px;
-    }
-    .union-bottom {
-    background-position: 100px 390px;
-
-    }
-
-}
-
-/* MÀN HÌNH ĐIỆN THOẠI NHỎ */
-@media (min-width: 320px) {
-    .Login__Brand {
-        position: absolute;
-        left: 25.12%;
-        right: 27.78%;
-        top: 10.38%;
-        bottom: 84.26%;
-    }
-
-    .Login__description {
-        position: absolute;
-        width: 164px;
-        height: 17px;
-        left: 32%;
-        top: 18%;
-    }
-
-    .form-group-login {
-        position: absolute;
-        width: 86.69%;
-        height: 300px;
-        left: 26px;
-        top: 197px;
-        margin: 0;
-        background: var(--white-color);
-        box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
-        border-radius: 10px;
-    }
-
-    .input-user-password,
-    .input-user-id {
-        width: 100%;
-    }
-
-    .input-icon-id {
-        left: 88%;
-    }
-
-    .input-eye-passwords {
+    .input-icon-id,
+    .input-icon-passwords{
         left: 92%;
     }
-
-    .btn-login {
-        width: 90.785%;
-        margin: 20px 0;
-        width: 100%;
-    }
-
-    .forgot-password {
-        left: 134px
-    }
-
-    .phone {
-        left: 104px;
-    }
-
-    .phone-number {
-        left: 129px;
+    .contact{
+        margin-top: 6px;
     }
 }
-
-/* MÀN HÌNH ĐIỆN THOẠI CÓ HEIGHT DÀI */
-@media (min-height: 914px) {
-
-    .input-user-password,
-    .input-user-id {
-        width: 100%;
-    }
-}
-
-/* MÀN HÌNH ĐIỆN THOẠI CÓ HEIGHT TỐI ĐA 915PX VÀ RỘNG TỐI THIỂU 412PX */
-@media screen and (max-height: 915px) and (min-width:412px) {
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px) {
     .Login__description {
-        top: 17%;
+        font-size: 18px;
     }
-
-    .btn-login {
-        width: 90.785%;
-        margin: 20px 0;
-        width: 100%;
-    }
-
-    .form-group-login {
-        height: 32.53%;
+    .input-icon-id,
+    .input-icon-passwords{
+        left: 94%;
     }
 }
-
-/* MÀN HÌNH ĐIỆN THOẠI IP 6/7/8 PLUS*/
-@media screen and (max-height: 736px) and (min-width:412px) {
-    .form-group-login {
-        height: 37.53%;
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px) {
+    .union-bottom{
+        display: block;
     }
 }
-
 /*Ipad dọc(768 x 1024)*/
-@media screen and (min-width: 768px) {
-    .Login__Brand {
-        top: 8.38%;
-    }
-
-    .Login__description {
-        top: 14%;
-    }
-
-    .form-group-login {
-        top: 180px;
-        height: 300px;
-    }
-
-    .forgot-password {
-        top: 504px;
-        left: 152px;
-    }
-
-    .phone-number {
-        top: 534px;
-        left: 140px;
-    }
-
-    .phone {
-        top: 532px;
-        left: 115px;
-    }
-}
-
-/* MÀN HÌNH IPAD NGANG */
-@media screen and (min-width: 1024px) {
-    .Login__description {
-        top: 15%;
-
-    }
-
-    .form-group-login {
-        top: 214px;
-        height: 300px;
-    }
-
-    .forgot-password {
-        top: 540px;
-    }
-
-    .phone-number {
-        top: 570px;
-    }
-
-    .phone {
-        top: 568px;
-    }
-}
-
-/* MÀN HÌNH DESKTOP */
-@media (min-width:1025px ) {
-    .form-group-login{
-        width: 360px;
-        height: 300px;
-    }
-}
+@media screen and (min-width: 768px) {}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px) {}

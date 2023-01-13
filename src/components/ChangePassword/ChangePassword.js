@@ -38,7 +38,7 @@ const ChangePassword = () => {
                 </Link>
 
                 <div className='div-icon-lock'>
-                    <img src={iconLock} className="icon-lock"/>
+                    <img src={iconLock} className="icon-lock" />
                 </div>
                 <div className="Login-status">
                     <div className="login-info">Đăng nhập lần đầu thành công</div>
@@ -47,14 +47,20 @@ const ChangePassword = () => {
 
                 <div className="form-group-change-password">
                     <form className="w3-container input-form" onSubmit={handleSubmit(onHandleSubmit)}>
-                        <p>
+                        <div className='div-input-change-password'>
                             <label className="input-title">Mật khẩu mới</label>
-                            <input
-                                className="w3-input input-user-password"
-                                type={isShowPassword ? "text" : "password"}
-                                name='newPassword'
-                                {...register("newPassword", { required: true, minLength: 6 })}
-                            />
+                            <div className='div-input-wrap'>
+                                <input
+                                    className="w3-input input-change-password"
+                                    type={isShowPassword ? "text" : "password"}
+                                    name='newPassword'
+                                    {...register("newPassword", { required: true, minLength: 6 })}
+                                />
+
+                                <span onClick={() => setIsShowPassword(!isShowPassword)}>
+                                    {isShowPassword ? <ImEye className='input-icon-change-password ' /> : <ImEyeBlocked className='input-icon-change-password ' />}
+                                </span>
+                            </div>
                             {Object.keys(errors).length !== 0 && (
                                 <>
                                     <span>
@@ -65,21 +71,23 @@ const ChangePassword = () => {
                                     </span>
                                 </>
                             )}
-                            <span onClick={() => setIsShowPassword(!isShowPassword)}>
-                                {isShowPassword ? <ImEyeBlocked className='input-icon-change-password ' /> : <ImEye className='input-icon-change-password ' />}
-                            </span>
+                        </div>
 
-                            {/* <i className="fas fa-eye-slash  input-icon" onClick={handleShowHidePassword}></i> */}
-                        </p>
-
-                        <p className='div-input-password'>
+                        <div className='div-input-change-password'>
                             <label className="input-title">Nhập lại mật khẩu mới</label>
-                            <input
-                                className="w3-input input-user-password"
-                                type={isShowPasswordReType ? "text" : "password"}
-                                name='retypePassword'
-                                {...register("retypePassword", { required: true, minLength: 6 })}
-                            />
+                            <div className='div-input-wrap'>
+
+                                <input
+                                    className="w3-input input-change-password"
+                                    type={isShowPasswordReType ? "text" : "password"}
+                                    name='retypePassword'
+                                    {...register("retypePassword", { required: true, minLength: 6 })}
+                                />
+
+                                <span onClick={() => setIsShowPasswordRetype(!isShowPasswordReType)}>
+                                    {isShowPasswordReType ? <ImEye className='input-icon-change-password-retype' /> : <ImEyeBlocked className='input-icon-change-password-retype' />}
+                                </span>
+                            </div>
                             {Object.keys(errors).length !== 0 && (
                                 <>
                                     <span>
@@ -91,21 +99,17 @@ const ChangePassword = () => {
                                 </>
 
                             )}
-                            <span onClick={() => setIsShowPasswordRetype(!isShowPasswordReType)}>
-                                {isShowPasswordReType ? <ImEyeBlocked className='input-icon-change-password-retype' /> : <ImEye className='input-icon-change-password-retype' />}
-                            </span>
-                        </p>
+                        </div>
 
                         <p className='div-btn-login'>
                             <button type='submit' className="btn-login">Đổi mật khẩu</button>
                         </p>
-
                     </form>
-
-
-
                 </div>
-                <div className='union-bottom'></div>
+                <div>
+                    <div className='union-bottom'></div>
+                </div>
+
             </div>
 
         </div>

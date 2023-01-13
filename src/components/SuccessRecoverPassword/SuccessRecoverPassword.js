@@ -1,20 +1,31 @@
-import { Link } from 'react-router-dom'
+import {  useNavigate } from 'react-router-dom'
 import './SuccessRecoverPassword.css'
-import Union from '../Union/Union'
 const SuccessRecoverPassword = () => {
+    const navigate = useNavigate()
+    const clickToLogin = () => {
+        navigate('/login')
+    }
     return (
         <div className="container">
             <div className="img-success">
             </div>
             <div className="status-success-password">Lấy lại mật khẩu thành công</div>
             <div className="comment-success-password">
-                Mật khẩu đã gửi đến email đã đăng ký. Vui lòng kiểm tra email để thực hiện đăng nhập lại
+                Mật khẩu đã gửi đến email đã đăng ký.
+                 Vui lòng kiểm tra email để thực hiện đăng nhập lại
             </div>
 
-            <Link to="/login">
-                <button className="btn-login-success-password">Đăng nhập lại</button>
-            </Link>
-            <Union className="Union-success-password" />
+            <button
+                type="submit"
+                className="btn-login-again"
+                onClick={clickToLogin}
+            >
+                Đăng nhập lại
+            </button>
+            <div>
+
+                <div className='union-bottom'></div>
+            </div>
         </div>
     )
 }

@@ -2,15 +2,38 @@
     position: relative;
     margin: 0 auto;
     width: 414px;
-    height: 899px;
+    height: 100VH;
     left: -1px;
     top: -3px;
     background: #FBFBFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.header-setting {
+        width: 414px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 52px;
+    margin-top: 62px;
+}
+
+
+.btn-previous{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 10%);
 }
 
 .setting-title {
 
-    position: absolute;
+  
     width: 300px;
     height: 21px;
     left: 57px;
@@ -26,11 +49,11 @@
 }
 
 .setting-information-user {
-    position: absolute;
-    width: 360px;
+    position: relative;
+    width: 89.375%;
     height: 63px;
-    left: 27px;
-    top: 119px;
+
+    top: 16px;
     background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
@@ -83,11 +106,10 @@
 
 /* tool đổi pass */
 .setting-change-password {
-    position: absolute;
-    width: 360px;
+    position: relative;
+    width: 89.375%;
     height: 63px;
-    left: 27px;
-    top: 197px;
+    top: 32px;
     background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
@@ -138,14 +160,14 @@
 /*  đăng xuất */
 
 .setting-log-out {
-    position: absolute;
-    width: 360px;
+    position: relative;
+    width: 89.375%;
     height: 63px;
-    left: 27px;
-    top: 275px;
+    top: 48px;
     background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
+    z-index: 10;
 }
 
 .setting-log-out-body {
@@ -186,6 +208,40 @@
     font-size: 18px;
     line-height: 18px;
     letter-spacing: -0.5px;
-
     color: var(--bold-color);
+}
+
+
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px) {
+    .union-setting{
+        position: absolute;
+        bottom: 28.13%;
+        right: 0
+    }
+
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px) {
+    .union-setting{
+        position: absolute;
+        bottom: 4.13%;
+        right: 0
+    }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px) {
+   
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px) {}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px) {}
+/* desktop */
+@media screen and (min-width:1025px){
+    .union-setting {
+        position: absolute;
+        bottom: 4.13%;
+        right: 0;
+    }
 }

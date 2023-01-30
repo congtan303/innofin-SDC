@@ -1,3 +1,5 @@
+
+
 .help-container {
     position: relative;
     margin: 0 auto;
@@ -6,6 +8,23 @@
     left: -1px;
     top: -3px;
     background: #FBFBFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.help-title {
+    width: auto;
+    margin-top: 68px;
+    height: 21px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--bold-color);
 }
 
 .help-body-title-text {
@@ -28,12 +47,11 @@
 
 .help-body {
     position: relative;
-    left: 27px;
-    top: 119px;
+    top: 30px;
     background: var(--white-color);
     box-shadow: 0px 1px 10px rgb(112 112 112 / 20%);
     border-radius: 10px;
-    width: 360px;
+    width: 86.96%;
     height: 560px;
     padding: 24px 28px;
     overflow-y: scroll;
@@ -77,7 +95,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
-    width: 260px;
+    width: 86.44%;
     letter-spacing: -0.5px;
     color: var(--bold-color);
     margin-top: 8px;
@@ -102,11 +120,9 @@
 }
 
 .help-number-hotline {
-    position: absolute;
     width: 186px;
     height: 21px;
-    left: 120px;
-    top: 694px;
+    margin-top: 58px;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -118,11 +134,8 @@
 }
 
 .helps-footer {
-    position: absolute;
-    width: 375px;
+    width: 90.58%;
     height: 33px;
-    left: 20px;
-    top: 720px;
     text-align: center;
     font-style: italic;
     font-weight: 400;
@@ -130,4 +143,22 @@
     line-height: 20px;
     letter-spacing: -0.5px;
     color: #AEAEAE;
+}
+
+@media screen and (min-width: 240px){
+    .help-body {
+        height: 44% ;
+    }
+    .help-answer{
+        width: 100%;
+    }
+    .help-hr{
+        width: 106.72%;
+    }
+}
+
+@media screen and (min-width: 320px) and (min-height: 915px ) {
+    .help-body {
+        height: 70.19%;;
+    }
 }

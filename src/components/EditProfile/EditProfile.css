@@ -3,9 +3,9 @@
     box-shadow: 0px 1px 10px rgb(112 112 112 / 20%);
     border-radius: 10px;
     width: 360px;
-    left: 30px;
-    top: 119px;
+    top: 50px;
     position: relative;
+  
 
 }
 
@@ -76,11 +76,14 @@
     font-size: 18px;
     line-height: 18px;
     position: relative;
-    top: 160px;
+    top: 80px;
     z-index: 10;
 }
 
 input::placeholder {
+    opacity: 0.5;
+}
+.input-option{
     opacity: 0.5;
 }
 
@@ -92,10 +95,8 @@ select.form-control.p-2 {
     border-bottom: 1px solid var(--border-color); ;
 }
 
-.union-edit-info-user {
-    background-image: url(../../asset/Union.svg);
-    background-repeat: no-repeat;
-    background-position: 234px 94px;
-    width: 414px;
-    height: 904px;
+.union-edit-profile {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

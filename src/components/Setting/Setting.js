@@ -1,20 +1,31 @@
 import { Link } from 'react-router-dom'
 import './Setting.css'
+import unionSetting from '../../asset/Union.svg'
 export default function Setting() {
     return (
         <div className='setting-container'>
+            <header className='header-setting'>
+                {/* <div className="btn-setting">
+                    <Link to="/account-user">
+                        <button className="previous-button">
+                            <i className="fal fa-chevron-left icon-back"></i>
+                        </button>
+                    </Link>
 
-            <div className="btn-setting">
+                </div>
+                <div className="setting-title">
+                    Cài đặt
+                </div> */}
                 <Link to="/account-user">
-                    <button className="previous-button">
+                    <button className='btn-previous'>
                         <i className="fal fa-chevron-left icon-back"></i>
                     </button>
                 </Link>
+                <div className="setting-title">
+                    Cài đặt
+                </div>
+            </header>
 
-            </div>
-            <div className="setting-title">
-                Cài đặt
-            </div>
             <div className="setting-information-user">
                 <div className="setting-infomation-user-body">
                     <div className="setting-user-icon-background">
@@ -50,7 +61,8 @@ export default function Setting() {
                 </div>
 
             </div>
-            <div className='union-bottom'></div>
+            {/* <div className='union-bottom'></div> */}
+            <img src={unionSetting} className="union-setting" />
         </div>
     )
 }

@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form'
 import range from "lodash/range";
 import './EditProfile.css'
 import ReactDatePicker from 'react-datepicker';
+import unionEditProfile from '../../asset/Union.svg'
 
 export default function EditProfile() {
     const navigate = useNavigate()
@@ -154,7 +155,7 @@ export default function EditProfile() {
                     <i className="fal fa-chevron-left icon-back"></i>
                 </button>
             </Link>
-            <div className="title">
+            <div className="information-title">
                 Cập nhật thông tin
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -211,6 +212,7 @@ export default function EditProfile() {
                                                 margin: 10,
                                                 display: "flex",
                                                 justifyContent: "center",
+                                                
                                             }}
                                         >
                                             <button onClick={decreaseMonth} disabled={prevMonthButtonDisabled}>
@@ -405,8 +407,8 @@ export default function EditProfile() {
                         <div className="flex flex-col gap-5">
                             <label htmlFor='cities' className='edit-profile-name'>Tỉnh/Thành phố:</label>
 
-                            <select name='cities' className='form-control p-2' onChange={(e) => handleCities(e)}>
-                                <option value="abc">--Vui lòng chọn Tỉnh/Thành phố</option>
+                            <select name='cities' className='form-control p-2 input-option' onChange={(e) => handleCities(e)}>
+                                <option value="abc" >--Vui lòng chọn Tỉnh/Thành phố</option>
                                 {
                                     cities.map((city, index) => (
                                         <option key={index} value={city.cities_name}>{city.name}</option>
@@ -416,8 +418,8 @@ export default function EditProfile() {
 
                             <label htmlFor='districts' className='edit-profile-name'>Quận/Huyện</label>
 
-                            <select name='districts' className='form-control p-2' onChange={(e) => handleDistricts(e)}>
-                                <option value="abc">--Vui lòng chọn Quận/Huyện</option>
+                            <select name='districts' className='form-control p-2 input-option' onChange={(e) => handleDistricts(e)}>
+                                <option value="abc" >--Vui lòng chọn Quận/Huyện</option>
                                 {
                                     districts.map((district, index) => (
                                         <option key={index} value={district.districts_id}>{district.district.name}</option>
@@ -428,8 +430,8 @@ export default function EditProfile() {
                             <label htmlFor='wards' className='edit-profile-name'>Phường/Xã:</label>
 
 
-                            <select name='wards' className='form-control p-2' onChange={(e) => handleWards(e)} >
-                                <option value="abc">--Vui lòng chọn Phường/Xã</option>
+                            <select name='wards' className='form-control p-2 input-option' onChange={(e) => handleWards(e)} >
+                                <option value="abc" >--Vui lòng chọn Phường/Xã</option>
                                 {
                                     wards.map((ward, index) => (
                                         <option key={index} value={ward.ward_id}>{ward.ward.name}</option>
@@ -447,7 +449,8 @@ export default function EditProfile() {
 
 
             </form>
-            <div className='union-edit-info-user'></div>
+            {/* <div className='union-edit-info-user'></div> */}
+            <img src={unionEditProfile} className='union-edit-profile'/>
 
         </div>
     )

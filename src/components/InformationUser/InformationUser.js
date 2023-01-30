@@ -6,6 +6,7 @@ import './InformationUser.css'
 import ChangeAvatar from '../ChangeAvatar/ChangeAvatar';
 import moment from 'moment'
 import LoaderAnimation from '../LoaderAnimation/LoaderAnimation';
+import unionInformation from '../../asset/Union.svg'
 export default function InfomationUser() {
     const [dataUser, setDataUser] = useState({})
     const [loader, setLoader] = useState(true)
@@ -42,24 +43,24 @@ export default function InfomationUser() {
                         </Link>
 
                     </div>
-                    <div className="title">
+                    <div className="information-title">
                         Thông tin cá nhân
                     </div>
                     <div className="information-card">
-
+                    <hr className="information-hr"></hr>
                     </div>
-                    <div className='abc'>
+                    <div className='information-avatar-name-id'>
                         <div className="information-card-avatar">
                             <ChangeAvatar />
                         </div>
                         <div className="information-card-description">
                             {/* <div className="information-name">{dataUser.surname && dataUser.surname} {dataUser.name && dataUser.name}</div> */}
-                            <div className="information-name">Nguyễn Thị thanh thuý hiền</div>
+                            <div className="information-name">{dataUser.surname} {dataUser.name}</div>
                             <div className="information-id">Mã số ID: {dataUser.identityNumber && dataUser.identityNumber}</div>
                         </div>
                     </div>
 
-                    <hr className="information-hr"></hr>
+                    
                     <div className="information-account-balance">Số dư tài khoản điểm <span className="information-coin">{dataUser.point && dataUser.point.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} </span> điểm</div>
 
                     <div className="information-user-card">
@@ -68,14 +69,14 @@ export default function InfomationUser() {
                                 <div className='information-date-of-birth-text'>Ngày sinh:</div>
                                 <div className='information-date-of-birth-content'>{moment(dataUser.dateOfBirth && dataUser.dateOfBirth).format("DD/MM/YYYY")}</div>
                             </div>
-                            <div className='hr-information-user'></div>
+                            <hr className='hr-information-user'></hr>
                             <div className='information-identity-number'>
                                 <div className='information-identity-number-text'>Số CCCD:</div>
                                 <div className='information-identity-number-content'>{dataUser.identityNumber && dataUser.identityNumber}</div>
 
 
                             </div>
-                            <div className='hr-information-user'></div>
+                           <hr className='hr-information-user' />
 
                             <div className='information-phone-number'>
                                 <div className='information-phone-number-text'>Số điện thoại:</div>
@@ -88,14 +89,15 @@ export default function InfomationUser() {
 
 
                     <Link to="/edit-profile">
-                        <div className='btn-update-information'>
-                            <button className='btn-submit-update'>
+                       
+                            <button className='btn-update-information'>
                                 Cập nhật thông tin
                             </button>
-                        </div>
+                        
                     </Link>
 
-                    <div className='union-info-user'></div>
+                    {/* <div className='union-info-user'></div> */}
+                    <img src={unionInformation} className='union-information' />
                 </div>}
         </>
 

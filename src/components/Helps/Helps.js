@@ -10,7 +10,7 @@ export default function Helps() {
                     <i className="fal fa-chevron-left icon-back"></i>
                 </button>
             </Link>
-            <div className="title">
+            <div className="help-title">
                 Trợ giúp
             </div>
 

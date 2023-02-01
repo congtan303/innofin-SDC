@@ -1,10 +1,10 @@
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import './ListMoney.css'
-import UnionTop from '../Union-top/UnionTop'
-import FooterHistory from '../FooterHistory/FooterHistory'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useForm } from 'react-hook-form'
+import unionHeaderHistory from '../../asset/Union-top.png'
+
 export default function ListMoney() {
     const navigate = useNavigate()
     const { register, handleSubmit, formState: { errors } } = useForm()
@@ -12,7 +12,7 @@ export default function ListMoney() {
     const [statement, setStateMent] = useState([])
     const [collect, setCollect] = useState({})
     const [isCheckBox, setIsCheckBox] = useState(false)
-    
+
     const access_token = localStorage.getItem('access_token')
 
     const config = {
@@ -42,19 +42,22 @@ export default function ListMoney() {
 
     }
 
-    
+
     return (
-        <div className='container'>
+        <div className='history-container'>
+
             <div className="header-history">
                 <Link to={`/detail-start-collect/${id}/${lat}/${lng}`}>
                     <div className='header-history-previous-btn'>
+
                     </div>
                 </Link>
+
                 <div className="header-history-title">Bảng kê điện tử</div>
                 <div className="header-history-notification">
                     <div className="header-history-notification-number">1</div>
                 </div>
-                <UnionTop />
+                <img src={unionHeaderHistory} className='union-header-history' />
             </div>
 
             {/* body */}
@@ -72,23 +75,32 @@ export default function ListMoney() {
                             </thead>
                             <tbody>
                                 {statement && statement.map((item, index) => (
-                                    <tr key={index}>
-                                        {item.quantity !== 0 ?
-                                            <>
-                                                <td className='denominations'>{item.denomination}đ</td>
-                                                <td className='quantity'>{item.quantity}</td>
-                                                <td className='total-cash'>{item.denomination * item.quantity}đ</td>
-                                            </>
-                                            : null}
-                                    </tr>
-                                ))}
+                                    item.quantity !== 0 ?
+                                        (
+                                            <tr key={index}>
+                                                <td className='denominations'>{item.denomination.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}đ</td>
+                                                <td className='quantity'>{item.quantity.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
+                                                <td className='total-cash'>{(item.denomination * item.quantity).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}đ</td>
+
+                                            </tr>
+                                        )
+
+                                        : null
+
+                                )
+
+
+
+
+
+                                )}
                             </tbody>
                             <tfoot>
 
                                 <tr>
                                     <td className='list-money-total'>Tổng cộng</td>
                                     <td></td>
-                                    <td className='list-money-total-money'>{collect.total}đ</td>
+                                    <td className='list-money-total-money'>{collect.total && collect.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}đ</td>
                                 </tr>
                             </tfoot>
 
@@ -108,23 +120,62 @@ export default function ListMoney() {
                         />
                         <label htmlFor='money'> Tôi đã nhận đủ số tiền cần thu</label>
                         <div className='circle-checkbox'></div>
-                        {errors.inputCheckbox && <span className='text-warning-msg '>{errors.inputCheckbox.message}</span>}
+                        
+                    </div>
+                    {errors.inputCheckbox && <span className='text-warning-msg '>{errors.inputCheckbox.message}</span>}
+                    <div className='btn-group-list-money'>
+                        <button className={isCheckBox ? "btn-edit-table" : "btn-edit-table-active"}>
+                            Sửa bảng kê
+                        </button>
+
+                        <button
+                            type='submit'
+                            className={isCheckBox ? "btn-complete-edit-active" : "btn-complete-edit"}
+                        >
+                            Hoàn tất
+                        </button>
                     </div>
 
-                    <button className={isCheckBox ? "btn-edit-table" : "btn-edit-table-active" } >Sửa bảng kê</button>
 
-                    <button
-                        type='submit'
-                        className={isCheckBox ? "btn-complete-edit-active" : "btn-complete-edit" } 
-                    >
-                        {console.log(isCheckBox)}
-                        Hoàn tất
-                    </button>
                 </form>
             </div>
 
             {/* footer */}
-            <FooterHistory />
+            <div className="footer-history">
+                <Link to="/home-page">
+                    <div className="footer-history-icon">
+                        <div className="footer-history-icon-img">
+
+                        </div>
+
+                        <div className="footer-history-icon-text-normal">
+                            Thu hộ
+                        </div>
+
+
+                    </div>
+                </Link>
+                <div className="footer-history-active">
+                    <div className="footer-history-active-img">
+
+                    </div>
+                    <div className="footer-history-active-text">
+                        Lịch sử
+                    </div>
+                </div>
+                <Link to="/account-user">
+                    <div className="footer-history-account">
+                        <div className="footer-history-account-img">
+
+                        </div>
+                        <div className="footer-history-account-text">
+                            Tài khoản
+                        </div>
+                    </div>
+                </Link>
+
+
+            </div>
 
         </div>
     )

@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import './HistoryRecharge.css'
-import HeaderHistoryRecharge from '../HeaderHistoryRecharge/HeaderHistoryRecharge'
-import FooterHistory from '../FooterHistory/FooterHistory'
 import LoaderAnimation from '../LoaderAnimation/LoaderAnimation'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import moment from 'moment'
+import unionHeaderHistory from '../../asset/Union-top.png'
+
 
 export default function HistoryRecharge() {
     const [rechargeData, setRechargeData] = useState([])
@@ -17,12 +17,11 @@ export default function HistoryRecharge() {
     const config = {
         headers: {
             'Authorization': 'Bearer ' + access_token
-
         }
     }
 
     useEffect(() => {
-        if(page <= 2) {
+        if (page <= 2) {
             setLoader(true)
         } else {
             setLoader(false)
@@ -40,13 +39,33 @@ export default function HistoryRecharge() {
             setPage(page + 1)
             setLoader(false)
         }
-   
+
     }
     return (
-        <div className='container'>
-            <HeaderHistoryRecharge />
+        <div className='history-container'>
+            <div className="header-history">
+                <Link to="/history">
+                    <div className='header-history-previous-btn'>
 
-            <div >
+                    </div>
+                </Link>
+
+                <div className="header-history-title">Lịch sử</div>
+                <div className="header-history-notification">
+                    <div className="header-history-notification-number">1</div>
+                </div>
+                <img src={unionHeaderHistory} className='union-header-history' />
+            </div>
+            <div className='header-history-navbar'>
+                <Link to="/history">
+                    <div className='navbar-no-active'>Thu hộ</div>
+                </Link>
+                <div className='navbar-active'>Nạp điểm</div>
+
+
+            </div>
+
+     
                 <ul className='history-list' onScroll={onscroll} >
                     {rechargeData.map((item) => (
                         <li className='history-list-description' key={item.id}>
@@ -60,14 +79,48 @@ export default function HistoryRecharge() {
                                 <div className='history-list-status-icon-success-img'></div>
                             </div>
                         </li>
-                       
+
                     ))}
-                      {loader && <LoaderAnimation />}
+                    {loader && <LoaderAnimation />}
 
                 </ul>
-            </div>
+            
 
-            <FooterHistory />
+            <div className="footer-history">
+                <Link to="/home-page">
+                    <div className="footer-history-icon">
+                        <div className="footer-history-icon-img">
+
+                        </div>
+
+                        <div className="footer-history-icon-text-normal">
+                            Thu hộ
+                        </div>
+
+
+                    </div>
+                </Link>
+                <div className="footer-history-active">
+                    <div className="footer-history-active-img">
+
+                    </div>
+                    <div className="footer-history-active-text">
+                        Lịch sử
+                    </div>
+                </div>
+                <Link to="/account-user">
+                    <div className="footer-history-account">
+                        <div className="footer-history-account-img">
+
+                        </div>
+                        <div className="footer-history-account-text">
+                            Tài khoản
+                        </div>
+                    </div>
+                </Link>
+
+
+            </div>
 
 
         </div>

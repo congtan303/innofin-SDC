@@ -4,7 +4,6 @@ import axios from 'axios'
 import phone from '../../asset/Vector-contact-user.png'
 import './DetailTakeCollect.css'
 import SwipeableButton from '../SwipeButton2/SwipeButton2'
-import FooterApp from '../FooterApp/FooterApp'
 
 
 export default function DetailTakeCollect() {
@@ -60,65 +59,98 @@ export default function DetailTakeCollect() {
                         </div>
 
                     </div>
-                    <div className="history-background-notification">
 
-                    </div>
                 </div>
 
                 {/* body */}
 
 
-                <div className="Detail-1-content">
 
-                    <div className="Detail-1-card-body" >
-                        <div >
-                            <img
-                                src={dataCustomer.storeLogo}
-                                className="detail-1-avatar"
-                                alt="img-logo"
-                            />
-                        </div>
-                        <div className="detail-1-name">{dataCustomer.storeName}</div>
-                        <div className="detail-1-address">{dataCustomer.storeAddress}</div>
-                        <hr className="detail-1-hr" />
-                        <div className="detail-1-money">
-                            Số tiền phải thu:
-                            <strong className="blue text-detail-css">{dataCustomer.total && dataCustomer.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                            </strong>
-                        </div>
-                        <div className="detail-1-name-money">Người nộp tiền: <span className='user-payment'>{dataCustomer.staff}</span></div>
-                        <div className="detail-1-phone-number">Số điện thoại: <span className='user-payment-number-phone'>{dataCustomer.storePhone}</span></div>
 
-                        <div className="detail-1-contact">
-                            <a href='tel:0923 221 554 '>
-                                <div className="detail-1-contact-background">
-                                    <img src={phone} alt='img-phone-contact'></img>
-                                </div>
-                            </a>
-
-                        </div>
+                <div className="Detail-1-card-body" >
+                    
+                        <img
+                            src={dataCustomer.storeLogo}
+                            className="detail-1-avatar"
+                            alt="img-logo"
+                        />
+                    
+                    <div className="detail-1-name">{dataCustomer.storeName}</div>
+                    <div className="detail-1-address">{dataCustomer.storeAddress}</div>
+                    <hr className="detail-1-hr" />
+                    <div className="detail-1-money">
+                        Số tiền phải thu:
+                        <strong className="blue text-detail-css">{dataCustomer.total && dataCustomer.total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                        </strong>
                     </div>
+                    <div className="detail-1-name-money">Người nộp tiền: <span className='user-payment'>{dataCustomer.staff}</span></div>
+                    <div className="detail-1-phone-number">Số điện thoại: <span className='user-payment-number-phone'>{dataCustomer.storePhone}</span></div>
 
-                    <ul className="detail-1-list-note">
-                        <li>Khi bấm “bắt đầu" người nộp tiền sẽ được thông báo rằng bạn sẽ đến vòng 15 phút.
-                        </li>
-                        <li>Bạn không thể thay đổi địa điểm thu sau khi
-                            bấm nút bên dưới
-                        </li>
-                    </ul>
+                    <div className="detail-1-contact">
+                        <a href='tel:0923 221 554 '>
+                            <div className="detail-1-contact-background">
+                                <img src={phone} alt='img-phone-contact'></img>
+                            </div>
+                        </a>
 
-
-                    <div className='block'>
-                        <SwipeableButton onSuccess={onSuccess} color='#2CD1F8' />
                     </div>
+                </div>
+
+                <ul className="detail-1-list-note">
+                    <li className='list-note-1'>Khi bấm “bắt đầu" người nộp tiền sẽ được thông báo rằng bạn sẽ đến vòng 15 phút.
+                    </li>
+                    <li className='list-note-2'>Bạn không thể thay đổi địa điểm thu sau khi
+                        bấm nút bên dưới.
+                    </li>
+                </ul>
 
 
+                <div className='block'>
+                    <SwipeableButton onSuccess={onSuccess} color='#2CD1F8' />
+                </div>
+
+
+
+
+
+
+                {/* footer */}
+                <div className="footer-history">
+                    <div className="footer-history-icon-active">
+                        <div className="footer-history-icon-img-active">
+
+                        </div>
+                        <Link to="/home-page">
+                            <div className="footer-history-icon-text">
+                                Thu hộ
+                            </div>
+                        </Link>
+
+                    </div>
+                    <Link to="/history">
+                        <div className="footer-history-normal">
+                            <div className="footer-history-img">
+
+                            </div>
+                            <div className="footer-history-text-normal">
+                                Lịch sử
+                            </div>
+                        </div>
+                    </Link>
+
+                    <Link to="/account-user">
+                        <div className="footer-history-account">
+                            <div className="footer-history-account-img">
+
+                            </div>
+                            <div className="footer-history-account-text">
+                                Tài khoản
+                            </div>
+                        </div>
+                    </Link>
 
 
                 </div>
-
-                {/* footer */}
-                <FooterApp />
 
             </div>
 

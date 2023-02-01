@@ -6,20 +6,28 @@
     background: var(--background-color);
     margin: 0 auto;
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
 }
 
 .header-detail-previous-btn {
     background: url('../../asset/Vector-previous.png');
     width: 9px;
     height: 14px;
-    position: absolute;
+    /* position: absolute;
     top: 40px;
-    left: 28px;
+    left: 28px; */
 }
 
 .header-detail {
-    padding-top: 34px;
+    width: 414px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+    padding: 0 30px;
 }
 
 .detail-notification {
@@ -27,9 +35,9 @@
     width: 28px;
     height: 30px;
     position: relative;
-    position: absolute;
+    /* position: absolute;
     top: 34px;
-    right: 33px;
+    right: 33px; */
 }
 
 .detail-title {
@@ -56,14 +64,13 @@
 }
 
 .Detail-1-card-body {
-    position: absolute;
+    position: relative;
     width: 360px;
     height: 264px;
-    left: 26px;
-    top: 101px;
     background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
+    margin-top: 28px;
 }
 
 .detail-1-avatar {
@@ -94,41 +101,41 @@
 }
 
 .detail-1-address {
-    position: absolute;
+   
     width: 324px;
     height: 18px;
-    left: 20px;
-    top: 144px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.5px;
     color: var(--bold-color);
+    margin-left: 20px;
+
 }
 
 .detail-1-hr {
-    position: absolute;
     width: 321px;
     height: 1px;
     left: 20px;
     top: 168px;
-    margin: 0;
     background-color: var(--border-color);
+    margin: 6px 0 2px 20px;
 }
 
 .detail-1-money {
-    position: absolute;
+    position: relative;
+
     width: 100%;
     height: 22px;
-    left: 20px;
-    top: 174px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.5px;
     color: var(--bold-color);
+    margin-left: 20px;
+
 }
 
 .user-payment,
@@ -149,31 +156,29 @@
 }
 
 .detail-1-name-money {
-    position: absolute;
     width: 100%;
     height: 22px;
-    left: 20px;
-    top: 196px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.5px;
     color: var(--bold-color);
+    margin-left: 20px;
 }
 
 .detail-1-phone-number {
-    position: absolute;
     width: 100%;
     height: 22px;
-    left: 20px;
-    top: 218px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.5px;
     color: var(--bold-color);
+    margin-left: 20px;
+    margin-bottom: 24px;
+
 }
 
 .detail-1-contact-background {
@@ -199,9 +204,7 @@
 /* list */
 
 .detail-1-list-note {
-    position: absolute;
-    top: 380px;
-    margin-left: 24px; 
+    margin-top: 24px;
 }
 
 
@@ -210,18 +213,23 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.1px;
     color: var(--white-color);
     width: 320px;
     height: 43px;
     list-style: inherit ;
     padding: 0;
-    margin-bottom: 10px;
+    /* margin-left: 34px;
+    margin-top: 12px; */
+}
+
+.list-note-2{
+    margin-top: 10px;
 }
 
 /* btn xác nhận thu hộ */
 .block {
-    margin-top: -70px
+    margin-top: 8%
 }
 .btn-confirm-success-money {
     position: absolute;
@@ -252,4 +260,15 @@
     line-height: 20px;
     letter-spacing: -0.5px;
     color: var(--white-color);
+}
+ 
+@media screen and (min-width: 320px) {
+    .detail-1-list-note{
+        margin-top: 14px;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .detail-1-list-note{
+        margin-top: 24px;
+    }
 }

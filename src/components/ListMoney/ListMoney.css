@@ -1,10 +1,6 @@
 .list-money-content {
-    position: relative;
-    width: 414px;
-    top: 6px;
-    height: 514px;
-    overflow-y: scroll;
-    margin-top: 131px;
+    width: 100%;
+
 }
 
 .list-money-content::-webkit-scrollbar {
@@ -21,20 +17,21 @@
 }
 
 .List-money-body {
-    position: absolute;
-    width: 390px;
+    position: relative;
+    width: 94.21%;
     height: 464px;
-    left: 12px;
-    top: 10px;
+    top: 19px;
     background: var(--white-color);
     box-shadow: 0px 1px 10px rgb(112 112 112 / 20%);
     border-radius: 10px;
+    margin: 0 auto;
 }
 
 .list-money-table {
     margin: 0 auto;
     position: relative;
     top: 16px;
+    width: 91.797%;
 }
 
 table {
@@ -116,18 +113,16 @@ thead {
 }
 
 .confirm-money {
-    position: absolute;
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    left: 10px;
-    top: 500px;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
     color: var(--bold-color);
-    
+    margin: 44px 0 0 12px;
+
 }
 
 .total-money {
@@ -141,7 +136,7 @@ thead {
 }
 
 .input-checkbox {
- 
+
     margin-right: 10px;
     width: 24px;
     height: 24px;
@@ -158,7 +153,7 @@ thead {
     align-items: center;
     appearance: none;
     -webkit-appearance: none;
-    
+
 }
 
 
@@ -181,12 +176,18 @@ thead {
 
 /* btn edit table */
 
+.btn-group-list-money {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10px;
+    margin-top:20px ;
+}
+
 .btn-edit-table {
-    position: absolute;
     width: 190px;
     height: 54px;
-    left: 15px;
-    top: 545px;
     background: #CBCBCB;
     border-radius: 8px;
     border: none;
@@ -199,11 +200,8 @@ thead {
 }
 
 .btn-edit-table-active {
-    position: absolute;
     width: 190px;
     height: 54px;
-    left: 15px;
-    top: 545px;
     background: #2CD1F8;
     border-radius: 8px;
     border: none;
@@ -217,11 +215,8 @@ thead {
 
 
 .btn-complete-edit {
-    position: absolute;
     width: 190px;
     height: 54px;
-    left: 210px;
-    top: 545px;
     background: #CBCBCB;
     border-radius: 8px;
     border: none;
@@ -235,11 +230,8 @@ thead {
 
 
 .btn-complete-edit-active {
-    position: absolute;
     width: 190px;
     height: 54px;
-    left: 210px;
-    top: 545px;
     background: #2CD1F8;
     border-radius: 8px;
     border: none;
@@ -249,4 +241,30 @@ thead {
     font-size: 18px;
     line-height: 18px;
     color: var(--white-color);
+}
+.btn-edit-table,
+.btn-edit-table-active,
+.btn-complete-edit-active,
+.btn-complete-edit {
+    width: 48.23%   ;
+}
+
+@media screen and (max-height: 800px) {
+    .list-money-content {
+        height: 74.373%;
+        overflow-y: scroll;
+    }
+    .btn-group-list-money{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .list-money-content {
+        height: 100%;
+        overflow: hidden;
+    }
+    .btn-group-list-money{
+      
+    }
 }

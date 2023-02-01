@@ -1,7 +1,14 @@
 .home-page-container {
     width: 414px;
-    height: auto;
+    height: 899px;
     margin: 0 auto;
+    position: relative;
+    padding: 0;
+    background: #FBFBFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
 }
 
 .blue-text {
@@ -15,31 +22,27 @@
     left: 0px;
     top: 0px;
     background: linear-gradient(170.64deg, #15EAF8 -10.08%, #58A0FA 44.31%, #BB34FD 98.7%);
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 34px;
 }
 
 .information-user-and-coin {
     position: relative;
-    top: 26px;
-    left: 122px;
     width: 240px;
     height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 14px 0;
+    padding: 14px 0 14px 18px;
 
 }
 
-
-
-.header-union-top {
-    background-image: url(../../asset/Union-top.png);
-    background-repeat: no-repeat;
-    background-position: 316px 26px;
-    width: 414px;
-    height: 138px;
+.union-home-page {
     position: absolute;
+    right: 0;
+    top: 26px;
 }
 
 .home-page-header-welcome {
@@ -56,7 +59,7 @@
     color: var(--white-color);
 }
 
-
+/* 
 .home-page-header-avatar {
     background: url('../../asset/image-avatar.png')no-repeat;
     position: absolute;
@@ -66,15 +69,24 @@
     top: 43px;
     border: 2px solid var(--white-color);
     border-radius: 50%
+} */
+
+.avtar-user {
+    width: 68px;
+    height: 68px;
+    left: 33px;
+    top: 43px;
+    border: 2px solid var(--white-color);
+    border-radius: 50%;
+
 }
 
 .homepage-bell-notification {
-    background: url('../../asset/Vector-bell.png');
-    width: 28px;
+    background: url('../../asset/Vector-bell.png') no-repeat;
+    width: 32px;
     height: 30px;
-    position: absolute;
-    left: 351px;
-    top: 48px;
+    position: relative;
+    z-index: 10;
 }
 
 .homepage-number-notification {
@@ -110,29 +122,22 @@
 }
 
 .home-page-navbar {
-    position: absolute;
-    width: 414px;
+    width: 100%;
     height: 60px;
-    left: 0px;
-    top: 127px;
     background: var(--white-color);
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
-
-}
-
-.customer-need-take-money {
-    position: absolute;
-    width: 229px;
-    height: 32px;
-    left: 18px;
-    top: 18px;
-    font-style: normal;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+    /* or 122% */
+
     letter-spacing: -0.5px;
-    color: #2CD1F8;
+    color: #2CD1F8
 }
+
 
 /* list KHách hàng */
 
@@ -142,7 +147,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     width: 414px;
-    height: 462px;
+    height: 612px;
     padding: 8px;
     background: #FBFBFD;
 }
@@ -167,6 +172,9 @@
     cursor: pointer;
     align-items: center;
     padding: 10px 14px;
+    margin-bottom: 10px;
+    width: 390px;
+    height: 120px;
 }
 
 .list-customer-avatar {
@@ -299,8 +307,8 @@
 
 .check-data-payment {
     position: absolute;
-    right: 20px;
-    top: 370px;
+    right: 6%;
+    top: 75%;
     width: 50px;
     height: 50px;
     border: 1px solid;
@@ -317,44 +325,118 @@
 .icon-payment {
     font-size: 26px;
 }
+.footer-history-img {
+    background: url('../../asset/Union-history-home-page.png');
+    width: 28px;
+    height: 28px;
+}
 
-@media (max-width: 768px) {
+.footer-history-normal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #AEAEAE;
+}
 
-    .information-user-and-coin {
-        position: relative;
-        top: 26px;
-        left: 122px;
-        width: 240px;
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 14px 0;
+.footer-history-img {
+    margin-bottom: 4px;
+}
+
+.footer-history-account-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--purple-color);
+}
+
+.footer-history-account-active-img {
+    background: url('../../asset/Union-account-active.png');
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+}
+
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px) {
+    .home-page-container{
+        height: 100vh;
+    }
+    .Home-page-header {
+        width: 100%;
+        height: 12.98%;
+        padding: 0
+    }
+    .home-page-navbar{
+        height: 8.085%;
     }
 
-    .home-page-header-welcome {
-        /* position: absolute; */
-        width: 188px;
-        height: auto;
-        /* left: 122px;
-        top: 54px; */
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 18px;
-        letter-spacing: -0.5px;
-        color: var(--white-color);
+    .information-user-and-coin {
+        width: 220px;
+        height: 80px;
+    }
+
+    .list-customer{
+        position: initial;
+        height: 66.288%;
+        width: 100%;
+    }
+    .list-customer-information {
+        width: 100%;
+    }
+    .union-home-page{
+        top: 0;
+    }
+}
+
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 321px) {
+    .Home-page-header {
+        width: 100%;
+        padding: 0 34px;
+    }
+
+    .information-user-and-coin {
+        width: 240px;
+        height: 100px;
     }
 
     .list-customer {
-        height: 100vh;
+        width: 100%;
+        
     }
 
-    .check-data-payment {
-        position: absolute;
-        right: 20px;
-        top: 300px;
+    .list-customer-information {
+        width: 100%;
     }
+}
 
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px) {
+    .Home-page-header {
+        padding: 0 34px;
+    }
+}
 
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px) {}
+
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px) {
+    .home-page-container{
+        height: 899px;
+    }
+    .list-customer-information {
+        width: 390px
+    }
+    .union-home-page{
+        top: 26px;
+    }
 }

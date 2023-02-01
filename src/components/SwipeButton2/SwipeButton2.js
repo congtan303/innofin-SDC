@@ -43,7 +43,7 @@ export default class SwipeableButton extends Component {
     if(this.isDragging) {
       this.isDragging = false;
 
-      if(this.sliderLeft > this.containerWidth * 0.38) {
+      if(this.sliderLeft > this.containerWidth * 0.9) {
         this.sliderLeft = this.containerWidth;
         if(this.props.onSuccess) {
           this.props.onSuccess();

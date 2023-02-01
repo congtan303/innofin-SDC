@@ -14,17 +14,17 @@ export default function RechargeConfirm() {
                 Nạp điểm vào tài khoản
             </div>
 
-            <div className="recharge-confirm-title">
+            <div className="recharge-confirm-card">
 
-            </div>
-            <div className="recharge-confirm-description">
-                Yêu cầu nạp thêm điểm của bạn đã được ghi nhận. Điểm sẽ được nạp vào tài khoản
-                trong vòng <strong>15 phút</strong>
-            </div>
-            <Link to="/account-user">
-                <button className="btn-back-to-home-page">Về trang chủ</button>
-            </Link>
 
+                <div className="recharge-confirm-description">
+                    Yêu cầu nạp thêm điểm của bạn đã được ghi nhận. Điểm sẽ được nạp vào tài khoản
+                    trong vòng <strong>15 phút</strong>
+                </div>
+                <Link to="/account-user" className='div-btn-recharge-confirm'>
+                    <button className="btn-back-to-home-page">Về trang chủ</button>
+                </Link>
+            </div>
         </div>
     )
 }

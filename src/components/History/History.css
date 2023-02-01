@@ -1,10 +1,120 @@
+.history-container {
+    position: relative;
+    margin: 0 auto;
+    width: 414px;
+    height: 899px;
+    padding: 0;
+    background: #FBFBFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.header-history {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 128px;
+    width: 414px;
+    background: var(--background-color);
+}
+
+.union-header-history {
+    position: absolute;
+    right: 0;
+    top: 26px;
+}
+
+.header-history-previous-btn {
+    background: url('../../asset/Vector-previous.png');
+    width: 9px;
+    height: 14px;
+}
+
+.header-history-notification {
+    position: relative;
+    background: url('../../asset/Vector-bell.png');
+    width: 28px;
+    height: 30px;
+
+}
+
+.header-history-notification-number {
+    width: 18px;
+    height: 18px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--white-color);
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--purple-color);
+    position: absolute;
+    top: -6px;
+    left: 16px;
+}
+
+.header-history-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--white-color);
+}
+
+.header-history-navbar {
+    width: 414px;
+    height: 60px;
+    background: var(--white-color);
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    z-index: 10;
+}
+
+.header-history-navbar-app {
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #2CD1F8 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid var(--blue-color);
+}
+
+
+
+.header-history-navbar-add-coin {
+    width: 50%;
+    height: 100%;
+    float: right;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: var(--bold-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #DDDDDD;
+}
+
 .history-list {
     position: absolute;
     top: 192px;
     overflow-y: scroll;
     overflow-x: hidden;
-    width: 414px;
-    height: 455px;
+    width: 100%;
+    height: 612px;
     padding: 8px;
 }
 
@@ -25,7 +135,7 @@
 .history-list-description {
     box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
     border-radius: 10px;
-    width: 390px;
+    width: 98.734%;
     height: 120px;
     margin-bottom: 10px;
     padding: 10px 20px;
@@ -72,3 +182,155 @@
     color: var(--bold-color);
 }
 
+.footer-history {
+    position: absolute;
+    bottom: 0;
+    width: 414px;
+    height: 105px;
+    background: var(--white-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 1px 10px rgba(112, 112, 112, 0.2);
+    z-index: 10;
+    padding: 0 24px;
+}
+
+.footer-history-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #AEAEAE;
+}
+
+.footer-history-icon-text {
+    color: var(--purple-color);
+}
+
+.footer-history-icon-img {
+    background: url('../../asset/Union-cost.png');
+    width: 32.21px;
+    height: 28.54px;
+    margin-bottom: 4px;
+}
+
+.footer-history-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--purple-color);
+
+}
+
+.footer-history-active-img {
+    background: url('../../asset/Union-history.png');
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+}
+
+.footer-history-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #AEAEAE;
+}
+
+.footer-history-account-img {
+    background: url('../../asset/Union-account.png');
+    width: 28px;
+    height: 28px;
+    margin-bottom: 4px;
+}
+
+/*Smart phone nhỏ*/
+@media screen and (min-width: 240px) {
+    .history-container {
+        height: 100vh;
+    }
+
+    .header-history,
+    .header-history-navbar,
+    .footer-history {
+        width: 100%;
+    }
+
+    .header-history {
+
+        height: 12.98%;
+    }
+    .header-history-navbar{
+        height: 8.085%;
+
+    }
+    .history-list{
+      position: initial;
+        height: 66.288%;
+    }
+
+    .footer-history{
+        height: 12.647%;
+
+    }
+
+
+    .footer-history {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+}
+
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px) and (max-height: 667px) {}
+
+@media screen and (min-width: 320px) and (min-height: 668px) {}
+
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px) {}
+
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px) {}
+
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px) {
+    .history-container {
+        height: 899px;
+    }
+
+    .header-history,
+    .header-history-navbar,
+    .footer-history {
+        
+        width: 414px;
+    }
+    .header-history{
+        height: 128px;
+    }
+    .header-history-navbar{
+        height: 60px;
+    }
+    .history-list{
+        height: 612px;
+    }
+
+    .footer-history {
+        position: absolute;
+        height: 105px;
+    }
+    
+
+}

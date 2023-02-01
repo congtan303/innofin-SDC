@@ -8,12 +8,16 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.1px;
     color: var(--white-color);
-    width: 332px;
+    width: 300px;
     height: 43px;
     list-style: inherit;
     padding: 0;
+}
+
+.list-note-start-collect{
+    margin-right: 7%;
 }
 
 .detail-2-list-note {

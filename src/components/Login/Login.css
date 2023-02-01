@@ -256,4 +256,8 @@ input {
 /*Ipad dọc(768 x 1024)*/
 @media screen and (min-width: 768px) {}
 /*Ipad ngang(1024 x 768)*/
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .container-login{
+        height: 899px;
+    }
+}

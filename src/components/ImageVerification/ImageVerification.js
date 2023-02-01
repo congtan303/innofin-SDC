@@ -1,11 +1,10 @@
 
 import { useParams, useNavigate, Link } from "react-router-dom"
-import UnionTop from "../Union-top/UnionTop"
-import FooterApp from "../FooterApp/FooterApp"
 import './ImageVerification.css'
 import { useState, useEffect } from "react"
 import axios from 'axios'
 import { useForm } from 'react-hook-form'
+import unionHeaderHistory from '../../asset/Union-top.png'
 
 export default function ImageVerification() {
     const { id, lat, lng } = useParams()
@@ -64,8 +63,9 @@ export default function ImageVerification() {
                     Xác minh thu hộ
                 </div>
 
-                <UnionTop />
+                <img src={unionHeaderHistory} className='union-header-history' />
             </div>
+            
             <div className="body-image-verification">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="description-verification">
@@ -74,7 +74,7 @@ export default function ImageVerification() {
                     <div className="div-image-verification">
                         <div className="image-verification">
                             {image && (
-                                <img src={image.preview} alt="" width="100%" height="100%" />
+                                <img src={image.preview} alt="" width="100%" height="100%" className="img-verify" />
                             )}
 
                         </div>
@@ -95,16 +95,49 @@ export default function ImageVerification() {
                     {errors.inputImage && <span className='text-warning-msg text-center'>{errors.inputImage.message}</span>}
 
 
-                    <div className="div-button-verifycation">
-                        <div className="button-verifycation">
+                    
                             <button className="button-verifycation-text" type="submit">Hoàn thành</button>
-                        </div>
-                    </div>
+                       
                 </form>
 
 
             </div>
-            <FooterApp />
+            <div className="footer-history">
+                <div className="footer-history-icon-active">
+                    <div className="footer-history-icon-img-active">
+
+                    </div>
+                    <Link to="/home-page">
+                        <div className="footer-history-icon-text">
+                            Thu hộ
+                        </div>
+                    </Link>
+
+                </div>
+                <Link to="/history">
+                    <div className="footer-history-normal">
+                        <div className="footer-history-img">
+
+                        </div>
+                        <div className="footer-history-text-normal">
+                            Lịch sử
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to="/account-user">
+                    <div className="footer-history-account">
+                        <div className="footer-history-account-img">
+
+                        </div>
+                        <div className="footer-history-account-text">
+                            Tài khoản
+                        </div>
+                    </div>
+                </Link>
+
+
+            </div>
         </div>
     )
 }

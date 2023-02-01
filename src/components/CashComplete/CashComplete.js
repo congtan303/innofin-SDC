@@ -1,11 +1,10 @@
 import { Link, useParams } from 'react-router-dom'
 import './CashComplete.css';
 import logoComplete from '../../asset/image\ 12.png'
-import UnionTop from '../Union-top/UnionTop';
 import axios from 'axios'
-import FooterHistory from '../FooterHistory/FooterHistory';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect  } from 'react';
+import unionHeaderHistory from '../../asset/Union-top.png'
+
 export default function CashComplete() {
 
     let { id } = useParams();
@@ -34,13 +33,17 @@ export default function CashComplete() {
         <div className="container">
             {/* header */}
             <div className="header-history">
+                <Link to="/home-page">
+                    <div className='header-history-previous-btn'>
 
-                <div className="header-history-title title-complete">Thu hộ hoàn tất</div>
+                    </div>
+                </Link>
+
+                <div className="header-history-title">Thu hộ hoàn tất</div>
                 <div className="header-history-notification">
                     <div className="header-history-notification-number">1</div>
                 </div>
-
-                <UnionTop />
+                <img src={unionHeaderHistory} className='union-header-history' />
             </div>
             <div className='cash-complete-content'>
                 <div className='cash-complete-content-status'>
@@ -88,13 +91,45 @@ export default function CashComplete() {
                     </div>
                 </Link>
 
-
             </div>
 
 
-
             {/* footer */}
-            <FooterHistory />
+            <div className="footer-history">
+                <Link to="/home-page">
+                    <div className="footer-history-icon">
+                        <div className="footer-history-icon-img">
+
+                        </div>
+
+                        <div className="footer-history-icon-text-normal">
+                            Thu hộ
+                        </div>
+
+
+                    </div>
+                </Link>
+                <div className="footer-history-active">
+                    <div className="footer-history-active-img">
+
+                    </div>
+                    <div className="footer-history-active-text">
+                        Lịch sử
+                    </div>
+                </div>
+                <Link to="/account-user">
+                    <div className="footer-history-account">
+                        <div className="footer-history-account-img">
+
+                        </div>
+                        <div className="footer-history-account-text">
+                            Tài khoản
+                        </div>
+                    </div>
+                </Link>
+
+
+            </div>
 
         </div>
     )

@@ -1,7 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import './ListMoneyComplete.css'
 import UnionTop from '../Union-top/UnionTop'
-import FooterHistory from '../FooterHistory/FooterHistory'
 export default function ListMoneyComplete() {
     let { id, lat, lng } = useParams();
     return (
@@ -122,7 +121,41 @@ export default function ListMoneyComplete() {
             </div>
 
             {/* footer */}
-            <FooterHistory />
+            <div className="footer-history">
+                <Link to="/home-page">
+                    <div className="footer-history-icon">
+                        <div className="footer-history-icon-img">
+
+                        </div>
+
+                        <div className="footer-history-icon-text-normal">
+                            Thu hộ
+                        </div>
+
+
+                    </div>
+                </Link>
+                <div className="footer-history-active">
+                    <div className="footer-history-active-img">
+
+                    </div>
+                    <div className="footer-history-active-text">
+                        Lịch sử
+                    </div>
+                </div>
+                <Link to="/account-user">
+                    <div className="footer-history-account">
+                        <div className="footer-history-account-img">
+
+                        </div>
+                        <div className="footer-history-account-text">
+                            Tài khoản
+                        </div>
+                    </div>
+                </Link>
+
+
+            </div>
 
         </div>
     )

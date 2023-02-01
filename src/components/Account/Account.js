@@ -18,7 +18,6 @@ import UnionTop from '../../asset/Union-top-account.png'
 
 const Account = () => {
     const { dataUser } = useContext(UserContext);
-    console.log(dataUser);
 
     return (
 
@@ -133,7 +132,38 @@ const Account = () => {
             </div>
 
 
-            <FooterAccount />
+            <div className="footer-account">
+                <Link to="/home-page">
+                    <div className="footer-history-icon">
+                        <div className="footer-history-icon-img">
+
+                        </div>
+                        <div className="footer-history-icon-normal">
+                            Thu hộ
+                        </div>
+                    </div>
+                </Link>
+                <Link to="/history">
+                <div className="footer-history-normal">
+                    <div className="footer-history-img">
+
+                    </div>
+                    <div className="footer-history-text-normal">
+                        Lịch sử
+                    </div>
+                </div>
+                </Link>
+                
+                <div className="footer-history-account-active">
+                    <div className="footer-history-account-active-img">
+
+                    </div>
+                    <div className="footer-history-account-text">
+                        Tài khoản
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     )

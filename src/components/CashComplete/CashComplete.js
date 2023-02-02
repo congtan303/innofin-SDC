@@ -30,7 +30,7 @@ export default function CashComplete() {
 
 
     return (
-        <div className="container">
+        <div className="cash-complete-container">
             {/* header */}
             <div className="header-history">
                 <Link to="/home-page">

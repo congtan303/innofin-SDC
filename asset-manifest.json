@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/innofin-SDC/static/css/main.0632e2a8.css",
-    "main.js": "/innofin-SDC/static/js/main.b7bc4581.js",
+    "main.css": "/innofin-SDC/static/css/main.667d7517.css",
+    "main.js": "/innofin-SDC/static/js/main.e87d1eca.js",
     "static/js/787.ff81323d.chunk.js": "/innofin-SDC/static/js/787.ff81323d.chunk.js",
     "static/media/SFUIText-Regular.woff": "/innofin-SDC/static/media/SFUIText-Regular.865a0aa36162c98f6462.woff",
     "static/media/image 18.png": "/innofin-SDC/static/media/image 18.628dad754653d8675a2f.png",
@@ -13,12 +13,12 @@
     "static/media/Group 4.svg": "/innofin-SDC/static/media/Group 4.14e1d66d080c89c685a7d38dd4eea8c3.svg",
     "index.html": "/innofin-SDC/index.html",
     "static/media/Union.svg": "/innofin-SDC/static/media/Union.4e9a8636e45bfff93436fa118c96ce96.svg",
-    "main.0632e2a8.css.map": "/innofin-SDC/static/css/main.0632e2a8.css.map",
-    "main.b7bc4581.js.map": "/innofin-SDC/static/js/main.b7bc4581.js.map",
+    "main.667d7517.css.map": "/innofin-SDC/static/css/main.667d7517.css.map",
+    "main.e87d1eca.js.map": "/innofin-SDC/static/js/main.e87d1eca.js.map",
     "787.ff81323d.chunk.js.map": "/innofin-SDC/static/js/787.ff81323d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0632e2a8.css",
-    "static/js/main.b7bc4581.js"
+    "static/css/main.667d7517.css",
+    "static/js/main.e87d1eca.js"
   ]
 }

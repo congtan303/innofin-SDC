@@ -433,6 +433,10 @@
     .home-page-container{
         height: 899px;
     }
+
+    .Home-page-header{
+        height: 128px;
+    }
     .list-customer-information {
         width: 390px
     }

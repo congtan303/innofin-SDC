@@ -4,7 +4,6 @@ import axios from 'axios'
 import phone from '../../asset/Vector-contact-user.png'
 import './DetailStartCollect.css'
 import SwipeableButton from '../SwipeButton/SwipeButton'
-import FooterApp from '../FooterApp/FooterApp'
 
 export default function DetailStartCollect() {
     let { id, lat, lng } = useParams();

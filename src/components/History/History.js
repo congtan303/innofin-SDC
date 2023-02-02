@@ -4,7 +4,6 @@ import axios from 'axios'
 import LoaderAnimation from '../LoaderAnimation/LoaderAnimation'
 import { Link } from 'react-router-dom'
 import unionHeaderHistory from '../../asset/Union-top.png'
-import FooterHistory from '../FooterHistory/FooterHistory'
 
 export default function History() {
 

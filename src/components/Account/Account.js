@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import "./Account.css"
 import NotiBell from '../../asset/Vector-bell.png'
-import FooterAccount from '../FooterAccount/FooterAccount';
 import iconWallet from '../../asset/wallet.png'
 import walletBackground from '../../asset/Ellipse\ 14.png'
 import iconHelp from '../../asset/icon-help.png'
